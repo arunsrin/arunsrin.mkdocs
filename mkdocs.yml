@@ -19,4 +19,18 @@ pages:
         - Book Notes:
           - 'Crypto 101': books/crypto101.md
           - 'We are our brains': books/we-are-our-brains.md
-
+# Extensions
+markdown_extensions:
+  - admonition
+theme:
+  name: 'material'
+  language: 'en'
+  favicon: 'img/favicon.ico'
+  logo:
+    icon: 'sentiment_very_satisfied'
+  palette:
+    primary: 'light green'
+    accent: 'lime'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
