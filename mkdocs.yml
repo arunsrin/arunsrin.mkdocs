@@ -1,0 +1,18 @@
+site_name: arunsr.in
+docs_dir: home
+pages:
+        - Home: index.md
+        - About: about.md
+        - Snippets:
+          - 'Docker': snippets/docker.md
+          - 'Editors': snippets/editors.md
+          - 'Git': snippets/git.md
+          - 'Linux': snippets/linux.md
+          - 'Networking': snippets/networking.md
+          - 'OpenSSL': snippets/openssl.md
+          - 'Programming': snippets/programming.md
+          - 'Security': snippets/security.md
+        - Book Notes:
+          - 'Crypto 101': books/crypto101.md
+          - 'We are our brains': books/we-are-our-brains.md
+
