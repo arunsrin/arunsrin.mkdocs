@@ -12,72 +12,92 @@ generally playing with minimiastic window managers and the shell.
 
 These days I stick with Fedora and love it.
 
-# General Linux
+## General Linux
 
-## diff and patch
+### diff and patch
 
-    cp somepackage somepackage-new
-    # make changes in somepackage-new
-    diff -crB somepackage somepackage-new > mychanges.patch
-    # give the patch to someone else, who can now do:
-    cd somepackage
-    patch -p1 < mychanges.patch
+``` sh
+cp somepackage somepackage-new
+# make changes in somepackage-new
+diff -crB somepackage somepackage-new > mychanges.patch
+# give the patch to someone else, who can now do:
+cd somepackage
+patch -p1 < mychanges.patch
+```
 
-## ccache notes
+### ccache notes
 
 Install from the repo as usual
 
-`sudo yum install ccache -y`
+``` sh
+sudo yum install ccache -y
+```
 
 One way to set it up:
 
-    bash-4.2 /bin$ cp ccache /usr/local/bin/
-    bash-4.2 /bin$ ln -s ccache /usr/local/bin/gcc
-    bash-4.2 /bin$ ln -s ccache /usr/local/bin/g++
-    bash-4.2 /bin$ ln -s ccache /usr/local/bin/cc
-    bash-4.2 /bin$ ln -s ccache /usr/local/bin/c++
+``` sh
+bash-4.2 /bin$ cp ccache /usr/local/bin/
+bash-4.2 /bin$ ln -s ccache /usr/local/bin/gcc
+bash-4.2 /bin$ ln -s ccache /usr/local/bin/g++
+bash-4.2 /bin$ ln -s ccache /usr/local/bin/cc
+bash-4.2 /bin$ ln -s ccache /usr/local/bin/c++
+```
 
-## Change timezone in centos:
+### Change timezone in centos:
 
-`ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime`
+``` sh
+ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+```
 
 For debian:
 
-`timedatectl set-timezone Asia/Kolkata`
+``` sh
+timedatectl set-timezone Asia/Kolkata
+```
 
-## Install fonts in centos/linux:
+### Install fonts in centos/linux:
 
 System-wide : 
 
-`mkdir -p /usr/share/fonts/greatvibes`
+``` sh
+mkdir -p /usr/share/fonts/greatvibes
+```
 
 User only : 
 
-`mkdir ~/.fonts`
+``` sh
+mkdir ~/.fonts
+```
 
 Copy your font files in the appropriate folder and "register" them in the system with:
 
-`fc-cache -f -v`
+``` sh
+fc-cache -f -v
+```
 
-## Linux date conversion (epoch to human readable)
+### Linux date conversion (epoch to human readable)
 
 Convert epoch time to human readable format:
 
-`date -d @1445305686.222`
+``` sh
+date -d @1445305686.222
+```
 
-## Howto add swap space:
+### Howto add swap space:
 
-    free
-    dd if=/dev/zero of=/var/swap.img bs=1024k count=1000
-    mkswap /var/swap.img
-    swapon /var/swap.img
-    free
+``` sh
+free
+dd if=/dev/zero of=/var/swap.img bs=1024k count=1000
+mkswap /var/swap.img
+swapon /var/swap.img
+free
+```
 
-## Disable firefox's verification of extension signing
+### Disable firefox's verification of extension signing
 
 `xpinstall.signatures.required` in `about:config`
 
-## Firefox: open links in background tab always
+### Firefox: open links in background tab always
 
 -   Open a new tab, enter `about:config`
 -   Search for browser.tabs.loadDivertedInBackground
@@ -86,56 +106,68 @@ Convert epoch time to human readable format:
 
 (from newsblur's Goodies page)
 
-## If df shows no disk space even after deleting files, check this output:
+### If df shows no disk space even after deleting files, check this output:
 
-`sudo /usr/sbin/lsof | grep deleted`
+``` sh
+sudo /usr/sbin/lsof | grep deleted
+```
 
 -   Space will not be freed for the files there.
 -   Restart those offending daemons to actually free the space up.
 
 If you don't have lsof, just use this:
 
-    find /proc/*/fd -ls | grep  '(deleted)'
+``` sh
+find /proc/*/fd -ls | grep  '(deleted)'
+```
 
-## Useful linux diagnostic commands:
+### Useful linux diagnostic commands:
 
-    uptime
-    dmesg | tail
-    vmstat 1
-    mpstat -P ALL 1
-    pidstat 1
-    iostat -xz 1
-    free -m
-    sar -n DEV 1
-    sar -n TCP,ETCP 1
-    top
+``` sh
+uptime
+dmesg | tail
+vmstat 1
+mpstat -P ALL 1
+pidstat 1
+iostat -xz 1
+free -m
+sar -n DEV 1
+sar -n TCP,ETCP 1
+top
+```
 
-## GNU/Screen scrollback:
+### GNU/Screen scrollback:
 
 `Ctrl a Esc`
 (then use `Ctrl b/Ctrl f/Ctrl u/Ctrl d` etc)
 and `Esc` to end
 
-## Quick fsck (solaris)
+### Quick fsck (solaris)
 
-`fsck -Fy ufs /dev/rdsk/c1d0s5`
+``` sh
+fsck -Fy ufs /dev/rdsk/c1d0s5
+```
 
-## Debian - clean up orphaned files:
+### Debian - clean up orphaned files:
 
-`aptitude  remove --purge $(deborphan)`
+``` sh
+aptitude  remove --purge $(deborphan)
+```
 
-## See filesystem usage:
+### See filesystem usage:
 
-`/usr/bin/du --total --summarize --human-readable --one-file-system`
+``` sh
+/usr/bin/du --total --summarize --human-readable --one-file-system
+```
 
-## GNU/Screen splitting windows
+### GNU/Screen splitting windows
 
 -   `C-a V or C-a |`     split the screen vertically
 -   `C-a X`              remove/detach the current split
 -   `C-a S`              split horizontally
 -   `C-a tab`            cycle between windows
 
-## Tmux keybindings
+### Tmux keybindings
 
 -   `Ctrl-b %` (Split the window vertically)
 -   `Ctrl-b :` "split-window" (Split window horizontally)
@@ -146,24 +178,28 @@ and `Esc` to end
 
 And here's my .tmux.conf
 
-    set -g prefix C-a
-    unbind C-b
-    bind C-a send-prefix
-    
-    set -g default-terminal "xterm-256color"
-    
-    set -g history-limit 10000
-    set -g set-titles-string "#T"
-    
-    unbind %
-    bind | split-window -h
-    bind - split-window -v
+``` sh
+set -g prefix C-a
+unbind C-b
+bind C-a send-prefix
 
-## Colour in terminals
+set -g default-terminal "xterm-256color"
 
+set -g history-limit 10000
+set -g set-titles-string "#T"
+
+unbind %
+bind | split-window -h
+bind - split-window -v
+```
+
+### Colour in terminals
+
+``` sh
     arunsrin@ARUNSRIN-G2CA5 MINGW64 ~
     $ printf "\033[32mhi\033[0m"
     hi
+```
 
 -   `\033` is Escape
 -   So `Escape + 3 + 2 + m` tells the terminal that everything from this
@@ -173,48 +209,62 @@ And here's my .tmux.conf
 -   These are some sequences:
 
 ```
-    Sequence   What it Does
-    ESC[1m     Bold, intensify foreground
-    ESC[4m     Underscore
-    ESC[5m     Blink
-    ESC[7m     Reverse video
-    ESC[0m     All attributes off
+Sequence   What it Does
+ESC[1m     Bold, intensify foreground
+ESC[4m     Underscore
+ESC[5m     Blink
+ESC[7m     Reverse video
+ESC[0m     All attributes off
 ```
 
-## Bash Stty: Coredump etc
+### Bash Stty: Coredump etc
 
-`Ctrl \`
+``` sh
+Ctrl \
+```
 
 or
 
-`kill -SIGQUIT <pid>`
+``` sh
+kill -SIGQUIT <pid>
+```
 
 Override it with:
 
-`stty quit <some-binding>`
+``` sh
+stty quit <some-binding>
+```
 
 Similarly for that age-old backspace not deleting a character problem:
 
-`stty erase ^h`
+``` sh
+stty erase ^h
+```
 
 To see the current terminal capabilities, run:
 
-`stty -a`
+``` sh
+stty -a
+```
 
-## Fix for xargs errors when filenames contain spaces
+### Fix for xargs errors when filenames contain spaces
 
 -   `find` has a print0 option that uses null characters instead of \n as separators.
 -   `xargs` has a -0 option that uses the same separator when working on the args. So:
 
-`find . -name -print0 | xargs -0 ls -l`
+``` sh
+find . -name -print0 | xargs -0 ls -l
+```
 
-## Bash faster navigation with cdpath
+### Bash faster navigation with cdpath
 
-    export CDPATH=:$HOME:$HOME/projects:$HOME/code/beech
+``` sh
+export CDPATH=:$HOME:$HOME/projects:$HOME/code/beech
+```
 
 -   cd'ing to a folder first looks at CWD, then rest of CDPATH
 
-## Find
+### Find
 
 with date filters
 
@@ -228,11 +278,13 @@ with date filters
 -   `find . -maxdepth 1 -type d -ctime +38 -exec rm -rf  {} \;` delete all folders older than 38 days back.
 -   don't use atime much: every directory access changes its atime, so when find traverses through it, the inode's atime entry gets updated.
 
-## File formatting, wrapping etc
+### File formatting, wrapping etc
 
 Huh, who knew this existed:
 
-`cat <some-verbose-output> | fold -70`
+``` sh
+cat <some-verbose-output> | fold -70
+```
 
 -   `fold -s` folds at whitespace
 
@@ -241,26 +293,30 @@ Huh, who knew this existed:
 
 -   `pr` gives a pretty display with margins, headers, and page numbers.
 
-## Deleting files with odd names
+### Deleting files with odd names
 
 There's more than one way. Here's one: find the inode with `ls -i`, then delete with:
 
-`find -inum <inode-number> -exec rm -i {} \;`
+``` sh
+find -inum <inode-number> -exec rm -i {} \;
+```
 
-## See whitespace with cat
+### See whitespace with cat
 
 Use this:
 
-`cat -v -t -e <somefile>`
+``` sh
+cat -v -t -e <somefile>
+```
 
 -   `-e`: Add a trailing `$` at the end of a line.
 -   `-t`: Show tabs as `^I`
 
-## Stat command: see inode information
+### Stat command: see inode information
 
 The inode holds the address in the filesystem, access permissions, ctime/mtime etc
 
-```
+``` sh
     arunsrin@ARUNSRIN-G2CA5 MINGW64 ~
     $ stat ntuser.ini
       File: ‘ntuser.ini’
@@ -278,91 +334,113 @@ The inode holds the address in the filesystem, access permissions, ctime/mtime e
 
 If the filename is odd and you can't paste it easily in the terminal, just try
 
-`ls -il`
+``` sh
+ls -il
+```
 
-## Bash debugging
+### Bash debugging
 
 Run the script with `-xv` in the shebang:
 
-```
-    #!/bin/bash -xv
-    # do something
+``` sh
+#!/bin/bash -xv
+# do something
 ```
 
-## Bash suppress echo (for reading passwords)
+### Bash suppress echo (for reading passwords)
 
 In bash, while reading input from the user, if you want to suppress
 the echo on the screen (for sensitive inputs like passwords), do this:
 
-    stty -echo
-    read SECRETPASSWD
-    stty echo
+``` sh
+stty -echo
+read SECRETPASSWD
+stty echo
+```
 
-## ngrep
+### ngrep
 
 Try this:
 
-`sudo ngrep -d any <word> -q`
+``` sh
+sudo ngrep -d any <word> -q
+```
 
 `-d any` listens on any interface
 
 `-q` is quiet mode so those `#`'s don't show.
 
-## Pretty-print json
+### Pretty-print json
 
-`cat somefile.json | python -m json.tool`
+``` sh
+cat somefile.json | python -m json.tool
+```
 
-# Systemd
+## Systemd
 
-## Flush old logs in journalctl
+### Flush old logs in journalctl
 
 By date or by size:
 
-```
+``` sh
     sudo journalctl --vacuum-time=2d
     sudo journalctl --vacuum-size=500M
 ```
 
-## Tail journalctl
+### Tail journalctl
 
-`journalctl -f`
+``` sh
+journalctl -f
+```
 
 For a specific service:
 
-`journalctl -u httpd -f`
+``` sh
+journalctl -u httpd -f
+```
 
-## Store logs on disk
+### Store logs on disk
 
 (from <http://unix.stackexchange.com/questions/159221/how-display-log-messages-from-previous-boots-under-centos-7>)
 
 On CentOS 7, you have to enable the persistent storage of log messages:
 
-    # mkdir /var/log/journal
-    # systemd-tmpfiles --create --prefix /var/log/journal
-    # systemctl restart systemd-journald
+``` sh
+# mkdir /var/log/journal
+# systemd-tmpfiles --create --prefix /var/log/journal
+# systemctl restart systemd-journald
+```
 
 Otherwise, the journal log messages are not retained between
 boots. This is the default on Fedora 19+.
 
-# Package management
+## Package management
 
-## Sort RPMs by size
+### Sort RPMs by size
 
-`rpm -qa --queryformat '%{size} %{name}\n' | sort -rn | more`
+``` sh
+rpm -qa --queryformat '%{size} %{name}\n' | sort -rn | more
+```
 
-## Extract rpm into current folder instead of installing:
+### Extract rpm into current folder instead of installing:
 
-`rpm2cpio boost-system-1.53.0-23.el7.x86_64.rpm | cpio -idmv`
+``` sh
+rpm2cpio boost-system-1.53.0-23.el7.x86_64.rpm | cpio -idmv
+```
 
-## Trace a binary or file to the RPM that installed it:
+### Trace a binary or file to the RPM that installed it:
 
-`yum whatprovides /usr/lib64/libdbus-c++-1.so.0`
+``` sh
+yum whatprovides /usr/lib64/libdbus-c++-1.so.0
+```
 
 or this:
 
-`rpm -qf /usr/lib64/libdbus-c++-1.so.0`
+``` sh
+rpm -qf /usr/lib64/libdbus-c++-1.so.0
+```
 
-## Yum/dnf revert
+### Yum/dnf revert
 
 If a yum remove wiped out several packages, do this:
 
@@ -371,63 +449,73 @@ If a yum remove wiped out several packages, do this:
 
 yum/dnf will reinstall all the packages that were removed in that id.
 
-## Dependencies of a package
+### Dependencies of a package
 
 This command shows what other packages need the queried package:
 
-`repoquery --whatrequires libunwind`
+``` sh
+repoquery --whatrequires libunwind
+```
 
 This command shows what other packages need to be installed for a queried package:
 
-`yum deplist nginx`
+``` sh
+yum deplist nginx
+```
 
-# Databases
+## Databases
 
-## Postgreql quickstart
+### Postgreql quickstart
 
-    sudo -i -u postgres
-    postgresql quickstart
-    createuser --interactive
-    createdb ttrssdb
-    psql
-    >alter user ttrssuser with encrypted password 'blah';
-    >grant all privileges on database ttrssdb to ttrssuser;
+``` sql
+sudo -i -u postgres
+postgresql quickstart
+createuser --interactive
+createdb ttrssdb
+psql
+>alter user ttrssuser with encrypted password 'blah';
+>grant all privileges on database ttrssdb to ttrssuser;
+```
 
-## MySql quick start
+### MySql quick start
 
-    mysql> create database habari;
-    Query OK, 1 row affected (0.02 sec)
-    
-    mysql> grant all on habari.* to 'habariuser'@'localhost' identified by 'blah';
-    Query OK, 0 rows affected (0.06 sec)
-    
-    mysql> flush privileges;
-    Query OK, 0 rows affected (0.00 sec)
+``` sql
+mysql> create database habari;
+Query OK, 1 row affected (0.02 sec)
 
-## Sqlite basics:
+mysql> grant all on habari.* to 'habariuser'@'localhost' identified by 'blah';
+Query OK, 0 rows affected (0.06 sec)
 
-    thaum ~/code/app$ sqlite perl.db
-    SQLite version 2.8.17
-    Enter ".help" for instructions
-    sqlite> .tables
-    sqlite> .schema
-    sqlite> create table perltest (id integer PRIMARY KEY,name varchar(10), salary integer);
-    sqlite> .tables
-    perltest
-    sqlite> .headers on
-    sqlite> .mode column
-    sqlite> select * from perltest;
-    sqlite> insert into perltest values(1,'arun',12345);
-    sqlite> insert into perltest values(2,'brun',23456);
-    sqlite> select * from perltest;
-    id          name        salary
-    ----------  ----------  ----------
-    1           arun        12345
-    2           brun        23456
+mysql> flush privileges;
+Query OK, 0 rows affected (0.00 sec)
+```
 
-# Learnings/Notes
+### Sqlite basics:
 
-## Docker Notes:
+``` sql
+thaum ~/code/app$ sqlite perl.db
+SQLite version 2.8.17
+Enter ".help" for instructions
+sqlite> .tables
+sqlite> .schema
+sqlite> create table perltest (id integer PRIMARY KEY,name varchar(10), salary integer);
+sqlite> .tables
+perltest
+sqlite> .headers on
+sqlite> .mode column
+sqlite> select * from perltest;
+sqlite> insert into perltest values(1,'arun',12345);
+sqlite> insert into perltest values(2,'brun',23456);
+sqlite> select * from perltest;
+id          name        salary
+----------  ----------  ----------
+1           arun        12345
+2           brun        23456
+```
+
+## Learnings/Notes
+
+### Docker Notes:
 
 -   apache mesos: get a lot of compute clusters looking like a single system.
 -   Docker Trusted Registry: on-prem repository service
@@ -481,26 +569,26 @@ This command shows what other packages need to be installed for a queried packag
     containers in a single subnet , and allow them to talk to each
     other.
 
-## Vagrant notes:
+### Vagrant notes:
 
-### setup:
+#### setup:
 
 -   `vagrant init`
 -   `vagrant box add centos/7`
 -   mention the same box in the vagrantfile
 
-### start:
+#### start:
 
 -   `vagrant up`
 -   `vagrant ssh`
 
-### stop:
+#### stop:
 
 -   `vagrant suspend` # save state and stop
 -   `vagrant halt` # graceful shutdown
 -   `vagrant destroy` # wipe out hd etc
 
-## Ansible notes
+### Ansible notes
 
 -   Modules are wrappers for administration commands (like ping, apt, yum, copy, etc).
 -   Always use these instead of shell exec since modules are idempotent:
@@ -529,7 +617,7 @@ This command shows what other packages need to be installed for a queried packag
     templates.
 -   ansible-vault can be used to encrypt vars and files in a role.
 
-## Linux ad-hoc daemonization
+### Linux ad-hoc daemonization
 
 -   If a script is running in a terminal and you want to daemonize it, do this:
 -   `Ctrl-Z` to suspend it
@@ -538,21 +626,21 @@ This command shows what other packages need to be installed for a queried packag
     the command from the shell's job list, so it won't get a SIGHUP when
     the terminal closes.
 
-## linux ctime vs mtime
+### linux ctime vs mtime
 
 -   ctime is for inode, mtime is for contents
 -   e.g. chmod changes ctime. `echo "asd">>file` changes mtime.
 
-## soft vs hard links
+### soft vs hard links
 
-### Hard links:
+#### Hard links:
 
 -   Two filenames in a folder pointing to the exact same inode.
 -   There is no distinction between the link and the original.
 -   This means you can delete one file and the other will still exist!
 -   Cannot traverse filesystems. cannot hard link directories
 
-### Soft links:
+#### Soft links:
 
 -   A new kind of file that has its own inode entry. the OS knows how to
     traverse from it to the parent.
@@ -567,12 +655,14 @@ This command shows what other packages need to be installed for a queried packag
 
 i.e. if you have test/child:
 
-    cd child
-    ls -ail
-    .   inode1  # child's inode
-    ..  inode2  # parent's inode
-    cd ..
-    ls -ail
-    . inode2   # parent's inode
-    .. inode4  # parent's parent's inode
-    child inode1
+``` sh
+cd child
+ls -ail
+.   inode1  # child's inode
+..  inode2  # parent's inode
+cd ..
+ls -ail
+. inode2   # parent's inode
+.. inode4  # parent's parent's inode
+child inode1
+```

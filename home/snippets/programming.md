@@ -1,12 +1,14 @@
-# Python notes
+## Python notes
 
-## Python3 on centos (using scl):
+### Python3 on centos (using scl):
 
-`scl enable python33 bash`
+``` sh
+scl enable python33 bash
+```
 
-## Design patterns
+### Design patterns
 
-### Observer:
+#### Observer:
 
 -   Like a presence subscription. multiple obvservers get notified when
     a core object changes.
@@ -14,7 +16,7 @@
     way when an attribute changes, we can make a call to update() and
     let the observers know.
 
-### Strategy:
+#### Strategy:
 
 -   Different implementations hidden beneath a single
     abstraction. e.g. user calls sort() but does not care which
@@ -22,11 +24,11 @@
 -   Create different classes and implement `__call__`, so that when an
     object is created, that function is called automatically.
 
-### Template:
+#### Template:
 
 -   Differing steps in separate classes, one controller.
 
-## Unicode, and Encode vs Decode
+### Unicode, and Encode vs Decode
 
 -   `bytes.decode`: interpret a stream of bytes (from a file or the
     network) as unicode, with a passed charset like UTF-8 or latin-1.
@@ -50,55 +52,67 @@
 -   ISO-8859-1 aka Latin-1 is a single byte extension to ascii that
     supports a few extra symbols.
 
-## Coverage usage
+### Coverage usage
 
 Run this:
 
-`coverage run scriptname args`
+``` sh
+coverage run scriptname args
+```
 
 Results are stored in `.coverage`. If the script has different args,
 backup `.coverage`, run again and then combine them:
 
-`coverage combine .coverage.old .coverage`
+``` sh
+coverage combine .coverage.old .coverage
+```
 
 For a quick summary (`-m` specifies the missing lines):
 
-`coverage report -m`
+``` sh
+coverage report -m
+```
 
 For a report (`-d` specifies the dest folder):
 
-`coverage html -d coverage_html`
+``` sh
+coverage html -d coverage_html
+```
 
-## Decorator example
+### Decorator example
 
-    def my_decorator(func):
-        def wrapper(*args, **kwargs):
-            # do pre-processing
-            ret = func(*args, **kwargs)
-            # do post-processing
-            return ret
-        return wrapper
+``` py
+def my_decorator(func):
+    def wrapper(*args, **kwargs):
+        # do pre-processing
+        ret = func(*args, **kwargs)
+        # do post-processing
+        return ret
+    return wrapper
+```
 
 i.e., return a function (wrapper) that calls func with its args, but
 do your pre/post stuff within wrapper.
 
-## Django notes
+### Django notes
 
 -   Change your models (in models.py).
 -   Run `python manage.py makemigrations` to create migrations for those changes
 -   Run `python manage.py migrate` to apply those changes to the database.
 
-## Magic number
+### Magic number
 
 The python interpreter's magic number is found in:
 
-`importlib.util.MAGIC_NUMBER`
+``` py
+importlib.util.MAGIC_NUMBER
+```
 
 .pyc file format:
 
 `magic number | mtime | size | marshaled code object`
 
-## Dunder methods
+### Dunder methods
 
 -   String/bytes representation
 
@@ -140,12 +154,12 @@ The python interpreter's magic number is found in:
 
 `__prepare__, __instancecheck__, __subclasscheck__`
 
-## Pickling
+### Pickling
 
 -   The last byte of a pickled file is a '.' Anything that follows it is ignored.
 -   This would be a way to embed a jpeg or something to the end of a pickle file..??
 
-## Staticmethod vs Classmethod
+### Staticmethod vs Classmethod
 
 -   staticmethod: can be called directly from the class, without instantiating an object.
 -   classmethod: exactly the same.
@@ -153,38 +167,48 @@ The python interpreter's magic number is found in:
     parameter is never passed, the way it is for classmethods and normal
     methods.
 
-## Import files with hyphens
+### Import files with hyphens
 
-`test_cmd = importlib.import_module('test-cmd', None)`
+``` py
+test_cmd = importlib.import_module('test-cmd', None)
+```
 
-# Other languages
+## Other languages
 
-## HTML / CSS
+### HTML / CSS
 
-### HTML header
+#### HTML header
 
-    <html lang="en">
+``` html
+<html lang="en">
+```
 
 -   Here `lang` is an 'attribute', with value `en`.
 -   `html` is the tag.
 -   `head` has metadata, one of which is `title` (to fill the tab bar).
 -   `html` has tags for 'article', 'header', and 'figure' now!
 
-### CSS
+#### CSS
 
 -   Use classes to segregate your content. Call it with a leading '.' in css. e.g.
 
-`.site-nav-header { width: 300 px }`
+``` css
+.site-nav-header { width: 300 px }
+```
 
 -   ID's on the other hand can only be used once per html page. use with
     leading '#' in css. e.g.
 
-`#main-title { color: green }`
+``` css
+##main-title { color: green }
+```
 
-### FORMS
+#### FORMS
 
-    <label for="nickname">Please enter your nickname</label>
-    <input type="text" id="nickname" name="nickname">
+``` html
+<label for="nickname">Please enter your nickname</label>
+<input type="text" id="nickname" name="nickname">
+```
 
 -   The label's `for` should match the input's `id`
 -   The `name` is what is passed to the backend as a variable name
@@ -201,22 +225,24 @@ There are 3 groups of elements in the way the browser stacks them:
 -   block level: p, div, article (browser inserts CRLF)
 -   inline block level : input, textarea (can be resized)
 
-## tcl: xml parsing example
+### tcl: xml parsing example
 
-    package require tdom
-    set dom [dom parse $XML]     
-    set recording [$dom documentElement]
-    set datamode [$recording firstChild]
-    set session [$datamode nextSibling]
-    $session attributes *
-    $session getAttribute session_id
-    set participant [$session nextSibling]
-    set dom [dom parse $XML]     
-    set recording [$dom documentElement]
+``` tcl
+package require tdom
+set dom [dom parse $XML]     
+set recording [$dom documentElement]
+set datamode [$recording firstChild]
+set session [$datamode nextSibling]
+$session attributes *
+$session getAttribute session_id
+set participant [$session nextSibling]
+set dom [dom parse $XML]     
+set recording [$dom documentElement]
+```
 
-# Other study notes
+## Other study notes
 
-## TCP
+### TCP
 
 -   Use `SO_REUSEADDR` when stopping/starting servers: the OS will keep a
     socket alive for ~4 minutes after it's closed in case it has to
@@ -247,17 +273,17 @@ There are 3 groups of elements in the way the browser stacks them:
 -   Similarly `socket.gethostbyname('abc.com')` or `gethostbyaddr('1.2.3.4')`
 -   So self ip address is `socket.gethostbyname(socket.getfqdn())`
 
-## Unicode in DNS:
+### Unicode in DNS:
 
 -   RFC 3492 specifies the IDNA codec that maps a unicode hostname to an
     ascii representation.
 -   The lookup is performed for the encoded ascii string only.
 
-## UTF-8
+### UTF-8
 
 -   utf-8: 1-4 bytes. use setlocale() to switch encodings
 
-### example of unicode encoding:
+#### example of unicode encoding:
 
 -   character "¢"= code point U+00A2 = 00000000 10100010 → 11000010
     10100010 → hexadecimal C2 A2
@@ -266,7 +292,7 @@ There are 3 groups of elements in the way the browser stacks them:
     represent this character), followed by the data. The continuation
     bytes always start with a 10.
 
-### example 2:
+#### example 2:
 
 -   The following string contains 4 utf-8 characters:
 
@@ -279,12 +305,12 @@ There are 3 groups of elements in the way the browser stacks them:
     identical string literals in the same address, so modifying one will
     affect the other)
 
-## Levenshtein Distance
+### Levenshtein Distance
 
 -   Used in fuzzy searching (e.g. 'git lgo' which autocorrects and recommends 'log')
 -   Used to measure the difference between two strings
 
-## Linux's CFS: Completely Fair Scheduler
+### Linux's CFS: Completely Fair Scheduler
 
 -   On a single cpu, the available cpu cycles are divided among all the
     threads in proportion to their weights.
@@ -300,7 +326,7 @@ There are 3 groups of elements in the way the browser stacks them:
     commuication operations are expensive) so it is kept at a minimum if
     possible.
 
-## Memory layout in Linux
+### Memory layout in Linux
 
 -   32-bit: 3:1 ratio: out of 4gb, 3gb is for users and 1gb for kernel
 -   64-bit: 1:1: out of 128TB, 64TB is for users and 64 for kernel.
@@ -316,7 +342,7 @@ There are 3 groups of elements in the way the browser stacks them:
 -   text is usually read-only.
 -   stack and data are non-executable (to prevent (partially) overflows).
 
-## Algorithmic Complexity
+### Algorithmic Complexity
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 

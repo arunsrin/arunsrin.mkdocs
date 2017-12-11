@@ -6,7 +6,7 @@ ones that I'd recommend are:
 - Using Docker
 - Docker in Action
 
-# Useful commands
+## Useful commands
 
 -   `docker inspect <containerid>` - Shows IPAddress among other things.
 -   `docker diff <containerid>` - List of files changed in the container.
@@ -23,14 +23,14 @@ ones that I'd recommend are:
 -   `docker run arun/mynewcontainer` &#x2013;name test -d /usr/bin/nginx - daemonize and run a pulled image. RUN IS FOR IMAGES.
 -   `docker run --rm -it --link myredis:redis redis /bin/bash` - Woah. We ran another container and linked it to the existing 'myredis' container as 'redis' on the new one, i.e. /etc/hosts has an entry called 'redis' pointing to the old one.
 
-# Cleanup
+## Cleanup
 
-## Old and busted
+### Old and busted
 
 -   `docker rmi $(docker images --filter "dangling=true" -q --no-trunc)` - For images
 -   `docker rm -v $(docker ps -aq -f status=exited)` - Remove all exited containers.
 
-## New hotness
+### New hotness
 
 -   `docker system prune`
 -   `docker container prune`
@@ -41,7 +41,7 @@ Difference between Stopped Container and Image: stopped container
 retains its changes, settings, metadata, filesystem, runtime
 configuration, etc. Images don't have runtime information.
 
-# Dockerfile
+## Dockerfile
 
     FROM centos:7
     MAINTAINER Beech Team <beechbld@cisco.com>
@@ -51,11 +51,15 @@ Note: each command creates a layer, so try to squeeze stuff into a single comman
 
 Then build it like this:
 
-`docker build -t test/myemacs .`
+``` sh
+docker build -t test/myemacs .
+```
 
 And run it like this:
 
-`docker run test/emacs emacs .bashrc`
+``` sh
+docker run test/emacs emacs .bashrc
+```
 
 If you add this line to the Dockerfile:
 
@@ -64,7 +68,9 @@ If you add this line to the Dockerfile:
 then you can directly run the container and pass the args without
 mentioning the command, i.e.
 
-`docker run test/emacs .bashrc`
+``` sh
+docker run test/emacs .bashrc
+```
 
 COPY in a Dockerfile instructs docker to copy a file from the host to the container. e.g.
 
@@ -76,7 +82,9 @@ VOLUME is used to just use the host's filesystem for persistent data. e.g.
 
 To do it at run time, do this:
 
-``docker run -it -v `pwd`:/root arunsrin/testpy``
+``` sh
+docker run -it -v `pwd`:/root arunsrin/testpy
+```
 
 Instead of VOLUME, if you use ADD or COPY, it'll be baked into the
 image and available to anyone who downloads

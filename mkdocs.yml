@@ -22,6 +22,8 @@ pages:
 # Extensions
 markdown_extensions:
   - admonition
+  - codehilite:
+        guess_lang: true
 theme:
   name: 'material'
   language: 'en'

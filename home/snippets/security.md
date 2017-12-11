@@ -1,25 +1,29 @@
-# Things that go in a certificate
+## Things that go in a certificate
 
-    Subject: CN     the certificate owner's common name
-    Subject: E      the certificate owner's email address
-    Subject: T      the certificate owner's locality
-    Subject: ST     the certificate owner's state of residence
-    Subject: O      the organization to which the certificate owner belongs
-    Subject: OU     the name of the organizational unit to which the certificate owner belongs
-    Subject: C      the certificate owner's country of residence
-    Subject: STREET the certificate owner's street address
-    Subject: ALL    the certificate owner's complete distinguished name
-    Serial  the certificate's serial number
-    SignatureAlg    the algorithm used by the Certificate Authority to sign the certificate
-    BeginDate       the date at which the certificate becomes valid
-    EndDate the date at which the certificate becomes invalid
-    PublicKey       the certificate's public key
-    FriendlyName    the certificate's friendly name
+```
+Subject: CN     the certificate owner's common name
+Subject: E      the certificate owner's email address
+Subject: T      the certificate owner's locality
+Subject: ST     the certificate owner's state of residence
+Subject: O      the organization to which the certificate owner belongs
+Subject: OU     the name of the organizational unit to which the certificate owner belongs
+Subject: C      the certificate owner's country of residence
+Subject: STREET the certificate owner's street address
+Subject: ALL    the certificate owner's complete distinguished name
+Serial  the certificate's serial number
+SignatureAlg    the algorithm used by the Certificate Authority to sign the certificate
+BeginDate       the date at which the certificate becomes valid
+EndDate the date at which the certificate becomes invalid
+PublicKey       the certificate's public key
+FriendlyName    the certificate's friendly name
+```
 
-# selinux example:
+## selinux example:
 
-    ls -Z file1
-    -rwxrw-r-- user1 group1 unconfined_u:object_r:user_home_t:s0 file1
+``` sh
+ls -Z file1
+-rwxrw-r-- user1 group1 unconfined_u:object_r:user_home_t:s0 file1
+```
 
 -   SELinux contexts follow the SELinux user:role:type:level syntax.
 -   Use the `ps -eZ` command to view the SELinux context for processes
@@ -28,7 +32,7 @@
 
 also see `/etc/selinux/targeted/context/users`
 
-# SELinux/Nginx error
+## SELinux/Nginx error
 
 `sudo cat /var/log/audit/audit.log | grep nginx | grep denied`
 shows something like this:
@@ -38,55 +42,76 @@ type=AVC msg=audit(1445306182.317:301): avc:  denied  { name_connect } for  pid=
 ```
 
 Someone found that running the following commands fixed their issue:
-```
+
+``` sh
 sudo cat /var/log/audit/audit.log | grep nginx | grep denied | audit2allow -M mynginx
 sudo semodule -i mynginx.pp
 ```
+
 Or something like this:
-`chcon -Rt httpd_sys_content_t /srv/www/myapp/`
+
+``` sh
+chcon -Rt httpd_sys_content_t /srv/www/myapp/
+```
 
 ..to change the security context of the directory recursively so nginx will be allowed to serve it. Followed by:
 
-`setsebool -P httpd_can_network_connect 1`
+``` sh
+setsebool -P httpd_can_network_connect 1
+```
 
-# SElinux Apache static html
+## SElinux Apache static html
 
 -   Change the context of the file:
 
-`sudo chcon -R -v -t httpd_sys_rw_content_t index.html`
+``` sh
+sudo chcon -R -v -t httpd_sys_rw_content_t index.html
+```
 
 -   This might have happened because we copied a file from `~` to
     `/var/www`, which caused it to retain its original context.
 
-# Nmap one liners
+## Nmap one liners
 
 -   Port scan, os detection:
 
-`nmap -sS -P0 -sV -O 192.168.0.58`
+``` sh
+nmap -sS -P0 -sV -O 192.168.0.58
+```
 
 -   All active IPs in a network
 
-`nmap -sP 192.168.0.*`
+``` sh
+nmap -sP 192.168.0.*
+```
 
 -   Ping a range of IPs
 
-`nmap -sP 192.168.0.2-254`
+``` sh
+nmap -sP 192.168.0.2-254
+```
 
 -   Find unused IPs in a subnet
 
-`nmap -T4 -sP 192.168.0.0/24 && egrep "00:00:00:00:00:00" /proc/net/arp`
+``` sh
+nmap -T4 -sP 192.168.0.0/24 && egrep "00:00:00:00:00:00" /proc/net/arp
+```
 
-# Make a password in linux (without adding the user)
+## Make a password in linux (without adding the user)
 
 -   `whois` package: provides `mkpasswd`
 
-`mkpasswd --method=SHA-512`
+``` sh
+mkpasswd --method=SHA-512
+```
 
-# IPtables port forwarding
+## IPtables port forwarding
 
 Use case: make tomcat on port 8443 listen on port 443.
 
-`sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080`
+``` sh
+sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+```
 
 This will forward all traffic coming in on port 443 to the tomcat
 server listening on 8443.
@@ -95,83 +120,110 @@ server listening on 8443.
 
 To view, the usual `-L` and `-F` won't show anything. Instead, use:
 
-`iptables -L -t nat`
+``` sh
+iptables -L -t nat
+```
 
-`iptables -F -t nat`
+``` sh
+iptables -F -t nat
+```
 
-# Open firewall ports with firewalld
+## Open firewall ports with firewalld
 
-`firewall-cmd --permanent --add-port=5672/tcp`
+``` sh
+firewall-cmd --permanent --add-port=5672/tcp
+```
 
-`firewall-cmd --reload`
+``` sh
+firewall-cmd --reload
+```
 
-# Centos firewall commands
+## Centos firewall commands
 
-    firewall-cmd --state
-    firewall-cmd --get-zones
-    firewall-cmd --list-all-zones
-    firewall-cmd --get-default-zone
-    firewall-cmd --list-services  # currently enabled in this zone
-    firewall-cmd --get-services   # all
-    firewall-cmd --add-service=https --permanent
-    firewall-cmd --add-service=http --permanent
+``` sh
+firewall-cmd --state
+firewall-cmd --get-zones
+firewall-cmd --list-all-zones
+firewall-cmd --get-default-zone
+firewall-cmd --list-services  # currently enabled in this zone
+firewall-cmd --get-services   # all
+firewall-cmd --add-service=https --permanent
+firewall-cmd --add-service=http --permanent
+```
 
-# ssh-agent
+## ssh-agent
 
 -   You start an ssh-agent by running something like:
 
-`` eval `ssh-agent` ``
+``` sh
+eval `ssh-agent`
+```
 
 -   You can then feed it keys, with ssh-add like this:
 
-`ssh-add /home/test/.ssh/id_rsa`
+``` sh
+ssh-add /home/test/.ssh/id_rsa
+```
 or, if your key is in the default location, you can just do:
-`ssh-add`
+
+``` sh
+ssh-add
+```
 
 or just put this in `.bashrc`:
 
-    if [ -z "$SSH_AUTH_SOCK" ] ; then
-      eval `ssh-agent -s`
-      ssh-add
-    fi
+``` sh
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+  ssh-add
+fi
+```
 
 but this prompts for the passphrase the first time it is invoked. so do this instead:
 
-    #!/usr/bin/expect -f
-    spawn ssh-add /home/user/.ssh/id_rsa
-    expect "Enter passphrase for /home/user/.ssh/id_rsa:"
-    send "passphrase\n";
-    interact
+``` sh
+#!/usr/bin/expect -f
+spawn ssh-add /home/user/.ssh/id_rsa
+expect "Enter passphrase for /home/user/.ssh/id_rsa:"
+send "passphrase\n";
+interact
+```
 
-# Apache redirect http to https
+## Apache redirect http to https
 
-    NameVirtualHost *:80
-    <VirtualHost *:80>
-       ServerName mysite.example.com
-       DocumentRoot /usr/local/apache2/htdocs 
-       Redirect permanent / https://mysite.example.com/
-    </VirtualHost>
+```
+NameVirtualHost *:80
+<VirtualHost *:80>
+   ServerName mysite.example.com
+   DocumentRoot /usr/local/apache2/htdocs 
+   Redirect permanent / https://mysite.example.com/
+</VirtualHost>
+```
 
-# Letsencrypt notes
+## Letsencrypt notes
 
-    sudo dnf install httpd -y
-    sudo dnf install mod_ssl -y
-    sudo systemctl start httpd
-    sudo systemctl enable httpd
+``` sh
+sudo dnf install httpd -y
+sudo dnf install mod_ssl -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+```
 
 -   Add `ServerName` and a `VirtualHost` at a minimum
 -   now run `letsencrypt-auto` and fill out the stuff
 
-```
+``` sh
     sudo cp /etc/letsencrypt/options-ssl-apache.conf /etc/httpd/conf.d
     sudo systemctl restart httpd
 ```
 
 -   To renew:
 
-`letsencrypt-auto renew`
+``` sh
+letsencrypt-auto renew
+```
 
-# Components of a cipher suite
+## Components of a cipher suite
 
 The algorithms that make up a typical cipher suite are the following:
 

@@ -19,9 +19,9 @@ clone this repo, copy the dotfiles over and:
 
 Yay!
 
-# Org-mode Keybindings
+## Org-mode Keybindings
 
-## Basic keybindings
+### Basic keybindings
 
 -   `C-c C-n` and `C-c C-p` to cycle between headings.
 -   `TAB` on a heading to expand/collapse.
@@ -31,7 +31,7 @@ Yay!
     -   `TAB` in a new bullet to indent it.
     -   `S-left` and `S-right` to change the bullet-style.
 
-## Checkboxes
+### Checkboxes
 
 -   [ ] `M-S-RET` gives a checkbox.
 -   [X] `C-c C-c` checks it.
@@ -39,13 +39,13 @@ Yay!
     -   [X] When all subtasks are checked, so is the main one.
 -   [X] A trailing [] in the line preceding a list of checkboxes contains a summary (2/3 in this case).
 
-## Publishing/Exporting
+### Publishing/Exporting
 
 -   `C-c C-e` for everything. 
     -   `h o` exports to html.
     -   `#` brings up common templates.
 
-# Org-mode code blocks
+## Org-mode code blocks
 
 -   Awk, C, R, Asymptote, Calc, Clojure, CSS, Ditaa, Dot, Emacs Lisp,
     Forth, Fortran, Gnuplot, Haskell, IO, J, Java, Javascript, LaTeX,
@@ -53,30 +53,42 @@ Yay!
     Octave, Org, Perl, Pico Lisp, PlantUML, Python, Ruby, Sass, Scala,
     Scheme, Screen, sh, Shen, Sql, Sqlite, ebnf2ps.
 
-# Set font in gvim permanently
+## Set font in gvim permanently
 
 -   Change it for the current session and verify what it is set as with this:
 
-`:set guifont?`
+``` vim
+:set guifont?
+```
 
 -   Copy the string and add it to .vimrc like so:
 
-`set guifont=Hack:h9:cANSI`
+``` vim
+set guifont=Hack:h9:cANSI
+```
 
-# Vim tips
+## Vim tips
 
 -   delete trailing whitespace:
 
-`:%s: *$::`
+``` vim
+:%s: *$::
+```
 
 -   pull onto search line:
 
-`/ CtrlR CtrlW`
+``` vim
+/ CtrlR CtrlW
+```
 
 -   open file name under cursor:
 
-`gf`
+``` vim
+gf
+```
 
 -   increment/decrement number under cursor:
 
-`CtrlA/CtrlX`
+``` vim
+CtrlA/CtrlX
+```

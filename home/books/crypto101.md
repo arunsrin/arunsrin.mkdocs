@@ -1,6 +1,6 @@
 Notes from reading the excellent book at <https://www.crypto101.io/>
 
-# Block ciphers
+## Block ciphers
 
 `C = E(k, P)`
 
@@ -14,12 +14,12 @@ Most common one is AES. preceeded by DES.
 
 AES was called Rijndael after its 2 developers. allows block sizes of 32, 128, 192 and 256.
 
-## Drawbacks:
+### Drawbacks:
 
 -   Message length must not exceed key length. If you want a larger message, use a stream cipher.
 -   Needs a key exchange protocol to exchange the (albeit small) key in advance.
 
-# AES
+## AES
 
 -   AES is a substitution-permutation network.
 -   It requires separate keys for each round in the next steps.
@@ -32,7 +32,7 @@ something else.
 Then the column is XORed with a round constant. Then finally the
 output is XORed with the previous round key.
 
-# DES/3DES
+## DES/3DES
 
 DES is no longer considered secure: tiny key size of 56 bits.
 
@@ -42,7 +42,7 @@ In 3DES, the input is encrypted, decrypted, then encrypted
 again. Since 3 different keys are used, cryptanalysis is harder than
 in DES. Still a poor choice.
 
-# Stream Ciphers
+## Stream Ciphers
 
 Message can be longer than key size. Naive way is to just split the
 message based on key length and repeatedly encrypt. This is what ECB
@@ -52,7 +52,7 @@ ECB is not great since identical messages will lead to identical
 ciphertext and the attacker can divide his message into blocks to get
 this information. The oracle attack below explains how.
 
-# Oracle attack
+## Oracle attack
 
 By carefully crafting inputs and getting them encrypted, an attacker
 can recover other ciphertext as well.
@@ -64,7 +64,7 @@ key length with all possible combinations for the last byte. The one
 that matches the first attempt tells him what the first byte is. Then
 repeat for the penultimate byte and so on.
 
-# CBC - Cipher Block Chaining
+## CBC - Cipher Block Chaining
 
 Plain text blocks are XORed with the previous ciphertext block before
 the current round of encryption.
@@ -86,7 +86,7 @@ a message, an attacker can manipulate the plaintext in the subsequent
 block, since the stuff he's inserted is going to be encrypted and then
 XORed with the next block.
 
-# Padding
+## Padding
 
 You can pad a message with zeroes except for cases where the data
 itself ends with zeroes. So PKCS#5 and PKCS#7 are better alternatives
@@ -111,7 +111,7 @@ for a failure to be reported, an attacker can interpret if it was
 rejected up-front as a padding failure or down the line as something
 else.
 
-# Native Stream Ciphers
+## Native Stream Ciphers
 
 These are built from the ground up to be stream ciphers. A synchronous
 stream cipher produces a stream of cipher text using a symmetric
@@ -135,7 +135,7 @@ able to recover parts of the combined key (and eventually the whole).
 WEP was affected by this attack because it used the nonce in a
 similarly crude way.
 
-# Salsa20
+## Salsa20
 
 A newer stream cipher designed by DJB.
 
@@ -153,7 +153,7 @@ number of constant time operations.
 
 Both these are based on an ARX design (Add Rotate XOR).
 
-# CTR Mode of Operation
+## CTR Mode of Operation
 
 Here, a nonce is used along with a counter that increments for every
 block. The nonce and the key are run through a block cipher to
@@ -164,7 +164,7 @@ plaintext back.
 As long as you don't reuse the nonce, an attacker cannot try
 multi-time pad attacks.
 
-# Bit flipping attacks
+## Bit flipping attacks
 
 Can be done on stream ciphers as well: an attacker can flip a few
 ciphertext bits and affect subsequent plaintext bits. For stream
@@ -174,7 +174,7 @@ block as for block ciphers.
 If authentication is done along with encryption, a recipient can
 simply discard such bad messages.
 
-# Key Exchange
+## Key Exchange
 
 Diffie Helmann is a nice symmetric way to do it. Alice encrypts a
 public key with her private component. Bob does the same to the public
@@ -189,31 +189,31 @@ each end with her own private key, and decrypt it locally. So we need
 to add authentication to the mix: is Bob actually Bob or might it be
 Eve? That's where Public Key Encryption comes in.
 
-# Public Key Encryption
+## Public Key Encryption
 
-## RSA
+### RSA
 
 Really really slow, so we use it just to come up with a key that a
 stream cipher will then use. Also, RSA can't encrypt anything larger
 than its modulus (2048 or 4096) so it just about suffices for a
 secret, not for the whole message.
 
-## MD5/SHA-1
+### MD5/SHA-1
 
 Do not use.
 
-## SHA-2
+### SHA-2
 
 Family comprising SHA-224, 256, 384, 512, 512/224 and
 512/256. Use. Performance better than SHA-1, and better collision
 resistance.
 
-## Keccak
+### Keccak
 
 Standardized as the SHA-3 family: SHA3-224, 256, 384, 512. Different
 family than SHA-2.
 
-# Salts/Rainbow tables
+## Salts/Rainbow tables
 
 Rainbow tables are large sorted tables of commonly used passwords. To
 avoid this, keep a separate column in the table for a salt, and
@@ -226,7 +226,7 @@ this n times. This is not good enough though.
 Probably the best recommendation is to use a low entropy key
 derivation function.
 
-# Message Authentication Codes (MACs)
+## Message Authentication Codes (MACs)
 
 Check authenticity / integrity of message. Often called
 'tags'. Similar to a checksum but uses a secret key and combines with
@@ -250,7 +250,7 @@ thing. Works well with Keccak but not so much with other hashing
 algorithms. Vulnerable to padding attacks (with some hashing
 algorithms).  HMAC: Hash-based MAC.
 
-# Authenticated Encryption Modes
+## Authenticated Encryption Modes
 
 Composing authenticated and encryption separately is fraught with
 peril. Here are some methods that implement both as a fundamental
@@ -265,7 +265,7 @@ be authenticated as a whole along with the message.
 
 GCM mode (and by extension GMAC) is one such mode.
 
-# Signature Algorithms
+## Signature Algorithms
 
 Consist of:
 
@@ -277,12 +277,12 @@ e.g. DSA (Digital Signature Algorithm), PKCS #1 v 1.5 etc. Basically
 use a private component to sign a message so that others can use the
 public component to verify it.
 
-# Key Derivation Functions
+## Key Derivation Functions
 
 Derives one or more secrets from a single secret. e.g. PBKDF2, bcrypt,
 scrypt and HKDF.
 
-# Linux /dev/random vs /dev/urandom
+## Linux /dev/random vs /dev/urandom
 
 /dev/random takes in noise into an entropy pool from the environment
 (network, device drivers, keyboard etc) and returns a strong random
@@ -291,7 +291,7 @@ stream. But if the entropy pool runs out it will block. So use
 a cryptographically secure PRNG stream from it. 'technically' weaker
 then random, but won't halt.
 
-# Attacks on TLS
+## Attacks on TLS
 
 CRIME and BREACH: Experts used to recommend compressing the plaintext
 before encrypting it. These attacks found a nasty way to use this when
