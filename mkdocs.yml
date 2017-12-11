@@ -1,5 +1,9 @@
 site_name: arunsr.in
+site_description: This is my site. There are many like it but this one is mine.
+site_author: Arun S
 docs_dir: home
+repo_url: https://github.com/arunsrin/arunsrin.mkdocs
+edit_uri: blob/master/home/
 pages:
         - Home: index.md
         - About: about.md
