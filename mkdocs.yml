@@ -2,6 +2,7 @@ site_name: arunsr.in
 site_description: This is my site. There are many like it but this one is mine.
 site_author: Arun S
 docs_dir: home
+site_dir: ../../public
 repo_url: https://github.com/arunsrin/arunsrin.mkdocs
 edit_uri: blob/master/home/
 pages:
@@ -25,14 +26,6 @@ markdown_extensions:
   - codehilite:
         guess_lang: true
 theme:
-  name: 'material'
+  name: 'mkdocs'
   language: 'en'
   favicon: 'img/favicon.ico'
-  logo:
-    icon: 'sentiment_very_satisfied'
-  palette:
-    primary: 'light green'
-    accent: 'lime'
-  font:
-    text: 'Ubuntu'
-    code: 'Ubuntu Mono'
