@@ -15,6 +15,12 @@ curl --header "X-MyHeader: 123" www.google.com
 -   Follow redirects with `-l`
 -   Disable security check with `-k`
 
+- Send content with `-d`:
+
+``` sh
+curl -X POST --header "Content-Type: application/json" -d '{"test": true}' http://localhost/blah
+```
+
 ## If more than 10 telnet sessions to a server fail
 
 `per_source = 10`
