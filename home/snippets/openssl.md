@@ -25,6 +25,12 @@ openssl x509 -noout -modulus -in server.pem | openssl md5 ;\
 openssl rsa -noout -modulus -in server.key | openssl md5
 ```
 
+## Convert .cer to .pem
+
+``` sh
+openssl x509 -inform der -in certificate.cer -out certificate.pem
+```
+
 ## Connect and verify
 
 -   Connect to a remote host and see a whole lot of details:
