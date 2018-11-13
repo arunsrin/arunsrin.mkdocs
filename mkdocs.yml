@@ -20,6 +20,7 @@ pages:
         - Book Notes:
           - 'Crypto 101': books/crypto101.md
           - 'We are our brains': books/we-are-our-brains.md
+          - 'How to read a book': books/how-to-read-a-book.md
 # Extensions
 markdown_extensions:
   - admonition
