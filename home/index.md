@@ -19,6 +19,7 @@ so on.
   - [Docker](snippets/docker.md)
   - [Editors](snippets/editors.md)
   - [Git](snippets/git.md)
+  - [Java](snippets/java.md)
   - [Linux](snippets/linux.md)
   - [Networking](snippets/networking.md)
   - [OpenSSL](snippets/openssl.md)
