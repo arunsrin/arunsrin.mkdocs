@@ -14,6 +14,31 @@ These days I stick with Fedora and love it.
 
 ## General Linux
 
+### Centos 7 sources
+
+Clone their helper repo first:
+
+``` sh
+git clone  https://git.centos.org/git/centos-git-common.git
+```
+
+Go to their [RPM project](https://git.centos.org/project/rpms) and
+select a project to clone. I'm picking `coreutils` here. This repo has
+a SPEC file and the patches to the original source.
+
+``` sh
+git clone https://git.centos.org/r/rpms/coreutils.git
+```
+
+The master branch is always empty. Checkout their `c7` branch to see
+the SPECS and SOURCES folders for Centos 7, and run the helper script
+to fetch the source.
+
+``` sh
+git checkout c7
+../centos-git-common/get_sources.sh
+```
+
 ### diff and patch
 
 ``` sh
