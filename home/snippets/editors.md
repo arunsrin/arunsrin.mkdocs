@@ -1,3 +1,4 @@
+# Editors
 
 My heart lies with GNU Emacs. It is probably my most used tool at work
 because I take a crapload of notes. The pages on this site are written

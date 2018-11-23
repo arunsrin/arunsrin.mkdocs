@@ -1,6 +1,6 @@
-## Databases
+# Databases
 
-### Postgreql quickstart
+## Postgreql quickstart
 
 ``` sql
 sudo -i -u postgres
@@ -12,7 +12,7 @@ psql
 >grant all privileges on database ttrssdb to ttrssuser;
 ```
 
-### MySql quick start
+## MySql quick start
 
 ``` sql
 mysql> create database habari;
@@ -25,7 +25,7 @@ mysql> flush privileges;
 Query OK, 0 rows affected (0.00 sec)
 ```
 
-### Sqlite basics:
+## Sqlite basics:
 
 ``` sql
 thaum ~/code/app$ sqlite perl.db

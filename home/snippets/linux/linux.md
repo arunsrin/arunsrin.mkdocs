@@ -1,3 +1,5 @@
+# Linux
+
 My favourite OS. Been using it since 2004. Learnt the hard way, uphill
 both ways. I used to borrow DVDs from the library at work and give it
 a spin at home. I didn't have a working internet connection back then

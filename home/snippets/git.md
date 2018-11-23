@@ -1,3 +1,5 @@
+# Git
+
 ## Color coded git output
 
 ``` sh

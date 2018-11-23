@@ -1,6 +1,6 @@
-## Systemd
+# Systemd
 
-### Flush old logs in journalctl
+## Flush old logs in journalctl
 
 By date or by size:
 
@@ -9,7 +9,7 @@ By date or by size:
     sudo journalctl --vacuum-size=500M
 ```
 
-### Tail journalctl
+## Tail journalctl
 
 ``` sh
 journalctl -f
@@ -21,7 +21,7 @@ For a specific service:
 journalctl -u httpd -f
 ```
 
-### Store logs on disk
+## Store logs on disk
 
 (from <http://unix.stackexchange.com/questions/159221/how-display-log-messages-from-previous-boots-under-centos-7>)
 

@@ -1,7 +1,7 @@
-## Learnings/Notes
+# Learnings/Notes
 
 
-### Linux's CFS: Completely Fair Scheduler
+## Linux's CFS: Completely Fair Scheduler
 
 -   On a single cpu, the available cpu cycles are divided among all the
     threads in proportion to their weights.
@@ -17,7 +17,7 @@
     commuication operations are expensive) so it is kept at a minimum if
     possible.
 
-### Memory layout in Linux
+## Memory layout in Linux
 
 -   32-bit: 3:1 ratio: out of 4gb, 3gb is for users and 1gb for kernel
 -   64-bit: 1:1: out of 128TB, 64TB is for users and 64 for kernel.
@@ -33,7 +33,7 @@
 -   text is usually read-only.
 -   stack and data are non-executable (to prevent (partially) overflows).
 
-### Docker Notes:
+## Docker Notes:
 
 -   apache mesos: get a lot of compute clusters looking like a single system.
 -   Docker Trusted Registry: on-prem repository service
@@ -87,26 +87,26 @@
     containers in a single subnet , and allow them to talk to each
     other.
 
-### Vagrant notes:
+## Vagrant notes:
 
-#### setup:
+### setup:
 
 -   `vagrant init`
 -   `vagrant box add centos/7`
 -   mention the same box in the vagrantfile
 
-#### start:
+### start:
 
 -   `vagrant up`
 -   `vagrant ssh`
 
-#### stop:
+### stop:
 
 -   `vagrant suspend` # save state and stop
 -   `vagrant halt` # graceful shutdown
 -   `vagrant destroy` # wipe out hd etc
 
-### Ansible notes
+## Ansible notes
 
 -   Modules are wrappers for administration commands (like ping, apt, yum, copy, etc).
 -   Always use these instead of shell exec since modules are idempotent:
@@ -135,7 +135,7 @@
     templates.
 -   ansible-vault can be used to encrypt vars and files in a role.
 
-### Linux ad-hoc daemonization
+## Linux ad-hoc daemonization
 
 -   If a script is running in a terminal and you want to daemonize it, do this:
 -   `Ctrl-Z` to suspend it
@@ -144,21 +144,21 @@
     the command from the shell's job list, so it won't get a SIGHUP when
     the terminal closes.
 
-### linux ctime vs mtime
+## linux ctime vs mtime
 
 -   ctime is for inode, mtime is for contents
 -   e.g. chmod changes ctime. `echo "asd">>file` changes mtime.
 
-### soft vs hard links
+## soft vs hard links
 
-#### Hard links:
+### Hard links:
 
 -   Two filenames in a folder pointing to the exact same inode.
 -   There is no distinction between the link and the original.
 -   This means you can delete one file and the other will still exist!
 -   Cannot traverse filesystems. cannot hard link directories
 
-#### Soft links:
+### Soft links:
 
 -   A new kind of file that has its own inode entry. the OS knows how to
     traverse from it to the parent.
