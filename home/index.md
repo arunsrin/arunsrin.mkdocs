@@ -19,11 +19,15 @@ so on.
   - [Docker](snippets/docker.md)
   - [Editors](snippets/editors.md)
   - [Git](snippets/git.md)
-  - [Java](snippets/java.md)
-  - [Linux](snippets/linux.md)
+  - [Linux](snippets/linux/linux.md)
+    - [Package Management](snippets/linux/package-management.md)
+    - [Learnings & Notes](snippets/linux/learnings-and-notes.md)
+    - [SystemD](snippets/linux/systemd.md)
   - [Networking](snippets/networking.md)
   - [OpenSSL](snippets/openssl.md)
-  - [Programming](snippets/programming.md)
+  - [Programming](snippets/programming/programming.md)
+    - [Databases](snippets/programming/databases.md)
+    - [Java](snippets/programming/java.md)
   - [Security](snippets/security.md)
 
 #### Book Notes

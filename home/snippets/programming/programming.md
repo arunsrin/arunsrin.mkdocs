@@ -310,38 +310,6 @@ set recording [$dom documentElement]
 -   Used in fuzzy searching (e.g. 'git lgo' which autocorrects and recommends 'log')
 -   Used to measure the difference between two strings
 
-### Linux's CFS: Completely Fair Scheduler
-
--   On a single cpu, the available cpu cycles are divided among all the
-    threads in proportion to their weights.
--   The weight `= priority =` niceness.
--   Threads are organized in a runqueue (implemented as a red-black tree).
--   A thread exceeding its timeslice is pre-empted and the next one is given a slice.
--   In multicore systems, each core has its own runqueue.
--   But this may not always be fair (since one core may run one
-    low-priority thread while the other may run several high-priority
-    threads, inefficiently)
--   So linux has a load balancer that periodically keeps the queus in balance.
--   Load balancing is a costly operation (both computation and
-    commuication operations are expensive) so it is kept at a minimum if
-    possible.
-
-### Memory layout in Linux
-
--   32-bit: 3:1 ratio: out of 4gb, 3gb is for users and 1gb for kernel
--   64-bit: 1:1: out of 128TB, 64TB is for users and 64 for kernel.
--   So the kernel memory starts at 0xffff80000000<snip>000 in 64-bit,
-    and 0xc000000 in 32-bit.
--   For a user process, Stack size is 8mb by default (see ulimit -s).
--   Stack occupies top of the address space and grows down.
--   The botttom of the stack contains env variables, prog name and \*\*args
--   Below the stack is memmap which has stuff linked dynamically and
-    mapped by the kernel at runtime.
--   Then is the heap.
--   Then there's bss/data/program text.
--   text is usually read-only.
--   stack and data are non-executable (to prevent (partially) overflows).
-
 ### Algorithmic Complexity
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
