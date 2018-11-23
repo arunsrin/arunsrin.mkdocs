@@ -66,6 +66,47 @@ jar -tf hello.jar
 
     - `address=7896` - port we listen on.
 
+## Maven
+
+- Expected directory structure: Java files are in `src/main/java` as
+  well as `src/test/java`. Resource files are under
+  `src/main/resources` and `src/test/resources`.
+
+- `mvn archetype:generate`: Generates a skeleton of a project based on
+  your inputs (package name, versioning, project name, etc).
+
+- Edit `pom.xml` and set the jdk version there.. the default may be
+  old. Java 9 onwaards doesn't generate the `.class` format. You
+  should have this added to the default .xml file:
+
+```xml
+<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+            <source>1.11</source>
+            <target>1.11</target>
+            <release>11</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+```
+
+- `mvn package` - compile, test, bundle.
+
 ## Things to find out later
 
 - See how to create a call graph in eclipse.
+
+- `final` keyword?
+
+    - *Answer*: when used with a variable, it (a) blocks reassignment,
+      and (b) limits existence to that block. e.g. a `final String tmp = orig`
+      inside a for loop cannot be reassigned with a different
+      value. The value does not exist outside the block it is defined
+      in. Good practice to declare this often as it means a variable
+      is guaranteed not to change in value.
