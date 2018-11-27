@@ -99,6 +99,24 @@ jar -tf hello.jar
 
 - `mvn package` - compile, test, bundle.
 
+## Interfaces
+
+- All fields (i.e. class variables) default to `static final`. All
+  methods default to `public`.
+
+## Field types
+
+- `static` - One instance per class, not per  object.
+
+- `final` - Initialized exactly once, either where declared or
+- somewhere in the constructor. Immutable after that.
+
+- `transient` - Do not serialize/deserialize this field.
+
+- `volatile` - Treat as a field that may be accessed by multiple
+  threads. If not volatile, the value may be stored in a processor
+  cache or registry for faster access.
+
 ## Things to find out later
 
 - See how to create a call graph in eclipse.
@@ -111,3 +129,4 @@ jar -tf hello.jar
       value. The value does not exist outside the block it is defined
       in. Good practice to declare this often as it means a variable
       is guaranteed not to change in value.
+
