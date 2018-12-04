@@ -1,5 +1,19 @@
 # Git
 
+## Separate git configurations for work and play
+
+Put something like this in your `~/.gitconfig`:
+
+```
+[includeIf "gitdir:~/work/"]
+    path = ~/.gitconfig.work
+
+[includeIf "gitdir:~/code/"]
+    path = ~/.gitconfig.personal
+```
+If your work repos are in `~/work`, you can have a separate user/email etc for
+repos in that folder.
+
 ## Color coded git output
 
 ``` sh
