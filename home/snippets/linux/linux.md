@@ -41,6 +41,19 @@ git checkout c7
 ../centos-git-common/get_sources.sh
 ```
 
+### dnsmasq custom dns server for a domain
+
+Add a specific record like this in the dnsmasq configuration:
+
+```
+server=/mydomain.local/10.250.0.2
+```
+
+For everything else, dnsmasq will use the existing configuration in
+`/etc/resolv.conf`.
+
+More [here](https://serverfault.com/questions/872109/resolv-conf-multiple-dns-servers-with-specific-domains)
+
 ### diff and patch
 
 ``` sh
