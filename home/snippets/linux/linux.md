@@ -59,11 +59,14 @@ More [here](https://serverfault.com/questions/872109/resolv-conf-multiple-dns-se
 ``` sh
 cp somepackage somepackage-new
 # make changes in somepackage-new
-diff -crB somepackage somepackage-new > mychanges.patch
+diff -ruN somepackage somepackage-new > mychanges.patch
 # give the patch to someone else, who can now do:
 cd somepackage
 patch -p1 < mychanges.patch
 ```
+
+More information than you'll ever need
+[here](http://lists.landley.net/pipermail/toybox-landley.net/2019-January/010049.html).
 
 ### ccache notes
 
