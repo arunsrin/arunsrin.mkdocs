@@ -41,6 +41,12 @@ This command shows what other packages need the queried package:
 repoquery --whatrequires libunwind
 ```
 
+Another way, without using repoquery:
+
+``` sh
+rpm -q --whatrequires python-ipaddress
+```
+
 This command shows what other packages need to be installed for a queried package:
 
 ``` sh
