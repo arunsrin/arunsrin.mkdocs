@@ -14,6 +14,31 @@ Put something like this in your `~/.gitconfig`:
 If your work repos are in `~/work`, you can have a separate user/email etc for
 repos in that folder.
 
+## Show parents of a merge commit
+
+``` sh
+git cat-file -p <commit>
+```
+
+or
+
+``` sh
+git show --pretty=raw <commit>
+```
+
+Both these show similar information: the committer, the parent(s),
+commit text and so on.
+
+## Show files changed between two commit IDs
+
+Now that you have the two parents of a merged request (see above tip),
+you can see all files changed between its two parents with a command
+like this:
+
+``` sh
+git diff --name-only <sha1> <sha2>
+```
+
 ## Color coded git output
 
 ``` sh
