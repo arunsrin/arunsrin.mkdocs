@@ -1,5 +1,11 @@
 # Security
 
+## Query list of ciphers supported by a server
+
+``` sh
+nmap --script ssl-enum-ciphers -p 443 example.com
+```
+
 ## Things that go in a certificate
 
 ```
