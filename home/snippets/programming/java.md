@@ -2,6 +2,22 @@
 
 Most of these notes are from the book *Java Projects* by *Peter Verhas*.
 
+## JConsole over SSH with SOCKS Proxy
+
+This is from [here](http://stackoverflow.com/questions/15093376/jconsole-over-ssh-local-port-forwarding): 
+Create the SSH socks proxy locally on some free port (e.g. 7777):
+
+```
+ssh -fN -D 7777 user@firewalled-host
+```
+
+Run JConsole by specifying the SOCKS proxy (e.g. localhost:7777) and
+the address for the JMX server (e.g. localhost:2147)
+
+```
+jconsole -J-DsocksProxyHost=localhost -J-DsocksProxyPort=7777 service:jmx:rmi:///jndi/rmi://localhost:2147/jmxrmi -J-DsocksNonProxyHosts=
+```
+
 ## JShell
 
 - `/list -start` - shows modules imported at startup.
