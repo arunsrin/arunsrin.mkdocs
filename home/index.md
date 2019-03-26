@@ -38,6 +38,12 @@ trying to take notes for some books that are worthy of revisits.
   - [Crypto 101](books/crypto101.md)
   - [We are our brains](books/we-are-our-brains.md)
   
+### In Progress
+
+Some in-progress notes topics of study.
+  - [Site Ideas](inprogress/site-ideas.md)
+  - [Kubernetes](inprogress/k8s.md)
+
 ## About
 
 See [About](about.md) for more about me. This site is built using the

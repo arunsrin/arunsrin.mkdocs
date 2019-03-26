@@ -13,4 +13,3 @@ markdown_extensions:
 theme:
   name: 'mkdocs'
   language: 'en'
-  favicon: 'img/favicon.ico'
