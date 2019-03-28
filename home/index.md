@@ -41,6 +41,7 @@ trying to take notes for some books that are worthy of revisits.
 ### In Progress
 
 Some in-progress notes topics of study.
+
   - [Site Ideas](inprogress/site-ideas.md)
   - [Kubernetes](inprogress/k8s.md)
 
