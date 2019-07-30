@@ -19,6 +19,7 @@ so on.
   - [Docker](snippets/docker.md)
   - [Editors](snippets/editors.md)
   - [Git](snippets/git.md)
+  - [Kubernetes](snippets/k8s.md)
   - [Linux](snippets/linux/linux.md)
     - [Package Management](snippets/linux/package-management.md)
     - [Learnings & Notes](snippets/linux/learnings-and-notes.md)
@@ -37,13 +38,13 @@ trying to take notes for some books that are worthy of revisits.
 
   - [Crypto 101](books/crypto101.md)
   - [We are our brains](books/we-are-our-brains.md)
+  - [The Art of the Infinite](books/the-art-of-the-infinite.md)
   
 ### In Progress
 
 Some in-progress notes topics of study.
 
   - [Site Ideas](inprogress/site-ideas.md)
-  - [Kubernetes](inprogress/k8s.md)
 
 ## About
 
