@@ -11,5 +11,8 @@ markdown_extensions:
   - codehilite:
         guess_lang: true
 theme:
-  name: 'mkdocs'
+  # name: 'mkdocs'
+  name: null
+  custom_dir: cinder
+
   language: 'en'
