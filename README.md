@@ -2,4 +2,16 @@
 
 Static site for all my snippets, notes, etc. Powered by the excellent [mkdocs](http://www.mkdocs.org/).
 
-Currently hosted [here](https://arunsrin.nfshost.com/), but may become my primary site once it neatens up a bit.
+Currently hosted [here](https://www.arunsr.in).
+
+# Installation / Usage
+
+``` py
+git clone git@github.com:arunsrin/arunsrin.mkdocs.git
+cd arunsrin.mkdocs
+virtualenv .venv --python=python3
+source .venv/bin/activate
+pip install mkdocs
+mkdocs serve # test
+mkdocs build # publishes to ../../public/
+```
