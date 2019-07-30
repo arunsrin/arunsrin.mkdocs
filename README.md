@@ -6,7 +6,7 @@ Currently hosted [here](https://www.arunsr.in).
 
 # Installation / Usage
 
-``` py
+``` sh
 git clone git@github.com:arunsrin/arunsrin.mkdocs.git
 cd arunsrin.mkdocs
 virtualenv .venv --python=python3
