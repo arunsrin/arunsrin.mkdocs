@@ -11,14 +11,49 @@ I'm pretty comfortable with Vim as well. I use it for quick and dirty
 editing for my projects. For longer sessions I invariably swtich to
 Emacs.
 
-Dotfiles for both editors are at
-[my github](https://github.com/arunsrin/dotfiles). On a new machine I
-clone this repo, copy the dotfiles over and:
+!!! note
+	My dotfiles for both editors are at [this github repo](https://github.com/arunsrin/dotfiles).
+
+On a new machine I clone this repo, copy the dotfiles over and:
 
 - If emacs, just start it. It downloads all the packages and I'm good to go.
 - If vim, I clone `vundle` first, then start vim and do a `:PluginInstall`.
 
 Yay!
+
+## Compile GNU Emacs on Centos/Fedora/RHEL
+
+``` sh
+yum -y groupinstall "Development Tools" 
+yum -y install gtk+-devel gtk2-devel \
+	libXpm-devel libpng-devel giflib-devel \
+	libtiff-devel libjpeg-devel \
+	ncurses-devel gpm-devel dbus-devel \
+	dbus-glib-devel dbus-python \
+	GConf2-devel pkgconfig \
+	libXft-devel 
+
+wget https://ftp.gnu.org/pub/gnu/emacs/emacs-25.1.tar.xz
+
+tar xvJf  emacs-25.1.tar.xz
+cd emacs-25.1
+./configure
+make
+sudo make install
+```
+## Disable underscore to subscript conversion in org-mode
+
+Add this to the top of the .org file:
+
+```
+#+OPTIONS: ^:nil
+```
+
+Or set this:
+
+``` lisp
+(setq org-export-with-sub-superscripts nil)
+```
 
 ## Org-mode Keybindings
 
@@ -93,3 +128,20 @@ gf
 ``` vim
 CtrlA/CtrlX
 ```
+
+## References
+
+Larger guides from the rest of the internet are below.
+
+### Emacs
+- [Elfeed for Emacs](http://pragmaticemacs.com/emacs/read-your-rss-feeds-in-emacs-with-elfeed/)
+- [Comment boxes](http://pragmaticemacs.com/emacs/comment-boxes/)
+- [Publishing org files to html](https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html)
+- [Magit](https://magit.vc/)
+- [Fractals !!? in Emacs](https://nullprogram.com/blog/2012/09/14/)
+- [Huge eshell guide](https://www.masteringemacs.org/article/complete-guide-mastering-eshell)
+- [Animations in Emacs](http://dantorop.info/project/emacs-animation/)
+
+### Vim
+- [Vim/cscope tutorial](http://cscope.sourceforge.net/cscope_vim_tutorial.html)
+- [Vim/python plugins](https://realpython.com/vim-and-python-a-match-made-in-heaven/)
