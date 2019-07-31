@@ -11,25 +11,25 @@ time.
 So here are notes I've collected over time on various things that
 interest me.
 
-### Tech Snippets
+### Tech Notes
 
 One-liners for a variety of tools I use regularly.. Linux, openssl and
 so on.
 
-  - [Docker](snippets/docker.md)
-  - [Editors](snippets/editors.md)
-  - [Git](snippets/git.md)
-  - [Kubernetes](snippets/k8s.md)
-  - [Linux](snippets/linux/linux.md)
-    - [Package Management](snippets/linux/package-management.md)
-    - [Learnings & Notes](snippets/linux/learnings-and-notes.md)
-    - [SystemD](snippets/linux/systemd.md)
-  - [Networking](snippets/networking.md)
-  - [OpenSSL](snippets/openssl.md)
-  - [Programming](snippets/programming/programming.md)
-    - [Databases](snippets/programming/databases.md)
-    - [Java](snippets/programming/java.md)
-  - [Security](snippets/security.md)
+  - [Docker](notes/docker.md)
+  - [Editors](notes/editors.md)
+  - [Git](notes/git.md)
+  - [Kubernetes](notes/k8s.md)
+  - [Linux](notes/linux/linux.md)
+    - [Package Management](notes/linux/package-management.md)
+    - [Learnings & Notes](notes/linux/learnings-and-notes.md)
+    - [SystemD](notes/linux/systemd.md)
+  - [Networking](notes/networking.md)
+  - [OpenSSL](notes/openssl.md)
+  - [Programming](notes/programming/programming.md)
+    - [Databases](notes/programming/databases.md)
+    - [Java](notes/programming/java.md)
+  - [Security](notes/security.md)
 
 ### Book Notes
 
