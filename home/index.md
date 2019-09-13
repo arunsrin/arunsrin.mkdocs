@@ -16,35 +16,45 @@ interest me.
 One-liners for a variety of tools I use regularly.. Linux, openssl and
 so on.
 
-  - [Docker](notes/docker.md)
-  - [Editors](notes/editors.md)
-  - [Git](notes/git.md)
-  - [Kubernetes](notes/k8s.md)
-  - [Linux](notes/linux/linux.md)
-    - [Package Management](notes/linux/package-management.md)
-    - [Learnings & Notes](notes/linux/learnings-and-notes.md)
-    - [SystemD](notes/linux/systemd.md)
-  - [Networking](notes/networking.md)
-  - [OpenSSL](notes/openssl.md)
-  - [Programming](notes/programming/programming.md)
-    - [Databases](notes/programming/databases.md)
-    - [Java](notes/programming/java.md)
-  - [Security](notes/security.md)
+- [Docker](notes/docker.md)
+- [Editors](notes/editors.md)
+- [Git](notes/git.md)
+- [Kubernetes](notes/k8s.md)
+- [Linux](notes/linux/linux.md)
+- [Package Management](notes/linux/package-management.md)
+- [Learnings & Notes](notes/linux/learnings-and-notes.md)
+- [SystemD](notes/linux/systemd.md)
+- [Networking](notes/networking.md)
+- [OpenSSL](notes/openssl.md)
+- [Programming](notes/programming/programming.md)
+- [Databases](notes/programming/databases.md)
+- [Java](notes/programming/java.md)
+- [Security](notes/security.md)
 
 ### Book Notes
 
 I'm a voracious reader but I can't recollect stuff all that great. I'm
 trying to take notes for some books that are worthy of revisits.
 
-  - [Crypto 101](books/crypto101.md)
-  - [We are our brains](books/we-are-our-brains.md)
-  - [The Art of the Infinite](books/the-art-of-the-infinite.md)
-  
+- [Crypto 101](books/crypto101.md)
+- [We are our brains](books/we-are-our-brains.md)
+- [The Art of the Infinite](books/the-art-of-the-infinite.md)
+
+### Role Models
+
+Some heroes that I look up to, in the tech and literary worlds mostly.
+
+- [Richard Dawkins](heroes/dawkins.md)
+- [Carl Sagan](heroes/sagan.md)
+- [Richard Stallman](heroes/stallman.md)
+- [Noam Chomsky](heroes/chomsky.md)
+
+
 ### In Progress
 
 Some in-progress notes topics of study.
 
-  - [Site Ideas](inprogress/site-ideas.md)
+- [Site Ideas](inprogress/site-ideas.md)
 
 ## About
 
