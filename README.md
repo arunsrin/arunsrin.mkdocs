@@ -11,7 +11,7 @@ git clone git@github.com:arunsrin/arunsrin.mkdocs.git
 cd arunsrin.mkdocs
 virtualenv .venv --python=python3
 source .venv/bin/activate
-pip install mkdocs
+pip install -r requirements.txt
 mkdocs serve # test
 mkdocs build # publishes to ../../public/
 ```
