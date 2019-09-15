@@ -10,8 +10,8 @@ world-changing as he describes.
 
 Conspiracy theorists are stupid. Dark, dystopian dreams of
 corporations and Military Industrial Complexes running the world are
-good material for books. But the world Chomsky opens your eyes to is
-in a way, worse. He lifts the veils on atrocities that have been
+good material for story books. But the world Chomsky opens your eyes
+to is in a way, worse. He lifts the veils on atrocities that have been
 happening over the past few decades, meticulously referenced with
 proof after bitter proof.
 
