@@ -46,7 +46,6 @@ Some heroes that I look up to, in the tech and literary worlds mostly.
 
 - [Richard Dawkins](heroes/dawkins.md)
 - [Carl Sagan](heroes/sagan.md)
-- [Richard Stallman](heroes/stallman.md)
 - [Noam Chomsky](heroes/chomsky.md)
 
 
