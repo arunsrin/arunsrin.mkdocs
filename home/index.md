@@ -40,6 +40,10 @@ trying to take notes for some books that are worthy of revisits.
 - [We are our brains](books/we-are-our-brains.md)
 - [The Art of the Infinite](books/the-art-of-the-infinite.md)
 
+Here is a quicker list of books read per year, starting November 2019.
+
+- [2019](books/2019.md)
+
 ### Role Models
 
 Some heroes that I look up to, in the tech and literary worlds mostly.
