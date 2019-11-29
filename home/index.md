@@ -53,6 +53,14 @@ Some heroes that I look up to, in the tech and literary worlds mostly.
 - [Richard Stallman](heroes/stallman.md)
 - [Noam Chomsky](heroes/chomsky.md)
 
+### Games
+
+I have an XBox One S, a PS Vita, a Nintendo 3DS and I used to game on my PC. These days the Xbox is the only one that
+gets any play time.
+
+Here is a list of what I have, what I want and what I've liked so far.
+
+- [Xbox One](games/xboxone.md)
 
 ### In Progress
 
