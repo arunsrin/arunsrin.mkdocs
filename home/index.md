@@ -36,6 +36,7 @@ so on.
 I'm a voracious reader but I can't recollect stuff all that great. I'm
 trying to take notes for some books that are worthy of revisits.
 
+- [Hate Inc.](books/hate-inc.md)
 - [Crypto 101](books/crypto101.md)
 - [We are our brains](books/we-are-our-brains.md)
 - [The Art of the Infinite](books/the-art-of-the-infinite.md)
