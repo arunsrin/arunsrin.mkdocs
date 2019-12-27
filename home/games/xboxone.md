@@ -20,10 +20,11 @@ I prefer single-player Action Adventure games. I prefer the story-telling experi
   - **Rise of the Tomb Raider** - Probably my favourite series. I have fond memories of playing *Tomb Raider: Legend* on
   my PS2.
   
+  - Mass Effect: Andromeda
   - Bioshock
 
 ## In Progress
-  - Mass Effect: Andromeda
+  - Homefront Revolution
   - Shadow of the Tomb Raider
   - Fallout 4
   - Watch Dogs 2
