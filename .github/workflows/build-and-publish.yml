@@ -32,5 +32,5 @@ jobs:
           PORT: 22
           KEY: ${{ secrets.KEY }}
       with:
-          source: "public/*"
-          target: "/home/public/test"
+        source:  "public/*"
+        target: "/home/public"
