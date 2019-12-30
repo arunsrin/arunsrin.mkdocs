@@ -33,5 +33,6 @@ jobs:
           KEY: ${{ secrets.KEY }}
       with:
         source:  "./public/*"
-        target: "/home/"
+        target: "/home/public"
         rm: true
+        strip_components: 1
