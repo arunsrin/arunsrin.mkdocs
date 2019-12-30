@@ -1,4 +1,4 @@
-# arunsrin
+# Home
 
 Welcome to my home page.
 
@@ -33,6 +33,10 @@ so on.
 
 ### Book Notes
 
+Here is a list of books read per year, starting November 2019.
+
+- [2019](books/2019.md)
+
 I'm a voracious reader but I can't recollect stuff all that great. I'm
 trying to take notes for some books that are worthy of revisits.
 
@@ -41,9 +45,6 @@ trying to take notes for some books that are worthy of revisits.
 - [We are our brains](books/we-are-our-brains.md)
 - [The Art of the Infinite](books/the-art-of-the-infinite.md)
 
-Here is a quicker list of books read per year, starting November 2019.
-
-- [2019](books/2019.md)
 
 ### Role Models
 

@@ -1,4 +1,5 @@
 site_name: arunsr.in
+site_url: https://www.arunsr.in
 site_description: This is my site. There are many like it but this one is mine.
 site_author: Arun S
 docs_dir: home
@@ -14,5 +15,4 @@ theme:
   # name: 'mkdocs'
   name: null
   custom_dir: cinder
-
   language: 'en'
