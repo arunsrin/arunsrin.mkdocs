@@ -13,5 +13,5 @@ virtualenv .venv --python=python3
 source .venv/bin/activate
 pip install -r requirements.txt
 mkdocs serve # test
-mkdocs build # publishes to ../../public/
+mkdocs build # publishes to ./public/
 ```

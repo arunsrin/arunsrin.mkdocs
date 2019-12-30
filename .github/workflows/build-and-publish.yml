@@ -22,7 +22,6 @@ jobs:
         pip install -r requirements.txt
     - name: Build
       run: |
-        sed -i 's%site_dir: ../../public%site_dir: public%' mkdocs.yml
         mkdocs build
     - name: SCP Files
       uses: appleboy/scp-action@master
