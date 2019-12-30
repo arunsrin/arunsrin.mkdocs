@@ -34,5 +34,5 @@ jobs:
       with:
         source:  "./public/*"
         target: "/home/public"
-        rm: true
         strip_components: 1
+        tar_tmp_path: "/home/tmp"
