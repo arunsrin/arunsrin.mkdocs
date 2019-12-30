@@ -4,6 +4,15 @@
 
 *Author*: Matt Taibbi
 
+I've been reading Taibbi for a while now and this was a nice
+refreshing step back from his usual acerbic style. He covers the media
+industry's complicity in creating a toxic political
+environment. Towards the end is where the book gets really
+interesting: as an inward-looking view into how the left-leaning media
+is as bad in creating filter bubbles as the usual suspects in the
+right.
+
+
 Here are some snippets I saved from the book.
 
 ### On Facebook's curation of news
