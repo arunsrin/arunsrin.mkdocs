@@ -22,9 +22,10 @@ I prefer single-player Action Adventure games. I prefer the story-telling experi
   
   - Mass Effect: Andromeda
   - Bioshock
+  - Homefront Revolution
+
 
 ## In Progress
-  - Homefront Revolution
   - Shadow of the Tomb Raider
   - Fallout 4
   - Watch Dogs 2
