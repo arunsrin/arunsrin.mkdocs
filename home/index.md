@@ -5,7 +5,7 @@ Welcome to my home page.
 ## What's here
 
 Commonly used commands are burned in my memory, but the less common
-ones (e.g. during bring up of a new box) are a pain to search for each
+ones (e.g. during bring-up of a new box) are a pain to search for each
 time.
 
 So here are notes I've collected over time on various things that
@@ -58,12 +58,13 @@ Some heroes that I look up to, in the tech and literary worlds mostly.
 
 ### Games
 
-I have an XBox One S, a PS Vita, a Nintendo 3DS and I used to game on my PC. These days the Xbox is the only one that
-gets any play time.
+I have an XBox One S, a PS Vita, a Nintendo 3DS and I used to game on my PC.
+These days the Xbox is the only one that gets any play time.
 
 Here is a list of what I have, what I want and what I've liked so far.
 
 - [Xbox One](games/xboxone.md)
+
 
 ### In Progress
 
@@ -77,3 +78,15 @@ See [About](about.md) for more about me. This site is built using the
 lovely [MkDocs](http://www.mkdocs.org), a python-based static site
 generator. The content is written in markdown using GNU Emacs. It is
 hosted on [NFSN](https://nearlyfreespeech.net).
+
+## External Links
+
+- [Books I own, on LibraryThing](https://www.librarything.com/catalog/indeliblestamp)
+
+- [Github Profile](https://github.com/arunsrin/)
+
+- [My Steam Profile](https://steamcommunity.com/id/indeliblestamp)
+
+- [My TrueAchievements
+Profile](https://www.trueachievements.com/gamer/arunsrin) - I'm not an
+achievement hunter but it tracks my Xbox progress quite well.
