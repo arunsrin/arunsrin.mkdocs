@@ -100,3 +100,16 @@ When running a command like `docker build -t asda/asd .` , the '.' is
 the build context. It's contents are tar'd and sent to the docker
 daemon so that ADD and COPY commands work seamlessly. Don't run this
 on a large folder like `~` !!
+
+## docker-compose: stop all containers when one dies
+
+From
+[here](https://stackoverflow.com/questions/33799885/how-to-stop-all-containers-when-one-container-stops-with-docker-compose#41841714):
+
+```
+docker-compose up --abort-on-container-exit
+
+```
+
+This will stop all containers launched via `docker-compose` when one of the
+containers stops.
