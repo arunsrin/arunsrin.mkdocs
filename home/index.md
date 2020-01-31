@@ -41,11 +41,31 @@ Here is a list of books read per year, starting November 2019.
 I'm a voracious reader but I can't recollect stuff all that great. I'm
 trying to take notes for some books that are worthy of revisits.
 
+- [The Thinking Person's Guide to Climate Change](books/thinking-climate-change.md) (IN PROGRESS)
 - [Hate Inc.](books/hate-inc.md)
 - [Crypto 101](books/crypto101.md)
 - [We are our brains](books/we-are-our-brains.md)
 - [The Art of the Infinite](books/the-art-of-the-infinite.md)
 
+### Research
+
+> (When asked "What is best in life?") To crush your enemies, see them driven
+> before you, and to hear the lamentation of their women!
+>
+> -- *Conan the Barbarian, 1982.*
+
+Here are some notes and links I've collected in topics that interest me. Several
+are works in progress: I'm yet to move my large collection of bookmarks to these
+sections.
+
+- [Capitalism](research/capitalism.md) (and it's ills).
+- [Climate Change](research/climate-change.md)
+- [Economics](research/economics.md)
+- [GMOs](research/gmo.md)
+- [The Dark side of the Internet](research/internet.md)
+- [Medicine / The human body](research/medicine.md)
+- [Philosophhy](research/philosophy.md)
+- [Scepticism](research/scepticism.md)
 
 ### Role Models
 
