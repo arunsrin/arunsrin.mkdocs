@@ -9,6 +9,7 @@
     {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
     {% if page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
     <link rel="shortcut icon" href="{{ 'img/favicon.ico'|url }}">
+    <link href="https://github.com/arunsrin/arunsrin.mkdocs/commits/master.atom" rel="alternate" title="Recent Commits to arunsrin.mkdocs:master" type="application/atom+xml">
 
     {% block htmltitle %}
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>

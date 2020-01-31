@@ -64,7 +64,7 @@ sections.
 - [GMOs](research/gmo.md)
 - [The Dark side of the Internet](research/internet.md)
 - [Medicine / The human body](research/medicine.md)
-- [Philosophhy](research/philosophy.md)
+- [Philosophy](research/philosophy.md)
 - [Scepticism](research/scepticism.md)
 
 ### Role Models
