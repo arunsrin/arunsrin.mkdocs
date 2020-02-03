@@ -58,7 +58,8 @@ warming.
 
 ### Chapter 3 - Who’s Responsible?
 
-Emissions breakdown
+Emissions breakdown:
+
 - Transport 14
 - Buildings 18
 - Industry 29
