@@ -49,11 +49,6 @@ trying to take notes for some books that are worthy of revisits.
 
 ### Research
 
-> (When asked "What is best in life?") To crush your enemies, see them driven
-> before you, and to hear the lamentation of their women!
->
-> -- *Conan the Barbarian, 1982.*
-
 Here are some notes and links I've collected in topics that interest me. Several
 are works in progress: I'm yet to move my large collection of bookmarks to these
 sections.
