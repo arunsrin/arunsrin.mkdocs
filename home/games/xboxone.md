@@ -7,6 +7,10 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
   
+  - Shadow of the Tomb Raider - Fun game, great visuals and stealth sections.
+Little disappointed with the overall game. I can't put my hand to exactly what
+felt wrong.
+
   - **Far Cry 5** - Probably my favourite game on the console so far. Amazing
 open world, supports a lot of play styles, nice co-op AI partners.
   
@@ -40,7 +44,6 @@ instigating enough of a rebellion to tip the balance.
 
 
 ## In Progress
-  - Shadow of the Tomb Raider
   - Fallout 4
   - Watch Dogs 2
   - Halo 5
