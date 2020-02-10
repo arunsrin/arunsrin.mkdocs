@@ -1,5 +1,13 @@
 # Systemd
 
+## Socket activation
+
+Systemd has a neat little feature where a daemon can turn on whenever a
+connection is made to it. Works with Unix and network sockets. [More details
+here](http://0pointer.de/blog/projects/socket-activation.html). Essentially you
+create a socket file alongside your service file. The advantage is that you
+don't need to start your services in a specific order.
+
 ## Flush old logs in journalctl
 
 By date or by size:
