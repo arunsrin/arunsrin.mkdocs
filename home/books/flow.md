@@ -1,8 +1,10 @@
 # Flow
 
 I've long been interested in Active vs Passive hobbies, why one is better than
-the others, and so on. Here's a nice reddit post that captures a similar mindset
-around gaming. So reading Flow gave a lot of clarity to these ideas.
+the others, and so on. Here's a [nice reddit
+post](https://www.reddit.com/r/truegaming/comments/en9li9/if_i_am_genuinely_happy_what_is_wrong_with/)
+that captures a similar mindset around gaming. So reading Flow gave a lot of
+clarity to these ideas.
 
 Any programmer who's been 'in the zone' and loses sense of time knows the
 feeling of 'Flow' and that is the subject of this book -- Deep hobbies that
@@ -29,6 +31,7 @@ Here are some sections from the book that caught my attention:
 > the path to freedom gets overgrown by brambles of meaningless mumbo-jumbo.
 > Ritual form wins over substance, and the seeker is back where he started."
 
+
 > "Pleasure is an important component of the quality of life, but by itself it
 > does not bring happiness. Sleep, rest, food, and sex provide restorative
 > _homeostatic_ experiences that return consciousness to order after the needs
@@ -36,6 +39,7 @@ Here are some sections from the book that caught my attention:
 > produce psychological growth. They do not add complexity to the self. Pleasure
 > helps to maintain order, but by itself cannot create new order in
 > consciousness."
+
 
 > "In today's world we have come to neglect the habit of writing because so many
 > other media of communication have taken its place. Telephones and tape
