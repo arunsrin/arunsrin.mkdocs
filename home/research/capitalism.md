@@ -1,5 +1,3 @@
-Capitalism
-
 # Capitalism
 
 [Nice

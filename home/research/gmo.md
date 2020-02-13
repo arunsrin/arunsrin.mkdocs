@@ -1,5 +1,8 @@
 # GMOs
 
+People fear new technology. GMOs interest me because they stand on the thin line
+between fascinating technology and scary dystopia.
+
 - [21 year
   study](https://geneticliteracyproject.org/2018/02/19/gmo-corns-yield-human-health-benefits-vindicated-21-years-studies)
 - [Slate

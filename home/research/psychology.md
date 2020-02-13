@@ -1,8 +1,13 @@
 # Psychology
 
+I have a slight mistrust of pop psychology books that make fancy claims and spin
+small studies into large claims. Here are some good links that dissect them
+better than I could.
+
 
 ###  Taleb criticism
-- [Risk](http://curi.us/2242-taleb-is-wrong-killing-millions-actually-is-risky)
+- [Turning Taleb's Precautionary Principle on
+  itself](http://curi.us/2242-taleb-is-wrong-killing-millions-actually-is-risky)
 
 ### Pinker criticism
 - [One section of Enlightenment now](https://docs.wixstatic.com/ugd/d9aaad_8b76c6c86f314d0288161ae8a47a9821.pdf)
@@ -26,7 +31,7 @@
 
 - This is on priming research. The replicability-index i.e. R-index is low:
   " The chapter cites 12 articles and 11 of the 12 articles have an R-Index
-  below 50." [Good blog with reply from Kahnemann
-  agreeing](https://replicationindex.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/comment-page-1/#comment-1454)
+  below 50." [Good blog (links to reply from Kahnemann, agreeing to its
+  claims](https://replicationindex.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/comment-page-1/#comment-1454)
 
 
