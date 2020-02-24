@@ -42,14 +42,20 @@ a fan of the choice system, but enjoyable otherwise.
 tension where you're initially avoiding an overpowered enemy, and slowly
 instigating enough of a rebellion to tip the balance.
 
+  - Halo 5 - Decent single player campaign. Skipped the multiplayer bits. Had
+no idea what was going on story-wise, as I've never payed a Halo before.
+
+  - Call of Dury - Infinite Warfare - Tolerable single player campaign.
+Titanfall 2 does this kind of thing a lot better.
 
 ## In Progress
   - Fallout 4
   - Watch Dogs 2
-  - Halo 5
   - Dying Light
   - GTA 5
   - Witcher 3
+  - This War of Mine
+  - Might No. 9
 
 ## Wishlist
   - Avengers
