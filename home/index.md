@@ -54,12 +54,8 @@ Here are some notes and links I've collected in topics that interest me. Several
 are works in progress: I'm yet to move my large collection of bookmarks to these
 sections.
 
-- [Capitalism](research/capitalism.md) (and it's ills).
 - [Climate Change](research/climate-change.md)
-- [Economics](research/economics.md)
 - [GMOs](research/gmo.md)
-- [The Dark side of the Internet](research/internet.md)
-- [Medicine / The human body](research/medicine.md)
 - [Philosophy](research/philosophy.md)
 - [Scepticism](research/scepticism.md)
 
