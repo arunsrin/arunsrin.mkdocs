@@ -41,6 +41,7 @@ Here is a list of books read per year, starting November 2019.
 I'm a voracious reader but I can't recollect stuff all that great. I'm
 trying to take notes for some books that are worthy of revisits.
 
+- [Good Math](books/good-math.md)
 - [Flow](books/flow.md)
 - [The Thinking Person's Guide to Climate Change](books/thinking-climate-change.md) (IN PROGRESS)
 - [Hate Inc.](books/hate-inc.md)
