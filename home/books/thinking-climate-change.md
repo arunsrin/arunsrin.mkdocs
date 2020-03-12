@@ -1,4 +1,6 @@
-# The Thinking Person's Guide to Climate Change, by Robert Henson
+# The Thinking Person's Guide to Climate Change
+
+*Author:* Robert Henson
 
 ## Part 1 - The Basics - Global Warming in a nutshell
 ### Chapter 1 - Climate Change: A Primer
