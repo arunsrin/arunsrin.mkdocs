@@ -1,4 +1,8 @@
-# Good Math: A Geek's Guide to the Beauty of Numbers, Logic, and Computation by Mark C. Chu-Carroll
+# Good Math
+
+*Full Title:* Good Math: A Geek's Guide to the Beauty of Numbers, Logic, and Computation
+
+*Author*: Mark C. Chu-Carroll
 
 Here are some notes I took while reading this book. Overall I felt it
 was interesting, but there were large jumps in difficulty in some of
