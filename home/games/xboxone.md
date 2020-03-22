@@ -49,18 +49,18 @@ no idea what was going on story-wise, as I've never payed a Halo before.
 Titanfall 2 does this kind of thing a lot better.
 
 ## In Progress
+  - Deus Ex: Mankind Divided
   - Fallout 4
   - Watch Dogs 2
   - Dying Light
   - GTA 5
   - Witcher 3
   - This War of Mine
-  - Might No. 9
+  - Mighty No. 9
 
 ## Wishlist
   - Avengers
   - Cyberpunk 2099
-  - Deus Ex
   - Assassin's Creed Odyssey
   
 ## Abandoned
