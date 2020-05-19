@@ -13,6 +13,8 @@ felt wrong.
 
   - **Far Cry 5** - Probably my favourite game on the console so far. Amazing
 open world, supports a lot of play styles, nice co-op AI partners.
+
+  - Far Cry 4 - Almost as good as 5. Better story as well.
   
   - **Rayman Legends** - My kids love this. Exquisite level design & music.
   
@@ -48,10 +50,14 @@ no idea what was going on story-wise, as I've never payed a Halo before.
   - Call of Dury - Infinite Warfare - Tolerable single player campaign.
 Titanfall 2 does this kind of thing a lot better.
 
+  - Deus Ex: Mankind Divided - Badly wanted to like this game, but didn't.
+
+
 ## In Progress
-  - Deus Ex: Mankind Divided
+  - Thief
+  - Everspace
+  - Ori
   - Fallout 4
-  - Watch Dogs 2
   - Dying Light
   - GTA 5
   - Witcher 3
@@ -66,4 +72,5 @@ Titanfall 2 does this kind of thing a lot better.
 ## Abandoned
 
   - XCOM 2 - Too hard/stressful for me :( Great game though.
-
+  - Guacamelee - About 60% of the way, I gave up at a frustratingly hard section.
+  - Watch Dogs 2 - Loved the satire of the tech industry, didn't like the gameplay at all.
