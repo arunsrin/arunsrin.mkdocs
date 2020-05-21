@@ -6,6 +6,9 @@ docs_dir: home
 site_dir: public
 repo_url: https://github.com/arunsrin/arunsrin.mkdocs
 edit_uri: blob/master/home/
+# plugins:
+#   - search:
+#       prebuild_index: python
 # Extensions
 markdown_extensions:
   - admonition
@@ -16,3 +19,4 @@ theme:
   name: null
   custom_dir: cinder
   language: 'en'
+  highlightjs: true
