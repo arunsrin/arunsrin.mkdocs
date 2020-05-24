@@ -58,7 +58,6 @@ are works in progress: I'm yet to move my large collection of bookmarks to these
 sections.
 
 - [Climate Change](research/climate-change.md)
-- [GMOs](research/gmo.md)
 - [Philosophy](research/philosophy.md)
 - [Scepticism](research/scepticism.md)
 

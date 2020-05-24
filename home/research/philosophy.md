@@ -14,4 +14,5 @@
 - [Outgroups](https://slatestarcodex.com/2014/09/30/i-can-tolerate-anything-except-the-outgroup)
 - [Chomsky on Education](https://chomsky.info/warfare02)
 - [Moral Foundations by Jonathan Haidt](http://www.moralfoundations.org)
+- [Against dog ownership](https://dormin.org/2020/03/21/against-dog-ownership/)
 
