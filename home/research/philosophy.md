@@ -1,10 +1,8 @@
-# Philosophy
+# Philosophy / Morality
 
 ## Vegetarianism
-- [Peter Singer on
-  Animals](http://faculty.webster.edu/corbetre/philosophy/animals/singer-text.html)
-- [More on
-  vegetarianism](https://slatestarcodex.com/2019/12/11/acc-is-eating-meat-a-net-harm/),
+- [Peter Singer on Animals](http://faculty.webster.edu/corbetre/philosophy/animals/singer-text.html)
+- [More on vegetarianism](https://slatestarcodex.com/2019/12/11/acc-is-eating-meat-a-net-harm/),
   from SSC's adversarial collaboration and also links to some nice research on
   harm/suffering etc:
 > "In total, meat, aquaculture, eggs, and dairy use ~83% of the world’s farmland

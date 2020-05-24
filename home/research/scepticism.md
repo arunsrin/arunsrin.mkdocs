@@ -6,8 +6,7 @@
   
 ## Homeopathy
 
-- [My favourite post on
-  Homeopathy](http://www.badscience.net/2007/11/a-kind-of-magic), by the
+- [My favourite post on Homeopathy](http://www.badscience.net/2007/11/a-kind-of-magic), by the
   one-and-only Ben Goldacre.
 - [Why you can't trust Homeopathy](http://www.1023.org.uk/why-you-cant-trust-homeopathy.php)
 
@@ -19,7 +18,5 @@
 
 ## Miscellaneous
 
-- [Assassinations foretold in Moby
-  Dick](http://users.cecs.anu.edu.au/~bdm/dilugim/moby.html) - Show this to
-  those people who keep finding hidden meanings in the Bible etc.
+- [Assassinations foretold in Moby Dick](http://users.cecs.anu.edu.au/~bdm/dilugim/moby.html) - Show this to those people who keep finding hidden meanings in the Bible etc.
 
