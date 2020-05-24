@@ -60,6 +60,7 @@ sections.
 - [Climate Change](research/climate-change.md)
 - [Philosophy](research/philosophy.md)
 - [Scepticism](research/scepticism.md)
+- [Online Privacy and the Internet](research/privacy-internet.md)
 
 ### Role Models
 

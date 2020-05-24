@@ -31,6 +31,8 @@ There are fortunately no stupid people in my immediate community who are vaccine
 
 - [Assassinations foretold in Moby Dick](http://users.cecs.anu.edu.au/~bdm/dilugim/moby.html) - Show this to those people who keep finding hidden meanings in the Bible etc.
 
+- [How to avoid swallowing War Propaganda](https://www.currentaffairs.org/2020/01/how-to-avoid-swallowing-war-propaganda)
+
 ## Internet cranks
 
 - Mark McCarron is his own internet rabbit hole. Here's an article of his on a Spam/Email alternative: [We've found the perfect solution to spam • The Register](https://www.theregister.co.uk/2003/07/09/weve_found_the_perfect_solution/). He's also written a cipher called crystalline. Read his comments to see how defensive and out of touch with reality he is.
