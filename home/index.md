@@ -4,12 +4,32 @@ Welcome to my home page.
 
 ## What's here
 
-Commonly used commands are burned in my memory, but the less common
-ones (e.g. during bring-up of a new box) are a pain to search for each
-time.
+I read a lot of books but want to turn that into a more active hobby that ties
+into writing in some way. So you will find a list of books I've read, and
+reviews of some of them.
 
-So here are notes I've collected over time on various things that
-interest me.
+On the software side, I've collected some notes over time on various things that
+interest me. They're not burned in my memory like the Emacs/readline
+keybindings, so I've felt the need to dump them here.
+
+### Book Notes
+
+Here is a list of books read per year, starting November 2019.
+
+- [2020](books/2020.md)
+- [2019](books/2019.md)
+
+I'm a voracious reader but I can't recollect stuff all that great. I'm
+trying to take notes for some books that are worthy of revisits.
+
+- [Eats, Shoots & Leaves](books/eats-shoots-leaves.md)
+- [Good Math](books/good-math.md)
+- [Flow](books/flow.md)
+- [The Thinking Person's Guide to Climate Change](books/thinking-climate-change.md) (IN PROGRESS)
+- [Hate Inc.](books/hate-inc.md)
+- [Crypto 101](books/crypto101.md)
+- [We are our brains](books/we-are-our-brains.md)
+- [The Art of the Infinite](books/the-art-of-the-infinite.md)
 
 ### Tech Notes
 
@@ -30,25 +50,6 @@ so on.
     - [Databases](notes/programming/databases.md)
     - [Java](notes/programming/java.md)
 - [Security](notes/security.md)
-
-### Book Notes
-
-Here is a list of books read per year, starting November 2019.
-
-- [2020](books/2020.md)
-- [2019](books/2019.md)
-
-I'm a voracious reader but I can't recollect stuff all that great. I'm
-trying to take notes for some books that are worthy of revisits.
-
-- [Eats, Shoots & Leaves](books/eats-shoots-leaves.md)
-- [Good Math](books/good-math.md)
-- [Flow](books/flow.md)
-- [The Thinking Person's Guide to Climate Change](books/thinking-climate-change.md) (IN PROGRESS)
-- [Hate Inc.](books/hate-inc.md)
-- [Crypto 101](books/crypto101.md)
-- [We are our brains](books/we-are-our-brains.md)
-- [The Art of the Infinite](books/the-art-of-the-infinite.md)
 
 ### Research
 
