@@ -113,3 +113,10 @@ docker-compose up --abort-on-container-exit
 
 This will stop all containers launched via `docker-compose` when one of the
 containers stops.
+
+
+## Run redis on windows
+
+My teams' integration tests need this and I'm the only windows guy!
+
+`docker run -d -p 6379:6379 redis:6`

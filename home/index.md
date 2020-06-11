@@ -39,6 +39,7 @@ so on.
 - [Docker](notes/docker.md)
 - [Editors](notes/editors.md)
 - [Git](notes/git.md)
+- [Kafka](notes/kafka.md)
 - [Kubernetes](notes/k8s.md)
 - [Linux](notes/linux/linux.md)
     - [Package Management](notes/linux/package-management.md)
