@@ -27,8 +27,6 @@ And you convert a table to a stream by capturing the mutations made to it into
 a change stream. Also called **CDC** (Change Data Capture). I guess it’s a
 stream that replays all the add/edit/remove actions done on that table.
 
-*Ooh is this what Apache Spark etc. build on top of, to aggregate data over
-buckets and write queries etc.?*
 
 ## Topics
 
