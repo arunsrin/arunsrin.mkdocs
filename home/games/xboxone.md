@@ -59,14 +59,13 @@ The ones in **bold** below are highly recommended.
 
 
 ## In Progress
+  - Watch Dogs 2 
   - Everspace
   - Dying Light
-  - Ori 1
   - Fallout 4
   - GTA 5
   - Witcher 3
   - This War of Mine
-  - Mighty No. 9
 
 ## Wishlist
   - Avengers
@@ -77,4 +76,5 @@ The ones in **bold** below are highly recommended.
 
   - XCOM 2 - Too hard/stressful for me :( Great game though.
   - Guacamelee - About 60% of the way, I gave up at a frustratingly hard section.
-  - Watch Dogs 2 - Loved the satire of the tech industry, didn't like the gameplay at all.
+  - Ori 1 - Lovely game but I hate the frustrating experience.
+  - Mighty No. 9 - Why do I keep buying hard platformers?
