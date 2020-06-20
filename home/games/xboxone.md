@@ -7,6 +7,11 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
   
+  - Watch Dogs 2 - It took me several attempts to get into this game. The open
+world is beautiful, and so is the satirical take on Silicon Valley. The part I
+struggled with was the annoying stealth gameplay. I truly started enjoying it
+only after switching my play style to a more aggressive mode.
+
   - Thief - Enjoyable game. I loved their stealth implementation (over other
     games like Deus Ex: Mankind Divided). There were some truly thrilling
     moments during the game.
@@ -59,7 +64,6 @@ The ones in **bold** below are highly recommended.
 
 
 ## In Progress
-  - Watch Dogs 2 
   - Everspace
   - Dying Light
   - Fallout 4
