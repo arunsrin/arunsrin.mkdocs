@@ -6,9 +6,10 @@ docs_dir: home
 site_dir: public
 repo_url: https://github.com/arunsrin/arunsrin.mkdocs
 edit_uri: blob/master/home/
-# plugins:
-#   - search:
-#       prebuild_index: python
+plugins:
+  - search
+  - git-revision-date:
+      as_datetime: true
 # Extensions
 markdown_extensions:
   - admonition
