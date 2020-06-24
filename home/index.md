@@ -83,12 +83,6 @@ Here is a list of what I have, what I want and what I've liked so far.
 - [Xbox One](games/xboxone.md)
 
 
-### In Progress
-
-Some in-progress notes topics of study.
-
-- [Site Ideas](inprogress/site-ideas.md)
-
 ## About
 
 See [About](about.md) for more about me. This site is built using the
