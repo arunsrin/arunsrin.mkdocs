@@ -15,14 +15,24 @@
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
     {% endblock %}
 
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href="{{ 'css/bootstrap-custom.min.css'|url }}" rel="stylesheet">
     <link href="{{ 'css/base.min.css'|url }}" rel="stylesheet">
     <link href="{{ 'css/cinder.min.css'|url }}" rel="stylesheet">
-    <link href="{{ 'css/highlight.min.css'|url }}" rel="stylesheet">
+
+    {% if config.theme.highlightjs is defined and config.theme.highlightjs is sameas false %} 
+
+    {% else %}
+        {% if config.theme.colorscheme %}
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/{{ config.theme.colorscheme }}.min.css">
+        {% else %}
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        {% endif %}
+    {% endif %}
 
     {%- for path in config['extra_css'] %}
     <link href="{{ path|url }}" rel="stylesheet">
@@ -33,15 +43,6 @@
             <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
         <![endif]-->
-
-    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-    WebFont.load({
-        google: {
-            families: ['Open Sans', 'PT Sans']
-        }
-    });
-    </script>
 
     {% if config.google_analytics %}
     <script>
@@ -84,21 +85,33 @@
         {% block footer %}
         <hr>
         <p>{% if config.copyright %}
-        <small>{{ config.copyright }}<br></small>
+        <small>{{ config.copyright }}</small><br>
         {% endif %}
-        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+        </p>
 
         {% if page and page.meta.revision_date %}<br>
         <small>Revised on: {{ page.meta.revision_date }}</small>
         {% endif %}
         {% endblock %}
     </footer>
-    
+
     {%- block scripts %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{{ 'js/bootstrap-3.0.3.min.js'|url }}"></script>
-    <script src="{{ 'js/highlight.pack.js'|url }}"></script>
+
+    {% if config.theme.highlightjs is defined and config.theme.highlightjs is sameas false %}  <!-- default is to include highlightjs -->
+    
+    {% else %}
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        {% if config.theme.hljs_languages %}
+            {%- for lang in config.theme.hljs_languages %}
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/{{lang}}.min.js"></script>
+            {%- endfor %}
+        {% endif %}
     <script>hljs.initHighlightingOnLoad();</script>
+    {% endif %}
+
     <script>var base_url = {{ base_url | tojson }}</script>
     {% if config.shortcuts %}
         <script>var shortcuts = {{ config.shortcuts | tojson }}</script>
