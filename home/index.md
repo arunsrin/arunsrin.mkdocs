@@ -22,6 +22,7 @@ Here is a list of books read per year, starting November 2019.
 I'm a voracious reader but I can't recollect stuff all that great. I'm
 trying to take notes for some books that are worthy of revisits.
 
+- [How to Read a Book](books/how-to-read-a-book.md)
 - [Eats, Shoots & Leaves](books/eats-shoots-leaves.md)
 - [Good Math](books/good-math.md)
 - [Flow](books/flow.md)
