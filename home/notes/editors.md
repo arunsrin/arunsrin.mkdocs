@@ -103,6 +103,15 @@ Or set this:
 set guifont=Hack:h9:cANSI
 ```
 
+## Separate vim settings for windows and linux
+
+``` vim
+if ($OS == 'Windows_NT')
+  " do someting
+else
+  " do something else
+endif
+```
 ## Vim tips
 
 -   delete trailing whitespace:
