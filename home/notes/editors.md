@@ -112,6 +112,23 @@ else
   " do something else
 endif
 ```
+## vim-fugitive cheatsheet
+
+``` vim
+:Git # Run any arbitrary git command from inside Vim
+:Gwrite # Stage the current file to the index
+:Gread # Revert current file to last checked in version
+:Gremove # Delete the current file and the corresponding Vim buffer
+:Gmove # Rename the current file and the corresponding Vim buffer
+:Gcommit # Opens up a commit window in a split window
+:Ggrep keyword # Will search for 'keyword' in working copy files (excluding untracked files)
+
+:Gstatus # Opens a status window. Open file with an enter, jump directly between files with {ctrl-n} and {ctrl-p}
+:Gdiff # Performs a vimdiff against the index version of the file. Opens a vertical split window (index file on the left, working copy on the right). Navigate through hunks using {[c} for previous and {]c} for next
+
+:Glog # Loads all previous revisions of the current file into the quickfix list. Use it with '-- %' to load all ancestral commit objects that touched the current file into the quickfix list. Use it with '--grep=keyword --' to search for 'keyword' in all ancestral commit messages. Or '-Skeyword --' to search for 'keyword' in the diff for each ancestral commit. Jump between previous and next quickfix item with {:cprev} or {:cnext}, respectively
+```
+
 ## Vim tips
 
 -   delete trailing whitespace:
