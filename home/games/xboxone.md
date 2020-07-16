@@ -6,6 +6,8 @@ a good story.
 The ones in **bold** below are highly recommended.
 
 ## Completed
+
+  - Injustice 2 - Kids loved it. Nice single player campaign, but a bit short.
   
   - Watch Dogs 2 - It took me several attempts to get into this game. The open
 world is beautiful, and so is the satirical take on Silicon Valley. The part I
