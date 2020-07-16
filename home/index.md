@@ -59,6 +59,7 @@ Here are some notes and links I've collected in topics that interest me. Several
 are works in progress: I'm yet to move my large collection of bookmarks to these
 sections.
 
+- [COVID-19](research/covid-19.md)
 - [Productivity](research/productivity.md)
 - [Climate Change](research/climate-change.md)
 - [Philosophy](research/philosophy.md)
