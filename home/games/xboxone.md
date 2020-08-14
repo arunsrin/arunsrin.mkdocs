@@ -66,6 +66,7 @@ only after switching my play style to a more aggressive mode.
 
 
 ## In Progress
+  - Assassin's Creed Odyssey
   - Everspace
   - Dying Light
   - Fallout 4
@@ -74,9 +75,9 @@ only after switching my play style to a more aggressive mode.
   - This War of Mine
 
 ## Wishlist
-  - Avengers
+  - Middle-Earth: Shadow of War
   - Cyberpunk 2099
-  - Assassin's Creed Odyssey/Origins
+  - Control
   
 ## Abandoned
 
