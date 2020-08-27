@@ -7,6 +7,11 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
 
+  - **Assassin's Creed Odyssey** - I've loved greek mythology all my life so
+  this was an amazing experience. Very nice variety in play styles
+  (ranger/warrior/assassin), and constant loots and upgrades made for a
+  addictive gameplay loop. Side quest plots are pretty average.
+
   - Injustice 2 - Kids loved it. Nice single player campaign, but a bit short.
   
   - Watch Dogs 2 - It took me several attempts to get into this game. The open
@@ -66,13 +71,13 @@ only after switching my play style to a more aggressive mode.
 
 
 ## In Progress
-  - Assassin's Creed Odyssey
+  - Rage 2
+  - Sunset Overdrive
+  - Battlefront 2
   - Everspace
-  - Dying Light
   - Fallout 4
   - GTA 5
   - Witcher 3
-  - This War of Mine
 
 ## Wishlist
   - Middle-Earth: Shadow of War
@@ -81,6 +86,8 @@ only after switching my play style to a more aggressive mode.
   
 ## Abandoned
 
+  - Dying Light
+  - This War of Mine
   - XCOM 2 - Too hard/stressful for me :( Great game though.
   - Guacamelee - About 60% of the way, I gave up at a frustratingly hard section.
   - Ori 1 - Lovely game but I hate the frustrating experience.
