@@ -112,6 +112,14 @@ else
   " do something else
 endif
 ```
+## Searching in vimwiki
+
+Seems to be a wrapper around some vim grep functionality.
+
+- `:VimWikiSearch /pattern/` (or `:VWS /pattern/`) starts it.
+- `:lnext` and `:lprevious` cycle through hits.
+- `:lopen` shows all hits, like emacs' `M-x occur`.
+
 ## vim-fugitive cheatsheet
 
 ``` vim
@@ -126,7 +134,7 @@ endif
 :Gstatus # Opens a status window. Open file with an enter, jump directly between files with {ctrl-n} and {ctrl-p}
 :Gdiff # Performs a vimdiff against the index version of the file. Opens a vertical split window (index file on the left, working copy on the right). Navigate through hunks using {[c} for previous and {]c} for next
 
-:Glog # Loads all previous revisions of the current file into the quickfix list. Use it with '-- %' to load all ancestral commit objects that touched the current file into the quickfix list. Use it with '--grep=keyword --' to search for 'keyword' in all ancestral commit messages. Or '-Skeyword --' to search for 'keyword' in the diff for each ancestral commit. Jump between previous and next quickfix item with {:cprev} or {:cnext}, respectively
+:Glog # Loads all previous revisions of the current file into the quickfix list.
 ```
 
 ## Vim tips
