@@ -19,6 +19,11 @@ Here is a list of books read per year, starting November 2019.
 - [2020](books/2020.md)
 - [2019](books/2019.md)
 
+Here are notes on Oxford's *Very Short Introduction To..* series.
+
+- [Accounting](books/intro/accounting.md)
+- [Advertising](books/intro/advertising.md)
+
 I'm a voracious reader but I can't recollect stuff all that great. I'm
 trying to take notes for some books that are worthy of revisits.
 
