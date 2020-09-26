@@ -24,9 +24,9 @@ Clone their helper repo first:
 git clone  https://git.centos.org/git/centos-git-common.git
 ```
 
-Go to their [RPM project](https://git.centos.org/project/rpms) and
-select a project to clone. I'm picking `coreutils` here. This repo has
-a SPEC file and the patches to the original source.
+Go to their [RPM project](https://git.centos.org) and select a project
+to clone. I'm picking `coreutils` here. This repo has a SPEC file and
+the patches to the original source.
 
 ``` sh
 git clone https://git.centos.org/r/rpms/coreutils.git

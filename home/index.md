@@ -32,7 +32,7 @@ Some notes / reviews of books:
 - [Flow](books/reviews/flow.md)
 - [The Thinking Person's Guide to Climate Change](books/reviews/thinking-climate-change.md) (IN PROGRESS)
 - [Hate Inc.](books/reviews/hate-inc.md)
-- [Crypto 101](books/reiews/crypto101.md)
+- [Crypto 101](books/reviews/crypto101.md)
 - [We are our brains](books/reviews/we-are-our-brains.md)
 - [The Art of the Infinite](books/reviews/the-art-of-the-infinite.md)
 
