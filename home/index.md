@@ -12,7 +12,7 @@ On the software side, I've collected some notes over time on various things that
 interest me. They're not burned in my memory like the Emacs/readline
 keybindings, so I've felt the need to dump them here.
 
-### Book Notes
+### Books
 
 Here is a list of books read per year, starting November 2019.
 
@@ -24,18 +24,17 @@ Here are notes on Oxford's *Very Short Introduction To..* series.
 - [Accounting](books/intro/accounting.md)
 - [Advertising](books/intro/advertising.md)
 
-I'm a voracious reader but I can't recollect stuff all that great. I'm
-trying to take notes for some books that are worthy of revisits.
+Some notes / reviews of books:
 
-- [How to Read a Book](books/how-to-read-a-book.md)
-- [Eats, Shoots & Leaves](books/eats-shoots-leaves.md)
-- [Good Math](books/good-math.md)
-- [Flow](books/flow.md)
-- [The Thinking Person's Guide to Climate Change](books/thinking-climate-change.md) (IN PROGRESS)
-- [Hate Inc.](books/hate-inc.md)
-- [Crypto 101](books/crypto101.md)
-- [We are our brains](books/we-are-our-brains.md)
-- [The Art of the Infinite](books/the-art-of-the-infinite.md)
+- [How to Read a Book](books/reviews/how-to-read-a-book.md)
+- [Eats, Shoots & Leaves](books/reviews/eats-shoots-leaves.md)
+- [Good Math](books/reviews/good-math.md)
+- [Flow](books/reviews/flow.md)
+- [The Thinking Person's Guide to Climate Change](books/reviews/thinking-climate-change.md) (IN PROGRESS)
+- [Hate Inc.](books/reviews/hate-inc.md)
+- [Crypto 101](books/reiews/crypto101.md)
+- [We are our brains](books/reviews/we-are-our-brains.md)
+- [The Art of the Infinite](books/reviews/the-art-of-the-infinite.md)
 
 ### Tech Notes
 
