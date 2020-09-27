@@ -21,8 +21,11 @@ Here is a list of books read per year, starting November 2019.
 
 Here are notes on Oxford's *Very Short Introduction To..* series.
 
+[Main page](books/intro/index.md)
+
 - [Accounting](books/intro/accounting.md)
 - [Advertising](books/intro/advertising.md)
+- [Alexander](books/intro/alexander.md)
 
 Some notes / reviews of books:
 
@@ -46,13 +49,13 @@ so on.
 - [Git](notes/git.md)
 - [Kafka](notes/kafka.md)
 - [Kubernetes](notes/k8s.md)
-- [Linux](notes/linux/linux.md)
+- [Linux](notes/linux/index.md)
     - [Package Management](notes/linux/package-management.md)
     - [Learnings & Notes](notes/linux/learnings-and-notes.md)
     - [SystemD](notes/linux/systemd.md)
 - [Networking](notes/networking.md)
 - [OpenSSL](notes/openssl.md)
-- [Programming](notes/programming/programming.md)
+- [Programming](notes/programming/index.md)
     - [Databases](notes/programming/databases.md)
     - [Java](notes/programming/java.md)
 - [Security](notes/security.md)
