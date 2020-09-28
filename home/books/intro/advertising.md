@@ -1,4 +1,4 @@
-# Advertising: A Very Short Introduction
+# Advertising
 
 # Introduction
 
