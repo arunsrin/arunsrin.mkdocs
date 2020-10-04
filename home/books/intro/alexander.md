@@ -72,6 +72,8 @@ Alexander of Epirus. His father Philip was assassinated there, the
 reasons are still unclear. So it came to him to seek revenge against
 the Persians for the destruction they'd caused earlier.
 
+---
+
 # Warrior: Alexander's Army
 
 Alexander dealt with uprisings in areas close to Macedonia, and later
@@ -94,6 +96,8 @@ A *siege train* comprising catapults, battering rams, siege towers
 (that were dismantled and loaded into carts), also followed the main
 army.
 
+---
+
 # Commander: Alexander and the Greeks
 
 Would-be Greek leaders often looked to opposing kings (Philip, the
@@ -105,4 +109,30 @@ they allied with him.
 A more formalized agreement was then made, known as the *League of
 Corinth*. This was a campaign led by Philip (the *hegemon*) against
 Persia. After his death, Alexader renewed the alliance but Thebes
-revolted.
+revolted. As punishment for the rebellion, Alexander attacked
+them. They were completely destroyed..
+
+Sparta was the only city outside of these happenings. They were not
+part of the *League* and had lost a lot of territory and
+dominance. They chose to side with Darius instead.
+
+Athens was Alexander's favoured city. The politicians were divided in
+their support of Alexander.
+
+## Exiles
+
+One of Alexander's acts was to order the cities to take back their
+exiles. This was a bit problematic as individuals were not allowed to
+own land in cities that they didn't belong to. So exiles had to find
+other ways of supporting themselves, e.g. fight as a hoplite or
+cavalryman. When Alexander returned to Greece and disbanded his army,
+these were the ones who needed somewhere to go, hence the order to
+allow them back to their cities.
+
+This order challenged the autonomy of the cities that had enforced
+these exiles initially. Exiles had to be accommodated alongside other
+citizens who had taken over their lands, and disputes arose.
+
+---
+
+# Pharaoh: Alexander and Egypt
