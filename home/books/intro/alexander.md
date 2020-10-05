@@ -167,3 +167,63 @@ indicate an answer. Or they'd keep two pieces of paper in front and
 the image swaying towards one of them would indicate that decision.
 
 Amun / Ammon / Zeus Ammon. Depicted as a man with a ram's horns.
+
+Greek narratives tended to have a spoken exchange between the enquirer
+and priest (e.g. the Oracle at Delphi), and this makes for a better
+story than swaying idols. So past writers have written accounts where
+Alexander asked questions about (a) his father's murders being
+punished and (b) whether he'd rule the world. The response was that
+his father could not be harmed by mortals (i.e. he had divine
+parentage) but Philip's death had been avenged. And yes he would go on
+to rule the world.
+
+---
+
+# Pharoah Alexander
+
+Memphis was the administrative center of Egypt. Alexander traveled to
+several cities across the kingdom where the allies renewed their
+alliance with him. His travel concluded at Memphis where he was
+crowned as the Pharaoah. Greek authors apparently skim past this, as
+their narrative was more around Alexander's gradual corruption and
+adoption of 'barbarian' practices. The Egypt bit seems to be too early
+for that plot.
+
+---
+
+# King of the World: Alexander and Persia
+
+At Gordium, the old capital of Phrygia, is where the Gordian Knot
+story happens. Whoever could undo a knot connecting a cart to a yoke
+it would be the King of the World. He fulfilled the prophecy by
+cutting it (in other tellings, he pulls a peg that held the knot
+together).
+
+## Susa
+
+Alexander started adopting Persian clothes and customs around this
+time, which disturbed his Macedonian companions. There is a
+possibility he saw himself as Darius's successor, and wanted to move
+his capital from Maceondia to Susa and Babylon.
+
+## The Burning of Persepolis
+
+The palace of Persepolis had been built by Darius and
+Xerxes. Alexander had it burned as symbolic revenge for their attacks
+on Athens.
+
+## Dressing as a Persian
+
+Similar to how he adopted Egyptian customs and the role of Pharoah, he
+started doing the same in Persia as well. Moralists claim that this
+was where his decline started. Depending on how you read, they either
+say that his companions were suspicious and hostile towards this, or
+that the companions were getting into luxurious living while Alexander
+was the one practising frugality and self control.
+
+## Court Ceremonial
+
+There is some controversy around whether or not he expected people to
+prostrate themselves in his presence, an act that historians claimed
+normal in Persian courts (it was not; it was only required of defeated
+enemies). 
