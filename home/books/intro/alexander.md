@@ -136,3 +136,34 @@ citizens who had taken over their lands, and disputes arose.
 ---
 
 # Pharaoh: Alexander and Egypt
+
+With Greece sorted out, Alexander now came to Egypt in late 332. Egypt
+had gone through quite a bit of churn, with multiple transfer of
+power. Two events that happened in Alexander's time there are:
+
+- The foundation of the city of Alexandria
+- his visit to the oracle of Amun at Siwa
+
+## Alexandria
+
+Through trade, had become the largest city in the world at that
+time. Joined the Mediterranean world to the East. The Library gathered
+all of Greek literature. After Alexander's death, Ptolemy took control
+of Egypt and proclaimed himself King. He used Memphis as his capital
+though. He and his successors made Alexandria the cultural hub that
+it's famous for, not Alexander. Also, Alexander founded many other
+cities called Alexandria during his conquests. So overall it is not
+very clear that he had very large plans for the famous one in Egypt.
+
+Stories of omens surrounding the City's foundations are probably
+whitewashing by future rulers to associate the city with Alexander.
+
+## The Oracle of Amun
+
+Apparently a turning point in Alexander's perception of himself. At
+major festivals, the image of the God would be carried by eight
+priests and people could ask questions. The image swaying would
+indicate an answer. Or they'd keep two pieces of paper in front and
+the image swaying towards one of them would indicate that decision.
+
+Amun / Ammon / Zeus Ammon. Depicted as a man with a ram's horns.
