@@ -227,3 +227,119 @@ There is some controversy around whether or not he expected people to
 prostrate themselves in his presence, an act that historians claimed
 normal in Persian courts (it was not; it was only required of defeated
 enemies). 
+
+## Alexander's Queens
+
+Marriage was used as a means to maintain friendly relations with
+neighboring kingdoms. His first wife Rhoxane had his next 2 wives
+killed soon after Alexander's death, to protect the claim to throne of
+her unborn child.
+
+# Traveller: Alexander in Afghanistan and Pakistan
+
+He spent five years starting 330 on a new campaign. Most preachy
+historians of the time dwell on this period. This was also the point
+where his soldiers refused to go further on.
+
+Alexander's plan in Afghanistan was to defeat Darius III. But the
+latter was killed by his general Bessus, so Alexander claimed that, as
+king, he was avenging Darius's death instead.
+
+There are multiple stories around Alexander crossing the river
+Jaxartes. He married Rhoxane in this camppaign, which consolidated his
+control of the region.
+
+## To the Indus Valley
+
+From Afghanistan he now went to the Hindu Kush into what is now
+Pakistan. Four tributaries flowing into the Indus from the Himalayas
+were controlled by a number of rival Indian princes. Rather than
+appointing satraps here, he confirmed those princes if they accepted
+his authority. One ruler, Taxiles, accepted. His neighbour, Porus, did
+not. Alexander defeated Porus in a major battle.
+
+## Turning back
+
+He continued eastwards. On the banks of the Hyphasis, his soldiers
+refused to continue. Alexander shut himself in his tent and refused to
+come out. He then claimed he'd go alone, but the soldiers didn't
+relent. Finally he submitted to their will and turned back. Current
+historians think this is apocryphal too, like a lot of the stories
+around Alexander. He next turned south towards the ocean rather than
+turnin back the same way he came.
+
+## To the Ocean
+
+No texts from India survive, so we're stuck with the unreliable
+Alexander historians again. He faced fierce resistance in
+Punjab. Chandragupta Maurya visited him here, and would take over most
+of India after Alexander left.
+
+## The Gedrosian Desert
+
+His final campaign, notorious and misunderstood. He wanted a naval
+route to reach Mesopotamia from Afghanistan. But for this the fleet
+that he had readied should have been supplied as it sailed along the
+inhospitable Iranian coast. This was why he led his land force through
+the region of Gedrosia in southern Iran on his way from the Indus back
+to Pasargadae. This would make sure fresh water, supplies and grains
+were available to the fleet as it followed.
+
+The stories here tell of Alexander losing most of his army in the
+arduous desert journey.
+
+# Doomed to die: Alexander in Babylon
+
+Final chapter of his life. The scholars who produced astronomical
+diaries were also chroniclers of the kings. So we have good records
+of the events without the moral commentary.
+
+Eight years earlier, in September 331, there had been a lunar eclipse
+that foretold that the king would die, his son would not succeed him,
+and the new ruler would come from the west and rule for eight
+years. Darius indeed did die, and Alexander succeeded him. And those
+eight years were up.
+
+A few months before he entered, there was a lunar and solar eclipse,
+again a bad omen, that the King of the World would die.
+
+## Death
+
+At the age of 32, he caught a fever and spent the last few days of his
+life lying on his couch, mainly conducting the religious rituals
+required of him as a king.
+
+Later on, stories circulated about him being poisoned, most likely to
+damage the reputation of the accused.
+
+Another story is about his last words. Some report that he lost his
+speech in the last few days of his life. But the story is that when
+asked to whom he wanted to leave the kingdom, he apparently said, "to
+the strongest."
+
+There was in-fighting in the next few decades to control his empire or
+carve out parts of it. His body was sent back to Macedonia but
+intercepted by Ptolemy in Egypt to legitimize his rule.
+
+# After Alexander
+
+Caesar was often compared to Alexander. The Senate voted to put up a
+statute of him titled 'The invincible god'. Similar to a supposed
+letter written by Aristotle to Alexander, Cicero attempted to caution
+Caesar. So story tellers / historians liked to portray Alexander's
+journey as a descent into tyranny.
+
+As Rome went from one king to another, portrayals of Alexander changed
+accordingly. Under Caligula's rule he was portrayed negatively; under
+Hadrian and Trajan, positively. 
+
+In medieval times, stories around Alexander became more fanciful. 
+
+More scrutiny happened in the Enlightement Age with new translations
+and editions. His 'civilizing mission' was used to justify British
+rule in India, and events in America led to publications that showed
+the dangers of democracy and the superiority of constitutional
+monarchy.
+
+Basically he has taken a role of hero or villain based on the
+narrative the historians of that time wanted to create.
