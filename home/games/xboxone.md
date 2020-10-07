@@ -7,6 +7,8 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
 
+  - Rage 2 - I have a soft spot for this series so I liked it.
+
   - **Assassin's Creed Odyssey** - I've loved greek mythology all my life so
   this was an amazing experience. Very nice variety in play styles
   (ranger/warrior/assassin), and constant loots and upgrades made for a
@@ -71,7 +73,6 @@ only after switching my play style to a more aggressive mode.
 
 
 ## In Progress
-  - Rage 2
   - Sunset Overdrive
   - Battlefront 2
   - Everspace

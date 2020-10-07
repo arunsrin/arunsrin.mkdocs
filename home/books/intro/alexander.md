@@ -109,6 +109,7 @@ they allied with him.
 A more formalized agreement was then made, known as the *League of
 Corinth*. This was a campaign led by Philip (the *hegemon*) against
 Persia. After his death, Alexader renewed the alliance but Thebes
+<<<<<<< HEAD
 revolted. As punishment for the rebellion, Alexander attacked
 them. They were completely destroyed..
 
@@ -235,6 +236,8 @@ neighboring kingdoms. His first wife Rhoxane had his next 2 wives
 killed soon after Alexander's death, to protect the claim to throne of
 her unborn child.
 
+---
+
 # Traveller: Alexander in Afghanistan and Pakistan
 
 He spent five years starting 330 on a new campaign. Most preachy
@@ -288,6 +291,8 @@ were available to the fleet as it followed.
 The stories here tell of Alexander losing most of his army in the
 arduous desert journey.
 
+---
+
 # Doomed to die: Alexander in Babylon
 
 Final chapter of his life. The scholars who produced astronomical
@@ -321,6 +326,8 @@ There was in-fighting in the next few decades to control his empire or
 carve out parts of it. His body was sent back to Macedonia but
 intercepted by Ptolemy in Egypt to legitimize his rule.
 
+---
+
 # After Alexander
 
 Caesar was often compared to Alexander. The Senate voted to put up a
@@ -343,3 +350,4 @@ monarchy.
 
 Basically he has taken a role of hero or villain based on the
 narrative the historians of that time wanted to create.
+
