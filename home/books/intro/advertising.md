@@ -50,6 +50,8 @@ divisions throughout the world.
 So although commissions have reduced to 10%, the number of
 specialized divisions to talk to is more nowadays.
 
+---
+
 # Advertisers
 
 Is advertising mandatory ? Not at all. E.g. manufacturing companies,
@@ -59,6 +61,8 @@ be successful without the audience knowing the publisher)
 
 > "I know half of all the money I spend on advertising is wasted, but
 > I have no means of knowing which half."
+
+---
 
 # The Media
 
@@ -110,9 +114,13 @@ Not about the message you send, but what the audience takes away.
 After Television, the copy/art team raised the status of the
 visualizer, not just the copywriter who was the idea person.
 
+---
+
 # Media Agencies
 
 No surprises. Considerationsa around medium, budget, market etc.
+
+---
 
 # Research, Research, Research
 
@@ -128,11 +136,15 @@ This might have been an interesting area to go deeper, as advertising
 would be fairly useless if it *didn't* manipulate human motivation. So
 the flippant answer seems to be too hasty.
 
+---
+
 # The good, the bad, and the ugly
 
 The author seems to think that health warnings and advertising bans
 did not reduce cigarette consumption, and only increasing costs and
 bans on public smoking did.
+
+---
 
 # The Role of Advertising in Society
 
@@ -158,6 +170,8 @@ it is (my comments are in braces like these):
   - Everyone needs to be reminded about what products they like
     (seriously?!)
 	
+--- 
+
 # Closing thoughts
 
 You'd expect a book about advertising to be persuasive and effective
