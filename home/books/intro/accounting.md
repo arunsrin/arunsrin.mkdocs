@@ -60,6 +60,8 @@ Question: What does India follow?
 
 Answer: IFRS
 
+---
+
 # The Fundamentals of Financial Accounting
 
 A *Balance Sheet* is officially called *Statement of Financial
@@ -122,6 +124,8 @@ if we take a loan)
 
 Similarly cash decreasing is also not necessarily bad (e.g. buying
 long lasting equipment)
+
+---
 
 # Financial Reports of Listed Companies
 
@@ -218,11 +222,15 @@ High p/e ratio => high confidence in the company.
 - Creative accounting: exploit loopholes, lack of clarity
 - Off-balance-sheet finance: incur obligations but don't show them
 
+---
+
 # International Differences and Standardization
 IFRS vs GAAP
 
 Daimler-Benz and British Airways published earnings in both models
 and showed wildly different profit figures!
+
+---
 
 # Regulation and Audit
 
@@ -238,6 +246,8 @@ approximation that is acceptable)
 -  Gathering evidence
 -  Reporting to client and others
 
+---
+
 # Internal Decision-making: Costs and Volumes
 
 As a part of financial accounting, the following are produced:
@@ -247,6 +257,8 @@ income statement, the balance sheet, the cash flow statement.
 
 But management accounting (focus of this and next chapter) is around
 internal documents: costing reports, break-even reports, budgets.
+
+---
 
 # Accounting as Control 
 
@@ -259,6 +271,8 @@ Come up with a balanced scorecard around 3 axes:
 -  Keeping customers happy
 -  Having good internal processes/objectives
 -  Achieving learning/growth
+
+---
 
 # Homework
 
