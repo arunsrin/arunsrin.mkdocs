@@ -72,6 +72,7 @@ sections.
 - [Philosophy](research/philosophy.md)
 - [Scepticism](research/scepticism.md)
 - [Online Privacy and the Internet](research/privacy-internet.md)
+- [Capitalism](research/capitalism.md)
 
 ### Role Models
 
