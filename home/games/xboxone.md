@@ -73,11 +73,8 @@ only after switching my play style to a more aggressive mode.
 
 
 ## In Progress
-  - Sunset Overdrive
-  - Battlefront 2
   - Everspace
   - Fallout 4
-  - GTA 5
   - Witcher 3
 
 ## Wishlist
@@ -87,9 +84,6 @@ only after switching my play style to a more aggressive mode.
   
 ## Abandoned
 
-  - Dying Light
-  - This War of Mine
   - XCOM 2 - Too hard/stressful for me :( Great game though.
   - Guacamelee - About 60% of the way, I gave up at a frustratingly hard section.
-  - Ori 1 - Lovely game but I hate the frustrating experience.
-  - Mighty No. 9 - Why do I keep buying hard platformers?
+  - Ori 1 - Lovely  game but I hate the frustrating experience.
