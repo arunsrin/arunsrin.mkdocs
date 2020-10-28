@@ -11,6 +11,7 @@ I'm keeping a diary of interesting links to track the COVID-19 epidemic.
 - Why the whole test kit availability thing was messed up in the early days: [they were tainted](https://arstechnica.com/science/2020/04/cdcs-failed-coronavirus-tests-were-tainted-with-coronavirus-feds-confirm/).
 - [Timeline of WHO's response](https://www.who.int/news-room/detail/29-06-2020-covidtimeline).
 - How [New Zealand beat COVID-19](https://arstechnica.com/science/2020/06/new-zealand-eliminates-covid-19-lifts-all-social-distancing/).
+- A nice summary of [the Vaccine Protocols](https://blogs.sciencemag.org/pipeline/archives/2020/09/21/the-vaccine-protocols).
 
 ## Scepticism
 
