@@ -73,6 +73,8 @@ only after switching my play style to a more aggressive mode.
 
 
 ## In Progress
+  - Tom Clancy's Ghost Recon Wildlands - Getting tired of the whole ubisoft 
+    open world formula so this is probably my last shot at that genre.
   - Everspace
   - Fallout 4
   - Witcher 3
