@@ -73,8 +73,9 @@ only after switching my play style to a more aggressive mode.
 
 
 ## In Progress
-  - Tom Clancy's Ghost Recon Wildlands - Getting tired of the whole ubisoft 
-    open world formula so this is probably my last shot at that genre.
+
+  - Gears 5
+  - Middle Earth: Shadow of War
   - Everspace
   - Fallout 4
   - Witcher 3
@@ -86,6 +87,8 @@ only after switching my play style to a more aggressive mode.
   
 ## Abandoned
 
+  - Tom Clancy's Ghost Recon Wildlands - Getting tired of the whole ubisoft 
+    open world formula so this is probably my last shot at that genre.
   - XCOM 2 - Too hard/stressful for me :( Great game though.
   - Guacamelee - About 60% of the way, I gave up at a frustratingly hard section.
   - Ori 1 - Lovely  game but I hate the frustrating experience.
