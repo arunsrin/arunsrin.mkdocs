@@ -7,6 +7,9 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
 
+  - **Gears of War** - Mindless fun. Thoroughly enjoyed playing this and now I
+  intend to play through the rest of the series.
+
   - Rage 2 - I have a soft spot for this series so I liked it.
 
   - **Assassin's Creed Odyssey** - I've loved greek mythology all my life so
@@ -74,6 +77,10 @@ only after switching my play style to a more aggressive mode.
 
 ## In Progress
 
+As of December 2020, I got Gamepass Unlimited so there's too many to count :)
+
+I intend to play through the Gears and Halo franchises at least.
+
   - Gears 5
   - Middle Earth: Shadow of War
   - Everspace
@@ -81,9 +88,8 @@ only after switching my play style to a more aggressive mode.
   - Witcher 3
 
 ## Wishlist
-  - Middle-Earth: Shadow of War
-  - Cyberpunk 2099
-  - Control
+
+  - Nothing really, now that I have game pass.
   
 ## Abandoned
 
