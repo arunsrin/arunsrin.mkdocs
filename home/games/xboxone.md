@@ -7,6 +7,9 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
 
+  - Gears 2, Gears 3 - Finished the remaining legacy Gears games during the 2020 
+  year-end holidays. An excellent series from start to finish.
+  
   - **Gears of War** - Mindless fun. Thoroughly enjoyed playing this and now I
   intend to play through the rest of the series.
 
