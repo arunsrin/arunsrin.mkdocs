@@ -19,16 +19,9 @@ Here is a list of books read per year, starting November 2019.
 - [2020](books/2020.md)
 - [2019](books/2019.md)
 
-Here are notes on Oxford's *Very Short Introduction To..* series.
-
-[Main page](books/intro/index.md)
-
-- [Accounting](books/intro/accounting.md)
-- [Advertising](books/intro/advertising.md)
-- [Alexander](books/intro/alexander.md)
-
 Some notes / reviews of books:
 
+- [The Happiness Hypothesis](books/reviews/happiness.md)
 - [How to Read a Book](books/reviews/how-to-read-a-book.md)
 - [Eats, Shoots & Leaves](books/reviews/eats-shoots-leaves.md)
 - [Good Math](books/reviews/good-math.md)
@@ -38,6 +31,14 @@ Some notes / reviews of books:
 - [Crypto 101](books/reviews/crypto101.md)
 - [We are our brains](books/reviews/we-are-our-brains.md)
 - [The Art of the Infinite](books/reviews/the-art-of-the-infinite.md)
+
+Here are notes on Oxford's *Very Short Introduction To..* series.
+
+[Main page](books/intro/index.md)
+
+- [Accounting](books/intro/accounting.md)
+- [Advertising](books/intro/advertising.md)
+- [Alexander](books/intro/alexander.md)
 
 ### Tech Notes
 
