@@ -15,8 +15,6 @@ markdown_extensions:
   - admonition
   - codehilite:
         guess_lang: true
-extra_css:
-  - "css/mystyle.css"
 theme:
   # name: 'mkdocs'
   name: null
