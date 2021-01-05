@@ -94,10 +94,10 @@
     {% if config.theme.highlightjs is defined and config.theme.highlightjs is sameas false %}  <!-- default is to include highlightjs -->
     
     {% else %}
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+    <script src="{{ 'highlightjs/highlight.min.js'|url }}"></script>
         {% if config.theme.hljs_languages %}
             {%- for lang in config.theme.hljs_languages %}
-                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/{{lang}}.min.js"></script>
+                <script src="{{ 'highlightjs/languages/{{lang}}.min.js'|url }}"></script>
             {%- endfor %}
         {% endif %}
     <script>hljs.initHighlightingOnLoad();</script>
