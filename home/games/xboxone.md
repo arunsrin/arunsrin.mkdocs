@@ -7,6 +7,9 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
 
+  - Gears 5 - Again, an enjoyable game. Quite different from the classics but
+    good in its own way.
+
   - Gears 2, Gears 3 - Finished the remaining legacy Gears games during the 2020 
   year-end holidays. An excellent series from start to finish.
   
