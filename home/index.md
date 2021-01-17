@@ -39,6 +39,7 @@ Here are notes on Oxford's *Very Short Introduction To..* series.
 - [Accounting](books/intro/accounting.md)
 - [Advertising](books/intro/advertising.md)
 - [Alexander](books/intro/alexander.md)
+- [Anaesthesia](books/intro/anaesthesia.md)
 
 ### Tech Notes
 
