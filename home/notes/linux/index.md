@@ -419,3 +419,19 @@ sudo ngrep -d any <word> -q
 cat somefile.json | python -m json.tool
 ```
 
+### WSL passwd reset
+
+From powershell, run this to directly login as the root user:
+
+``` sh
+wsl --user root
+```
+
+If you have more than one wsl distribution installed, list them with `wsl -l`
+and exec into that with this:
+
+``` sh
+wsl -d Ubuntu-20.04 --user root
+```
+
+Then you can do the usual `passwd` or `passwd <user>` to reset that password.
