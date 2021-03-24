@@ -114,6 +114,7 @@ git checkout pull-requests/1000/from
 
 `git pull --rebase origin master`
 
+-   And make it permanent with this: `git config --global pull.rebase true`
 -   'The `--rebase` option tells Git to move all of Mary's commits to the
     tip of the master branch after synchronising it with the changes
     from the central repository.'
