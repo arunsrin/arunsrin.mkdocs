@@ -7,6 +7,13 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
 
+  - Assassin's Creed Origins - Everyone said this was better than Odyssey and
+  indeed it is. The side quests are way better and everything feels well
+  designed.
+
+  - Diablo 3 - I played in easy mode as a Mage and it was perhaps too easy. So
+  I did not feel like playing again with a different characters.
+
   - Gears 5 - Again, an enjoyable game. Quite different from the classics but
     good in its own way.
 
@@ -85,18 +92,15 @@ only after switching my play style to a more aggressive mode.
 
 As of December 2020, I got Gamepass Unlimited so there's too many to count :)
 
-I intend to play through the Gears and Halo franchises at least.
+(As of April 2020, I unsubscribed so I could diversify my hobbies a bit)
 
-  - Gears 5
+  - Dishonored 2
+  - Darksiders 2
   - Middle Earth: Shadow of War
   - Everspace
   - Fallout 4
   - Witcher 3
 
-## Wishlist
-
-  - Nothing really, now that I have game pass.
-  
 ## Abandoned
 
   - Tom Clancy's Ghost Recon Wildlands - Getting tired of the whole ubisoft 
