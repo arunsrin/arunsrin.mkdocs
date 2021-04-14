@@ -22,6 +22,7 @@ Here is a list of books read per year, starting November 2019.
 
 Some notes / reviews of books:
 
+- [Despair](books/reviews/despair.md)
 - [The Happiness Hypothesis](books/reviews/happiness.md)
 - [How to Read a Book](books/reviews/how-to-read-a-book.md)
 - [Eats, Shoots & Leaves](books/reviews/eats-shoots-leaves.md)
