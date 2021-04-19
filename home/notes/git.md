@@ -14,6 +14,13 @@ Put something like this in your `~/.gitconfig`:
 If your work repos are in `~/work`, you can have a separate user/email etc for
 repos in that folder.
 
+## Create an empty commit
+
+`git commit --allow-empty -m "blah blah"`
+
+Useful if you have a gitops workflow and just want to raise a PR to trigger
+something from there.
+
 ## Show parents of a merge commit
 
 ``` sh
