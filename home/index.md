@@ -61,6 +61,7 @@ so on.
 - [OpenSSL](notes/openssl.md)
 - [Programming](notes/programming/index.md)
     - [Databases](notes/programming/databases.md)
+    - [Go](notes/programming/go.md)
     - [Java](notes/programming/java.md)
 - [Security](notes/security.md)
 
