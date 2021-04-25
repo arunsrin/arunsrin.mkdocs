@@ -8,6 +8,9 @@ h1, h2, h3, h4, h5, h6 {
 pre, code {
     background-color: #fdf6e3;
 }
+.admonition {
+    background-color: #fdf6e3;
+}
 .navbar-default {
     background-color: #002b36;
     color: #fdf6e3;
