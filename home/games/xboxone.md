@@ -7,6 +7,9 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
 
+  - **Darksiders 2** - Had a blast playing this. Lovely world design, fun 
+  puzzles, and enough variety to keep thing fresh.
+  
   - Assassin's Creed Origins - Everyone said this was better than Odyssey and
   indeed it is. The side quests are way better and everything feels well
   designed.
