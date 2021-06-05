@@ -325,7 +325,91 @@ num := copy(y, x) // Returns number of elements copied. Y is the target slice.
 fmt.Println(y, num) // Prints [1 2 3 4] 4
 ```
 
+### Strings, runes, bytes
 
+UTF-8, unless specified.
+
+`len()` gives you the raw byte length not the grapheme length.
+
+`byte` is the underlying structure, `rune` is the UTF code point, and `string` is what the user sees.
+
+
+### Maps
+
+Make a map where key is a string, value is an int:
+
+```go
+	m0 := map[string]int{}
+	m0["asd"] = 1
+```
+
+Set values up front:
+
+```go
+	m1 := map[string]int{
+		"hello": 1,
+		"world": 2,
+	}
+```
+
+for the above, extract and test like this:
+
+```go
+	v, ok := m1["hello"]
+	fmt.Println(v, ok)
+    // Returns, 1 true
+	v, ok := m1["does-not-exist"]
+	fmt.Println(v, ok)
+    // Returns, 0 false
+```
+
+i.e. Value stored in the map is `1` and there is indeed a value present for that map (stored in the `ok` variable)
+
+
+`delete(m1, "hello")` deletes that key/value.
+
+### Sets
+
+Don't exist natively but you can make a map with bool values to
+get a similar data structure.
+
+```go
+	myset := map[int]bool{}
+	vals := []int{1, 3, 5, 7, 1, 10, 11, 3}
+
+	for _, v := range vals {
+		myset[v] = true
+	}
+```
+
+Use third-party libraries for Union, Intersection, etc.
+
+### Structs
+
+```go
+	type person struct {
+		name  string
+		empid int
+	}
+	var e1 person
+	e1.name = "arun"
+	e1.empid = 12345
+    // or
+	e2 := person{"sid", 5678}
+```
+
+#### Anonymous struct
+
+```go
+	pet := struct {
+		name string
+		age  int
+	}{name: "shadow", age: 10}
+```
+
+!!!note
+    Type conversions between 2 structs are ONLY possible if order and
+    names and types all match.
 
 # References
 
@@ -335,4 +419,6 @@ fmt.Println(y, num) // Prints [1 2 3 4] 4
 
 - [official code review comments](https://github.com/golang/go/wiki/CodeReviewComments)
 - [Effective Go](https://golang.org/doc/effective_go)
+
+- [Inside the Map implementation, video](https://www.youtube.com/watch?v=Tl7mi9QmLns)
 
