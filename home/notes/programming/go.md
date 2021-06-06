@@ -44,6 +44,12 @@ Run: `go vet ./...`
 
 Vi: `:GoVet`
 
+This does not catch subtle bugs around shadow variables. So consider installing `shadow` as well:
+
+Install: `go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@latest`
+
+Run: `shadow ./...`
+
 ### Combine golint, govet with golangci-lint
 
 This tool runs 10 different linters by default and support dozens others.
@@ -75,6 +81,7 @@ lint: fmt
 
 vet: fmt
         go vet ./...
+        shadow ./...
 .PHONY:vet
 
 build: vet
@@ -410,6 +417,137 @@ Use third-party libraries for Union, Intersection, etc.
 !!!note
     Type conversions between 2 structs are ONLY possible if order and
     names and types all match.
+
+## Blocks
+
+Anything outside a function is in the *package* block.
+
+Anything you call with an import from another file is in the
+*file* block.
+
+And things within functions are in their blocks.
+
+There is also a *universe* block that contains all the built-in
+types and functions like `true` and `int` and `make`.
+
+!!!warning
+    Variables with the same name in an inner scope are
+    *shadowed*. So any change you make are not retained once Go
+    moves back to the outer scope.
+
+```go
+	x := 10
+	if x > 5 {
+		fmt.Println(x)  // 10, from outer scope
+		x := 5          // new shadow variable
+		fmt.Println(x)  // 5
+	}
+	fmt.Println(x) // You'd want it to be 5, but it's 10
+```
+
+The use of `:=` makes it easy to miss this, which reuses
+variables only in the current block.
+
+Consider installing `shadow` which catches this kind of thing:
+
+```sh
+code/learninggo/ch04 via  v1.16.3 ❯ shadow blocks.go
+/home/arunsrin/code/learninggo/ch04/blocks.go:9:3: declaration of "x" shadows declaration at line 6
+code/learninggo/ch04 via  v1.16.3 ❯
+```
+
+### if
+
+Fairly obvious. Also, let's you define a variable inside the if
+condition that you can then use in the rest of the block.
+
+### for
+
+Simple, C-style:
+
+```go
+	for i := 0; i < 5; i++ {
+		fmt.Println(i)
+	}
+```
+- Must use `:=` to initiatlize, `var` will not work.
+- No parens
+
+Condition-only style:
+
+```go
+	for i > 0 {
+		fmt.Println(i)
+		i--
+	}
+```
+
+Infinite style:
+
+```go
+	for {
+		fmt.Println("loop forever")
+	}
+```
+
+- Use with `break` and `continue`
+
+for-range style:
+
+```go
+	x := []int{100, 200, 300}
+	for i, v := range x {
+		fmt.Println(i, v)
+	}
+```
+
+- `i` gives the iteration, and `v` the value
+- When looping through a map, `i` gives the key instead
+- Use `_` if you don't plan to use that variable in the loop
+- Iteration over maps is random, no fixed order is guaranteed
+- If you loop over a string, each element will be a `rune`, not a `byte`
+    - The `i` value will jump by that many bytes to indicate that a
+  non-ascii UTF symbol was detected
+- `for` copies `i` and `v` and gives it to you. So modifying it
+will not modify the upstream value you're iterating through.
+
+### switch
+
+Example:
+
+```go
+	words := []string{"a", "cow", "gopher", "smile", "octopus",
+		"anthropologist"}
+	for _, word := range words {
+		switch size := len(word); size {
+		case 1, 2, 3, 4:
+			fmt.Println(word, " is a short word")
+		case 5:
+			wordLen := len(word)
+			fmt.Println(word, " is the right length: ", wordLen)
+		case 6, 7, 8, 9:
+		default:
+			fmt.Println(word, " is a long word")
+		}
+	}
+```
+
+- No `break` needed
+- Each switch case is a scope, introduce new variables there and
+they will be accessible only in that case
+- In an empty case, *nothing happens*. There is no fall-through
+to the next case
+    - Rather, use commas to combine multiple cases that have the
+    same logic
+- `break` in a switch case will only break out of that case. Use
+labels to actually break out of the outer loop
+
+### Blank switch
+
+In the previous example, `size` compared with each `case`
+statement, and, if equal, that case is executed. In a blank
+switch, you could run any condition in the case, not just
+equality
 
 # References
 
