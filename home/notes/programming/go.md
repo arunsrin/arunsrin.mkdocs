@@ -549,6 +549,250 @@ statement, and, if equal, that case is executed. In a blank
 switch, you could run any condition in the case, not just
 equality
 
+## Functions
+
+- No named or optional functional parameters.
+
+### Variadic functions
+
+Exception is when it's at the end:
+
+`func blah(base int, rest ...int)`
+
+- Use it in the function as a normal slice
+- It can be skipped or called with any number of args
+
+```go
+func main() {
+	blah(1, 2)
+	blah(1)
+	lotsOfArgs := []int{2, 3, 4}
+	blah(1, lotsOfArgs...) //Note trailing ... for slice
+}
+
+func blah(base int, rest ...int) {
+	fmt.Println("Received this many rest args", len(rest))
+}
+```
+
+### Mutliple return values
+
+Example 
+
+`func div(num int, denom int) (int, error) {...}`
+
+Fairly common pattern to return the actual response followed by
+an `error` type
+
+!!!note
+    Has to be assigned to each variable on the calling side, you
+    can't just treat it as a tuple and assign to a single
+    variable like in python
+
+### Named return values
+
+Example 
+
+`func div(num int, denom int) (result int, err error) {...}`
+
+Advantage is that you are pre-declaring that those variables are
+present in the function and initialized to default values.
+
+On the calling side, feel free to use any other name.
+
+### Blank returns
+
+Example
+
+`return`
+
+!!!warning
+    Don't use!
+
+It returns the last value of a named return variable.. not
+idiomatic and prone to cause confusion.
+
+### Passing functions
+
+Here's a simple example:
+
+```go
+func main() {
+	var opMap = map[string]func(int, int) int{
+		"+": add,
+		"-": sub,
+	}
+	opFunc := opMap["+"]
+	res := opFunc(5, 10)
+	fmt.Println(res)
+}
+
+func add(i int, j int) int { return i + j }
+func sub(i int, j int) int { return i - j }
+```
+
+!!!warning
+    The example above is pretty poor. You would have quite a bit
+    more error correction in the real world
+
+### Function Type Declarations
+
+`type opFuncType func(int, int) int`
+
+More to come later but it's essentially like above.
+
+That would make the map in the above example much simpler:
+
+`var opMap = map[string]opFuncType {...}`
+
+### Anonymous functions
+
+```go
+	i := 10
+	func(j int) {
+		fmt.Println("inside anon function", j)
+	}(i)
+```
+
+Useful while launching goroutines or with `defer`
+
+### Closures
+
+Functions inside functions. They can use and modify variables
+from the outer function.
+
+```go
+	type Person struct {
+		name string
+		age  int
+	}
+	people := []Person{
+		{"asha", 7},
+		{"sid", 5},
+	}
+
+	fmt.Println(people)
+	sort.Slice(people, func(i int, j int) bool {
+		return people[i].age < people[j].age
+	})
+	fmt.Println(people)
+```
+
+Here, `sort.Slice()` gets a function with 2 parameters `i` and
+`j` but it has access to `people` as well.
+
+You can even return a function from another function:
+
+```go
+func main() {
+	f1 := makeMult(10)
+	fmt.Println(f1(20))
+}
+
+func makeMult(base int) func(int) int {
+	return func(factor int) int {
+		return base * factor
+	}
+}
+```
+
+!!!note
+    All of above are *Higher-order functions*, i.e. those that
+    take a function as a parameter, or as a return value
+
+### defer
+
+Here is a simple `cat` implementation. It uses `defer` to close
+file handles. `defer` is used to run something at the end of a
+function, whether it ran successfully or not.
+
+```go
+package main
+
+import (
+	"io"
+	"log"
+	"os"
+)
+
+func main() {
+	// simple `cat` implementation
+	if len(os.Args) < 2 {
+		log.Fatal("No file specified")
+	}
+	f, err := os.Open(os.Args[1])
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+
+	data := make([]byte, 2048)
+	for {
+		count, err := f.Read(data)
+		os.Stdout.Write(data[:count])
+		if err != nil {
+			if err != io.EOF {
+				log.Fatal(err)
+			}
+			break
+		}
+	}
+}
+```
+
+Note that if that function that you defer returns some values,
+there is no way to actually read and use them.
+
+Another good pattern is to write your own cleanup function and
+then pass it to defer. E.g. if interacting with a DB, you may
+want to either commit or rollback everything at the end.
+
+Another pattern is to return a closure function alongside the
+usual content and error. That way the caller can call it
+themselves in their defer.
+
+Example:
+
+```go
+func getFile(n string) (f os.File*, func(), error) {...}
+```
+
+So that the caller can do this:
+
+```go
+    f, cleanup, err := getFile("/etc/passwd")
+    // check for err
+    defer cleanup()
+    // do the rest
+```
+
+### call by value
+
+Anything you pass as a parameter is copied. Making modifications
+to it will NOT stick, if you pass a struct or int or string.
+
+If you pass a map or slice, you can modify the content but not
+the size.
+
+# Standard Library
+
+Useful stuff from the standard library
+
+`strconv.Atoi`: convert `"5"` to `5`
+
+From `math/rand`: `rand.Intn(10)` returns a random number between 0 and 10. Seed is fixed though so look deeper
+
+`os.Args` like python's `sys.argv`
+
+# Third Party
+
+Useful stuff from the ecosystem. Search in this page for details.
+
+- `go install github.com/rakyll/hey@latest`
+- `go install golang.org/x/tools/cmd/goimports@latest`
+- `go install golang.org/x/lint/golint@latest`
+- `go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@latest`
+
 # References
 
 - Learning Go, by Jon Bodner
