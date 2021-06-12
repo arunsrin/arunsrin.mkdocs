@@ -778,6 +778,169 @@ the size.
 
 # Pointers
 
+Example:
+
+```go
+var y int32 = 10
+pointerx := &y  //pointerx's content is now y's address
+var pointerz *string  //nil pointer, doesn't point to anything
+```
+
+Differences from other languages:
+
+- No memory management
+- No pointer arithmetic
+
+`&` is an address operator that returns the address of that variable.
+
+`*` is the indirection operator. Using it returns the value in that address.
+Called *derefencing*.
+
+Example:
+
+```go
+	var x int = 10
+	pointerY := &x
+	var z int = x + *pointerY
+	fmt.Println(z)
+```
+
+Always do a null check!
+
+```go
+	var nilPointer *int
+	if nilPointer != nil {
+		fmt.Println(*nilPointer) // panic here
+	}
+```
+
+`new` creates a new null pointer, but is not used much: 
+
+```go
+    var x = new(int)
+```
+
+You cannot point to builtins like ints and strings directly. You
+will need to assign them to a variable and then make a pointer of
+that variable.
+
+Pointers in structs are a pain for this reason, you cannot assign
+a string or int directly to them.  A good pattern is to have a
+helper function that basically takes each type and returns a
+pointer to that type:
+
+```go
+func stringp(s string) *string {
+	return &s
+}
+```
+
+Use Pointers to indicate mutability in a function. Since go is
+call by value, a copy is always made of the paramter passed to
+the function, and any change you make inside are not going to
+reflect on the outside.
+
+The above note is for primitives, structs, and arrays. More to
+come on maps and slices.
+
+Anyway, a better pattern is to just return the modified content
+rather than modify it via pointers.
+
+Commonly used in json parsing though.
+
+!!!note
+    If you pass a nil pointer to a function, it cannot modify it.
+    You can only a modify a pointer that has valid content.
+
+## Json parsing
+
+```go
+	type person struct {
+		Name string `json:"name"`
+		Age  int    `json:"age"`
+	}
+	var f person
+	err := json.Unmarshal(
+		[]byte(`{"name":"arunsrin","age":38}`), &f)
+	fmt.Println(f, err)
+```
+
+The json library expects an `interface{}` in the second parameter
+since it cannot anticipate the type. So the value passed to it
+*has* to be a pointer. The lack of generics has led to the above
+pattern become a norm in this use case.
+
+There is a perf *hit* if you use pointers for small data. Becomes
+an advantage only for large structs (~mb).
+
+## Maps vs slices
+
+A map is internally implemented as a pointer to a struct. So when
+passing maps to functions and modifying them inside, you would
+see a change on the outside as well.
+
+So avoid using maps, especially for public consumption.
+
+Slices are more complicated when passed as parameters to
+functions:
+
+- Change in values are reflected
+- But appending to a slice is not affected
+
+This is because when passed to the function, a copy of the
+*length*, *capacity* and *pointer* are made. So a change in
+content is because of the pointer pointing to the same common
+content. But an append results in an increase in length and
+capacity of the copy and not the original.
+
+!!!note
+    Because of all the above it is simply best to assume that a
+    slice is not modifiable.
+
+## Using slices as buffers
+
+A good pattern is to make a single slice of fixed size and use it
+in a loop while processing I/O. This is better than allocating
+memory for each chunk, which leads to the GC having to do a lot
+of work.
+
+Here is an example:
+
+```go
+package main
+
+import (
+	"fmt"
+	"os"
+)
+
+func main() {
+	file, _ := os.Open("/etc/passwd")
+	defer file.Close()
+
+	data := make([]byte, 100)
+	for {
+		count, err := file.Read(data)
+		if err != nil {
+			break
+		}
+		if count == 0 {
+			break
+		}
+		process(data[:count])
+	}
+}
+
+func process(d []byte) {
+	fmt.Print(string(d))
+}
+```
+
+As you can see, data is declared once and reused repeatedly when
+it is passed to `process()`.
+
+While the length cannot be modified, `process()` can change the
+content that was sent to it.
 
 # Standard Library
 
@@ -791,7 +954,7 @@ From `math/rand`: `rand.Intn(10)` returns a random number between 0 and 10. Seed
 
 # Third Party
 
-Useful stuff from the ecosystem. Search in this page for details.
+Useful [stuff](stuff) from the ecosystem. Search in this page for details.
 
 - `go install github.com/rakyll/hey@latest`
 - `go install golang.org/x/tools/cmd/goimports@latest`
