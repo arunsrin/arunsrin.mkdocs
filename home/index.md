@@ -48,6 +48,7 @@ Here are notes on Oxford's *Very Short Introduction To..* series.
 One-liners for a variety of tools I use regularly.. Linux, openssl and
 so on.
 
+- [AWS](notes/aws.md)
 - [Docker](notes/docker.md)
 - [Editors](notes/editors.md)
 - [Git](notes/git.md)
