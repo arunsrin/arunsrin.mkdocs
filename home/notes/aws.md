@@ -2,7 +2,7 @@
 
 Most of this is from *Amazon Web Services in Action, IInd edition*.
 
-## CloudFormation
+# CloudFormation
 
 Use CloudFormation to create a wordpress infra using these services:
 
@@ -41,3 +41,56 @@ Looks like you can refer to other blocks in the file like this: `GatewayId:
 `AvailabilityZone: !Select [1, !GetAZs '']`.
 
 As `ASG` is also created and it sets current count to 4.
+
+# EC2
+
+## Instance Families
+
+To decode the naming convention e.g. `t2.micro`:
+
+- T - Cheap. Burst to higher perf for short periods.
+- M - General Purpose
+- C - Compute optimized
+- R - Memory optimized
+- D - Storage optimized, huge HDD
+- I - Storage optimized, huge SSD
+- X - Huge capacity, focus on memory, up to 1952 GB Mem and 128 virtual cores
+- F - Accelerated computing based on FPGAs
+- P,G and CG - Accelerated computing based on GPUs
+
+The second part of the name, the `2` in `t2`, refers to the
+generation. So this is the 2nd generation of the T family, of
+size `micro`.
+
+!!!note
+    Stopped VMs incur no charges (unless you have attached resources like storage)
+  
+## EIPs
+
+EIPs (elastic IPs) give you a fixed IP that you can associate to an EC2
+instance. Otherwise the IP is going to change across reboots.
+
+Seems very straightforward actually, create an EIP and you can associate to an
+instance or a specific interface.
+
+You can also create a new Network Interface, attach it to the instance, and
+attach another EIP to that interface.
+
+## Spot / Reserved instances
+
+Spot: You bid for unused capacity in a DC. Price based on supply and demand.
+
+Reserved: Use if you need VMs for a year or longer. Pay for a given time frame,
+and get a discount. You pay even if you don't use it.
+
+- No upfront, 1 year term
+- Partial upfront, 1 or 3 year term
+- All upfront, 1 or 3 year term
+
+Potential savings may go up to 60%. You can also make scheduled reservations,
+e.g. every week day from 9 AM to 5PM.
+
+For spot instances, you set a bidding price. If the current spot price is lower
+than your bid, an instance is spun up and your job runs. If the spot price then
+exceeds your price, your VM is *terminated*. Good for batch processing jobs.
+
