@@ -942,6 +942,199 @@ it is passed to `process()`.
 While the length cannot be modified, `process()` can change the
 content that was sent to it.
 
+# Types, methods, interfaces
+
+An *abstract type* specifies what a type should do, not how it is
+done.
+
+A *concrete type* specifies what and how.
+
+Here's a function attached to a struct:
+
+```go
+func main() {
+
+	c := ComplexNumber{3.55, 10}
+	fmt.Println(c.toString())
+
+}
+
+type ComplexNumber struct {
+	Real      float32
+	Imaginary float32
+}
+
+func (c ComplexNumber) toString() string {
+	return fmt.Sprintf("%0.1f + %0.1f i", c.Real, c.Imaginary)
+}
+```
+
+You can attach the same method name to different types. The bit
+between `func` and the name `toString()` is called the *receiver*
+spec. You should use a pointer receiver if you intend to mutate
+it (or handle *nil* instanes). Otherwise use a simple value
+receiver.
+
+Also the function has to be in the same package level. You can't
+take a type from some package and override with a function in
+yours.
+
+Modified version of the above with 1 pointer receiver and the
+other normal receiver:
+
+```go
+func main() {
+
+	c := ComplexNumber{3.55, 10}
+	fmt.Println(c.toString())
+	c.increment() //observe that you didn't have to do &c.increment() here. Go does it automatically
+	fmt.Println(c.toString())
+
+}
+
+type ComplexNumber struct {
+	Real      float32
+	Imaginary float32
+}
+
+func (c ComplexNumber) toString() string {
+	return fmt.Sprintf("%0.1f + %0.1f i", c.Real, c.Imaginary)
+}
+
+func (c *ComplexNumber) increment() {
+	c.Real++
+	c.Imaginary++
+}
+```
+
+!!!note
+    getters and setters are not idiomatic. Just access directly.
+
+## iota
+
+Equivalent of enums. Seems pretty crippled, ignore.
+
+Initializes to 0 and auto-increments from there on.
+
+```go
+	type MailCategory int
+	const (
+		Uncategorized MailCategory = iota
+		Personal
+		Spam
+		Social
+		Advertisements
+	)
+	x := Spam
+	fmt.Println(x)
+```
+
+## Inheritance
+
+Not exactly. But you can *embed* a type in another. So the
+former's methods can be accessed in the outer type seamlessly.
+
+## Interfaces
+
+Example:
+
+```go
+	type Stringer interface {
+		String() string
+	}
+```
+
+Here, an implementation must implement a `String()` method.
+
+Idiom is to end the name with `er` e.g. `Stringer()`, `Closer`.
+
+A concrete type does not need to declare that it implements a
+particular interface, it implicitly happens. Like python's duck
+typing.
+
+!!note
+    Idiom: Accept interfaces, return structs
+
+## interfaces and nil
+
+For an interface to be nil, both the type and the value must be
+nil.
+
+When the type is non-nil, it apparently is not straightforward to
+tell if the value is nil. Reflection helps here.
+
+## empty interfaces
+
+They map to anything in go, and main use case is for open-ended
+stuff like json parsing.
+
+```go
+    var i interface{} //empty interface
+    i = 10
+    i = "hello"
+    i = struct {
+      FirstName string
+      LastName string
+      } {"A", "S"}
+```
+
+So in the json parsing case you'd see something like this:
+
+```go
+    data := map[string]interface{}{}
+```
+
+The first `{}` is for making an empty interface, the second `{}`
+is for instantiating a map instance.
+
+## Type assertions and type switches
+
+```go
+type MyInt int
+
+func main() {
+	var i interface{}
+	var mine MyInt = 20
+	i = mine
+	// i2 := i Fails in last line with error `(mismatched types interface {} and int)`
+	i2 := i.(MyInt)
+	fmt.Println(i2 + 1)
+}
+```
+
+Basically here we tell that `i2` is of type `MyInt`.
+
+This is a type *assertion* not a *conversion*. Happens only at
+runtime unlike latter which is compile-type. So use the comma-ok
+pattern to catch the failure.
+
+```go
+func doThings(i interface{}) {
+	switch j := i.(type) {
+	case nil:
+		// i is nil, type of j is interface{}
+	case int:
+		// j is of type int
+	case MyInt:
+		// j is of type MyInt
+	case io.Reader:
+		// j is of type io.Reader
+	case bool, rune:
+		// i is either bool or rune, so j is of type inteface{}
+	default:
+		// no idea what i is, so j is of type interface{}
+	}
+}
+```
+
+People usually shadow the variable i.e. `i := i.(type)`
+
+In the above we had some estimates of the types. If you don't know the type at all, use Reflection.
+
+## WebApp example
+
+Too long to print here. [Here](https://gist.github.com/arunsrin/030f0818a6ead6c55243c15f190fa682) it is.
+
 # Standard Library
 
 Useful stuff from the standard library
