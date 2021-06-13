@@ -94,3 +94,70 @@ For spot instances, you set a bidding price. If the current spot price is lower
 than your bid, an instance is spun up and your job runs. If the spot price then
 exceeds your price, your VM is *terminated*. Good for batch processing jobs.
 
+# Programming: CLI, SDK, CloudFormation
+
+## Setup IAM first
+
+IAM -> Add User -> 
+
+- Name: *my-cli*
+- Access type: `Programmatic`
+- Permissions: Attach Existing Policies Directly
+  - `AdministratorAccess` gives us everything
+
+Then copy the access ID and key over somewhere safe.
+
+Run `aws configure` to set things up.
+
+```bash
+ aws configure
+ AWS Access Key ID [None]: <redacted>
+ AWS Secret Access Key [None]: <redacted>
+ Default region name [None]: us-east-1
+ Default output format [None]: json
+ ~
+```
+
+## Some CLI commands to try
+
+This is pretty much like the `openstack` CLI.
+
+- `aws ec2 describe-regions`
+- `aws ec2 describe-instances --filters "Name=instance-type,Values=t2.micro"` - Using some filters
+
+There is a `--query` arg that uses *JMESPath*, e.g.
+
+- `aws ec2 describe-images --query "Images[0].ImageId"`
+
+## SDK
+
+Similarly, you can use the SDK for better control. e.g. `ec2.describeImages({ ... })`
+
+## Blueprints / CloudFormation
+
+Covered above already in brief. Contains:
+
+- Format version
+- Description
+- Parameters - These are things you can set in the UI via drop-down etc, like ssh keys, AZ names, SG, etc
+  - You can also set default values, remove echo (for sensitive text), specify allowed values and so on.
+- Resources - instances, network, LB, EIP etc
+- Outputs - return something from the template, like the generated hostname
+  - Use `!GetAtt` for this. e.g. `!GetAtt 'Server.PublicDnsName'`
+
+## Updates
+
+Normally if you want to increase CPU/Mem, you'd have to power down, edit
+settings, power back up. CF makes it all declarative. In this case, change the
+`InstanceType` and redeploy, and it will figure out what to do.
+
+## Template vs Stack
+
+If you run a template to create a certain infrastructure, it's called a stack.
+Think of template as a class and stack as the object instantiated by it.
+
+# References
+
+- [Cloudformation templates](https://github.com/widdix/aws-cf-templates)
+- [AWS quick starts](https://aws.amazon.com/quickstart/?solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc&awsf.filter-tech-category=*all&awsf.filter-industry=*all&awsf.filter-content-type=*all)
+
