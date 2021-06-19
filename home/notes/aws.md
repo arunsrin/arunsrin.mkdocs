@@ -156,6 +156,100 @@ settings, power back up. CF makes it all declarative. In this case, change the
 If you run a template to create a certain infrastructure, it's called a stack.
 Think of template as a class and stack as the object instantiated by it.
 
+# Automation: CF, Beanstalk, OpsWorks
+
+- Elastic Beanstalk: fixed runtimes and conventions 
+    - Config Management Tools: PHP, NodeJS, .Net
+    - Deployment Runtime: Java, Python, Ruby, Go, Docker
+- OpsWorks: just chef, ugh
+    - Config Management Tools: PHP, NodeJS
+    - Deployment Runtime: Java, Ruby, or any custom one
+- CF: write shell scripts that run post-install
+    - Config Management Tools: any
+    - Deployment Runtime: any
+
+## CF User Data
+
+Find it at `http://169.254.169.254/latest/user-data`. Upto 16kb can be injected
+into the VM at boot time.
+
+It needs to be in base64 format though, so you inject it like
+this:
+
+```
+UserData:
+  'Fn::Base64': !Sub |
+    #!/bin/bash -x
+    export MY_PASSWORD="${MY_PASSWORD}"
+    /usr/bin/start.sh
+```
+
+## CF Variables
+
+Just use `!Sub`, for instance:
+
+```
+!Sub 'Your VPD id is ${VPC}' # same as !Ref VPC
+!Sub '${VPC.CidrBlock}' # same as !GetAtt 'VPC.CidrBlock'
+```
+
+## Elastic Beanstalk
+
+OS and runtime managed by AWS. Logical blocks are:
+
+- An *application* which contains versions, environments and configurations.
+- A *version* which identifies a specific release.
+- A *configuration template* for app and platform configs.
+- An *environment* where a specific version and config will be deployed.
+
+## Create the application
+
+`aws elasticbeanstalk create-application --application-name etherpad`
+
+## Create a version
+
+Must exist in S3.
+
+```
+aws elasticbeanstalk create-application-version --application-name etherpad \
+ --version-label 1 \
+ --source-bundle "S3Bucket=awsinaction-code2,S3Key=chapter05/etherpad.zip"
+```
+ 
+## Create an environment
+
+See what PaaS offerings exist:
+
+```
+aws elasticbeanstalk list-available-solution-stacks
+# for the nodeJS one we need in this example:
+aws elasticbeanstalk list-available-solution-stacks --output text \
+ --query "SolutionStacks[?contains(@, 'running Node.js')] | [0]"
+```
+
+There's a bunch of stuff for IIS, Java, PHP, Python, Ruby, Tomcat, Go...
+
+Then create it:
+
+```
+$ aws elasticbeanstalk create-environment --environment-name etherpad \
+ --application-name etherpad \
+ --option-settings Namespace=aws:elasticbeanstalk:environment,\
+ OptionName=EnvironmentType,Value=SingleInstance \                 1
+ --solution-stack-name "$SolutionStackName" \
+ --version-label 1
+```
+
+## Cleanup
+
+Destroy the environment with `terminate-environment`, and the
+application with `delete-application`.
+
+## OpsWorks
+
+um let's move on, it's Chef.
+
+
 # References
 
 - [Cloudformation templates](https://github.com/widdix/aws-cf-templates)
