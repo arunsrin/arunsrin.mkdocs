@@ -249,9 +249,226 @@ application with `delete-application`.
 
 um let's move on, it's Chef.
 
+# Securing AWS: IAM, SG, VPC
+
+Usual stuff here, pretty familiar with app and OS security
+which is not covered anyway. SG for limiting network access,
+VPC for private networks, IAM for RBAC.
+
+## Systems Manager
+
+Lets you manage all your instances from a single pane, run
+remote commands on all of them, and so on.
+
+Also let's you directly access your resources rather than via ssh.
+
+## IAM
+
+- *user*
+- *group*
+- *role*
+- *policy*
+
+Use IAM users for API access. Allows fine-grained association
+to groups and resources.
+
+
+### Policies
+
+An example:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Sid": "1",
+    "Effect": "Allow",
+    "Action": "ec2:*",
+    "Resource": "*"
+  }, {
+    "Sid": "2",
+    "Effect": "Deny",                      1
+    "Action": "ec2:TerminateInstances",    2
+    "Resource": "*"
+  }]
+}
+```
+
+In this case, a user attached to this policy could do
+everything in ec2 except terminate the instances.
+
+If something is both Denied and Allowed, Deny takes
+precedence.
+
+### ARN
+
+An AWS Resource Name (ARN) is a unique identifier with this structure:
+
+`arn:aws:ec2:us-east-1:123456789:instance/i-zxcv123v`
+
+Service / Region / Account ID / Resource type / Resource
+
+Account ID is 12 digits.
+
+Run `aws iam get-user` to see what you're logged in as, what
+your account id is, etc.
+
+### Kinds of policies
+
+- Managed policy - Can be reused in your account. AWS
+maintans some (admin, read-only etc), customers can maintain
+their own.
+- Inline policy - Belongs to a specific role/user/group.
+
+### Creating my IAM admin user
+
+```
+aws iam create-group --group-name "admin"
+
+#verify with
+aws iam list-groups
+
+aws iam attach-group-policy --group-name "admin" \
+ --policy-arn "arn:aws:iam::aws:policy/AdministratorAccess"
+
+# verify with
+aws iam list-attached-group-policies --group-name admin
+
+aws iam create-user --user-name "arunsrin"
+
+# verify with
+aws iam list-users
+
+# add to group
+aws iam add-user-to-group --group-name "admin" --user-name "arunsrin"
+
+# set password
+export AWS_PASSWORD='<your-password>'
+aws iam create-login-profile --user-name "arunsrin" --password "$AWS_PASSWORD"
+
+```
+
+Then login to `https://$ACCOUNT_ID/signin.aws.amazon.com/console` and set up the
+following in the account security settings:
+
+- Access keys
+- MFA
+- Upload SSH keys to AWS CodeCommit
+
+### Authenticating AWS resources with roles
+
+An EC2 instance might need to talk to S3 and so on. Instead of using IAM users
+and uploading those secrets to each instance, use IAM Roles instead. The
+credentials are automatically injected into the instance.
+
+In CF you can just declare an inline policy giving access to an instance to a
+specific API.
+
+## SG
+
+Create and use [VPC Flow
+Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html) to debug
+problems in this layer.
+
+The source/dest of an SG can either be an IP address or another SG. A good use
+case for the latter is a bastion host. You can define a SG to only allow SSH to
+the rest of the environment if the source is the bastion instance, irrespective
+of its IP.
+
+Example that allows ssh to the bastion host only from a public IP, and ssh to
+all other instances only *from* the bastion host's SG:
+
+```
+SecurityGroupBastionHost:
+  Type: 'AWS::EC2::SecurityGroup'
+  Properties:
+    GroupDescription: 'Allowing incoming SSH and ICPM from anywhere.'
+    VpcId: !Ref VPC
+    SecurityGroupIngress:
+    - IpProtocol: icmp
+      FromPort: "-1"
+      ToPort: "-1"
+      CidrIp: '0.0.0.0/0'
+    - IpProtocol: tcp
+      FromPort: '22'
+      ToPort: '22'
+      CidrIp: !Sub '${IpForSSH}/32'
+SecurityGroupInstance:
+  Type: 'AWS::EC2::SecurityGroup'
+  Properties:
+    GroupDescription: 'Allowing incoming SSH from the Bastion Host.'
+    VpcId: !Ref VPC
+    SecurityGroupIngress:
+    - IpProtocol: tcp
+      FromPort: '22'
+      ToPort: '22'
+      SourceSecurityGroupId: !Ref SecurityGroupBastionHost
+```
+
+## VPC
+
+Private address ranges:
+- `10.0.0.0/8`
+- `172.16.0.0/12`
+- `192.168.0.0/16`
+
+Use a subnet to separate concerns. Private for DB, backend, Public for
+frontend, etc. Goes well with the SG concept above to restrict traffic between
+subnets.
+
+One can attach an *Internet Gateway* to a VPC to NAT public traffic to the
+private IPs.
+
+You can also create *Network ACLs* and attach to a VPC. Unlike SGs though,
+these are stateless. i.e. for TCP and any bidirectional traffic to work, you'd
+need to explicitly mention ingress and egress for, say, port 22. Also consider
+that incoming connections will use an ephemeral port.. Also the ordering
+matters here and first matching rule is applied and rest are skipped.
+
+Overall, stick to SGs and use NACLs only for finetuning.
+
+### Implementation
+
+To create an overall VPC with a public subnet that can be reached from the
+outside world:
+
+- `AWS::EC2::VPC` creates the VPC with a certain overall CIDR range.
+- `AWS::EC2::InternetGateway` connects you to the outside world.
+- `AWS::EC2::VPCGatewayAttachment` connects the above 2.
+
+- `AWS::EC2::Subnet` carve out a smaller new subnet from the VPC above.
+- `AWS::EC2::RouteTable` routeTable linked to VPC above.
+- `AWS::EC2::SubnetRouteTableAssociation` links the 2 above
+- `AWS::EC2::Route` specifies a routing rule from the InternetGateway to the RouteTable
+- `AWS::EC2::NetworkAcl` firewall rules
+- `AWS::EC2::SubnetNetworkAclAssociation` Connect Network Acl to Subnet
+
+For a private subnet that you want to restrict, you'd skiip the InternetGateway
+bits. As long as its in the same VPC, entities in other subnets can reach each
+other.
+
+Don't forget to attach the SecurityGroup and SubnetId to the EC2 instance,
+under NetworkInterfaces.
+
+For devices in an internal subnet to connect to the outside world, use a NAT
+gateway in a public subnet and create a route to it from the inside:
+
+- `AWS::EC2::Subnet` dedicated subnet for public nat
+- `AWS::EC2::RouteTable` in the overall VPC
+- `AWS::EC2::Route` allowing 0.0.0.0 egress from RouteTable to InternetGateway
+- `AWS::EC2::EIP` elastic IP for the Nat Gateway
+- `AWS::EC2::NatGateway` with above elastic IP and the Subnet created initially
+- `AWS::EC2::Route` routes 0.0.0.0 egress from internal RouteTable to NatGateway
+
+Since traffic via a NAT Gateway is billed, 2 alternatives are:
+- Use a public subnet if possible, instead of a private one
+- Use `VPC endpoints` for accessing AWS services like S3
 
 # References
 
 - [Cloudformation templates](https://github.com/widdix/aws-cf-templates)
 - [AWS quick starts](https://aws.amazon.com/quickstart/?solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc&awsf.filter-tech-category=*all&awsf.filter-industry=*all&awsf.filter-content-type=*all)
+- [List of IAM policies](https://iam.cloudonaut.io/)
+
+
 
