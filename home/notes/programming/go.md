@@ -1135,6 +1135,159 @@ In the above we had some estimates of the types. If you don't know the type at a
 
 Too long to print here. [Here](https://gist.github.com/arunsrin/030f0818a6ead6c55243c15f190fa682) it is.
 
+# Errors
+
+Always return an `error` as the last return value. Simple
+example:
+
+```go
+func calcRemainderAndMod(num, denom int) (int, int, error) {
+	if denom == 0 {
+		return 0, 0, errors.New("denom is 0")
+	}
+	return num / denom, num % denom, nil
+}
+```
+
+!!!note
+    No capitalization, punctuation, newlines in error strings.
+
+
+Reasons for returning instead of throwing:
+- Simpler code paths
+- Force developers to check and handle natively since all
+variables must be read in go
+
+## Alternate way
+
+Rather than `errors.New("some message")`, one can also do this:
+
+```go
+  fmt.ErrorF("%d isn't even", i)
+```
+
+## Sentinel Errors
+
+Their names start with `Err` by convention, and indicate that
+no further processing is possible.
+
+Example: the `zip` package has `zip.ErrFormat`.
+
+Once declared, it is part of the public API of your package.
+So use carefully, or just pick one that's already there.
+
+Looks messy actually, just don't do it.
+
+## Adding more info
+
+Since the error interface is just a string:
+
+```go
+type error interface {
+  Error() string
+}
+```
+
+You can extend it quite easily like so:
+
+```go
+struct MyError {
+  StatusCode int
+  Message string
+}
+```
+
+And use it in your code like this:
+
+```go
+  return nil, MyError{
+    StatusCode: 400,
+    Message: fmt.Sprintf("bad request %s", uid)
+  }
+```
+
+## Wrapping errors
+
+You can chain your information to a downstream error using
+`fmt.Errorf`'s `%w` verb.
+
+On the receiving side you can unwrap with `errors.Unwrap`.
+But you would'nt usually do this. Instead, use `errors.Is`
+and `errors.As`.
+
+Once you wrap something, you can't compare and check if a
+certain Sentinel Error occurred. This is where `errors.Is`
+helps. It iterates throught the error chain and tells you if
+a match is found.
+
+```go
+  if err != nil {
+    if errors.Is(err, os.ErrNotExist) {
+      fmt.Println("That file doesn't exist")
+    }
+  }
+```
+
+You can also implement `Is()` in your custom Error Type and
+do your own pattern matching implementation.
+
+`errors.As` lets you check if a returned error matches a certain type.
+
+```go
+err := AFunctionThatReturnsAnError()
+var myErr MyErr
+if errors.As(err, &myErr) {
+  fmt.Println(myErr.Code)
+}
+```
+
+Second argument sould either be a pointer to an error, or a
+pointer to an interface.
+
+Don't use this unless you know what you're doing.
+
+## panic and recover
+
+When a panic happens:
+- current function exits immediately
+- all its defers run
+- then all the defers of the calling function run, and so on
+- finally when main is reached, the program exits with a message and stacktrace
+
+You can call panic in your code, usually with a string.
+
+```go
+func main() {
+	doPanic("goodbyeee")
+}
+
+func doPanic(msg string) {
+	panic(msg)
+}
+```
+
+You can call a `recover` inside a defer to halt the panic and continue execution.
+
+In the following example, division by zero does not kill the
+program, it continues to the next iteration:
+
+```go
+func main() {
+	for _, val := range []int{1, 2, 0, 6} {
+		div60(val)
+	}
+}
+
+func div60(i int) {
+	defer func() {
+		if v := recover(); v != nil {
+			fmt.Println(v)
+		}
+	}()
+	fmt.Println(60 / i)
+}
+```
+
 # Standard Library
 
 Useful stuff from the standard library
