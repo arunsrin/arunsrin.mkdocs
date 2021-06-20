@@ -464,11 +464,94 @@ Since traffic via a NAT Gateway is billed, 2 alternatives are:
 - Use a public subnet if possible, instead of a private one
 - Use `VPC endpoints` for accessing AWS services like S3
 
+# Lambda
+
+- No updates, no remote access
+- Billed by invocation
+- Integrated with other AWS infra well
+- Java, Node, C#, Python, Go
+- Publish metrics to CloudWatch by default
+
+## Creating a lambda
+
+Lots of blueprints available.
+
+Seems pretty straightforward to create. We selected a
+blueprint called `lambda-canary`, a simple python script that
+hits a site and checks for a string.
+
+Scheduling uses cron syntax but also a `rate` syntax, e.g.
+`rate(1 hour)`. EventBridge does this.
+
+On submission, you get a nice editor to tweak your code, a
+tab to Test it, Monitor it, and so on.
+
+## Alerting
+
+Now to get an email alert when something changes, you need to
+use CloudWatch. Each metric published by lambda has:
+- Invocations: how many times it was called successfully or unsuccessfully
+- Errors: exceptions, timeouts and other failures in the code
+- Duration
+- Throttles: If we hit a limit and AWS throttles the number of invocations of this lambda, it shows up here.
+
+Errors & Throttles are good metrics to create alerts.
+
+- Go to CloudWatch in the console
+- Alarms -> Create Alarm
+- Select metrics -> Lambda -> by Function Name -> arunsrin-site-healthcheck | Errors
+- Proceed. Select `Sum` as the statistic
+- `Static` Condition, whenever Error is `>=` a fixed value, say, `2`
+
+!!!note
+    lambda functions run outside your VPC by default and have
+    full internet access. To access the parts within your
+    private network in your VPC, you'd have to define the
+    VPC, subnets and SG for your lambda function
+
+## CloudWatch / CloudTrail
+
+So far we have seen its metrics, logs and alarms. But it does
+events too. Any state change in an EC2 instance results in a
+new emit. We can detect those events in a lambda function and
+take certain actions.
+
+*CloudTrail* is the component that raises events.
+
+You write a rule to filter certain events, like *RunInstances*.
+
+Then for python you would implement a function like this:
+
+
+```py
+def lambda_handler(event, context):
+  # insert your code
+  return
+```
+
+- 300 second limit for each invocation
+- Cold start takes time: download dependencies, start runtime..
+
+## Serverless Application Model
+
+An extension of CF that let's you define lambdas. Your
+scripts in the folder are bundled and uploaded.
+
+## Stitching it together
+
+To make a backend app in this stack you would use something
+like these:
+
+- API Gateway - Secure and scalable REST APIs
+- Lambda - triggered by above
+- Object store and NoSQL DB - used by above
+
 # References
 
 - [Cloudformation templates](https://github.com/widdix/aws-cf-templates)
 - [AWS quick starts](https://aws.amazon.com/quickstart/?solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc&awsf.filter-tech-category=*all&awsf.filter-industry=*all&awsf.filter-content-type=*all)
 - [List of IAM policies](https://iam.cloudonaut.io/)
+- AWS Lambda in Action, by Danilo Poccia
 
 
 
