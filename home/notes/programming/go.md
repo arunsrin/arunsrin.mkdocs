@@ -1288,6 +1288,161 @@ func div60(i int) {
 }
 ```
 
+# Modules, Packages, Imports
+
+Core concepts: 
+
+- repositories - where in VCS you'd store your code
+- modules - root of a Go library or app
+- packages - modules consist of one or more of these
+
+Modules should be globally unique, like Java's packages.
+Convention is to have the repo e.g.
+`github.com/arunsrin/blah`
+
+Have a `go.mod` in the root directory to declare a module.
+Use the `go mod` command to manage this file.
+
+```sh
+learninggo/ch09/my1stmodule ❯ go mod init github.com/arunsrin/example01/v2
+go: creating new go.mod: module github.com/arunsrin/example01/v2
+learninggo/ch09/my1stmodule via  v1.16.5 ❯ cat go.mod
+module github.com/arunsrin/example01/v2
+
+go 1.16
+learninggo/ch09/my1stmodule via  v1.16.5 ❯
+```
+
+A `require` section declares your dependencies. E.g.
+
+```go
+require (
+    github.com/learning-go-book/formatter v0.0.0-20200921021027-5abc380940ae
+    github.com/shopspring/decimal v1.2.0
+)
+```
+
+A `replace` section let's you override a module's location,
+and an `exclude` section prevents a specific version from
+being used.
+
+## Packages
+
+Say you have 2 packages, `formatter` and `math` in 2 subfolders in your module. Use them with the full path in your `main.go` like so:
+
+
+```go
+import (
+    "fmt"
+
+    "github.com/learning-go-book/package_example/formatter"
+    "github.com/learning-go-book/package_example/math"
+)
+```
+
+!!!warning
+        However tempting it may be, don't use relative paths.
+
+Your packages should declare the package name as the first
+line, e.g. `package formatter`. Usually this is same as your
+directory name.
+
+Use good naming conventions:
+- Bad: `util.ExtractNames`, `util.FormatNames`
+- Good: `extract.Names`, `format.Names`
+
+## Good module conventions
+
+- Create a `cmd/` directory, with one sub-folder for each
+binary built from the module.
+- All other go code go into packages inside a `pkg/`
+directory.
+
+## Overrides
+
+Example: Both `crypto/rand` and `math/rand` exist. So the equivalent of python's `import blah as blah2` is:
+
+```go
+import (
+    crand "crypto/rand"
+    "encoding/binary"
+    "fmt"
+    "math/rand"
+)
+```
+
+## godoc
+
+Place the comment above the thing being documented, with no
+new lines in between.
+
+Before the package declaration: package-level comments.
+
+## internal Packages
+
+When defines as `internal`, everything exported by that
+Package is only visible to other sibling packages.
+
+## init Function
+
+Avoid. A function called `init()` with no parameters and
+return values. Gets run the first time a package is
+referenced by another.
+
+## Check available versions of a module
+
+```sh
+go list -m -versions github.com/learning-go-book/simpletax
+```
+
+To downgrade to a specific version:
+
+```sh
+go get github.com/learning-go-book/simpletax@v1.0.0
+```
+
+## Major versions
+
+For all versions apart from 0 and 1, the module path must end
+in `vN` where `N` is the major version. E.g.
+
+`"github.com/learning-go-book/simpletax/v2"`
+
+In the code itself you can do one of these 2:
+- Create a sub-directory called `v2` or whatever and copy
+your README, LICENSE fiiles.
+- Create a branch called `v2` or keep version 2 in master and
+create a branch called `v1` for the legacy version.
+
+## Vendoring
+
+Keep copies of dependencies inside your module.
+
+`go mod vendor`
+
+## Module Proxy Server
+
+go's mirror. First tries there, and downloads and caches if
+not present.
+
+Google also maintains a *sum database* that has version
+information. Protects from malicious version modifications.
+
+Alternates to this default behaviour:
+- Use a different proxy server like JFrog's [GoCenter](https://gocenter.io)
+	- To do this,`export
+GOPROXY="https://gocenter.io,direct"`
+- Disable the behaviour: `export GOPROXY=direct`
+- Run your own
+
+### Private proxy servers
+
+Set `GOPRIVATE`:
+
+`export GOPRIVATE=*.example.com,company.com/repo`
+
+Anything matching the above will be downloaded directly.
+
 # Standard Library
 
 Useful stuff from the standard library
@@ -1300,12 +1455,14 @@ From `math/rand`: `rand.Intn(10)` returns a random number between 0 and 10. Seed
 
 # Third Party
 
-Useful [stuff](stuff) from the ecosystem. Search in this page for details.
+Useful stuff from the ecosystem. Search in this page for details.
 
 - `go install github.com/rakyll/hey@latest`
 - `go install golang.org/x/tools/cmd/goimports@latest`
 - `go install golang.org/x/lint/golint@latest`
 - `go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@latest`
+
+The equivalent of pypi here is [pkg.go.dev](https://pkg.go.dev). It automatically indexes open-source go projects.
 
 # References
 
