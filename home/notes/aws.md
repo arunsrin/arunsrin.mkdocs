@@ -546,6 +546,143 @@ like these:
 - Lambda - triggered by above
 - Object store and NoSQL DB - used by above
 
+# Data Storage
+
+- S3 - access via AWS API, third party tools
+- Glacier - very slow
+- EBS (SSD) - attached to instance via network
+- EC2 Instance Store (SSD) - attached to instance directly
+- EFS - NFSv4.1 - attached via network
+- RDS - MySQL, SSD
+- Elasticache - Redis / memcached protocol
+- DynamoDB - access via AWS API (SDKs, CLI)
+
+# S3
+
+Make a bucket:
+
+```sh
+$ aws s3 mb s3://arunsrin
+make_bucket: arunsrin
+$
+```
+
+Upload:
+
+```sh
+aws s3 sync ~/code/dotfiles/ s3://arunsrin/dotfiles
+```
+
+List contents:
+
+```sh
+aws s3 ls 
+aws s3 ls arunsrin/
+aws s3 ls arunsrin/dotfiles/
+```
+
+Download:
+
+```sh
+aws s3 cp --recursrive s3://arunsrin s3backup
+```
+
+Remove:
+
+```sh
+aws s3 rm --recursive s3://arunsrin/dotfiles
+```
+
+## Versioning
+
+Disabled by default. Replacing a key with different content will wipe out the
+old data. Turn on versioning:
+
+```sh
+aws s3api put-bucket-versioning --bucket arunsrin \
+ --versioning-configuration Status=Enabled
+```
+
+## Access
+
+Create a bucket policy and upload it. Essentially we want to Allow Access, to
+Anyone, to be able to GetObjects from s3, from our Bucket:
+
+```json
+{
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Sid":"AddPerm",
+      "Effect":"Allow",
+      "Principal": "*",
+      "Action":["s3:GetObject"],
+      "Resource":["arn:aws:s3:::$BucketName/*"]
+    }
+  ]
+}
+```
+
+Then upload it:
+
+```sh
+aws s3api put-bucket-policy --bucket arunsrin-uploads --policy file://s3-policy.json
+```
+
+## Static website hosting
+
+Do the above to make it publicly accessible, then upload your html files, and
+do this:
+
+```sh
+aws s3 website s3://$BucketName --index-document helloworld.html
+```
+
+You can access it on a url like this:
+
+`http://$BucketName.s3-website-$Region.amazonaws.com`
+
+E.g. mine is http://arunsrin-uploads.s3-website-us-east-1.amazonaws.com/
+
+!!!warning
+	At this point I tried to have a CNAME from my domain to the above, and
+	realized it didn't work.
+
+Apparently the CNAME and bucket name have to match. So I had to make a new
+bucket with the correct name and copy the content over, and re-enable public
+access and static website.
+
+```sh
+aws s3 mb s3://uploads.arunsr.in
+aws s3 sync s3://arunsrin-uploads s3://uploads.arunsr.in
+aws s3 rb --force s3://arunsrin-uploads
+aws s3 website s3://uploads.arunsr.in --index-document index.html
+aws s3api put-bucket-policy --bucket uploads.arunsr.in --policy file://s3-policy.json
+```
+
+Now [http://uploads.arunsr.in/](http://uploads.arunsr.in/) works :)
+
+But SSL doesn't, TODO see CloudFront for that bit.
+
+## Things to note
+
+s3 is eventually consistent. i.e. concurrent creates and deletes will always be
+atomic, but occassionally you might get stale data.
+
+For better i/o performance, don't name all your keys starting with same
+characters, like image0, image1, image2..
+
+Using `foo/bar` gives a folder-like experience while browsing the contents of
+`foo/` but technically the key is still `foo/bar`.
+
+# Glacier
+
+- Very slow, takes minutes to hours to retrieve data.
+- Storage is cheap, putting and getting out data is pricey.
+
+One can add a *lifecycle rule* in S3 to archive or delete data after a set
+number of days, or move them to glacier.
+
 # References
 
 - [Cloudformation templates](https://github.com/widdix/aws-cf-templates)
