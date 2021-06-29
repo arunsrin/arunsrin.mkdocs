@@ -3,7 +3,8 @@ title: Resume
 # Resume | Arun Srinivasan
 
 
-I'm a Platform Engineer / Tech Lead with 17 years experience in the industry.
+I'm a Platform Engineer / Tech Lead with 17 years of experience in the
+industry.
 14 of these are in Cisco, the most recent of which have been in Webex.
 
 ---
@@ -20,8 +21,8 @@ I am proficient in building platforms on:
 
 I <3 *Python* and it is my go-to language for most tasks.
 
-I like the Security side of things and have been involved in hardening all the
-products I've worked on.
+I have a strong background and interest in the *Security* side of things and
+have been involved in hardening all the products I've worked on.
 
 ---
 
