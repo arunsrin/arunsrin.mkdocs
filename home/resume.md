@@ -72,3 +72,4 @@ I like to *understand and communicate* complex ideas simply.
 - [Email](mailto:gnu.arun@gmail.com)
 - [Linkedin](https://www.linkedin.com/in/arunsrin/)
 - [Github](https://github.com/arunsrin/)
+- [Blog](https://www.arunsr.in) | [Static Site](https://notes.arunsr.in)
