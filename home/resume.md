@@ -68,6 +68,7 @@ I like to *understand and communicate* complex ideas simply.
 
 ## Contact
 
+- Phone: `+91 9945 3 14159`
 - [Email](mailto:gnu.arun@gmail.com)
 - [Linkedin](https://www.linkedin.com/in/arunsrin/)
 - [Github](https://github.com/arunsrin/)
