@@ -38,8 +38,8 @@ openssl x509 -inform der -in certificate.cer -out certificate.pem
 -   Connect to a remote host and see a whole lot of details:
 
 ``` sh
-openssl s_client -verify -showcerts \
--connect remote-hostname.com:443 -msg \
+ openssl s_client -connect remote-hostname.com:443 \
+ -msg -showcerts -verify 1 \
 -CAfile allca.cer -cert myhostname.cer -key myhostname.key
 ```
 
