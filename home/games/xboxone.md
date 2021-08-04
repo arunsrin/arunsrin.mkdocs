@@ -7,6 +7,10 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
 
+  - Resident Evil Revelations 2 - Enjoyed this. Looks like it'd be nice as a
+  co-op game too. I don't like the survival parts of survival horror much so
+  thankfully the easy mode was forgiving.
+
   - **Darksiders 2** - Had a blast playing this. Lovely world design, fun 
   puzzles, and enough variety to keep thing fresh.
   
@@ -95,13 +99,11 @@ only after switching my play style to a more aggressive mode.
 
 As of December 2020, I got Gamepass Unlimited so there's too many to count :)
 
-(As of April 2020, I unsubscribed so I could diversify my hobbies a bit)
+(As of April 2021, I unsubscribed so I could diversify my hobbies a bit)
 
+  - Red Read Redemption 2
   - Dishonored 2
-  - Darksiders 2
   - Middle Earth: Shadow of War
-  - Everspace
-  - Fallout 4
   - Witcher 3
 
 ## Abandoned
@@ -111,3 +113,7 @@ As of December 2020, I got Gamepass Unlimited so there's too many to count :)
   - XCOM 2 - Too hard/stressful for me :( Great game though.
   - Guacamelee - About 60% of the way, I gave up at a frustratingly hard section.
   - Ori 1 - Lovely  game but I hate the frustrating experience.
+  - Everspace - I don't like repeating the same thing again and again so it
+  didn't suit my play style.
+  - Fallout 4 - Somehow didn't click for me. Required a more serious investment
+  than I'm able to make currently.
