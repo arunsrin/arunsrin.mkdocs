@@ -140,18 +140,6 @@ swapon /var/swap.img
 free
 ```
 
-### Disable firefox's verification of extension signing
-
-`xpinstall.signatures.required` in `about:config`
-
-### Firefox: open links in background tab always
-
--   Open a new tab, enter `about:config`
--   Search for browser.tabs.loadDivertedInBackground
--   Double click on '`false`' to set 'Value' to '`true`'
--   Go to NewsBlur and open a story with 'o' and see it load in the background
-
-(from newsblur's Goodies page)
 
 ### If df shows no disk space even after deleting files, check this output:
 

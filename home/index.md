@@ -49,6 +49,7 @@ One-liners for a variety of tools I use regularly.. Linux, openssl and
 so on.
 
 - [AWS](notes/aws.md)
+- [Browsers](notes/browsers.md)
 - [Docker](notes/docker.md)
 - [Editors](notes/editors.md)
 - [Git](notes/git.md)
