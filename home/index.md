@@ -48,6 +48,7 @@ Here are notes on Oxford's *Very Short Introduction To..* series.
 One-liners for a variety of tools I use regularly.. Linux, openssl and
 so on.
 
+- [Ansible](notes/ansible.md)
 - [AWS](notes/aws.md)
 - [Browsers](notes/browsers.md)
 - [Docker](notes/docker.md)
