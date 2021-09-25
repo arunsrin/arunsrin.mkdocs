@@ -102,8 +102,15 @@ As of December 2020, I got Gamepass Unlimited so there's too many to count :)
 (As of April 2021, I unsubscribed so I could diversify my hobbies a bit)
 
   - Red Read Redemption 2
-  - Dishonored 2
+  - Assassin's Creed Odyssey New Game+ and DLC
+
+## Backlog
+
+Games i've bought that are in my queue
+
+  - Halo Master Chief Collection
   - Middle Earth: Shadow of War
+  - Dishonored 2
   - Witcher 3
 
 ## Abandoned
