@@ -7,6 +7,9 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
 
+  - Quantum Break - A  game based on time-travel with alternating filmed
+  episodes. A lot of fun!
+
   - Resident Evil Revelations 2 - Enjoyed this. Looks like it'd be nice as a
   co-op game too. I don't like the survival parts of survival horror much so
   thankfully the easy mode was forgiving.
