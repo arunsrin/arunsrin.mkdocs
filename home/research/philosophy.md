@@ -1,6 +1,10 @@
 # Philosophy / Morality
 
 ## Vegetarianism
+
+- [Animal Pain and New Mysticism about
+Concsciousness](https://iai.tv/articles/animal-pain-and-the-new-mysticism-about-consciousness-auid-981&utm_source=reddit&_auid=2020)
+
 - [Peter Singer on Animals](http://faculty.webster.edu/corbetre/philosophy/animals/singer-text.html)
 
 - [More on vegetarianism](https://slatestarcodex.com/2019/12/11/acc-is-eating-meat-a-net-harm/),

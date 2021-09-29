@@ -2,7 +2,10 @@
 
 On blocking ads, filter bubbles, fake news and the like.
 
-## Ad blocking
+## Ads and Ad blocking
+
+- [Ads don't work that way](https://meltingasphalt.com/ads-dont-work-that-way/)
+- A slightly different and interesting perspective on how advertising works.
 
 - [Total advertising denial](https://www.devever.net/~hl/total-advertising-denial) - This guy
   blocks everything.

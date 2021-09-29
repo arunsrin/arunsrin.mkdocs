@@ -1,5 +1,10 @@
 # Scepticism
 
+## Behavioural Economics
+
+- [The death of behavioural economics](https://www.thebehavioralscientist.com/articles/the-death-of-behavioral-economics)
+- [Reconstruction of a Train Wreck: How Priming Research Went off the Rails](https://replicationindex.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/)
+
 ## GMOs
 
 People fear new technology. GMOs interest me because they stand on the thin line between fascinating technology and scary dystopia. I think they are a powerful tool for humanity and research in them should be encouraged.
