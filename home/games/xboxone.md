@@ -7,6 +7,15 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
 
+  - Lost Words: Beyond the Page - A touching story of a child coping with loss
+  through stories. Lovely art style and story.
+
+  - Ryse: Son of Rome - Lovely, violent game.
+
+  - The Dark Pictures Anthology: Man Of Medan - A fun horror adventure with 4
+  interlocking characters in an abandoned ship. This game kindled my love for
+  story-driven experiences.
+
   - Quantum Break - A  game based on time-travel with alternating filmed
   episodes. A lot of fun!
 
