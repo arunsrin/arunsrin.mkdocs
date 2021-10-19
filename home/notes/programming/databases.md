@@ -1,5 +1,18 @@
 # Databases
 
+## Cassandra quickstart
+
+I'm actually using ScyllaDB which is compatible with Cassandra.
+
+`cqlsh` is it's shell.
+
+``` sql
+DESCRIBE keyspaces;
+USE <name-of-keyspace>;
+DESCRIBE tables;
+SELECT * FROM <name-of-table>;
+```
+
 ## Postgreql quickstart
 
 ``` sql

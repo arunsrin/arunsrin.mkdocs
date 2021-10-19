@@ -2,6 +2,29 @@
 
 Some kubernetes overview links, with a focus on networking.
 
+## Terminal Enhancements
+
+(Cross posted from [here](https://www.arunsr.in/2021/07/16/k8s-terminal-enhancements/))
+
+### k9s
+
+Get it [here](https://k9scli.io/). My go-to cluster navigator of choice. Very
+vim-like in behaviour.
+
+### kubectl plugins
+
+Get [krew](https://krew.sigs.k8s.io/) which is a plugin manager for kubectl. I
+installed these plugins to start with:
+
+- [ctx](https://github.com/ahmetb/kubectx) – Easily switch between contexts.
+Integrates out of the box with fzf so it’s pretty sweet
+- [ns](https://github.com/ahmetb/kubectx) – Same, for switching namespaces
+rapidly
+- [tail](https://github.com/boz/kail) – Tails across all pods in a service,
+among other things
+- [tree](https://github.com/ahmetb/kubectl-tree) – shows the hierarchy of
+resources (like Service -> Endpoint) in a tree
+
 ## Books
 
 - *Kubernetes in Action* by Marko Luksa.

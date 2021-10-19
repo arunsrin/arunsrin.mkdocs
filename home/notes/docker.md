@@ -42,6 +42,16 @@ Difference between Stopped Container and Image: stopped container
 retains its changes, settings, metadata, filesystem, runtime
 configuration, etc. Images don't have runtime information.
 
+## Better/faster builds
+
+Turn this environment variable on to use the new build kit: 
+
+```sh
+DOCKER_BUILDKIT=1
+```
+
+More [here](https://docs.docker.com/develop/develop-images/build_enhancements/).
+
 ## Dockerfile
 
     FROM centos:7
