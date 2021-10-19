@@ -111,7 +111,9 @@ only after switching my play style to a more aggressive mode.
 
 As of December 2020, I got Gamepass Unlimited so there's too many to count :)
 
-(As of April 2021, I unsubscribed so I could diversify my hobbies a bit)
+*Update 1:* (As of April 2021, I unsubscribed so I could diversify my hobbies a bit)
+
+*Update 2:* (As of October 2021 I resubscribed and am having a blast with it)
 
   - Red Read Redemption 2
   - Assassin's Creed Odyssey New Game+ and DLC

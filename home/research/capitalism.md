@@ -2,6 +2,8 @@
 
 Unfettered capitalism is the root of all evil.
 
+- Pretty much all of the [anti-work](https://www.reddit.com/r/antiwork/) subreddit is a joy to lurk in.
+
 - [Fuck the Plastic Industry](https://www.cbc.ca/documentaries/the-passionate-eye/recycling-was-a-lie-a-big-lie-to-sell-more-plastic-industry-experts-say-1.5735618)
 
 - [Nice
