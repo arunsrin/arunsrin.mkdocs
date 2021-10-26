@@ -21,6 +21,13 @@ On a new machine I clone this repo, copy the dotfiles over and:
 
 Yay!
 
+## ctags
+
+- `ctags -R .` - generates the tags file with exuberant-tags
+  - works for python, c, c++ and quite a few more I think.
+- `Ctrl+]` jumps to definition.
+- `Ctrl+t` jumps back.
+
 ## Compile GNU Emacs on Centos/Fedora/RHEL
 
 ``` sh
