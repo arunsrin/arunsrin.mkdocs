@@ -7,6 +7,10 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
 
+  - Halo: CE - With Infinite releasing soon, I thought it would be nice to dip
+  my feet into this franchise. The first game feels a bit dated in some ways,
+  but was pretty enjoyable overall.
+
   - Lost Words: Beyond the Page - A touching story of a child coping with loss
   through stories. Lovely art style and story.
 
@@ -122,7 +126,6 @@ As of December 2020, I got Gamepass Unlimited so there's too many to count :)
 
 Games i've bought that are in my queue
 
-  - Halo Master Chief Collection
   - Middle Earth: Shadow of War
   - Dishonored 2
   - Witcher 3
