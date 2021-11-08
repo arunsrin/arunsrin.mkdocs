@@ -1,5 +1,37 @@
 # Databases
 
+## Notes from "SQL QuickStart Guide"
+
+Author: Walter Shields
+
+### Basic operations
+
+```sql
+-- Single line comment
+/* Multi 
+Line
+Comment */
+SELECT FirstName, LastName, Email, City from customers;
+```
+
+Once more, using aliases:
+
+```sql
+SELECT FirstName AS "First Name", LastName AS "Surname", Email, City
+from customers;
+```
+
+And again, with sorting:
+
+```sql
+SELECT FirstName AS "First Name", LastName AS "Surname", Email, City
+from customers
+ORDER BY Surname DESC;
+```
+
+Show only first 10 records: use the keyword `LIMIT`.
+
+
 ## Cassandra quickstart
 
 I'm actually using ScyllaDB which is compatible with Cassandra.
