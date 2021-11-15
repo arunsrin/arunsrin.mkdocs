@@ -31,6 +31,134 @@ ORDER BY Surname DESC;
 
 Show only first 10 records: use the keyword `LIMIT`.
 
+### Intermediate operations
+
+/Operators/ are used with other clauses like `SELECT` and `WHERE`. Examples:
+
+- Comparison operators like `=`, `>`, `<=` or `<>`
+- Logical operators: `BETWEEN`, `IN`, `LIKE`, `AND`, `OR`
+- Arithmetic operators like `+`, `-`, `/`, `*` and `%`
+
+```sql
+SELECT
+	Total AS [Original Amount],
+	Total + 10 AS [Addition example],
+	Total - 10 AS [Subtraction example]
+FROM
+	invoices
+ORDER BY
+	Total DESC;
+```
+
+#### Filtering with `WHERE`:
+
+```sql
+SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE Total = 1.98
+ORDER BY InvoiceDate;
+```
+
+`WHERE` always comes after the `FROM` but before the `ORDER BY`.
+
+`BETWEEN` gives a range, e.g. `WHERE Total BETWEEN 1.98 AND 5.00`
+
+#### Searching in text:
+
+```sql
+SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE BillingCity IN ('Tucson', 'Paris', 'London')
+ORDER BY Total
+```
+
+#### Wildcard search with LIKE
+
+```sql
+SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE BillingCity LIKE 'T%'
+ORDER BY Total
+```
+
+(You can do a `NOT LIKE 'T%'` to invert the results)
+
+#### Filtering by date
+
+```sql
+SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE InvoiceDate = '2009-01-03 00:00:00'
+ORDER BY Total
+```
+
+#### Something more interesting:
+
+```sql
+SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE InvoiceDate BETWEEN '2009-01-01 00:00:00' AND '2009-12-31 23:59:59'
+ORDER BY InvoiceDate
+```
+
+#### Using the Date() function
+
+Let's you skip the time, for instance.
+
+```sql
+SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE DATE(InvoiceDate) = '2009-01-03'
+ORDER BY Total
+```
+
+#### Multiple AND/OR:
+
+```sql
+SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE BillingCity LIKE 'p%' OR BillingCity LIKE 'd%'
+ORDER BY Total
+```
+
+#### Specifying order:
+
+```sql
+SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE Total > 1.98 AND (BillingCity LIKE 'p%' OR
+	BillingCity LIKE 'd%')
+ORDER BY Total
+```
+
+#### The CASE operator
+
+Lets you create a new, temporary field based on some conditions.
+
+```sql
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity,
+	Total,
+	CASE
+	WHEN TOTAL < 2.00 THEN 'Baseline Purchase'
+	WHEN TOTAL BETWEEN 2.00 AND 6.99 THEN 'Low Purchase'
+	WHEN TOTAL BETWEEN 7.00 AND 15.00 THEN 'Target Purchase'
+	ELSE 'Top Performers'
+	END AS PurchaseType
+FROM
+	invoices
+ORDER BY
+	BillingCity
+```
+
+- Wrapped with `CASE` and `END`
+- Alias using `AS` to create the new label
+- `WHEN` and `ELSE` to specify the conditions
+
+Now to filter only top performers in the above case, it is trivial to add a
+`WHERE PurchaseType = 'Top Performers'` to the query.
 
 ## Cassandra quickstart
 
