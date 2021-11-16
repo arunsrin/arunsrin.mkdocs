@@ -20,29 +20,6 @@ Here is a list of books read per year, starting November 2019.
 - [2020](books/2020.md)
 - [2019](books/2019.md)
 
-Some notes / reviews of books:
-
-- [Despair](books/reviews/despair.md)
-- [The Happiness Hypothesis](books/reviews/happiness.md)
-- [How to Read a Book](books/reviews/how-to-read-a-book.md)
-- [Eats, Shoots & Leaves](books/reviews/eats-shoots-leaves.md)
-- [Good Math](books/reviews/good-math.md)
-- [Flow](books/reviews/flow.md)
-- [The Thinking Person's Guide to Climate Change](books/reviews/thinking-climate-change.md) (IN PROGRESS)
-- [Hate Inc.](books/reviews/hate-inc.md)
-- [Crypto 101](books/reviews/crypto101.md)
-- [We are our brains](books/reviews/we-are-our-brains.md)
-- [The Art of the Infinite](books/reviews/the-art-of-the-infinite.md)
-
-Here are notes on Oxford's *Very Short Introduction To..* series.
-
-[Main page](books/intro/index.md)
-
-- [Accounting](books/intro/accounting.md)
-- [Advertising](books/intro/advertising.md)
-- [Alexander](books/intro/alexander.md)
-- [Anaesthesia](books/intro/anaesthesia.md)
-
 ### Tech Notes
 
 One-liners for a variety of tools I use regularly.. Linux, openssl and
@@ -69,6 +46,47 @@ so on.
     - [Java](notes/programming/java.md)
 - [Security](notes/security.md)
 
+### Games
+
+I have an XBox One S, a PS Vita, a Nintendo 3DS and I used to game on my PC.
+These days the Xbox is the only one that gets any play time.
+
+Here is a list of what I have, what I want and what I've liked so far.
+
+- [Xbox One](games/xboxone.md)
+
+---
+
+## Older Stuff
+
+!!!note
+    These pages are less up to date than others. 
+
+### Book reviews
+
+Some notes / reviews of books:
+
+- [Despair](books/reviews/despair.md)
+- [The Happiness Hypothesis](books/reviews/happiness.md)
+- [How to Read a Book](books/reviews/how-to-read-a-book.md)
+- [Eats, Shoots & Leaves](books/reviews/eats-shoots-leaves.md)
+- [Good Math](books/reviews/good-math.md)
+- [Flow](books/reviews/flow.md)
+- [The Thinking Person's Guide to Climate Change](books/reviews/thinking-climate-change.md) (IN PROGRESS)
+- [Hate Inc.](books/reviews/hate-inc.md)
+- [Crypto 101](books/reviews/crypto101.md)
+- [We are our brains](books/reviews/we-are-our-brains.md)
+- [The Art of the Infinite](books/reviews/the-art-of-the-infinite.md)
+
+Here are notes on Oxford's *Very Short Introduction To..* series.
+
+[Main page](books/intro/index.md)
+
+- [Accounting](books/intro/accounting.md)
+- [Advertising](books/intro/advertising.md)
+- [Alexander](books/intro/alexander.md)
+- [Anaesthesia](books/intro/anaesthesia.md)
+
 ### Research
 
 Here are some notes and links I've collected in topics that interest me. Several
@@ -92,15 +110,7 @@ Some heroes that I look up to, in the tech and literary worlds mostly.
 - [Richard Stallman](heroes/stallman.md)
 - [Noam Chomsky](heroes/chomsky.md)
 
-### Games
-
-I have an XBox One S, a PS Vita, a Nintendo 3DS and I used to game on my PC.
-These days the Xbox is the only one that gets any play time.
-
-Here is a list of what I have, what I want and what I've liked so far.
-
-- [Xbox One](games/xboxone.md)
-
+---
 
 ## About
 
