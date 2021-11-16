@@ -160,6 +160,81 @@ ORDER BY
 Now to filter only top performers in the above case, it is trivial to add a
 `WHERE PurchaseType = 'Top Performers'` to the query.
 
+### Working with multiple tables
+
+Example of a `JOIN` clause:
+
+```sql
+SELECT *
+FROM invoices
+INNER JOIN customers
+ON invoices.CustomerId = customers.CustomerId
+```
+
+Here the CustomerId column in customers table is a primary key, while CustomerId in invoices is a
+foreign key.
+
+With an alias this time:
+
+```sql
+SELECT c.FirstName, c.LastName, i.InvoiceId, i.InvoiceDate, i.Total
+FROM invoices as i
+INNER JOIN customers as C
+ON i.CustomerId = c.CustomerId
+ORDER BY c.LastName
+```
+
+INNER JOIN shows the intersection of 2 tables. Any info in one table that is missing in the other is
+just ignored.
+
+#### LEFT OUTER JOIN
+
+Combines all records in left with matching ones in right. Example:
+
+```sql
+SELECT *
+FROM invocies AS i
+LEFT OUTER JOIN customers AS c
+ON i.CustomerId = c.CustomerId
+```
+
+SQLite will insert `NULL` data when there are no matching records in the right table.
+
+#### RIGHT OUTER JOIN
+
+Same as LEFT, as you'd expect.
+
+#### Joining more than 2 tables
+
+Example:
+
+```sql
+SELECT e.FirstName AS EmpFirstName, e.LastName AS EmpLastName, e.EmployeeId, c.FirstName AS CustomerFirstName, c.LastName AS CustomerLastName, c.SupportRepId, i.CustomerId, i.Total
+FROM invoices as i
+INNER JOIN customers as c
+ON i.CustomerId = c.CustomerId
+INNER JOIN employees as e
+ON c.SupportRepId = e.EmployeeId
+ORDER BY i.Total DESC
+LIMIT 10
+```
+
+#### Using NULL, IS and NOT
+
+Example: show all artists that do not have a corresponding entry in the album table:
+
+```sql
+SELECT 
+	ar.ArtistId AS [ArtistId from Artists table],
+	al.ArtistId AS [ArtistId from Albums table],
+	ar.Name AS [Artist Name],
+	al.Title AS [Album]
+FROM artists AS ar
+LEFT OUTER JOIN albums AS al
+ON ar.ArtistId = al.ArtistId
+WHERE al.ArtistId IS NULL
+```
+
 ## Cassandra quickstart
 
 I'm actually using ScyllaDB which is compatible with Cassandra.
