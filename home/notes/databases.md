@@ -450,6 +450,69 @@ Note that without the `DISTINCT` keyword, we would get a large result with lots
 of repetitions. So this is the equivalent of doing a `set(some_list)` in
 python.
 
+### Views
+
+A virtual table that's basically a stored query that can be executed/references
+by other queries.
+
+Prefix a statement with `CREAE VIEW <blah> AS` to make one. Example:
+
+```sql
+CREATE VIEW V_AvgTotal AS
+SELECT
+	ROUND(AVG(Total), 2) AS [Average Total]
+FROM invoices
+```
+
+Naming with a `V_` prefix is a good convention to follow.
+
+Another example for a joined query:
+
+```sql
+CREATE VIEW V_Tracks_InvoiceItems AS
+SELECT
+	ii.InvoiceId,
+	ii.UnitPrice,
+	ii.Quantity,
+	t.Name,
+	t.Composer,
+	t.Milliseconds
+FROM
+	invoice_items ii
+INNER JOIN
+	tracks t
+ON ii.TrackId = t.Trackid
+```
+Now you can use this in some other query.
+
+To remove it:
+
+```sql
+DROP VIEW V_Tracks_InvoiceItems
+```
+No data is deleted, just the view is removed.
+
+### DML (Data Manipulation Language)
+
+This is about inserting/updating/deleting data. Simplest example:
+
+```sql
+INSERT INTO artists (Name)
+VALUES ('Bob Marley')
+```
+
+Simple UPDATE:
+
+```sql
+UPDATE employees SET PostalCode = '11202'
+WHERE EmployeeId = 9
+```
+And DELETE:
+
+```sql
+DELETE FROM employees WHERE EmployeeId = 9
+```
+
 ## Cassandra quickstart
 
 I'm actually using ScyllaDB which is compatible with Cassandra.
