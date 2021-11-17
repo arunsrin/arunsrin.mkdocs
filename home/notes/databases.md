@@ -235,6 +235,221 @@ ON ar.ArtistId = al.ArtistId
 WHERE al.ArtistId IS NULL
 ```
 
+### Using Functions
+
+Example: Counting occurrences:
+
+```sql
+SELECT COUNT(LastName) AS [Name Count]
+FROM customers
+WHERE LastName LIKE 'B%'
+```
+
+#### Types of Functions
+
+- String: INSTR(), LENGTH(), LOWER(), LTRIM(), REPLACE(), RTRIM(), SUBSTR(), TRIM(), UPPER()
+- Date: DATE(), DATETIME(), JULIANDAY(), STRFTIME(), TIME(), 'NOW'
+- Aggregate: AVG(), COUNT(), MAX(), MIN(), SUM()
+
+#### String manipulation
+
+Adds a space followed by LastName to FirstName:
+
+```sql
+SELECT FirstName || ' ' || LastName AS [Full Name]
+etc.
+```
+
+Substring example, take first five chars of PostalCode:
+
+```sql
+SELECT PostalCode, SUBSTR(PostalCode,1,5) AS [Five-digit Postal]
+etc.
+```
+
+#### Arguments for STRFTIME
+
+- `'%d'` - day of month: 00
+- `'%f'` - fractional seconds: SS.SSS
+- `'%H'` - hour: 00-24
+- `'%j'` - day of year 001-366
+- `'%J'` - Julian day number
+- `'%m'` - month: 01-12
+- `'%M'` - minute: 00-59
+- `'%s'` - seconds since 1970-01-01
+- `'%S'` - seconds: 00-59
+- `'%w'` - day of week: 0-6 (Sunday is 0)
+- `'%W'` - week of year: 00-53
+- `'%Y'` - year: 0000-9999
+
+Timestrings:
+
+- `'YYY-MM-DD'` - A date typed in Year-Month-Day format
+- `'now'` - Current date and time
+- `'DATETIME' field` - A databse field in a date and/or time format
+
+
+Modifiers:
+
+- `'+ X days'` - Add X days to the result
+- Same as above for `months` and `years`, and `-` instead of `+`
+- `'start of the day'` - modifies the time code to represent the beginning of the day
+- Same as above for `month` and `year`
+
+Examples:
+
+```sql
+SELECT 
+STRFTIME('The year is %Y and day is %d and month is %m', 'now')
+AS [Text with Conversion specifications]
+```
+
+Example to calculate age:
+
+```sql
+SELECT 
+	LastName,
+	FirstName,
+	STRFTIME('%Y-%m-%d', BirthDate) AS [Birthday No Timecode],
+	STRFTIME('%Y-%m-%d','now') - STRFTIME('%Y-%m-%d',BirthDate) AS [Age]
+FROM employees
+ORDER BY Age
+```
+#### Aggregations
+
+Main ones are SUM(), AVG(), MIN(), MAX(), COUNT().
+
+Example:
+
+```sql
+SELECT
+	SUM(Total) AS TotalSales,
+	AVG(Total) AS AverageSales,
+	ROUND(AVG(Total), 2) AS RoundedAverageSales,
+	MAX(Total) AS MaxSale,
+	MIN(Total) AS MinSale,
+	COUNT(*) AS SalesCount
+FROM invoices
+```
+
+The `*` in `COUNT(*)` ensures that all values are counted, even records with errors or nulls.
+
+Grouping Aggregates:
+
+```sql
+SELECT
+	BillingCity,
+	AVG(Total)
+FROM invoices
+GROUP BY BillingCity
+ORDER BY BillingCity
+```
+Run this without GROUP BY and you will see that the response is messed up, i.e. it tries to print
+the BillingCity which is a multi-line reponse, and also the AVG(Total) which is a single row.
+
+#### Filtering based on Aggregates with HAVING
+
+`WHERE` does not work with functions. So if you want to show only rows where AVG exceeds 6, use `HAVING`:
+
+```sql
+SELECT
+	BillingCity,
+	AVG(Total)
+FROM invoices
+GROUP BY BillingCity
+HAVING AVG(Total) > 6
+ORDER BY BillingCity
+```
+
+`HAVING` always comes after the `GROUP BY` clause.
+
+The `WHERE` clause tells SQL what data to include in the table. Once the information is filtered and
+aggregate functions are applied, `HAVING` acts as a further filter.
+
+### Subqueries
+
+Basically, one query inside another.
+
+Example: Find the Average of sales, and find all rows that were below this average. Since we can't
+use `WHERE` when you're using an aggregate function, you'd have to make a subquery and embed it in
+another. Example:
+
+```sql
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity,
+	Total
+FROM invoices
+WHERE Total < 
+(select 
+	AVG(Total)
+from invoices)
+ORDER BY Total DESC)
+```
+
+Another example, in a `SELECT` statement:
+
+```sql
+SELECT
+	BillingCity,
+	AVG(Total) AS [City Average],
+	(select
+		avg(total)
+	from
+		invoices) AS [Global Average]
+FROM invoices
+GROUP BY BillingCity
+ORDER BY BillingCity
+```
+
+Another, in a `WHERE` clause, in this case we want to see which sales in 2014
+has beaten 2013's highest sale.
+
+```sql
+SELECT
+	InvoiceDate,
+	BillingCity,
+	Total
+FROM
+	invoices
+WHERE
+	InvoiceDate >= '2013-01-01' AND total > 
+	(select
+		max(Total)
+	from invoices
+	where InvoiceDate < '2013-01-01')
+```
+
+Here's one where we're interested in 3 invoces. We write a query to extract the
+dates they were purchased. Then we pipe that into another query and see all
+sales that happened in those dates.
+
+```sql
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity
+FROM invoices
+WHERE InvoiceDate IN
+	(select InvoiceDate
+	from invoices
+	where InvoiceId in (251,252,255))
+```
+#### DISTINCT
+
+Here we want all tracks that do not appear in invoice_items i.e have never been
+bought. This is the query:
+
+```sql
+select Name, composer from tracks where trackid not in
+(select DISTINCT TrackId from invoice_items)
+```
+
+Note that without the `DISTINCT` keyword, we would get a large result with lots
+of repetitions. So this is the equivalent of doing a `set(some_list)` in
+python.
+
 ## Cassandra quickstart
 
 I'm actually using ScyllaDB which is compatible with Cassandra.
