@@ -16,6 +16,10 @@ These days I stick with Fedora and love it.
 
 ## General Linux
 
+### Check process, thread, utilization and CPU attached to
+
+`ps -mo pid,tid,%cpu,psr -p <process_id>`
+
 ### Check network connections made by a process with strace
 
 `strace -f -e trace=network -o /tmp/strace.txt -s 10000 <cmd> <args>`
