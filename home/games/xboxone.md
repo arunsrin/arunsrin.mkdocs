@@ -10,6 +10,9 @@ The ones in **bold** below are highly recommended.
   - Halo: CE - With Infinite releasing soon, I thought it would be nice to dip
   my feet into this franchise. The first game feels a bit dated in some ways,
   but was pretty enjoyable overall.
+  
+  _ Last Stop: Another interactive story. A light, funny science fiction plot
+  with 3 intersecting stories.
 
   - Lost Words: Beyond the Page - A touching story of a child coping with loss
   through stories. Lovely art style and story.
