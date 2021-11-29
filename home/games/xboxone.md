@@ -7,6 +7,12 @@ The ones in **bold** below are highly recommended.
 
 ## Completed
 
+  - Halo 2 - This was definitely better than the first. Less cut-and-paste
+  levels. The story is starting to get quite interesting too..
+
+  - **Halo: Reach** - My favourite Halo so far! Absolutely blew me away, both
+  gameplay and story-wise.
+
   - Halo: CE - With Infinite releasing soon, I thought it would be nice to dip
   my feet into this franchise. The first game feels a bit dated in some ways,
   but was pretty enjoyable overall.
