@@ -3,21 +3,21 @@
 I prefer single-player Action Adventure open-world games. Bonus points if it has
 a good story.
 
-The ones in **bold** below are highly recommended.
+The ones with a ♥ are highly recommended.
 
 ## Completed
 
   - Halo 2 - This was definitely better than the first. Less cut-and-paste
   levels. The story is starting to get quite interesting too..
 
-  - **Halo: Reach** - My favourite Halo so far! Absolutely blew me away, both
+  - ♥**Halo: Reach** - My favourite Halo so far! Absolutely blew me away, both
   gameplay and story-wise.
 
   - Halo: CE - With Infinite releasing soon, I thought it would be nice to dip
   my feet into this franchise. The first game feels a bit dated in some ways,
   but was pretty enjoyable overall.
   
-  _ Last Stop: Another interactive story. A light, funny science fiction plot
+  - Last Stop: Another interactive story. A light, funny science fiction plot
   with 3 intersecting stories.
 
   - Lost Words: Beyond the Page - A touching story of a child coping with loss
@@ -36,7 +36,7 @@ The ones in **bold** below are highly recommended.
   co-op game too. I don't like the survival parts of survival horror much so
   thankfully the easy mode was forgiving.
 
-  - **Darksiders 2** - Had a blast playing this. Lovely world design, fun 
+  - ♥**Darksiders 2** - Had a blast playing this. Lovely world design, fun 
   puzzles, and enough variety to keep thing fresh.
   
   - Assassin's Creed Origins - Everyone said this was better than Odyssey and
@@ -52,12 +52,12 @@ The ones in **bold** below are highly recommended.
   - Gears 2, Gears 3 - Finished the remaining legacy Gears games during the 2020 
   year-end holidays. An excellent series from start to finish.
   
-  - **Gears of War** - Mindless fun. Thoroughly enjoyed playing this and now I
+  - ♥**Gears of War** - Mindless fun. Thoroughly enjoyed playing this and now I
   intend to play through the rest of the series.
 
   - Rage 2 - I have a soft spot for this series so I liked it.
 
-  - **Assassin's Creed Odyssey** - I've loved greek mythology all my life so
+  - ♥**Assassin's Creed Odyssey** - I've loved greek mythology all my life so
   this was an amazing experience. Very nice variety in play styles
   (ranger/warrior/assassin), and constant loots and upgrades made for a
   addictive gameplay loop. Side quest plots are pretty average.
@@ -80,10 +80,10 @@ only after switching my play style to a more aggressive mode.
     Little disappointed with the overall game. I can't put my hand to exactly
     what felt wrong.
 
-  - **Far Cry 5** - Probably my favourite game on the console so far. Amazing
+  - ♥**Far Cry 5** - Probably my favourite game on the console so far. Amazing
     open world, supports a lot of play styles, nice co-op AI partners.
 
-  - **Rayman Legends** - My kids love this. Exquisite level design & music.
+  - ♥**Rayman Legends** - My kids love this. Exquisite level design & music.
   
   - Life is Strange - I felt a little old playing this, but it was worth completing.
 
@@ -95,9 +95,9 @@ only after switching my play style to a more aggressive mode.
 
   - Watch Dogs - Pretty fun game except for the brooding protagonist.
   
-  - **Titanfall 2** - Absolutely phenomenal single-player campaign.
+  - ♥**Titanfall 2** - Absolutely phenomenal single-player campaign.
   
-  - **Rise of the Tomb Raider** - Probably my favourite series. I have fond
+  - ♥**Rise of the Tomb Raider** - Probably my favourite series. I have fond
     memories of playing *Tomb Raider: Legend* on my PS2.
   
   - Mass Effect: Andromeda - I wish they made more games like this. Phenomenal
@@ -114,7 +114,7 @@ only after switching my play style to a more aggressive mode.
   - Halo 5 - Decent single player campaign. Skipped the multiplayer bits. Had no
     idea what was going on story-wise, as I've never payed a Halo before.
 
-  - Call of Dury - Infinite Warfare - Tolerable single player campaign.
+  - Call of Duty - Infinite Warfare - Tolerable single player campaign.
     Titanfall 2 does this kind of thing a lot better.
 
   - Deus Ex: Mankind Divided - Badly wanted to like this game, but didn't.
