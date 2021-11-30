@@ -31,6 +31,7 @@ so on.
 - [Databases](notes/databases.md)
 - [Docker](notes/docker.md)
 - [Editors](notes/editors.md)
+- [Elastic Stack](notes/elastic.md)
 - [Git](notes/git.md)
 - [Grafana](notes/grafana.md)
 - [Kafka](notes/kafka.md)
