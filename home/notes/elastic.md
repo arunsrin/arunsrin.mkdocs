@@ -256,9 +256,168 @@ it skips all that and does an exact match.
 You can set params for `fuzziness` in your search and it will return
 results accordingly e.g. victer will match with victor.
 
-# Kibana Query Language (KQL)
+## Bucket aggregations
 
-[KQL Guide](https://www.elastic.co/guide/en/kibana/7.15/kuery-query.html)
+Like a GROUP BY basically. Example:
+
+```json
+GET <index_name>/_search
+{
+	"aggs" {
+		"byCategory": {
+			"terms": {
+				"field": "category"
+			}
+		}
+	},
+	"size": 0
+}
+```
+
+- The size is set to 0 so we don't get raw results, but only
+  the aggregated ones.
+  
+You can also bucketize by numerical ranges, e.g. show me everything
+between 1 and 100, 100 and 1000, etc.
+
+## Metric aggregations
+
+Like doing a COUNT or AVG etc on numeric data. It's all json instead
+of SQL. Example:
+
+```json
+GET <index_name>/_search
+{
+	"aggregations": {
+		"download_max" : {
+			"max": {
+				"field": "downloadTotal"
+			}
+		}
+	},
+	"size": 0
+}
+```
+
+A Stats aggregation is similar but it basically does the sum, average,
+mix, max and count in a single shot.
+
+## Buckets based on Geospatial data
+
+- Geodistance aggregation - based on a lat/long, query hits within a
+  certain radius.
+- GeoHash grid aggregation - Divides the map into grids and searches
+  within a wide imprecise grid or narrower, more precise grids.
+
+# Logstash
+
+I already know this quite well. Input/Filter/Output sections etc.
+
+## Input Plugins
+
+- `file` is the most obvious, to read from a file.
+- `beats` tells logstash to pull from a beats daemon. Just takes a
+  `port` setting and nothing else.
+- `jdbc`: imports from a database. Each row becomes an event, each
+  column becomes a field. You can specify your sql statement and how
+  often to query.
+- `imap`: read mails!
+
+## Output Plugins
+
+- `elasticsearch`, and `kafka` obviously.
+- `csv`
+- `pagerduty` to send to PD. e.g. your input plugin could match all
+  5xx errors and output could directly page someone.
+
+## Filter Plugins
+
+`grok` is the one I've used most but there are others.
+
+- `csv` - Tell it to `autodetect_columns` otherwise set yours
+  explicitly, and it will extract csv data.
+- `mutate` - You can `convert` fields here (Age to integer), `rename`
+  them (FName to FirstName), `strip` them, `uppercase` them,
+  etc. Looks quite powerful
+- `grok` - most poweful. match a line against an expression. Use
+  `%{PATTERN:FIELDNAME:type}` to match a pattern with a field and set
+  its type. Some in-built patterns are `TIMERSTAMP_ISO8601`,
+  `USERNAME`, `GREEDYDATA`. A nice list is
+  [here](https://grokdebug.herokuapp.com/patterns#).
+- `date` - You can set a pattern like `dd/MMM/YYY:HH:mm:ss Z` as your
+  case may be. Overrides the `@timestamp` field by default.
+- `geoip` - converts an ip to a geoip json (timezone, lat/long,
+  continent code, country name and code etc.)
+- `useragent` - converts a UA string based on Browserscope data, to
+  OS, browser, version fields.
+
+## Codec Plugins
+
+There are also 'codec' plugins to encode/decode events: these are hit
+just before the input stage, or just before it leaves the output
+stage. Examples:
+
+- `json`: treats data as json, otherwise falls back to plain text and
+  adds a `_jsonparsefailure` tag.
+- `rubydebug` for ruby stuff
+- `multiline` for merging multiple lines into a single event, think a
+  long backtrace. You can specify a regex e.g. any line that starts
+  with a space `"^\s "`, and logstash will merge it with the previous
+  event.
+
+# Elastic Pipelines
+
+Newer elastic versions have an 'ingest node', if you use this you can
+potentially skip all the filtering in logstash. These nodes can do the
+preprocessing before the indexing happens.
+
+You would define a pipeline, with a series of processors. Each
+processor transforms the document in some way.
+
+Some processors: gsub, grok, convert, remove, rename, etc. [Full list
+of processor
+directives](https://www.elastic.co/guide/en/elasticsearch/reference/master/processors.html).
+
+e.g. I've seen `dissect` used to do basically what `grok` does.
+
+You would use the `_ingest` API to play with pipelines.
+
+# Beats
+
+Lightweight shippers. A library called `libbeat` is used. Go is used
+so a single fat binary is all you need. Looks like this does the input
+and output part of logstash, and pipelines do the filter part.
+
+- `filebeat` - takes files and sends them to elastic, kafka, logstash,
+  etc.
+    - You can use an out of the box module, consisting of path to look
+    for logs, elastic Ingest pipeline to send to, elastic templates
+    contianing field definitions, and sample kibana dashboards.
+- `metricbeat` - like collectd.
+- `packetbeat` - real time packet analyzer, understands Application
+  layer like HTTP, MySQL, Redis etc.
+- `heartbeat` - check if service is up and reachable. Supports icmp,
+  tcp, http probes.
+- `winlogbeat` - Reads event logs using windows APIs.
+- `auditbeat` - Skips auditd and directly communicates with underling
+  audit framework apparently.
+- `journalbeat` - For journald.
+- `functionbeat` - For serverless.
+
+3rd party stuff: spring, nginx, mysql, mongo, apache, docker, kafka,
+redis, kafka, amazon*. Full list
+[here](https://www.elastic.co/guide/en/beats/devguide/current/community-beats.html).
+
+
+# Kibana Notes
+
+## Initial Setup
+
+You must first create an index-pattern that aggregates your
+indexes. Then you would see all its fields, and can make each of them
+searchable, aggregatable, etc.
+
+## Queries
 
 Recollect the Term Queries section above. You can search for all those
 exact matches with `field:value`, e.g. `datacenter:sjc`.
@@ -266,4 +425,23 @@ exact matches with `field:value`, e.g. `datacenter:sjc`.
 OOh you can also do wildcard searches, like this: `host:nginx*` will
 match all host fields with the value nginx01, nginx02, etc.
 
+MUST NOT is like this: `~response:200`
 
+Ranges are like this: `response:[301 to 500]`
+
+## KQL
+
+[KQL Guide](https://www.elastic.co/guide/en/kibana/7.15/kuery-query.html)
+
+Example: `response:200 or geoip.city_name:Diedorf`
+
+## Visualizations
+
+Kibana supports these 2 aggregations:
+- Bucket: like a GROUP BY.
+- Metric: you can plot Count, Average, Sum, Min, Max, Standard Deviation, etc.
+
+# X-Pack
+
+You'd see stuff like this on the sidebar: Maps, Machine Learning,
+Infrastructure, Logs, APM, Uptime, Dev Tools, Stack Monitoring.
