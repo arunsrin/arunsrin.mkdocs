@@ -1,5 +1,24 @@
 # Networking
 
+## iperf
+
+This link is quite nice: https://www.golinuxcloud.com/linux-monitor-network-traffic/
+
+How to use iperf:
+
+Whitelist port 5201 on your security group and firewall.
+
+Then start the server first:
+
+`iperf3 -i 5 -s`
+
+Then the client:
+
+`iperf3 -i 5 -t 60 -c <IP/hostname of the server>`
+
+It gives a nice report but apparently isn’t good for latency checks, only
+bandwidth.
+
 ## UDP Client
 
 From [PyMOTW](https://pymotw.com/2/socket/udp.html) :
