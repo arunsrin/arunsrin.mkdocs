@@ -1,20 +1,22 @@
 # Productivity
 
-I like to experiment with different note taking systems. I used Emacs for the
-longest.. more than a decade at work. Plain text still has its appeal. These
-days I switch between tools like normal notebooks, OneNote, Evernote, Notion,
-Roam, and so on.  As of this writing, OneNote seems to tick most of my boxes.
+## Hobby Planning
 
+Once a week I have a 'Planning' session. I skim through my To Dos, what I did this week and what I want to do the next week. This is purely for my personal hobbies and not for work. For example, on one week I might binge-watch a TV show that just came out, so the next week I try to spend more time reading. In this slot, I also skim through my long-term hobby goals, and see what medium / short term steps I'm taking towards reaching them.
 
-Earlier, I also used to hoard a lot of bookmarks. I did not seem to find any
-use with them. So now I try to distil the key thoughts in them into a paragraph
-or two. The pages on this site serves as an output for some of this research.
+Right now I like to balance my team between [reading](../books/index.md) and [playing games](../games/xboxone.md). 
 
-I also keep an eye on To do Apps. A combination of Google Calendar and MS To-do
-actually works well enough for me. I think most procrastination comes from
-fear: a fear of trying new things, of someone reprimanding you, and so on. So
-with a combination of introspection and time-boxing for my tasks, I tend to be
-reasonably productive at work.
+Art is something I want to get better at so I try to do something there as well.
+
+## Tools
+
+I like and highly recommend the following tools:
+
+- MS To Do - this has an indispensable feature called 'Plan My Day' which is the first thing I do every morning. Makes it quite easy to surface things that you had scheduled for a particular day. Cross Platform, so it's really easy to add and review periodically.
+- OneNote - After using text-based editors for years, I've taken a liking to tools that support images. OneNote does this well with a great interface, 3 levels of 'folder' hierarchy and great integration with my stylus.
+- Vim / [Typora](https://typora.io/) - I'm torn between markdown as a store of data and OneNote. Typora seems to bridge both worlds with a really nice UI and seamless integration for images.
+
+# References
 
 ## Note Taking - Analog
 - [Research on non-linear note taking](http://www.idemployee.id.tue.nl/g.w.m.rauterberg/amme/makany-et-al-2008.pdf)

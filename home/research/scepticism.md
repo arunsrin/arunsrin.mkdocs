@@ -1,5 +1,7 @@
 # Scepticism
 
+Sometimes I get into arguments with people about some fairly interesting topics. Other times it's on stupid things they read on social media and swallow without a second thought. Here are some well written articles on interesting topics.
+
 ## Behavioural Economics
 
 - [What has happened down here is the winds have changed](https://statmodeling.stat.columbia.edu/2016/09/21/what-has-happened-down-here-is-the-winds-have-changed/)

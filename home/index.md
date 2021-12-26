@@ -14,6 +14,8 @@ keybindings, so I've felt the need to dump them here.
 
 ### Books
 
+Me and my [books](books/index.md)
+
 Here is a list of books read per year, starting November 2019.
 
 - [2021](books/2021.md)
@@ -95,6 +97,7 @@ are works in progress: I'm yet to move my large collection of bookmarks to these
 sections.
 
 - [COVID-19](research/covid-19.md)
+- [Cryptocurrencies](research/cryptocurrencies.md)
 - [Productivity](research/productivity.md)
 - [Climate Change](research/climate-change.md)
 - [Philosophy](research/philosophy.md)
