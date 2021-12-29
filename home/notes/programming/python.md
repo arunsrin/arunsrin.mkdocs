@@ -83,7 +83,17 @@ import pdb; pdb.set_trace()
 import ipdb; ipdb.set_trace()
 ```
 
-Get help with `help pdb`
+Get help with `help pdb`.
+
+There is also something called *development* mode for some extra runtime checks, turn it on with one of these:
+
+```sh
+python -X dev app.py
+# or
+PYTHONDEVMODE=1 app.py
+```
+
+This gives better stack traces on receiving system signals or segfaults, deprecation warnings, unsafe GIL usage etc.
 
 ## See python paths
 
