@@ -47,6 +47,7 @@ so on.
 - [Programming](notes/programming/index.md)
     - [Go](notes/programming/go.md)
     - [Java](notes/programming/java.md)
+    - [Python](notes/programming/python.md)
 - [Security](notes/security.md)
 
 ### Games
