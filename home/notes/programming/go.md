@@ -1,4 +1,4 @@
-# 🦫 Go
+# 🐹 Go
 
 Notes from the book *Learning Go*, by Jon Bodner.
 
