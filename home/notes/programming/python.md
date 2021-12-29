@@ -1,10 +1,125 @@
 # Python notes
 
-## Modern Python
+## Modern Python (2021 edition)
 
-Some tools that I should use more often to make my life easier.
+I use Python heavily but still prefer tools and libraries from the 2.x days. Here are some newer
+tools/packages/learnings that I want to upgrade to. Some of the notes below are from reading *Expert
+Python Programming, 3rd Edition*.
 
-- `black` - Auto-formats your files, like `go fmt`. Just run and forget.
+### black
+
+- Auto-formats your files, like `go fmt`. Just run and forget.
+- I just selected this as the formatter in vscode. For manual usage, just pip install and run:
+
+```sh
+filegen/app ❯ black main.py
+reformatted main.py
+All done! ✨ 🍰 ✨
+1 file reformatted.
+```
+
+### poetry
+
+- Creates its own virtualenv so don't install it in one. Instead do this:
+
+```sh
+pip install --user poetry
+```
+
+Usage:
+
+```sh
+poetry new some-project # initializes folder structure for src, tests, toml file
+```
+Or if you already have a project and just want to initialize the .toml file:
+
+```sh
+poetry init
+```
+
+The `pyproject.toml` structure conforms to [PEP-518](https://www.python.org/dev/peps/pep-0518/).
+
+Then, activate the virtual env with:
+
+```sh
+poetry shell
+```
+
+For adding packages, the only way is with:
+
+```sh
+poetry add <package>
+```
+
+This will update the toml file as well. You can then lock dependencies with:
+
+```sh
+poetry lock
+```
+
+### wait-for-it
+
+Run a command when a port is open. Example:
+
+```sh
+wait-for-it --service 0.0.0.0:8000 -- curl localhost:8000
+```
+
+## Debugging
+
+Here's a 2 lines that drops you into a shell:
+
+```sh
+python3 -m pdb -c continue script.py
+```
+
+For setting breakpoints, do this:
+
+```py
+breakpoint()
+# or this:
+import pdb; pdb.set_trace()
+# or this if you want a better shell:
+import ipdb; ipdb.set_trace()
+```
+
+Get help with `help pdb`
+
+## See python paths
+
+This shows the location of the user's site-packages folder, the `sys.path` contents, etc.
+
+```sh
+python3 -m site
+```
+
+## Merging dictionaries
+
+Newer python versions:
+
+```py
+>>> {'a':1,'b':2} | {'b':20,'c':30}
+{'a': 1, 'b': 20, 'c': 30}
+```
+Right most dict gets the value if there's a clash.
+
+Alternative way, using `collections.ChainMap`:
+
+```py
+>>> import collections
+>>> collections.ChainMap({'a':1,'b':2}, {'b':20,'c':30})
+ChainMap({'a': 1, 'b': 2}, {'b': 20, 'c': 30})
+>>>
+```
+
+In this case the left dict gets priority. ChainMap just uses the referenes so if the underlying
+dicts change, ChainMap knows about it.
+
+## Type Hints
+
+Generic types: `tuple`, `list`, `dict`, `set`, `frozenset` etc. For dicts you need to use
+`dict[KeyType, ValueType]`. There is also `typing.Any` if your return value is unknown, for
+instance.
 
 
 ## Python3 on centos (using scl):
