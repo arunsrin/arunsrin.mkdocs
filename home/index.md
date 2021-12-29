@@ -100,7 +100,7 @@ are works in progress: I'm yet to move my large collection of bookmarks to these
 sections.
 
 - [🦠COVID-19](research/covid-19.md)
-- [🪙Cryptocurrencies](research/cryptocurrencies.md)
+- [💸Cryptocurrencies](research/cryptocurrencies.md)
 - [✅Productivity](research/productivity.md)
 - [🌡️Climate Change](research/climate-change.md)
 - [💭Philosophy](research/philosophy.md)
