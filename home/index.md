@@ -2,7 +2,7 @@
 
 Welcome to my home page.
 
-## What's here
+## ⬇️What's here
 
 I read a lot of books but want to turn that into a more active hobby that ties
 into writing in some way. So you will find a list of books I've read, and
@@ -36,7 +36,7 @@ so on.
 - [🔍Elastic Stack](notes/elastic.md)
 - [💾Git](notes/git.md)
 - [📈Grafana](notes/grafana.md)
-- [🪲Kafka](notes/kafka.md)
+- [🪳Kafka](notes/kafka.md)
 - [☸️Kubernetes](notes/k8s.md)
 - [🐧Linux](notes/linux/index.md)
     - [🐧Package Management](notes/linux/package-management.md)
