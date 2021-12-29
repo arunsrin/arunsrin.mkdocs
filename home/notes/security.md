@@ -1,4 +1,4 @@
-# Security
+# 🔒 Security
 
 ## Query list of ciphers supported by a server
 

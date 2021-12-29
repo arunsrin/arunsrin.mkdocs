@@ -1,4 +1,4 @@
-# Games - Xbox One
+# 🎮Games - Xbox One
 
 I prefer single-player Action Adventure open-world games. Bonus points if it has
 a good story.

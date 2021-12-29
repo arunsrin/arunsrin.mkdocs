@@ -1,4 +1,4 @@
-# Cryptocurrencies
+# 🪙 Cryptocurrencies
 
 I find it telling that the loudest proponents of Crypto are VCs who extol the virtues of a decentralized system while building and profiting from centralized solutions. Here are some links that align well with how I perceive crypto.
 

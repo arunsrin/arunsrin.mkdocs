@@ -1,4 +1,4 @@
-# Noam Chomsky
+# 💭 Noam Chomsky
 
 ## Why
 

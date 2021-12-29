@@ -1,4 +1,4 @@
-# Online Privacy and the Internet
+# 🔏 Online Privacy and the Internet
 
 On blocking ads, filter bubbles, fake news and the like.
 

@@ -1,4 +1,4 @@
-# About
+# 🐧About
 
 I’m a software engineer in Bangalore who is addicted to books. Classic
 Literature (Vladimir Nabokov), Popular Science (Richard Dawkins) and Science

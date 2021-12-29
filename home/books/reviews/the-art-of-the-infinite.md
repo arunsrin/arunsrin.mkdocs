@@ -1,4 +1,4 @@
-# The Art of the Infinite
+# 📝 The Art of the Infinite
 
 This is the kind of book I wish I’d read 20 years back.
 

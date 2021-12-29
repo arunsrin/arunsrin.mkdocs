@@ -1,4 +1,4 @@
-# Climate Change
+# 🌡️ Climate Change
 
 - [10 charts by the Guardian](https://www.theguardian.com/environment/2019/sep/20/the-climate-crisis-explained-in-10-charts)
   

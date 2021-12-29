@@ -1,4 +1,4 @@
-# Ansible
+# 🅰️ Ansible
 
 These are mostly notes from reading *Mastering Ansible*, by James Freeman and
 Jesse Keating. I've used ansible quite a bit but wanted a structured
