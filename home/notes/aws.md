@@ -1,4 +1,4 @@
-# AWS
+# ☁️ AWS
 
 Most of this is from *Amazon Web Services in Action, IInd edition*.
 

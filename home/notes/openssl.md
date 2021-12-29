@@ -1,4 +1,4 @@
-# OpenSSL
+# 🔒 OpenSSL
 
 ## Verify Public Cert, Private Key, CSR
 

@@ -1,4 +1,4 @@
-# Python notes
+# 🐍Python notes
 
 ## Modern Python (2021 edition)
 

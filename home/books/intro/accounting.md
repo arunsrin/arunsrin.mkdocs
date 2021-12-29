@@ -1,4 +1,4 @@
-# Accounting
+# 📃 Accounting
 # Introduction
 
 Apparently, the need to keep accounting was a key driver in the

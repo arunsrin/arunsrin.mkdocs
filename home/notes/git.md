@@ -1,4 +1,4 @@
-# Git
+# 💾 Git
 
 ## Separate git configurations for work and play
 

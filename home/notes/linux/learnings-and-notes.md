@@ -1,4 +1,4 @@
-# Learnings/Notes
+# 🐧 Learnings/Notes
 
 
 ## Linux's CFS: Completely Fair Scheduler

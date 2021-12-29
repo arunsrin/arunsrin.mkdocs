@@ -1,4 +1,4 @@
-# Richard Stallman
+# 🐧 Richard Stallman
 
 ## Why
 

@@ -1,4 +1,4 @@
-# Philosophy / Morality
+# 💭 Philosophy / Morality
 
 ## Vegetarianism
 

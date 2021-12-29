@@ -1,4 +1,4 @@
-# Despair, by Vladimir Nabokov
+# 📝 Despair, by Vladimir Nabokov
 
 I reread this book this month. Nabokov’s protagonists are always fascinating.
 The one is Despair, Hermann, is almost tragic in how desperately he hides from

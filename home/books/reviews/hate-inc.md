@@ -1,4 +1,4 @@
-# Hate Inc.
+# 📝 Hate Inc.
 
 *Full Title*: Hate Inc.: Why Today's Media Makes Us Despise One Another
 

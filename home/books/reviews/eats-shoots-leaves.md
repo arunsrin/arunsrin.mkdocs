@@ -1,4 +1,4 @@
-# Eats, Shoots & Leaves
+# 📝 Eats, Shoots & Leaves
 
 *Author:* Lynne Truss
 

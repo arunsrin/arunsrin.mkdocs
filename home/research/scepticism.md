@@ -1,4 +1,4 @@
-# Scepticism
+# 💭 Scepticism
 
 Sometimes I get into arguments with people about some fairly interesting topics. Other times it's on stupid things they read on social media and swallow without a second thought. Here are some well written articles on interesting topics.
 
