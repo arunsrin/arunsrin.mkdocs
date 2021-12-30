@@ -59,6 +59,46 @@ Here is a list of what I have, what I want and what I've liked so far.
 
 - [🎮Xbox One](games/xboxone.md)
 
+### 🏫Research
+
+Here are some notes and links I've collected in topics that interest me. Several
+are works in progress: I'm yet to move my large collection of bookmarks to these
+sections. But this is an attempt to weave something from those saved links.
+
+- [🦠COVID-19](research/covid-19.md)
+- [💸Cryptocurrencies](research/cryptocurrencies.md)
+- [✅Productivity](research/productivity.md)
+- [🌡️Climate Change](research/climate-change.md)
+- [💭Philosophy](research/philosophy.md)
+- [💭Scepticism](research/scepticism.md)
+- [🔏Online Privacy and the Internet](research/privacy-internet.md)
+- [💰Capitalism](research/capitalism.md)
+
+---
+
+## 🐧About
+
+See [About](about.md) for more about me. This site is built using the
+lovely [MkDocs](http://www.mkdocs.org), a python-based static site
+generator. The content is written in markdown using GNU Emacs. It is
+hosted on [NFSN](https://nearlyfreespeech.net).
+
+## 🌐External Links
+
+- [My Blog](https://blog.arunsr.in) - I double commit my content here too because there's times when
+  I liked wordpress (I can post my artwork there) and times when I like this mkdocs site.
+  Structurally I like the garden-like feel of this site more than chronological format of  a blog)
+
+- Books I own, on [LibraryThing](https://www.librarything.com/catalog/indeliblestamp) and [GoodReads](https://www.goodreads.com/user/show/103052357-arun-s).
+
+- [Github Profile](https://github.com/arunsrin/) - Mostly this site and my dotfiles.
+
+- [My Steam Profile](https://steamcommunity.com/id/indeliblestamp) - Not used much.
+
+- [My TrueAchievements
+Profile](https://www.trueachievements.com/gamer/arunsrin) - I'm not an
+achievement hunter but it tracks my Xbox progress quite well.
+
 ---
 
 ## ♻️Older Stuff
@@ -93,21 +133,6 @@ Here are notes on Oxford's *Very Short Introduction To..* series.
 
 ... and abandoned after this brief start.
 
-### 🏫Research
-
-Here are some notes and links I've collected in topics that interest me. Several
-are works in progress: I'm yet to move my large collection of bookmarks to these
-sections.
-
-- [🦠COVID-19](research/covid-19.md)
-- [💸Cryptocurrencies](research/cryptocurrencies.md)
-- [✅Productivity](research/productivity.md)
-- [🌡️Climate Change](research/climate-change.md)
-- [💭Philosophy](research/philosophy.md)
-- [💭Scepticism](research/scepticism.md)
-- [🔏Online Privacy and the Internet](research/privacy-internet.md)
-- [💰Capitalism](research/capitalism.md)
-
 ### 🦸Role Models
 
 Some heroes that I look up to, in the tech and literary worlds mostly.
@@ -117,23 +142,3 @@ Some heroes that I look up to, in the tech and literary worlds mostly.
 - [🐧Richard Stallman](heroes/stallman.md)
 - [💭Noam Chomsky](heroes/chomsky.md)
 
----
-
-## 🐧About
-
-See [About](about.md) for more about me. This site is built using the
-lovely [MkDocs](http://www.mkdocs.org), a python-based static site
-generator. The content is written in markdown using GNU Emacs. It is
-hosted on [NFSN](https://nearlyfreespeech.net).
-
-## 🌐External Links
-
-- [Books I own, on LibraryThing](https://www.librarything.com/catalog/indeliblestamp)
-
-- [Github Profile](https://github.com/arunsrin/)
-
-- [My Steam Profile](https://steamcommunity.com/id/indeliblestamp)
-
-- [My TrueAchievements
-Profile](https://www.trueachievements.com/gamer/arunsrin) - I'm not an
-achievement hunter but it tracks my Xbox progress quite well.
