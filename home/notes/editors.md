@@ -28,6 +28,20 @@ Yay!
 - `Ctrl+]` jumps to definition.
 - `Ctrl+t` jumps back.
 
+## Compile GNU Emacs on Ubuntu
+
+This is from [here](https://emacsredux.com/blog/2021/12/19/using-emacs-on-windows-11-with-wsl2/):
+
+```sh
+git clone git://git.sv.gnu.org/emacs.git
+sudo apt install build-essential libgtk-3-dev libgnutls28-dev libtiff5-dev libgif-dev libjpeg-dev libpng-dev libxpm-dev libncurses-dev texinfo
+cd emacs
+./autogen.sh
+./configure --with-pgtk
+make -j8
+sudo make install
+```
+
 ## Compile GNU Emacs on Centos/Fedora/RHEL
 
 ``` sh
