@@ -131,6 +131,32 @@ Generic types: `tuple`, `list`, `dict`, `set`, `frozenset` etc. For dicts you ne
 `dict[KeyType, ValueType]`. There is also `typing.Any` if your return value is unknown, for
 instance.
 
+## map/filter/reduce
+
+Map takes the function (in this case just squares your input), and applies it to the iterable (in
+this case the `range`).
+
+```py
+list(map(lambda x: x**2, range(10)))
+```
+
+Filter takes an iterable and runs a function against each element one by one. e.g. to prevent even numbers:
+
+```py
+list(filter(lambda x:  x%2 == 0, range(10)))
+```
+
+Reduce is now in `functools`. It reduces an iterable to a single value. i.e. it takes `reduce(func,
+[a, b, c, d])` and does this: `func(func(func(a, b), c), d)`. E.g to sum numbers in a range:
+
+```py
+from functools import reduce
+reduce(lambda x, y: x + y, range(10))
+```
+
+Since these returns an iterator, you can call `next()` to get the next result.
+
+---
 
 ## Python3 on centos (using scl):
 
