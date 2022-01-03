@@ -85,6 +85,16 @@ import ipdb; ipdb.set_trace()
 
 Get help with `help pdb`
 
+There is also something called *development* mode for some extra runtime checks, turn it on with one of these:
+
+```sh
+python -X dev app.py
+# or
+PYTHONDEVMODE=1 app.py
+```
+
+This gives better stack traces on receiving signals, deprecation warnings, unsafe GIL usage etc.
+
 ## See python paths
 
 This shows the location of the user's site-packages folder, the `sys.path` contents, etc.
