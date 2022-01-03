@@ -1,4 +1,4 @@
-# Databases
+# 💾 Databases
 
 ## Notes from "SQL QuickStart Guide"
 

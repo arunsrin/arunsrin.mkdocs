@@ -1,4 +1,4 @@
-# Kafka 
+# 🐞 Kafka 
 
 These notes are based on a series of posts I read, starting with [this
 one](https://www.confluent.io/blog/kafka-streams-tables-part-1-event-streaming/).

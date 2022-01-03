@@ -1,4 +1,4 @@
-# Grafana
+# 📈 Grafana
 
 Most of these notes are from the book *Learn Grafana 7.0* by Eric Salituro.
 

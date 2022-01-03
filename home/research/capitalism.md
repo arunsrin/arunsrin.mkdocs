@@ -1,4 +1,4 @@
-# Capitalism
+# 💰 Capitalism
 
 Unfettered capitalism is the root of all evil.
 

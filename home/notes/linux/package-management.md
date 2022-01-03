@@ -1,4 +1,4 @@
-# Package management
+# 🐧 Package management
 
 ## Sort RPMs by size
 
