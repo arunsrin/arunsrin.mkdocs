@@ -2,6 +2,8 @@
 
 Notes from reading the excellent book at <https://www.crypto101.io/>
 
+Other [security](../../notes/security.md) notes.
+
 ## Block ciphers
 
 `C = E(k, P)`

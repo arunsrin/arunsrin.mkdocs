@@ -30,3 +30,5 @@ example of how densely informative each of Chomsky's statements is.
 
 - [Another example.](https://chomsky.info/warfare02/)
 
+- Collected notes on [capitalism](../research/capitalism.md)
+

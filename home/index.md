@@ -4,9 +4,8 @@ Welcome to my home page.
 
 ## ⬇️What's here
 
-I read a lot of books but want to turn that into a more active hobby that ties
-into writing in some way. So you will find a list of books I've read, and
-reviews of some of them.
+I read a lot of [books](books/index.md) but want to turn that into a more active hobby that ties
+into writing in some way. So you will find a list of books I've read, and reviews of some of them.
 
 On the software side, I've collected some notes over time on various things that
 interest me. They're not burned in my memory like the Emacs/readline

@@ -3,7 +3,7 @@
 ## Why
 
 Dawkins made me an atheist, but Sagan first had to make me a
-sceptic. In my childhood, I used to believe anything I read. I was
+[sceptic](../research/scepticism.md). In my childhood, I used to believe anything I read. I was
 obsessed with pseudo-scientific rubbish like ESP and Telepathy and
 Aliens in Roswell. It took kind-hearted Sagan's thought-provoking
 books to guide me back to a more sensble path.

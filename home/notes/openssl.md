@@ -1,5 +1,7 @@
 # 🔒 OpenSSL
 
+Some non-openssl [security](security.md) notes are in a sibling page.
+
 ## Verify Public Cert, Private Key, CSR
 
 -   Public Cert

@@ -1,5 +1,7 @@
 # 💾 Databases
 
+[Elastic](elastic.md) notes are in a sibling page.
+
 ## Notes from "SQL QuickStart Guide"
 
 Author: Walter Shields
