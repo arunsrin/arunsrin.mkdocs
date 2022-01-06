@@ -3,8 +3,8 @@
 ## Why
 
 Stallman is the heart of the Free Software Foundation and the reason
-for the GNU in GNU/Linux. He represents a certain purity and
-conviction that is hard to get in our industry these days. 
+for the GNU in [GNU/Linux](../notes/linux/index.md). He represents a certain purity and conviction
+that is hard to get in our industry these days. 
 
 I sit strongly on the GPL side of the GPL vs MIT license
 debate. Software that use GPL licenses are like life forms that

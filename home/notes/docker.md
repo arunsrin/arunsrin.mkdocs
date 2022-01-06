@@ -7,6 +7,8 @@ ones that I'd recommend are:
 - Using Docker
 - Docker in Action
 
+Some [kubernetes](k8s.md) notes are here.
+
 ## Useful commands
 
 -   `docker inspect <containerid>` - Shows IPAddress among other things.
