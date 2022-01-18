@@ -12,6 +12,7 @@ saves sync'd neatly between the two.
 Here are the games I've completed (i.e. seen the end credits, I'm not an
 achievement hunter) in the past few years:
 
+- [2022](2022.md)
 - [2021](2021.md)
 - [2020](2020.md)
 - [2019 and before](2019-and-before.md)
