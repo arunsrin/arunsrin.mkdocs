@@ -58,6 +58,12 @@ Here is a list of what I have, what I want and what I've liked so far.
 
 - [🎮Xbox One](games/xboxone.md)
 
+Here is a list of games played per year:
+
+- [🎮2021](games/2021.md)
+- [🎮2020](games/2020.md)
+- [🎮2019 and before](games/2019-and-before.md)
+
 ### 🏫Research
 
 Here are some notes and links I've collected in topics that interest me. Several
