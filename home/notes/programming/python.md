@@ -166,6 +166,56 @@ reduce(lambda x, y: x + y, range(10))
 
 Since these returns an iterator, you can call `next()` to get the next result.
 
+## Concurrency
+
+Best definition is from Leslie Lamport:
+
+> "Two events are concurrent if neither can causally affect the other."
+
+So, concurrency is a propery of a program or problem or algorithm, while
+parallelism is one of the ways of achieving this.
+
+
+### multithreading
+
+- Use `Queue` for communication
+- Use thread pools and throttling so you don't overload yourself (or
+  the remote party)
+- Don't print inside threads, send your output to a results queue and
+  print in main() at the end
+
+### multiprocessing
+
+The in-built `multiprocessing` package has interesting tools for
+sharing data:
+
+- `Pipe` for simple socket-like 2 way communication. Has a `send()`,
+  `recv()` etc.
+- `Queue` which is just like the standard queue
+- `sharedctypes` for C types in a dedicated pool of memory
+
+You can replace `multiprocessing` with `multiprocessing.dummy` and you
+write exactly the same code but with threads instead of processes in
+the background.
+
+### async
+
+This is co-operative so someone must relinquish execution control so
+that the next process can get a slice.1
+
+You can feed a bunch of coroutines to `asyncio.gather()`. It returns a
+single `future` object, which can then be run in the even loop.
+
+Use `await asyncio.sleep()` instead of `time.sleep()` to yield control.
+
+Use `concurrent.futures` to take a synchronous library and run it
+under the hood in a multithreaded manner but by using async
+patterns. It has a `ThreadPoolExecutor` and `ProcessPoolExecutor` to
+do so. Once you `submit` a function to these, you will get back a
+`Future` object, and you can get the actual result in
+`Future.result()`. Instead of `run_in_loop` you would do a
+`run_in_executor`.
+
 ---
 
 ## Python3 on centos (using scl):
