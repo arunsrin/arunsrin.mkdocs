@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Arun S">
+        <link rel="canonical" href="https://notes.arunsr.in/notes/programming/go/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>🐹 Go - arunsrin's notes</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/solarized-dark.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">arunsrin's notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">🏡 Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../about/" class="nav-link">🐧About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../books/" class="dropdown-item">📖Books</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2019/" class="dropdown-item">📚 2019</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2020/" class="dropdown-item">📚 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2021/" class="dropdown-item">📚 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2022/" class="dropdown-item">📚 2022</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Intro</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../books/intro/" class="dropdown-item">📃 Oxford - A Very Short Introduction Series</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/accounting/" class="dropdown-item">📃 Accounting</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/advertising/" class="dropdown-item">📃 Advertising</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/alexander/" class="dropdown-item">📃 Alexander the Great</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/anaesthesia/" class="dropdown-item">📃 Anaesthesia</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reviews</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../books/reviews/crypto101/" class="dropdown-item">📝 Crypto 101</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/despair/" class="dropdown-item">📝 Despair, by Vladimir Nabokov</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/eats-shoots-leaves/" class="dropdown-item">📝 Eats, Shoots & Leaves</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/flow/" class="dropdown-item">📝 Flow</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/good-math/" class="dropdown-item">📝 Good Math</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/happiness/" class="dropdown-item">📝 The Happiness Hypothesis</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/hate-inc/" class="dropdown-item">📝 Hate Inc.</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/how-to-read-a-book/" class="dropdown-item">📝 How To Read A Book</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/the-art-of-the-infinite/" class="dropdown-item">📝 The Art of the Infinite</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/thinking-climate-change/" class="dropdown-item">📝 The Thinking Person's Guide to Climate Change</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/we-are-our-brains/" class="dropdown-item">📝 We Are Our Brains</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../games/" class="dropdown-item">🎮Games</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2019-and-before/" class="dropdown-item">🎮 2019 and before</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2020/" class="dropdown-item">🎮 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2021/" class="dropdown-item">🎮 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2022/" class="dropdown-item">🎮 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/xboxone/" class="dropdown-item">🎮Xbox One</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Heroes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../heroes/chomsky/" class="dropdown-item">💭 Noam Chomsky</a>
+</li>
+                                    
+<li>
+    <a href="../../../heroes/dawkins/" class="dropdown-item">🧬 Richard Dawkins</a>
+</li>
+                                    
+<li>
+    <a href="../../../heroes/sagan/" class="dropdown-item">🌌 Carl Sagan</a>
+</li>
+                                    
+<li>
+    <a href="../../../heroes/stallman/" class="dropdown-item">🐧 Richard Stallman</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ansible/" class="dropdown-item">🅰️ Ansible</a>
+</li>
+                                    
+<li>
+    <a href="../../aws/" class="dropdown-item">☁️ AWS</a>
+</li>
+                                    
+<li>
+    <a href="../../browsers/" class="dropdown-item">🌐 Browsers</a>
+</li>
+                                    
+<li>
+    <a href="../../databases/" class="dropdown-item">💾 Databases</a>
+</li>
+                                    
+<li>
+    <a href="../../docker/" class="dropdown-item">🐋 Docker</a>
+</li>
+                                    
+<li>
+    <a href="../../editors/" class="dropdown-item">⌨️ Editors</a>
+</li>
+                                    
+<li>
+    <a href="../../elastic/" class="dropdown-item">🔍 Elastic Stack</a>
+</li>
+                                    
+<li>
+    <a href="../../git/" class="dropdown-item">💾 Git</a>
+</li>
+                                    
+<li>
+    <a href="../../grafana/" class="dropdown-item">📈 Grafana</a>
+</li>
+                                    
+<li>
+    <a href="../../k8s/" class="dropdown-item">☸️ Kubernetes</a>
+</li>
+                                    
+<li>
+    <a href="../../kafka/" class="dropdown-item">🐞 Kafka</a>
+</li>
+                                    
+<li>
+    <a href="../../networking/" class="dropdown-item">🕸️ Networking</a>
+</li>
+                                    
+<li>
+    <a href="../../openssl/" class="dropdown-item">🔒 OpenSSL</a>
+</li>
+                                    
+<li>
+    <a href="../../security/" class="dropdown-item">🔒 Security</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../linux/" class="dropdown-item">🐧Linux</a>
+</li>
+            
+<li>
+    <a href="../../linux/learnings-and-notes/" class="dropdown-item">🐧 Learnings/Notes</a>
+</li>
+            
+<li>
+    <a href="../../linux/package-management/" class="dropdown-item">🐧 Package management</a>
+</li>
+            
+<li>
+    <a href="../../linux/systemd/" class="dropdown-item">🐧Systemd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Programming</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">💻Programming</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">🐹 Go</a>
+</li>
+            
+<li>
+    <a href="../java/" class="dropdown-item">🍵 Java</a>
+</li>
+            
+<li>
+    <a href="../python/" class="dropdown-item">🐍Python notes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../research/capitalism/" class="dropdown-item">💰 Capitalism</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/climate-change/" class="dropdown-item">🌡️ Climate Change</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/covid-19/" class="dropdown-item">🦠 COVID-19 References</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/cryptocurrencies/" class="dropdown-item">💸 Cryptocurrencies</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/philosophy/" class="dropdown-item">💭 Philosophy / Morality</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/privacy-internet/" class="dropdown-item">🔏 Online Privacy and the Internet</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/productivity/" class="dropdown-item">✅ Productivity</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/scepticism/" class="dropdown-item">💭 Scepticism</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../java/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/arunsrin/arunsrin.mkdocs/blob/master/home/notes/programming/go.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#go" class="nav-link">🐹 Go</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#setup-environment" class="nav-link">Setup, Environment</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#difference-between-go-get-and-go-install" class="nav-link">Difference between go get and go install:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hey" class="nav-link">Hey</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vi" class="nav-link">Vi</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#goimports" class="nav-link">goimports</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#linting-with-golint" class="nav-link">Linting with golint</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sa-with-govet" class="nav-link">SA with govet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#combine-golint-govet-with-golangci-lint" class="nav-link">Combine golint, govet with golangci-lint</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vim-go-notes" class="nav-link">vim-go notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sample-makefile" class="nav-link">Sample makefile</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#basic-types" class="nav-link">Basic Types</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#type-conversions" class="nav-link">Type Conversions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#var-versus" class="nav-link">var versus :=</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#const" class="nav-link">const</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#unused-variables" class="nav-link">Unused variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#composite-types" class="nav-link">Composite Types</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#arrays" class="nav-link">Arrays</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#slices" class="nav-link">Slices</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#strings-runes-bytes" class="nav-link">Strings, runes, bytes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#maps" class="nav-link">Maps</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sets" class="nav-link">Sets</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#structs" class="nav-link">Structs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#blocks" class="nav-link">Blocks</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#if" class="nav-link">if</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#for" class="nav-link">for</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#switch" class="nav-link">switch</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#blank-switch" class="nav-link">Blank switch</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#functions" class="nav-link">Functions</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#variadic-functions" class="nav-link">Variadic functions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#mutliple-return-values" class="nav-link">Mutliple return values</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#named-return-values" class="nav-link">Named return values</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#blank-returns" class="nav-link">Blank returns</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#passing-functions" class="nav-link">Passing functions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#function-type-declarations" class="nav-link">Function Type Declarations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#anonymous-functions" class="nav-link">Anonymous functions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#closures" class="nav-link">Closures</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#defer" class="nav-link">defer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#call-by-value" class="nav-link">call by value</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#pointers" class="nav-link">Pointers</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#json-parsing" class="nav-link">Json parsing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#maps-vs-slices" class="nav-link">Maps vs slices</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#using-slices-as-buffers" class="nav-link">Using slices as buffers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#types-methods-interfaces" class="nav-link">Types, methods, interfaces</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#iota" class="nav-link">iota</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#inheritance" class="nav-link">Inheritance</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#interfaces" class="nav-link">Interfaces</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#interfaces-and-nil" class="nav-link">interfaces and nil</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#empty-interfaces" class="nav-link">empty interfaces</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#type-assertions-and-type-switches" class="nav-link">Type assertions and type switches</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#webapp-example" class="nav-link">WebApp example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#errors" class="nav-link">Errors</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#alternate-way" class="nav-link">Alternate way</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sentinel-errors" class="nav-link">Sentinel Errors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#adding-more-info" class="nav-link">Adding more info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wrapping-errors" class="nav-link">Wrapping errors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#panic-and-recover" class="nav-link">panic and recover</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#modules-packages-imports" class="nav-link">Modules, Packages, Imports</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#packages" class="nav-link">Packages</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#good-module-conventions" class="nav-link">Good module conventions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#overrides" class="nav-link">Overrides</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#godoc" class="nav-link">godoc</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#internal-packages" class="nav-link">internal Packages</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#init-function" class="nav-link">init Function</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#check-available-versions-of-a-module" class="nav-link">Check available versions of a module</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#major-versions" class="nav-link">Major versions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vendoring" class="nav-link">Vendoring</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#module-proxy-server" class="nav-link">Module Proxy Server</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#standard-library" class="nav-link">Standard Library</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#third-party" class="nav-link">Third Party</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#references" class="nav-link">References</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#queued" class="nav-link">Queued</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="go">🐹 Go</h1>
+<p>Notes from the book <em>Learning Go</em>, by Jon Bodner.</p>
+<h1 id="setup-environment">Setup, Environment</h1>
+<h2 id="difference-between-go-get-and-go-install">Difference between <code>go get</code> and <code>go install</code>:</h2>
+<p>See <a href="https://stackoverflow.com/questions/24878737/what-is-the-difference-between-go-get-and-go-install#24878851">here</a>.
+Basically <code>go get</code> downloads the source to $GOPATH/src along with the
+dependencies, and the latter compiles.</p>
+<p><code>go install</code> is recommended. Ignore <code>go get</code>.</p>
+<h2 id="hey">Hey</h2>
+<p><a href="https://github.com/rakyll">hey</a> for load testing http services. Install with:</p>
+<p><code>go install github.com/rakyll/hey@latest</code></p>
+<h2 id="vi">Vi</h2>
+<p>Install vim-go: it comes with a massive set of tools.</p>
+<h2 id="goimports">goimports</h2>
+<p><a href="https://pkg.go.dev/golang.org/x/tools/cmd/goimports">goimports</a> for some neat stuff that gofmt doesn't do. Install with:</p>
+<p><code>go install golang.org/x/tools/cmd/goimports@latest</code></p>
+<p>And run with:</p>
+<p><code>goimports -l -w .</code></p>
+<p>Vi: Just save it.</p>
+<h2 id="linting-with-golint">Linting with golint</h2>
+<p>Install: <code>go install golang.org/x/lint/golint@latest</code></p>
+<p>Run: <code>golint ./...</code></p>
+<p>Vi: <code>:GoLint</code></p>
+<h2 id="sa-with-govet">SA with govet</h2>
+<p>Run: <code>go vet ./...</code></p>
+<p>Vi: <code>:GoVet</code></p>
+<p>This does not catch subtle bugs around shadow variables. So consider installing <code>shadow</code> as well:</p>
+<p>Install: <code>go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@latest</code></p>
+<p>Run: <code>shadow ./...</code></p>
+<h2 id="combine-golint-govet-with-golangci-lint">Combine golint, govet with golangci-lint</h2>
+<p>This tool runs 10 different linters by default and support dozens others.</p>
+<p>Install: <a href="https://golangci-lint.run/usage/install/">see official docs</a></p>
+<p>Run: <code>golangci-lint run</code></p>
+<h2 id="vim-go-notes">vim-go notes</h2>
+<ul>
+<li>Code completion is with <code>Ctrl-x Ctrl-o</code></li>
+<li><code>:Tagbar</code> is bound to <code>F8</code></li>
+<li><code>:GoDef</code> is bound to <code>gd</code></li>
+<li>:<code>GoDefStack</code> shows you how deep you've jumped, <code>GoDefPop</code> or <code>Ctrl-T</code> just
+  pops to the last hop</li>
+</ul>
+<h2 id="sample-makefile">Sample makefile</h2>
+<pre class="codehilite"><code>.DEFAULT_GOAL := build
+
+fmt:
+        go fmt ./...
+.PHONY:fmt
+
+lint: fmt
+        golint ./...
+.PHONY:lint
+
+vet: fmt
+        go vet ./...
+        shadow ./...
+.PHONY:vet
+
+build: vet
+        go build hello.go
+.PHONY:build
+</code></pre>
+
+<h1 id="basic-types">Basic Types</h1>
+<h2 id="type-conversions">Type Conversions</h2>
+<p>Very strict here unlike JS / python.  One can't just treat non-empty strings
+like "asd" as true for example.  No other type can be converted to a bool, even
+explicitly.  The way to do that is to use comparison operators (==, !=, &gt;=,
+&lt;=).</p>
+<p>e.g. <code>x == 0</code> will return <code>true</code> or <code>false</code>.</p>
+<h2 id="var-versus">var versus :=</h2>
+<p>Most verbose way:</p>
+<p><code>var x int = 10</code></p>
+<p>Since the default type of an integer is <code>int</code>, we can omit that:</p>
+<p><code>var x = 10</code></p>
+<p>And since the default value is 0, we can also do this:</p>
+<p><code>var x int</code></p>
+<p>Multiple variables can be declared like this:</p>
+<p><code>var x, y int = 10, 20</code></p>
+<p>Even if types differ:</p>
+<p><code>var x, y = 10, "hello"</code></p>
+<p>For even more in one go, do this:</p>
+<pre class="codehilite"><code class="language-go">var (
+    x int
+    y = 20
+    z int = 30
+    d, e = 50, &quot;hello&quot;
+    f, g string
+)
+</code></pre>
+
+<p>Inside a function, you can use <code>:=</code> when you want go to infer the type.</p>
+<p><code>var x = 10</code></p>
+<p>becomes</p>
+<p><code>x := 10</code></p>
+<p>Or</p>
+<p><code>x, y := 10, "Hello"</code></p>
+<p>And so on.. The main difference here is that you can reassign to existing
+variables too.</p>
+<p>Recommendations / Idioms: </p>
+<ul>
+<li>Don't declare variables at the package level, especially if they change
+later. Keep only immutable variables there, and the rest inside functions.</li>
+<li>Don't use <code>:=</code> with type conversions, just use <code>var</code> there.</li>
+<li>If initialization to 0 is expected, use <code>var x int</code> instead of <code>x := 0</code>.</li>
+</ul>
+<h2 id="const">const</h2>
+<p>Only works at compile time, so can only be assigned to:</p>
+<ul>
+<li>Numeric literals</li>
+<li><code>true</code> and <code>false</code></li>
+<li>Strings</li>
+<li>Runes (A rune is a single unicode character I think)</li>
+<li>Other built-ins: complex, real, imag, len, cap</li>
+<li>Expressions that consist of operators and the preceding values</li>
+</ul>
+<p>So there's no way of specifying that a value calculated at runtime is
+immutable. Nor are there immutable arrays, slices, maps or structs.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Keep a const untyped so you have more flexbility.</p>
+</div>
+<p><code>const x = 10</code></p>
+<p>let's you later do this:</p>
+<pre class="codehilite"><code class="language-go">var y int = x
+var z float64 = x
+var d byte = x
+</code></pre>
+
+<p>As you'd expect, doing something like <code>const x int64 = 0</code> can only let you
+assign that const to another int64.</p>
+<h2 id="unused-variables">Unused variables</h2>
+<p>Not applicable to const's since these are detected and stubbed out from the
+final binary. For normal vars though, its a compilation error to declare a var
+and not use it.</p>
+<h1 id="composite-types">Composite Types</h1>
+<h2 id="arrays">Arrays</h2>
+<p>Rigid, don't use directly.</p>
+<p><code>var x [3]int</code> // Default 0's</p>
+<p><code>var x = [3]int{10, 20, 30}</code></p>
+<p>Sparse arrays: 0's are filled for the positions not specified:</p>
+<p><code>var x = [12]int{1,5:4,6,10:100,15}</code> // this creates {1,0,0,0,0,4,6,0,0,0,100,15}</p>
+<p><code>var x = [...]int{10,20,30}</code> // tell go to fill in the size</p>
+<p><code>var x [2][3]int</code> // multi-dimensional. Poor matrix support, avoid.</p>
+<p>Find the size with <code>len(arr)</code>. </p>
+<p>Limitations:</p>
+<ul>
+<li>The size is part of the type, so an <code>[3]int</code> is not the same type as a
+<code>[4]int</code>. So you CANNOT use a variable to specify the size of an array, because
+types must be resolved at compile time. Big limitation of arrays.</li>
+<li>One CANNOT use a type conversion to convert arrays of different sizes to
+identical types. Because of this, you can't write a function that works with
+arrays of unspecified sizes, nor can you assign arrays of different sizes to
+the same variable.</li>
+</ul>
+<p>Really just don't use this. Arrays are backing stores for slices and this is
+what you'd want to use.</p>
+<h2 id="slices">Slices</h2>
+<p>Length is /not/ part of the type. You don't specify the size when declaring:</p>
+<p><code>var x = []int{10, 20, 30}</code> //Note that in an array you'd do [...] instead</p>
+<p>Similarly:</p>
+<p><code>var x = []int{1, 5:4, 6, 10:100, 15}</code></p>
+<p><code>var x [][]int</code></p>
+<p>Empty slice:</p>
+<p><code>var x []int</code> // Since no value is assigned, x is assigned <code>nil</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Slices aren't comparable with each other with <code>==</code>, <code>!=</code> etc. Only with <code>nil</code>.
+Use <code>reflect.DeepEqual</code> if you want to compare two slices.</p>
+</div>
+<p>Use <code>append</code> to grow a slice:</p>
+<pre class="codehilite"><code class="language-go">var x []int
+x = append(x, 10)
+x = append(x, 11, 12)
+</code></pre>
+
+<p>To flatten one slice and append its values to another, use <code>...</code>:</p>
+<pre class="codehilite"><code class="language-go">y := []int{20, 30, 40}
+x = append(x, y...)
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Observe that we assign the value returned by <code>append</code>. This is because Go
+is call-by-value. Every time you pass a parameter to a function, Go makes a
+copy. So append works on the copy and returns it back to the caller. So we
+re-assign the new value to that variable.</p>
+</div>
+<h3 id="capacity">capacity</h3>
+<p>The Go runtime will increase the size of a slice when the number of elements
+exceeds the default allocation, e.g. by doubling it or increasing by 25%, based
+on the number of elements that are already there.</p>
+<p>The built-in function <code>cap</code> returns the current capacity of the slice, and
+<code>make</code> is used to create a new slice.</p>
+<h3 id="make">make</h3>
+<p>Like malloc. Will create a slice of fixed capacity and length, and initialize
+to 0.</p>
+<p><code>x := make([]int, 5)</code></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You can NOT use <code>append</code> to populate contents after a <code>make</code> like this.
+Reason: <code>make</code> will zero fill the slice and append will add the new values
+to the end. <code>append</code> <em>always</em> increases the length of a slice.</p>
+</div>
+<p>To specify initial capacity as well:</p>
+<p><code>x := make([]int, 6, 10)</code></p>
+<p><code>x := make([]int, 0, 10)</code> // 0 length but 10 capacity</p>
+<p>Runtime panic if you initialize a slice with a variable for the capacity and it
+turns out to be lesser than length. Or compile time if you do it with literals.</p>
+<h3 id="idiomatic-way-of-declaring-slices">idiomatic way of declaring slices</h3>
+<ul>
+<li><code>var data []int</code> // if you expect it to stay nil. Has 0 length</li>
+<li><code>var x = []int{}</code> // empty slice literal i.e. non-nil</li>
+<li><code>data := []int{2, 4, 6, 8}</code> // if you feel the values aren't going to change</li>
+<li>Use <code>make</code> when you have a good idea of the size.</li>
+<li>When unsure, use a zero length slice with a specified capacity so that
+<code>append</code> works easily.</li>
+</ul>
+<h3 id="slicing">slicing</h3>
+<p>Similar to python. But does NOT copy the data. You get two variables that share
+the same data. This gets really messy when you <code>append</code> to a sliced slice :(
+The sub-slice shares the capacity of the main slice, so unused capacity in the
+original slice is used when you do the append.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Never use <code>append</code> with subslices. If you have to, use it with a <em>full
+slice expression</em>, which includes a third arg that specifies the last
+position in the parent slice's capacity that's available of the subslice.
+E.g.</p>
+<p><code>y := x[2:4:4]</code> //Subslice y does not share anything beyond the 4th
+position with the parent.</p>
+</div>
+<h3 id="copy">copy</h3>
+<p>Safe way of creating an independent slice.</p>
+<pre class="codehilite"><code class="language-go">x := []int{1,2,3,4}
+y := make([]int, 4}
+num := copy(y, x) // Returns number of elements copied. Y is the target slice.
+fmt.Println(y, num) // Prints [1 2 3 4] 4
+</code></pre>
+
+<h2 id="strings-runes-bytes">Strings, runes, bytes</h2>
+<p>UTF-8, unless specified.</p>
+<p><code>len()</code> gives you the raw byte length not the grapheme length.</p>
+<p><code>byte</code> is the underlying structure, <code>rune</code> is the UTF code point, and <code>string</code> is what the user sees.</p>
+<h2 id="maps">Maps</h2>
+<p>Make a map where key is a string, value is an int:</p>
+<pre class="codehilite"><code class="language-go">    m0 := map[string]int{}
+    m0[&quot;asd&quot;] = 1
+</code></pre>
+
+<p>Set values up front:</p>
+<pre class="codehilite"><code class="language-go">    m1 := map[string]int{
+        &quot;hello&quot;: 1,
+        &quot;world&quot;: 2,
+    }
+</code></pre>
+
+<p>for the above, extract and test like this:</p>
+<pre class="codehilite"><code class="language-go">    v, ok := m1[&quot;hello&quot;]
+    fmt.Println(v, ok)
+    // Returns, 1 true
+    v, ok := m1[&quot;does-not-exist&quot;]
+    fmt.Println(v, ok)
+    // Returns, 0 false
+</code></pre>
+
+<p>i.e. Value stored in the map is <code>1</code> and there is indeed a value present for that map (stored in the <code>ok</code> variable)</p>
+<p><code>delete(m1, "hello")</code> deletes that key/value.</p>
+<h2 id="sets">Sets</h2>
+<p>Don't exist natively but you can make a map with bool values to
+get a similar data structure.</p>
+<pre class="codehilite"><code class="language-go">    myset := map[int]bool{}
+    vals := []int{1, 3, 5, 7, 1, 10, 11, 3}
+
+    for _, v := range vals {
+        myset[v] = true
+    }
+</code></pre>
+
+<p>Use third-party libraries for Union, Intersection, etc.</p>
+<h2 id="structs">Structs</h2>
+<pre class="codehilite"><code class="language-go">    type person struct {
+        name  string
+        empid int
+    }
+    var e1 person
+    e1.name = &quot;arun&quot;
+    e1.empid = 12345
+    // or
+    e2 := person{&quot;sid&quot;, 5678}
+</code></pre>
+
+<h3 id="anonymous-struct">Anonymous struct</h3>
+<pre class="codehilite"><code class="language-go">    pet := struct {
+        name string
+        age  int
+    }{name: &quot;shadow&quot;, age: 10}
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Type conversions between 2 structs are ONLY possible if order and
+names and types all match.</p>
+</div>
+<h1 id="blocks">Blocks</h1>
+<p>Anything outside a function is in the <em>package</em> block.</p>
+<p>Anything you call with an import from another file is in the
+<em>file</em> block.</p>
+<p>And things within functions are in their blocks.</p>
+<p>There is also a <em>universe</em> block that contains all the built-in
+types and functions like <code>true</code> and <code>int</code> and <code>make</code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Variables with the same name in an inner scope are
+<em>shadowed</em>. So any change you make are not retained once Go
+moves back to the outer scope.</p>
+</div>
+<pre class="codehilite"><code class="language-go">    x := 10
+    if x &gt; 5 {
+        fmt.Println(x)  // 10, from outer scope
+        x := 5          // new shadow variable
+        fmt.Println(x)  // 5
+    }
+    fmt.Println(x) // You'd want it to be 5, but it's 10
+</code></pre>
+
+<p>The use of <code>:=</code> makes it easy to miss this, which reuses
+variables only in the current block.</p>
+<p>Consider installing <code>shadow</code> which catches this kind of thing:</p>
+<pre class="codehilite"><code class="language-sh">code/learninggo/ch04 via  v1.16.3 ❯ shadow blocks.go
+/home/arunsrin/code/learninggo/ch04/blocks.go:9:3: declaration of &quot;x&quot; shadows declaration at line 6
+code/learninggo/ch04 via  v1.16.3 ❯
+</code></pre>
+
+<h2 id="if">if</h2>
+<p>Fairly obvious. Also, let's you define a variable inside the if
+condition that you can then use in the rest of the block.</p>
+<h2 id="for">for</h2>
+<p>Simple, C-style:</p>
+<pre class="codehilite"><code class="language-go">    for i := 0; i &lt; 5; i++ {
+        fmt.Println(i)
+    }
+</code></pre>
+
+<ul>
+<li>Must use <code>:=</code> to initiatlize, <code>var</code> will not work.</li>
+<li>No parens</li>
+</ul>
+<p>Condition-only style:</p>
+<pre class="codehilite"><code class="language-go">    for i &gt; 0 {
+        fmt.Println(i)
+        i--
+    }
+</code></pre>
+
+<p>Infinite style:</p>
+<pre class="codehilite"><code class="language-go">    for {
+        fmt.Println(&quot;loop forever&quot;)
+    }
+</code></pre>
+
+<ul>
+<li>Use with <code>break</code> and <code>continue</code></li>
+</ul>
+<p>for-range style:</p>
+<pre class="codehilite"><code class="language-go">    x := []int{100, 200, 300}
+    for i, v := range x {
+        fmt.Println(i, v)
+    }
+</code></pre>
+
+<ul>
+<li><code>i</code> gives the iteration, and <code>v</code> the value</li>
+<li>When looping through a map, <code>i</code> gives the key instead</li>
+<li>Use <code>_</code> if you don't plan to use that variable in the loop</li>
+<li>Iteration over maps is random, no fixed order is guaranteed</li>
+<li>If you loop over a string, each element will be a <code>rune</code>, not a <code>byte</code><ul>
+<li>The <code>i</code> value will jump by that many bytes to indicate that a
+  non-ascii UTF symbol was detected</li>
+</ul>
+</li>
+<li><code>for</code> copies <code>i</code> and <code>v</code> and gives it to you. So modifying it
+will not modify the upstream value you're iterating through.</li>
+</ul>
+<h2 id="switch">switch</h2>
+<p>Example:</p>
+<pre class="codehilite"><code class="language-go">    words := []string{&quot;a&quot;, &quot;cow&quot;, &quot;gopher&quot;, &quot;smile&quot;, &quot;octopus&quot;,
+        &quot;anthropologist&quot;}
+    for _, word := range words {
+        switch size := len(word); size {
+        case 1, 2, 3, 4:
+            fmt.Println(word, &quot; is a short word&quot;)
+        case 5:
+            wordLen := len(word)
+            fmt.Println(word, &quot; is the right length: &quot;, wordLen)
+        case 6, 7, 8, 9:
+        default:
+            fmt.Println(word, &quot; is a long word&quot;)
+        }
+    }
+</code></pre>
+
+<ul>
+<li>No <code>break</code> needed</li>
+<li>Each switch case is a scope, introduce new variables there and
+they will be accessible only in that case</li>
+<li>In an empty case, <em>nothing happens</em>. There is no fall-through
+to the next case<ul>
+<li>Rather, use commas to combine multiple cases that have the
+same logic</li>
+</ul>
+</li>
+<li><code>break</code> in a switch case will only break out of that case. Use
+labels to actually break out of the outer loop</li>
+</ul>
+<h2 id="blank-switch">Blank switch</h2>
+<p>In the previous example, <code>size</code> compared with each <code>case</code>
+statement, and, if equal, that case is executed. In a blank
+switch, you could run any condition in the case, not just
+equality</p>
+<h1 id="functions">Functions</h1>
+<ul>
+<li>No named or optional functional parameters.</li>
+</ul>
+<h2 id="variadic-functions">Variadic functions</h2>
+<p>Exception is when it's at the end:</p>
+<p><code>func blah(base int, rest ...int)</code></p>
+<ul>
+<li>Use it in the function as a normal slice</li>
+<li>It can be skipped or called with any number of args</li>
+</ul>
+<pre class="codehilite"><code class="language-go">func main() {
+    blah(1, 2)
+    blah(1)
+    lotsOfArgs := []int{2, 3, 4}
+    blah(1, lotsOfArgs...) //Note trailing ... for slice
+}
+
+func blah(base int, rest ...int) {
+    fmt.Println(&quot;Received this many rest args&quot;, len(rest))
+}
+</code></pre>
+
+<h2 id="mutliple-return-values">Mutliple return values</h2>
+<p>Example </p>
+<p><code>func div(num int, denom int) (int, error) {...}</code></p>
+<p>Fairly common pattern to return the actual response followed by
+an <code>error</code> type</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Has to be assigned to each variable on the calling side, you
+can't just treat it as a tuple and assign to a single
+variable like in python</p>
+</div>
+<h2 id="named-return-values">Named return values</h2>
+<p>Example </p>
+<p><code>func div(num int, denom int) (result int, err error) {...}</code></p>
+<p>Advantage is that you are pre-declaring that those variables are
+present in the function and initialized to default values.</p>
+<p>On the calling side, feel free to use any other name.</p>
+<h2 id="blank-returns">Blank returns</h2>
+<p>Example</p>
+<p><code>return</code></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Don't use!</p>
+</div>
+<p>It returns the last value of a named return variable.. not
+idiomatic and prone to cause confusion.</p>
+<h2 id="passing-functions">Passing functions</h2>
+<p>Here's a simple example:</p>
+<pre class="codehilite"><code class="language-go">func main() {
+    var opMap = map[string]func(int, int) int{
+        &quot;+&quot;: add,
+        &quot;-&quot;: sub,
+    }
+    opFunc := opMap[&quot;+&quot;]
+    res := opFunc(5, 10)
+    fmt.Println(res)
+}
+
+func add(i int, j int) int { return i + j }
+func sub(i int, j int) int { return i - j }
+</code></pre>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The example above is pretty poor. You would have quite a bit
+more error correction in the real world</p>
+</div>
+<h2 id="function-type-declarations">Function Type Declarations</h2>
+<p><code>type opFuncType func(int, int) int</code></p>
+<p>More to come later but it's essentially like above.</p>
+<p>That would make the map in the above example much simpler:</p>
+<p><code>var opMap = map[string]opFuncType {...}</code></p>
+<h2 id="anonymous-functions">Anonymous functions</h2>
+<pre class="codehilite"><code class="language-go">    i := 10
+    func(j int) {
+        fmt.Println(&quot;inside anon function&quot;, j)
+    }(i)
+</code></pre>
+
+<p>Useful while launching goroutines or with <code>defer</code></p>
+<h2 id="closures">Closures</h2>
+<p>Functions inside functions. They can use and modify variables
+from the outer function.</p>
+<pre class="codehilite"><code class="language-go">    type Person struct {
+        name string
+        age  int
+    }
+    people := []Person{
+        {&quot;asha&quot;, 7},
+        {&quot;sid&quot;, 5},
+    }
+
+    fmt.Println(people)
+    sort.Slice(people, func(i int, j int) bool {
+        return people[i].age &lt; people[j].age
+    })
+    fmt.Println(people)
+</code></pre>
+
+<p>Here, <code>sort.Slice()</code> gets a function with 2 parameters <code>i</code> and
+<code>j</code> but it has access to <code>people</code> as well.</p>
+<p>You can even return a function from another function:</p>
+<pre class="codehilite"><code class="language-go">func main() {
+    f1 := makeMult(10)
+    fmt.Println(f1(20))
+}
+
+func makeMult(base int) func(int) int {
+    return func(factor int) int {
+        return base * factor
+    }
+}
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All of above are <em>Higher-order functions</em>, i.e. those that
+take a function as a parameter, or as a return value</p>
+</div>
+<h2 id="defer">defer</h2>
+<p>Here is a simple <code>cat</code> implementation. It uses <code>defer</code> to close
+file handles. <code>defer</code> is used to run something at the end of a
+function, whether it ran successfully or not.</p>
+<pre class="codehilite"><code class="language-go">package main
+
+import (
+    &quot;io&quot;
+    &quot;log&quot;
+    &quot;os&quot;
+)
+
+func main() {
+    // simple `cat` implementation
+    if len(os.Args) &lt; 2 {
+        log.Fatal(&quot;No file specified&quot;)
+    }
+    f, err := os.Open(os.Args[1])
+    if err != nil {
+        log.Fatal(err)
+    }
+    defer f.Close()
+
+    data := make([]byte, 2048)
+    for {
+        count, err := f.Read(data)
+        os.Stdout.Write(data[:count])
+        if err != nil {
+            if err != io.EOF {
+                log.Fatal(err)
+            }
+            break
+        }
+    }
+}
+</code></pre>
+
+<p>Note that if that function that you defer returns some values,
+there is no way to actually read and use them.</p>
+<p>Another good pattern is to write your own cleanup function and
+then pass it to defer. E.g. if interacting with a DB, you may
+want to either commit or rollback everything at the end.</p>
+<p>Another pattern is to return a closure function alongside the
+usual content and error. That way the caller can call it
+themselves in their defer.</p>
+<p>Example:</p>
+<pre class="codehilite"><code class="language-go">func getFile(n string) (f os.File*, func(), error) {...}
+</code></pre>
+
+<p>So that the caller can do this:</p>
+<pre class="codehilite"><code class="language-go">    f, cleanup, err := getFile(&quot;/etc/passwd&quot;)
+    // check for err
+    defer cleanup()
+    // do the rest
+</code></pre>
+
+<h2 id="call-by-value">call by value</h2>
+<p>Anything you pass as a parameter is copied. Making modifications
+to it will NOT stick, if you pass a struct or int or string.</p>
+<p>If you pass a map or slice, you can modify the content but not
+the size.</p>
+<h1 id="pointers">Pointers</h1>
+<p>Example:</p>
+<pre class="codehilite"><code class="language-go">var y int32 = 10
+pointerx := &amp;y  //pointerx's content is now y's address
+var pointerz *string  //nil pointer, doesn't point to anything
+</code></pre>
+
+<p>Differences from other languages:</p>
+<ul>
+<li>No memory management</li>
+<li>No pointer arithmetic</li>
+</ul>
+<p><code>&amp;</code> is an address operator that returns the address of that variable.</p>
+<p><code>*</code> is the indirection operator. Using it returns the value in that address.
+Called <em>derefencing</em>.</p>
+<p>Example:</p>
+<pre class="codehilite"><code class="language-go">    var x int = 10
+    pointerY := &amp;x
+    var z int = x + *pointerY
+    fmt.Println(z)
+</code></pre>
+
+<p>Always do a null check!</p>
+<pre class="codehilite"><code class="language-go">    var nilPointer *int
+    if nilPointer != nil {
+        fmt.Println(*nilPointer) // panic here
+    }
+</code></pre>
+
+<p><code>new</code> creates a new null pointer, but is not used much: </p>
+<pre class="codehilite"><code class="language-go">    var x = new(int)
+</code></pre>
+
+<p>You cannot point to builtins like ints and strings directly. You
+will need to assign them to a variable and then make a pointer of
+that variable.</p>
+<p>Pointers in structs are a pain for this reason, you cannot assign
+a string or int directly to them.  A good pattern is to have a
+helper function that basically takes each type and returns a
+pointer to that type:</p>
+<pre class="codehilite"><code class="language-go">func stringp(s string) *string {
+    return &amp;s
+}
+</code></pre>
+
+<p>Use Pointers to indicate mutability in a function. Since go is
+call by value, a copy is always made of the paramter passed to
+the function, and any change you make inside are not going to
+reflect on the outside.</p>
+<p>The above note is for primitives, structs, and arrays. More to
+come on maps and slices.</p>
+<p>Anyway, a better pattern is to just return the modified content
+rather than modify it via pointers.</p>
+<p>Commonly used in json parsing though.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you pass a nil pointer to a function, it cannot modify it.
+You can only a modify a pointer that has valid content.</p>
+</div>
+<h2 id="json-parsing">Json parsing</h2>
+<pre class="codehilite"><code class="language-go">    type person struct {
+        Name string `json:&quot;name&quot;`
+        Age  int    `json:&quot;age&quot;`
+    }
+    var f person
+    err := json.Unmarshal(
+        []byte(`{&quot;name&quot;:&quot;arunsrin&quot;,&quot;age&quot;:38}`), &amp;f)
+    fmt.Println(f, err)
+</code></pre>
+
+<p>The json library expects an <code>interface{}</code> in the second parameter
+since it cannot anticipate the type. So the value passed to it
+<em>has</em> to be a pointer. The lack of generics has led to the above
+pattern become a norm in this use case.</p>
+<p>There is a perf <em>hit</em> if you use pointers for small data. Becomes
+an advantage only for large structs (~mb).</p>
+<h2 id="maps-vs-slices">Maps vs slices</h2>
+<p>A map is internally implemented as a pointer to a struct. So when
+passing maps to functions and modifying them inside, you would
+see a change on the outside as well.</p>
+<p>So avoid using maps, especially for public consumption.</p>
+<p>Slices are more complicated when passed as parameters to
+functions:</p>
+<ul>
+<li>Change in values are reflected</li>
+<li>But appending to a slice is not affected</li>
+</ul>
+<p>This is because when passed to the function, a copy of the
+<em>length</em>, <em>capacity</em> and <em>pointer</em> are made. So a change in
+content is because of the pointer pointing to the same common
+content. But an append results in an increase in length and
+capacity of the copy and not the original.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Because of all the above it is simply best to assume that a
+slice is not modifiable.</p>
+</div>
+<h2 id="using-slices-as-buffers">Using slices as buffers</h2>
+<p>A good pattern is to make a single slice of fixed size and use it
+in a loop while processing I/O. This is better than allocating
+memory for each chunk, which leads to the GC having to do a lot
+of work.</p>
+<p>Here is an example:</p>
+<pre class="codehilite"><code class="language-go">package main
+
+import (
+    &quot;fmt&quot;
+    &quot;os&quot;
+)
+
+func main() {
+    file, _ := os.Open(&quot;/etc/passwd&quot;)
+    defer file.Close()
+
+    data := make([]byte, 100)
+    for {
+        count, err := file.Read(data)
+        if err != nil {
+            break
+        }
+        if count == 0 {
+            break
+        }
+        process(data[:count])
+    }
+}
+
+func process(d []byte) {
+    fmt.Print(string(d))
+}
+</code></pre>
+
+<p>As you can see, data is declared once and reused repeatedly when
+it is passed to <code>process()</code>.</p>
+<p>While the length cannot be modified, <code>process()</code> can change the
+content that was sent to it.</p>
+<h1 id="types-methods-interfaces">Types, methods, interfaces</h1>
+<p>An <em>abstract type</em> specifies what a type should do, not how it is
+done.</p>
+<p>A <em>concrete type</em> specifies what and how.</p>
+<p>Here's a function attached to a struct:</p>
+<pre class="codehilite"><code class="language-go">func main() {
+
+    c := ComplexNumber{3.55, 10}
+    fmt.Println(c.toString())
+
+}
+
+type ComplexNumber struct {
+    Real      float32
+    Imaginary float32
+}
+
+func (c ComplexNumber) toString() string {
+    return fmt.Sprintf(&quot;%0.1f + %0.1f i&quot;, c.Real, c.Imaginary)
+}
+</code></pre>
+
+<p>You can attach the same method name to different types. The bit
+between <code>func</code> and the name <code>toString()</code> is called the <em>receiver</em>
+spec. You should use a pointer receiver if you intend to mutate
+it (or handle <em>nil</em> instanes). Otherwise use a simple value
+receiver.</p>
+<p>Also the function has to be in the same package level. You can't
+take a type from some package and override with a function in
+yours.</p>
+<p>Modified version of the above with 1 pointer receiver and the
+other normal receiver:</p>
+<pre class="codehilite"><code class="language-go">func main() {
+
+    c := ComplexNumber{3.55, 10}
+    fmt.Println(c.toString())
+    c.increment() //observe that you didn't have to do &amp;c.increment() here. Go does it automatically
+    fmt.Println(c.toString())
+
+}
+
+type ComplexNumber struct {
+    Real      float32
+    Imaginary float32
+}
+
+func (c ComplexNumber) toString() string {
+    return fmt.Sprintf(&quot;%0.1f + %0.1f i&quot;, c.Real, c.Imaginary)
+}
+
+func (c *ComplexNumber) increment() {
+    c.Real++
+    c.Imaginary++
+}
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>getters and setters are not idiomatic. Just access directly.</p>
+</div>
+<h2 id="iota">iota</h2>
+<p>Equivalent of enums. Seems pretty crippled, ignore.</p>
+<p>Initializes to 0 and auto-increments from there on.</p>
+<pre class="codehilite"><code class="language-go">    type MailCategory int
+    const (
+        Uncategorized MailCategory = iota
+        Personal
+        Spam
+        Social
+        Advertisements
+    )
+    x := Spam
+    fmt.Println(x)
+</code></pre>
+
+<h2 id="inheritance">Inheritance</h2>
+<p>Not exactly. But you can <em>embed</em> a type in another. So the
+former's methods can be accessed in the outer type seamlessly.</p>
+<h2 id="interfaces">Interfaces</h2>
+<p>Example:</p>
+<pre class="codehilite"><code class="language-go">    type Stringer interface {
+        String() string
+    }
+</code></pre>
+
+<p>Here, an implementation must implement a <code>String()</code> method.</p>
+<p>Idiom is to end the name with <code>er</code> e.g. <code>Stringer()</code>, <code>Closer</code>.</p>
+<p>A concrete type does not need to declare that it implements a
+particular interface, it implicitly happens. Like python's duck
+typing.</p>
+<p>!!note
+    Idiom: Accept interfaces, return structs</p>
+<h2 id="interfaces-and-nil">interfaces and nil</h2>
+<p>For an interface to be nil, both the type and the value must be
+nil.</p>
+<p>When the type is non-nil, it apparently is not straightforward to
+tell if the value is nil. Reflection helps here.</p>
+<h2 id="empty-interfaces">empty interfaces</h2>
+<p>They map to anything in go, and main use case is for open-ended
+stuff like json parsing.</p>
+<pre class="codehilite"><code class="language-go">    var i interface{} //empty interface
+    i = 10
+    i = &quot;hello&quot;
+    i = struct {
+      FirstName string
+      LastName string
+      } {&quot;A&quot;, &quot;S&quot;}
+</code></pre>
+
+<p>So in the json parsing case you'd see something like this:</p>
+<pre class="codehilite"><code class="language-go">    data := map[string]interface{}{}
+</code></pre>
+
+<p>The first <code>{}</code> is for making an empty interface, the second <code>{}</code>
+is for instantiating a map instance.</p>
+<h2 id="type-assertions-and-type-switches">Type assertions and type switches</h2>
+<pre class="codehilite"><code class="language-go">type MyInt int
+
+func main() {
+    var i interface{}
+    var mine MyInt = 20
+    i = mine
+    // i2 := i Fails in last line with error `(mismatched types interface {} and int)`
+    i2 := i.(MyInt)
+    fmt.Println(i2 + 1)
+}
+</code></pre>
+
+<p>Basically here we tell that <code>i2</code> is of type <code>MyInt</code>.</p>
+<p>This is a type <em>assertion</em> not a <em>conversion</em>. Happens only at
+runtime unlike latter which is compile-type. So use the comma-ok
+pattern to catch the failure.</p>
+<pre class="codehilite"><code class="language-go">func doThings(i interface{}) {
+    switch j := i.(type) {
+    case nil:
+        // i is nil, type of j is interface{}
+    case int:
+        // j is of type int
+    case MyInt:
+        // j is of type MyInt
+    case io.Reader:
+        // j is of type io.Reader
+    case bool, rune:
+        // i is either bool or rune, so j is of type inteface{}
+    default:
+        // no idea what i is, so j is of type interface{}
+    }
+}
+</code></pre>
+
+<p>People usually shadow the variable i.e. <code>i := i.(type)</code></p>
+<p>In the above we had some estimates of the types. If you don't know the type at all, use Reflection.</p>
+<h2 id="webapp-example">WebApp example</h2>
+<p>Too long to print here. <a href="https://gist.github.com/arunsrin/030f0818a6ead6c55243c15f190fa682">Here</a> it is.</p>
+<h1 id="errors">Errors</h1>
+<p>Always return an <code>error</code> as the last return value. Simple
+example:</p>
+<pre class="codehilite"><code class="language-go">func calcRemainderAndMod(num, denom int) (int, int, error) {
+    if denom == 0 {
+        return 0, 0, errors.New(&quot;denom is 0&quot;)
+    }
+    return num / denom, num % denom, nil
+}
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>No capitalization, punctuation, newlines in error strings.</p>
+</div>
+<p>Reasons for returning instead of throwing:
+- Simpler code paths
+- Force developers to check and handle natively since all
+variables must be read in go</p>
+<h2 id="alternate-way">Alternate way</h2>
+<p>Rather than <code>errors.New("some message")</code>, one can also do this:</p>
+<pre class="codehilite"><code class="language-go">  fmt.ErrorF(&quot;%d isn't even&quot;, i)
+</code></pre>
+
+<h2 id="sentinel-errors">Sentinel Errors</h2>
+<p>Their names start with <code>Err</code> by convention, and indicate that
+no further processing is possible.</p>
+<p>Example: the <code>zip</code> package has <code>zip.ErrFormat</code>.</p>
+<p>Once declared, it is part of the public API of your package.
+So use carefully, or just pick one that's already there.</p>
+<p>Looks messy actually, just don't do it.</p>
+<h2 id="adding-more-info">Adding more info</h2>
+<p>Since the error interface is just a string:</p>
+<pre class="codehilite"><code class="language-go">type error interface {
+  Error() string
+}
+</code></pre>
+
+<p>You can extend it quite easily like so:</p>
+<pre class="codehilite"><code class="language-go">struct MyError {
+  StatusCode int
+  Message string
+}
+</code></pre>
+
+<p>And use it in your code like this:</p>
+<pre class="codehilite"><code class="language-go">  return nil, MyError{
+    StatusCode: 400,
+    Message: fmt.Sprintf(&quot;bad request %s&quot;, uid)
+  }
+</code></pre>
+
+<h2 id="wrapping-errors">Wrapping errors</h2>
+<p>You can chain your information to a downstream error using
+<code>fmt.Errorf</code>'s <code>%w</code> verb.</p>
+<p>On the receiving side you can unwrap with <code>errors.Unwrap</code>.
+But you would'nt usually do this. Instead, use <code>errors.Is</code>
+and <code>errors.As</code>.</p>
+<p>Once you wrap something, you can't compare and check if a
+certain Sentinel Error occurred. This is where <code>errors.Is</code>
+helps. It iterates throught the error chain and tells you if
+a match is found.</p>
+<pre class="codehilite"><code class="language-go">  if err != nil {
+    if errors.Is(err, os.ErrNotExist) {
+      fmt.Println(&quot;That file doesn't exist&quot;)
+    }
+  }
+</code></pre>
+
+<p>You can also implement <code>Is()</code> in your custom Error Type and
+do your own pattern matching implementation.</p>
+<p><code>errors.As</code> lets you check if a returned error matches a certain type.</p>
+<pre class="codehilite"><code class="language-go">err := AFunctionThatReturnsAnError()
+var myErr MyErr
+if errors.As(err, &amp;myErr) {
+  fmt.Println(myErr.Code)
+}
+</code></pre>
+
+<p>Second argument sould either be a pointer to an error, or a
+pointer to an interface.</p>
+<p>Don't use this unless you know what you're doing.</p>
+<h2 id="panic-and-recover">panic and recover</h2>
+<p>When a panic happens:
+- current function exits immediately
+- all its defers run
+- then all the defers of the calling function run, and so on
+- finally when main is reached, the program exits with a message and stacktrace</p>
+<p>You can call panic in your code, usually with a string.</p>
+<pre class="codehilite"><code class="language-go">func main() {
+    doPanic(&quot;goodbyeee&quot;)
+}
+
+func doPanic(msg string) {
+    panic(msg)
+}
+</code></pre>
+
+<p>You can call a <code>recover</code> inside a defer to halt the panic and continue execution.</p>
+<p>In the following example, division by zero does not kill the
+program, it continues to the next iteration:</p>
+<pre class="codehilite"><code class="language-go">func main() {
+    for _, val := range []int{1, 2, 0, 6} {
+        div60(val)
+    }
+}
+
+func div60(i int) {
+    defer func() {
+        if v := recover(); v != nil {
+            fmt.Println(v)
+        }
+    }()
+    fmt.Println(60 / i)
+}
+</code></pre>
+
+<h1 id="modules-packages-imports">Modules, Packages, Imports</h1>
+<p>Core concepts: </p>
+<ul>
+<li>repositories - where in VCS you'd store your code</li>
+<li>modules - root of a Go library or app</li>
+<li>packages - modules consist of one or more of these</li>
+</ul>
+<p>Modules should be globally unique, like Java's packages.
+Convention is to have the repo e.g.
+<code>github.com/arunsrin/blah</code></p>
+<p>Have a <code>go.mod</code> in the root directory to declare a module.
+Use the <code>go mod</code> command to manage this file.</p>
+<pre class="codehilite"><code class="language-sh">learninggo/ch09/my1stmodule ❯ go mod init github.com/arunsrin/example01/v2
+go: creating new go.mod: module github.com/arunsrin/example01/v2
+learninggo/ch09/my1stmodule via  v1.16.5 ❯ cat go.mod
+module github.com/arunsrin/example01/v2
+
+go 1.16
+learninggo/ch09/my1stmodule via  v1.16.5 ❯
+</code></pre>
+
+<p>A <code>require</code> section declares your dependencies. E.g.</p>
+<pre class="codehilite"><code class="language-go">require (
+    github.com/learning-go-book/formatter v0.0.0-20200921021027-5abc380940ae
+    github.com/shopspring/decimal v1.2.0
+)
+</code></pre>
+
+<p>A <code>replace</code> section let's you override a module's location,
+and an <code>exclude</code> section prevents a specific version from
+being used.</p>
+<h2 id="packages">Packages</h2>
+<p>Say you have 2 packages, <code>formatter</code> and <code>math</code> in 2 subfolders in your module. Use them with the full path in your <code>main.go</code> like so:</p>
+<pre class="codehilite"><code class="language-go">import (
+    &quot;fmt&quot;
+
+    &quot;github.com/learning-go-book/package_example/formatter&quot;
+    &quot;github.com/learning-go-book/package_example/math&quot;
+)
+</code></pre>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning<p>However tempting it may be, don't use relative paths.</p>
+</p>
+</div>
+<p>Your packages should declare the package name as the first
+line, e.g. <code>package formatter</code>. Usually this is same as your
+directory name.</p>
+<p>Use good naming conventions:
+- Bad: <code>util.ExtractNames</code>, <code>util.FormatNames</code>
+- Good: <code>extract.Names</code>, <code>format.Names</code></p>
+<h2 id="good-module-conventions">Good module conventions</h2>
+<ul>
+<li>Create a <code>cmd/</code> directory, with one sub-folder for each
+binary built from the module.</li>
+<li>All other go code go into packages inside a <code>pkg/</code>
+directory.</li>
+</ul>
+<h2 id="overrides">Overrides</h2>
+<p>Example: Both <code>crypto/rand</code> and <code>math/rand</code> exist. So the equivalent of python's <code>import blah as blah2</code> is:</p>
+<pre class="codehilite"><code class="language-go">import (
+    crand &quot;crypto/rand&quot;
+    &quot;encoding/binary&quot;
+    &quot;fmt&quot;
+    &quot;math/rand&quot;
+)
+</code></pre>
+
+<h2 id="godoc">godoc</h2>
+<p>Place the comment above the thing being documented, with no
+new lines in between.</p>
+<p>Before the package declaration: package-level comments.</p>
+<h2 id="internal-packages">internal Packages</h2>
+<p>When defines as <code>internal</code>, everything exported by that
+Package is only visible to other sibling packages.</p>
+<h2 id="init-function">init Function</h2>
+<p>Avoid. A function called <code>init()</code> with no parameters and
+return values. Gets run the first time a package is
+referenced by another.</p>
+<h2 id="check-available-versions-of-a-module">Check available versions of a module</h2>
+<pre class="codehilite"><code class="language-sh">go list -m -versions github.com/learning-go-book/simpletax
+</code></pre>
+
+<p>To downgrade to a specific version:</p>
+<pre class="codehilite"><code class="language-sh">go get github.com/learning-go-book/simpletax@v1.0.0
+</code></pre>
+
+<h2 id="major-versions">Major versions</h2>
+<p>For all versions apart from 0 and 1, the module path must end
+in <code>vN</code> where <code>N</code> is the major version. E.g.</p>
+<p><code>"github.com/learning-go-book/simpletax/v2"</code></p>
+<p>In the code itself you can do one of these 2:
+- Create a sub-directory called <code>v2</code> or whatever and copy
+your README, LICENSE fiiles.
+- Create a branch called <code>v2</code> or keep version 2 in master and
+create a branch called <code>v1</code> for the legacy version.</p>
+<h2 id="vendoring">Vendoring</h2>
+<p>Keep copies of dependencies inside your module.</p>
+<p><code>go mod vendor</code></p>
+<h2 id="module-proxy-server">Module Proxy Server</h2>
+<p>go's mirror. First tries there, and downloads and caches if
+not present.</p>
+<p>Google also maintains a <em>sum database</em> that has version
+information. Protects from malicious version modifications.</p>
+<p>Alternates to this default behaviour:
+- Use a different proxy server like JFrog's <a href="https://gocenter.io">GoCenter</a>
+    - To do this,<code>export
+GOPROXY="https://gocenter.io,direct"</code>
+- Disable the behaviour: <code>export GOPROXY=direct</code>
+- Run your own</p>
+<h3 id="private-proxy-servers">Private proxy servers</h3>
+<p>Set <code>GOPRIVATE</code>:</p>
+<p><code>export GOPRIVATE=*.example.com,company.com/repo</code></p>
+<p>Anything matching the above will be downloaded directly.</p>
+<h1 id="standard-library">Standard Library</h1>
+<p>Useful stuff from the standard library</p>
+<p><code>strconv.Atoi</code>: convert <code>"5"</code> to <code>5</code></p>
+<p>From <code>math/rand</code>: <code>rand.Intn(10)</code> returns a random number between 0 and 10. Seed is fixed though so look deeper</p>
+<p><code>os.Args</code> like python's <code>sys.argv</code></p>
+<h1 id="third-party">Third Party</h1>
+<p>Useful stuff from the ecosystem. Search in this page for details.</p>
+<ul>
+<li><code>go install github.com/rakyll/hey@latest</code></li>
+<li><code>go install golang.org/x/tools/cmd/goimports@latest</code></li>
+<li><code>go install golang.org/x/lint/golint@latest</code></li>
+<li><code>go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@latest</code></li>
+</ul>
+<p>The equivalent of pypi here is <a href="https://pkg.go.dev">pkg.go.dev</a>. It automatically indexes open-source go projects.</p>
+<h1 id="references">References</h1>
+<ul>
+<li>Learning Go, by Jon Bodner</li>
+</ul>
+<h2 id="queued">Queued</h2>
+<ul>
+<li><a href="https://github.com/golang/go/wiki/CodeReviewComments">official code review comments</a></li>
+<li>
+<p><a href="https://golang.org/doc/effective_go">Effective Go</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=Tl7mi9QmLns">Inside the Map implementation, video</a></p>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

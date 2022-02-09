@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Arun S">
+        <link rel="canonical" href="https://notes.arunsr.in/notes/programming/python/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>🐍Python notes - arunsrin's notes</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/solarized-dark.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">arunsrin's notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">🏡 Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../about/" class="nav-link">🐧About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../books/" class="dropdown-item">📖Books</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2019/" class="dropdown-item">📚 2019</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2020/" class="dropdown-item">📚 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2021/" class="dropdown-item">📚 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2022/" class="dropdown-item">📚 2022</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Intro</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../books/intro/" class="dropdown-item">📃 Oxford - A Very Short Introduction Series</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/accounting/" class="dropdown-item">📃 Accounting</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/advertising/" class="dropdown-item">📃 Advertising</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/alexander/" class="dropdown-item">📃 Alexander the Great</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/anaesthesia/" class="dropdown-item">📃 Anaesthesia</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reviews</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../books/reviews/crypto101/" class="dropdown-item">📝 Crypto 101</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/despair/" class="dropdown-item">📝 Despair, by Vladimir Nabokov</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/eats-shoots-leaves/" class="dropdown-item">📝 Eats, Shoots & Leaves</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/flow/" class="dropdown-item">📝 Flow</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/good-math/" class="dropdown-item">📝 Good Math</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/happiness/" class="dropdown-item">📝 The Happiness Hypothesis</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/hate-inc/" class="dropdown-item">📝 Hate Inc.</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/how-to-read-a-book/" class="dropdown-item">📝 How To Read A Book</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/the-art-of-the-infinite/" class="dropdown-item">📝 The Art of the Infinite</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/thinking-climate-change/" class="dropdown-item">📝 The Thinking Person's Guide to Climate Change</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/we-are-our-brains/" class="dropdown-item">📝 We Are Our Brains</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../games/" class="dropdown-item">🎮Games</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2019-and-before/" class="dropdown-item">🎮 2019 and before</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2020/" class="dropdown-item">🎮 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2021/" class="dropdown-item">🎮 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2022/" class="dropdown-item">🎮 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/xboxone/" class="dropdown-item">🎮Xbox One</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Heroes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../heroes/chomsky/" class="dropdown-item">💭 Noam Chomsky</a>
+</li>
+                                    
+<li>
+    <a href="../../../heroes/dawkins/" class="dropdown-item">🧬 Richard Dawkins</a>
+</li>
+                                    
+<li>
+    <a href="../../../heroes/sagan/" class="dropdown-item">🌌 Carl Sagan</a>
+</li>
+                                    
+<li>
+    <a href="../../../heroes/stallman/" class="dropdown-item">🐧 Richard Stallman</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ansible/" class="dropdown-item">🅰️ Ansible</a>
+</li>
+                                    
+<li>
+    <a href="../../aws/" class="dropdown-item">☁️ AWS</a>
+</li>
+                                    
+<li>
+    <a href="../../browsers/" class="dropdown-item">🌐 Browsers</a>
+</li>
+                                    
+<li>
+    <a href="../../databases/" class="dropdown-item">💾 Databases</a>
+</li>
+                                    
+<li>
+    <a href="../../docker/" class="dropdown-item">🐋 Docker</a>
+</li>
+                                    
+<li>
+    <a href="../../editors/" class="dropdown-item">⌨️ Editors</a>
+</li>
+                                    
+<li>
+    <a href="../../elastic/" class="dropdown-item">🔍 Elastic Stack</a>
+</li>
+                                    
+<li>
+    <a href="../../git/" class="dropdown-item">💾 Git</a>
+</li>
+                                    
+<li>
+    <a href="../../grafana/" class="dropdown-item">📈 Grafana</a>
+</li>
+                                    
+<li>
+    <a href="../../k8s/" class="dropdown-item">☸️ Kubernetes</a>
+</li>
+                                    
+<li>
+    <a href="../../kafka/" class="dropdown-item">🐞 Kafka</a>
+</li>
+                                    
+<li>
+    <a href="../../networking/" class="dropdown-item">🕸️ Networking</a>
+</li>
+                                    
+<li>
+    <a href="../../openssl/" class="dropdown-item">🔒 OpenSSL</a>
+</li>
+                                    
+<li>
+    <a href="../../security/" class="dropdown-item">🔒 Security</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../linux/" class="dropdown-item">🐧Linux</a>
+</li>
+            
+<li>
+    <a href="../../linux/learnings-and-notes/" class="dropdown-item">🐧 Learnings/Notes</a>
+</li>
+            
+<li>
+    <a href="../../linux/package-management/" class="dropdown-item">🐧 Package management</a>
+</li>
+            
+<li>
+    <a href="../../linux/systemd/" class="dropdown-item">🐧Systemd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Programming</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">💻Programming</a>
+</li>
+            
+<li>
+    <a href="../go/" class="dropdown-item">🐹 Go</a>
+</li>
+            
+<li>
+    <a href="../java/" class="dropdown-item">🍵 Java</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">🐍Python notes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../research/capitalism/" class="dropdown-item">💰 Capitalism</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/climate-change/" class="dropdown-item">🌡️ Climate Change</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/covid-19/" class="dropdown-item">🦠 COVID-19 References</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/cryptocurrencies/" class="dropdown-item">💸 Cryptocurrencies</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/philosophy/" class="dropdown-item">💭 Philosophy / Morality</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/privacy-internet/" class="dropdown-item">🔏 Online Privacy and the Internet</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/productivity/" class="dropdown-item">✅ Productivity</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/scepticism/" class="dropdown-item">💭 Scepticism</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../java/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../../research/capitalism/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/arunsrin/arunsrin.mkdocs/blob/master/home/notes/programming/python.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#python-notes" class="nav-link">🐍Python notes</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#modern-python-2021-edition" class="nav-link">Modern Python (2021 edition)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#debugging" class="nav-link">Debugging</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#see-python-paths" class="nav-link">See python paths</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#merging-dictionaries" class="nav-link">Merging dictionaries</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#type-hints" class="nav-link">Type Hints</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#mapfilterreduce" class="nav-link">map/filter/reduce</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#concurrency" class="nav-link">Concurrency</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#python3-on-centos-using-scl" class="nav-link">Python3 on centos (using scl):</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#design-patterns" class="nav-link">Design patterns</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#unicode-and-encode-vs-decode" class="nav-link">Unicode, and Encode vs Decode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#coverage-usage" class="nav-link">Coverage usage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#decorator-example" class="nav-link">Decorator example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#django-notes" class="nav-link">Django notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#magic-number" class="nav-link">Magic number</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dunder-methods" class="nav-link">Dunder methods</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pickling" class="nav-link">Pickling</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#staticmethod-vs-classmethod" class="nav-link">Staticmethod vs Classmethod</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#import-files-with-hyphens" class="nav-link">Import files with hyphens</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="python-notes">🐍Python notes</h1>
+<h2 id="modern-python-2021-edition">Modern Python (2021 edition)</h2>
+<p>I use Python heavily but still prefer tools and libraries from the 2.x days. Here are some newer
+tools/packages/learnings that I want to upgrade to. Some of the notes below are from reading <em>Expert
+Python Programming, 3rd Edition</em>.</p>
+<h3 id="black">black</h3>
+<ul>
+<li>Auto-formats your files, like <code>go fmt</code>. Just run and forget.</li>
+<li>I just selected this as the formatter in vscode. For manual usage, just pip install and run:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">filegen/app ❯ black main.py
+reformatted main.py
+All done! ✨ 🍰 ✨
+1 file reformatted.
+</code></pre>
+
+<h3 id="poetry">poetry</h3>
+<ul>
+<li>Creates its own virtualenv so don't install it in one. Instead do this:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">pip install --user poetry
+</code></pre>
+
+<p>Usage:</p>
+<pre class="codehilite"><code class="language-sh">poetry new some-project # initializes folder structure for src, tests, toml file
+</code></pre>
+
+<p>Or if you already have a project and just want to initialize the .toml file:</p>
+<pre class="codehilite"><code class="language-sh">poetry init
+</code></pre>
+
+<p>The <code>pyproject.toml</code> structure conforms to <a href="https://www.python.org/dev/peps/pep-0518/">PEP-518</a>.</p>
+<p>Then, activate the virtual env with:</p>
+<pre class="codehilite"><code class="language-sh">poetry shell
+</code></pre>
+
+<p>For adding packages, the only way is with:</p>
+<pre class="codehilite"><code class="language-sh">poetry add &lt;package&gt;
+</code></pre>
+
+<p>This will update the toml file as well. You can then lock dependencies with:</p>
+<pre class="codehilite"><code class="language-sh">poetry lock
+</code></pre>
+
+<h3 id="wait-for-it">wait-for-it</h3>
+<p>Run a command when a port is open. Example:</p>
+<pre class="codehilite"><code class="language-sh">wait-for-it --service 0.0.0.0:8000 -- curl localhost:8000
+</code></pre>
+
+<h2 id="debugging">Debugging</h2>
+<p>Here's a 2 lines that drops you into a shell:</p>
+<pre class="codehilite"><code class="language-sh">python3 -m pdb -c continue script.py
+</code></pre>
+
+<p>For setting breakpoints, do this:</p>
+<pre class="codehilite"><code class="language-py">breakpoint()
+# or this:
+import pdb; pdb.set_trace()
+# or this if you want a better shell:
+import ipdb; ipdb.set_trace()
+</code></pre>
+
+<p>Get help with <code>help pdb</code>.</p>
+<p>There is also something called <em>development</em> mode for some extra runtime checks, turn it on with one of these:</p>
+<pre class="codehilite"><code class="language-sh">python -X dev app.py
+# or
+PYTHONDEVMODE=1 app.py
+</code></pre>
+
+<p>This gives better stack traces on receiving system signals or segfaults, deprecation warnings, unsafe GIL usage etc.</p>
+<p>There is also something called <em>development</em> mode for some extra runtime checks, turn it on with one of these:</p>
+<pre class="codehilite"><code class="language-sh">python -X dev app.py
+# or
+PYTHONDEVMODE=1 app.py
+</code></pre>
+
+<p>This gives better stack traces on receiving signals, deprecation warnings, unsafe GIL usage etc.</p>
+<h2 id="see-python-paths">See python paths</h2>
+<p>This shows the location of the user's site-packages folder, the <code>sys.path</code> contents, etc.</p>
+<pre class="codehilite"><code class="language-sh">python3 -m site
+</code></pre>
+
+<h2 id="merging-dictionaries">Merging dictionaries</h2>
+<p>Newer python versions:</p>
+<pre class="codehilite"><code class="language-py">&gt;&gt;&gt; {'a':1,'b':2} | {'b':20,'c':30}
+{'a': 1, 'b': 20, 'c': 30}
+</code></pre>
+
+<p>Right most dict gets the value if there's a clash.</p>
+<p>Alternative way, using <code>collections.ChainMap</code>:</p>
+<pre class="codehilite"><code class="language-py">&gt;&gt;&gt; import collections
+&gt;&gt;&gt; collections.ChainMap({'a':1,'b':2}, {'b':20,'c':30})
+ChainMap({'a': 1, 'b': 2}, {'b': 20, 'c': 30})
+&gt;&gt;&gt;
+</code></pre>
+
+<p>In this case the left dict gets priority. ChainMap just uses the referenes so if the underlying
+dicts change, ChainMap knows about it.</p>
+<h2 id="type-hints">Type Hints</h2>
+<p>Generic types: <code>tuple</code>, <code>list</code>, <code>dict</code>, <code>set</code>, <code>frozenset</code> etc. For dicts you need to use
+<code>dict[KeyType, ValueType]</code>. There is also <code>typing.Any</code> if your return value is unknown, for
+instance.</p>
+<h2 id="mapfilterreduce">map/filter/reduce</h2>
+<p>Map takes the function (in this case just squares your input), and applies it to the iterable (in
+this case the <code>range</code>).</p>
+<pre class="codehilite"><code class="language-py">list(map(lambda x: x**2, range(10)))
+</code></pre>
+
+<p>Filter takes an iterable and runs a function against each element one by one. e.g. to prevent even numbers:</p>
+<pre class="codehilite"><code class="language-py">list(filter(lambda x:  x%2 == 0, range(10)))
+</code></pre>
+
+<p>Reduce is now in <code>functools</code>. It reduces an iterable to a single value. i.e. it takes <code>reduce(func,
+[a, b, c, d])</code> and does this: <code>func(func(func(a, b), c), d)</code>. E.g to sum numbers in a range:</p>
+<pre class="codehilite"><code class="language-py">from functools import reduce
+reduce(lambda x, y: x + y, range(10))
+</code></pre>
+
+<p>Since these returns an iterator, you can call <code>next()</code> to get the next result.</p>
+<h2 id="concurrency">Concurrency</h2>
+<p>Best definition is from Leslie Lamport:</p>
+<blockquote>
+<p>"Two events are concurrent if neither can causally affect the other."</p>
+</blockquote>
+<p>So, concurrency is a propery of a program or problem or algorithm, while
+parallelism is one of the ways of achieving this.</p>
+<h3 id="multithreading">multithreading</h3>
+<ul>
+<li>Use <code>Queue</code> for communication</li>
+<li>Use thread pools and throttling so you don't overload yourself (or
+  the remote party)</li>
+<li>Don't print inside threads, send your output to a results queue and
+  print in main() at the end</li>
+</ul>
+<h3 id="multiprocessing">multiprocessing</h3>
+<p>The in-built <code>multiprocessing</code> package has interesting tools for
+sharing data:</p>
+<ul>
+<li><code>Pipe</code> for simple socket-like 2 way communication. Has a <code>send()</code>,
+  <code>recv()</code> etc.</li>
+<li><code>Queue</code> which is just like the standard queue</li>
+<li><code>sharedctypes</code> for C types in a dedicated pool of memory</li>
+</ul>
+<p>You can replace <code>multiprocessing</code> with <code>multiprocessing.dummy</code> and you
+write exactly the same code but with threads instead of processes in
+the background.</p>
+<h3 id="async">async</h3>
+<p>This is co-operative so someone must relinquish execution control so
+that the next process can get a slice.1</p>
+<p>You can feed a bunch of coroutines to <code>asyncio.gather()</code>. It returns a
+single <code>future</code> object, which can then be run in the even loop.</p>
+<p>Use <code>await asyncio.sleep()</code> instead of <code>time.sleep()</code> to yield control.</p>
+<p>Use <code>concurrent.futures</code> to take a synchronous library and run it
+under the hood in a multithreaded manner but by using async
+patterns. It has a <code>ThreadPoolExecutor</code> and <code>ProcessPoolExecutor</code> to
+do so. Once you <code>submit</code> a function to these, you will get back a
+<code>Future</code> object, and you can get the actual result in
+<code>Future.result()</code>. Instead of <code>run_in_loop</code> you would do a
+<code>run_in_executor</code>.</p>
+<hr />
+<h2 id="python3-on-centos-using-scl">Python3 on centos (using scl):</h2>
+<pre class="codehilite"><code class="language-sh">scl enable python33 bash
+</code></pre>
+
+<h2 id="design-patterns">Design patterns</h2>
+<h3 id="observer">Observer:</h3>
+<ul>
+<li>Like a presence subscription. multiple obvservers get notified when
+    a core object changes.</li>
+<li>Also see @property to create setters/getters for attributes. That
+    way when an attribute changes, we can make a call to update() and
+    let the observers know.</li>
+</ul>
+<h3 id="strategy">Strategy:</h3>
+<ul>
+<li>Different implementations hidden beneath a single
+    abstraction. e.g. user calls sort() but does not care which
+    algorithm is used.</li>
+<li>Create different classes and implement <code>__call__</code>, so that when an
+    object is created, that function is called automatically.</li>
+</ul>
+<h3 id="template">Template:</h3>
+<ul>
+<li>Differing steps in separate classes, one controller.</li>
+</ul>
+<h2 id="unicode-and-encode-vs-decode">Unicode, and Encode vs Decode</h2>
+<ul>
+<li><code>bytes.decode</code>: interpret a stream of bytes (from a file or the
+    network) as unicode, with a passed charset like UTF-8 or latin-1.</li>
+<li><code>str.encode</code>: take a unicode string and convert it to bytes, to write
+    to file or send over a network.</li>
+<li><strong>deep breath</strong> both byte strings and unicode have a method to convert
+    to the other. byte.decode('utf-8') takes a byte stream and
+    represents it as a UTF-8 string. utf.encode() takes a utf-8 string
+    and represents it as a byte stream (to send out over a network, for
+    example).</li>
+<li><code>encode()</code> accepts an arg that allows you to represent as ascii, but
+    replace out-of-range characters with ???? or something else.</li>
+<li>Python2: str: stream of bytes, unicode: unicode.</li>
+<li>Python3: str: unicode, bytes: stream of bytes.</li>
+<li>Python2 implicitly tries to change bytes to unicode and vice versa
+    to be 'helpful'. Python3 doesn't.</li>
+<li>A recommendation: bytes on the outside -&gt; decode to utf-8 -&gt; use
+    unicode inside -&gt; encode to bytes -&gt; send out.</li>
+<li><code>IOBuffer</code> and <code>FileBuffer</code> are like dummy network/file interfaces
+    (useful for tests?)</li>
+<li>ISO-8859-1 aka Latin-1 is a single byte extension to ascii that
+    supports a few extra symbols.</li>
+</ul>
+<h2 id="coverage-usage">Coverage usage</h2>
+<p>Run this:</p>
+<pre class="codehilite"><code class="language-sh">coverage run scriptname args
+</code></pre>
+
+<p>Results are stored in <code>.coverage</code>. If the script has different args,
+backup <code>.coverage</code>, run again and then combine them:</p>
+<pre class="codehilite"><code class="language-sh">coverage combine .coverage.old .coverage
+</code></pre>
+
+<p>For a quick summary (<code>-m</code> specifies the missing lines):</p>
+<pre class="codehilite"><code class="language-sh">coverage report -m
+</code></pre>
+
+<p>For a report (<code>-d</code> specifies the dest folder):</p>
+<pre class="codehilite"><code class="language-sh">coverage html -d coverage_html
+</code></pre>
+
+<h2 id="decorator-example">Decorator example</h2>
+<pre class="codehilite"><code class="language-py">def my_decorator(func):
+    def wrapper(*args, **kwargs):
+        # do pre-processing
+        ret = func(*args, **kwargs)
+        # do post-processing
+        return ret
+    return wrapper
+</code></pre>
+
+<p>i.e., return a function (wrapper) that calls func with its args, but
+do your pre/post stuff within wrapper.</p>
+<h2 id="django-notes">Django notes</h2>
+<ul>
+<li>Change your models (in models.py).</li>
+<li>Run <code>python manage.py makemigrations</code> to create migrations for those changes</li>
+<li>Run <code>python manage.py migrate</code> to apply those changes to the database.</li>
+</ul>
+<h2 id="magic-number">Magic number</h2>
+<p>The python interpreter's magic number is found in:</p>
+<pre class="codehilite"><code class="language-py">importlib.util.MAGIC_NUMBER
+</code></pre>
+
+<p>.pyc file format:</p>
+<p><code>magic number | mtime | size | marshaled code object</code></p>
+<h2 id="dunder-methods">Dunder methods</h2>
+<ul>
+<li>String/bytes representation</li>
+</ul>
+<p><code>__repr__, __str__, __format__, __bytes__</code></p>
+<ul>
+<li>Conversion to number</li>
+</ul>
+<p><code>__abs__, __bool__, __complex__, __int__, __float__, __hash__, __index__</code></p>
+<ul>
+<li>Emulating collections</li>
+</ul>
+<p><code>__len__, __getitem__, __setitem__, __delitem__, __contains__</code></p>
+<ul>
+<li>Iteration</li>
+</ul>
+<p><code>__iter__, __reversed__, __next__</code></p>
+<ul>
+<li>Emulating callables</li>
+</ul>
+<p><code>__call__</code></p>
+<ul>
+<li>Context management</li>
+</ul>
+<p><code>__enter__, __exit__</code></p>
+<ul>
+<li>Instance creation and destruction</li>
+</ul>
+<p><code>__new__, __init__, __del__</code></p>
+<ul>
+<li>Attribute management</li>
+</ul>
+<p><code>__getattr__, __getattribute__, __setattr__, __delattr__, __dir__</code></p>
+<ul>
+<li>Attribute descriptors</li>
+</ul>
+<p><code>__get__, __set__, __delete__</code></p>
+<ul>
+<li>Class services</li>
+</ul>
+<p><code>__prepare__, __instancecheck__, __subclasscheck__</code></p>
+<h2 id="pickling">Pickling</h2>
+<ul>
+<li>The last byte of a pickled file is a '.' Anything that follows it is ignored.</li>
+<li>This would be a way to embed a jpeg or something to the end of a pickle file..??</li>
+</ul>
+<h2 id="staticmethod-vs-classmethod">Staticmethod vs Classmethod</h2>
+<ul>
+<li>staticmethod: can be called directly from the class, without instantiating an object.</li>
+<li>classmethod: exactly the same.</li>
+<li>BUT: when a staticmethod is called from an object, the 'self'
+    parameter is never passed, the way it is for classmethods and normal
+    methods.</li>
+</ul>
+<h2 id="import-files-with-hyphens">Import files with hyphens</h2>
+<pre class="codehilite"><code class="language-py">test_cmd = importlib.import_module('test-cmd', None)
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

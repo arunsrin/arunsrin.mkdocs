@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Arun S">
+        <link rel="canonical" href="https://notes.arunsr.in/notes/databases/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>💾 Databases - arunsrin's notes</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/solarized-dark.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">arunsrin's notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">🏡 Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../about/" class="nav-link">🐧About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../books/" class="dropdown-item">📖Books</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2019/" class="dropdown-item">📚 2019</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2020/" class="dropdown-item">📚 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2021/" class="dropdown-item">📚 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2022/" class="dropdown-item">📚 2022</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Intro</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/intro/" class="dropdown-item">📃 Oxford - A Very Short Introduction Series</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/accounting/" class="dropdown-item">📃 Accounting</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/advertising/" class="dropdown-item">📃 Advertising</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/alexander/" class="dropdown-item">📃 Alexander the Great</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/anaesthesia/" class="dropdown-item">📃 Anaesthesia</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reviews</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/reviews/crypto101/" class="dropdown-item">📝 Crypto 101</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/despair/" class="dropdown-item">📝 Despair, by Vladimir Nabokov</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/eats-shoots-leaves/" class="dropdown-item">📝 Eats, Shoots & Leaves</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/flow/" class="dropdown-item">📝 Flow</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/good-math/" class="dropdown-item">📝 Good Math</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/happiness/" class="dropdown-item">📝 The Happiness Hypothesis</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/hate-inc/" class="dropdown-item">📝 Hate Inc.</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/how-to-read-a-book/" class="dropdown-item">📝 How To Read A Book</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/the-art-of-the-infinite/" class="dropdown-item">📝 The Art of the Infinite</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/thinking-climate-change/" class="dropdown-item">📝 The Thinking Person's Guide to Climate Change</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/we-are-our-brains/" class="dropdown-item">📝 We Are Our Brains</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../games/" class="dropdown-item">🎮Games</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2019-and-before/" class="dropdown-item">🎮 2019 and before</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2020/" class="dropdown-item">🎮 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2021/" class="dropdown-item">🎮 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2022/" class="dropdown-item">🎮 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../games/xboxone/" class="dropdown-item">🎮Xbox One</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Heroes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../heroes/chomsky/" class="dropdown-item">💭 Noam Chomsky</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/dawkins/" class="dropdown-item">🧬 Richard Dawkins</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/sagan/" class="dropdown-item">🌌 Carl Sagan</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/stallman/" class="dropdown-item">🐧 Richard Stallman</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ansible/" class="dropdown-item">🅰️ Ansible</a>
+</li>
+                                    
+<li>
+    <a href="../aws/" class="dropdown-item">☁️ AWS</a>
+</li>
+                                    
+<li>
+    <a href="../browsers/" class="dropdown-item">🌐 Browsers</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">💾 Databases</a>
+</li>
+                                    
+<li>
+    <a href="../docker/" class="dropdown-item">🐋 Docker</a>
+</li>
+                                    
+<li>
+    <a href="../editors/" class="dropdown-item">⌨️ Editors</a>
+</li>
+                                    
+<li>
+    <a href="../elastic/" class="dropdown-item">🔍 Elastic Stack</a>
+</li>
+                                    
+<li>
+    <a href="../git/" class="dropdown-item">💾 Git</a>
+</li>
+                                    
+<li>
+    <a href="../grafana/" class="dropdown-item">📈 Grafana</a>
+</li>
+                                    
+<li>
+    <a href="../k8s/" class="dropdown-item">☸️ Kubernetes</a>
+</li>
+                                    
+<li>
+    <a href="../kafka/" class="dropdown-item">🐞 Kafka</a>
+</li>
+                                    
+<li>
+    <a href="../networking/" class="dropdown-item">🕸️ Networking</a>
+</li>
+                                    
+<li>
+    <a href="../openssl/" class="dropdown-item">🔒 OpenSSL</a>
+</li>
+                                    
+<li>
+    <a href="../security/" class="dropdown-item">🔒 Security</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux/" class="dropdown-item">🐧Linux</a>
+</li>
+            
+<li>
+    <a href="../linux/learnings-and-notes/" class="dropdown-item">🐧 Learnings/Notes</a>
+</li>
+            
+<li>
+    <a href="../linux/package-management/" class="dropdown-item">🐧 Package management</a>
+</li>
+            
+<li>
+    <a href="../linux/systemd/" class="dropdown-item">🐧Systemd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Programming</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../programming/" class="dropdown-item">💻Programming</a>
+</li>
+            
+<li>
+    <a href="../programming/go/" class="dropdown-item">🐹 Go</a>
+</li>
+            
+<li>
+    <a href="../programming/java/" class="dropdown-item">🍵 Java</a>
+</li>
+            
+<li>
+    <a href="../programming/python/" class="dropdown-item">🐍Python notes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../research/capitalism/" class="dropdown-item">💰 Capitalism</a>
+</li>
+                                    
+<li>
+    <a href="../../research/climate-change/" class="dropdown-item">🌡️ Climate Change</a>
+</li>
+                                    
+<li>
+    <a href="../../research/covid-19/" class="dropdown-item">🦠 COVID-19 References</a>
+</li>
+                                    
+<li>
+    <a href="../../research/cryptocurrencies/" class="dropdown-item">💸 Cryptocurrencies</a>
+</li>
+                                    
+<li>
+    <a href="../../research/philosophy/" class="dropdown-item">💭 Philosophy / Morality</a>
+</li>
+                                    
+<li>
+    <a href="../../research/privacy-internet/" class="dropdown-item">🔏 Online Privacy and the Internet</a>
+</li>
+                                    
+<li>
+    <a href="../../research/productivity/" class="dropdown-item">✅ Productivity</a>
+</li>
+                                    
+<li>
+    <a href="../../research/scepticism/" class="dropdown-item">💭 Scepticism</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../browsers/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../docker/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/arunsrin/arunsrin.mkdocs/blob/master/home/notes/databases.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#databases" class="nav-link">💾 Databases</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#notes-from-sql-quickstart-guide" class="nav-link">Notes from "SQL QuickStart Guide"</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cassandra-quickstart" class="nav-link">Cassandra quickstart</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#postgreql-quickstart" class="nav-link">Postgreql quickstart</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#mysql-quick-start" class="nav-link">MySql quick start</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sqlite-basics" class="nav-link">Sqlite basics:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="databases">💾 Databases</h1>
+<p><a href="../elastic/">Elastic</a> notes are in a sibling page.</p>
+<h2 id="notes-from-sql-quickstart-guide">Notes from "SQL QuickStart Guide"</h2>
+<p>Author: Walter Shields</p>
+<h3 id="basic-operations">Basic operations</h3>
+<pre class="codehilite"><code class="language-sql">-- Single line comment
+/* Multi 
+Line
+Comment */
+SELECT FirstName, LastName, Email, City from customers;
+</code></pre>
+
+<p>Once more, using aliases:</p>
+<pre class="codehilite"><code class="language-sql">SELECT FirstName AS &quot;First Name&quot;, LastName AS &quot;Surname&quot;, Email, City
+from customers;
+</code></pre>
+
+<p>And again, with sorting:</p>
+<pre class="codehilite"><code class="language-sql">SELECT FirstName AS &quot;First Name&quot;, LastName AS &quot;Surname&quot;, Email, City
+from customers
+ORDER BY Surname DESC;
+</code></pre>
+
+<p>Show only first 10 records: use the keyword <code>LIMIT</code>.</p>
+<h3 id="intermediate-operations">Intermediate operations</h3>
+<p>/Operators/ are used with other clauses like <code>SELECT</code> and <code>WHERE</code>. Examples:</p>
+<ul>
+<li>Comparison operators like <code>=</code>, <code>&gt;</code>, <code>&lt;=</code> or <code>&lt;&gt;</code></li>
+<li>Logical operators: <code>BETWEEN</code>, <code>IN</code>, <code>LIKE</code>, <code>AND</code>, <code>OR</code></li>
+<li>Arithmetic operators like <code>+</code>, <code>-</code>, <code>/</code>, <code>*</code> and <code>%</code></li>
+</ul>
+<pre class="codehilite"><code class="language-sql">SELECT
+    Total AS [Original Amount],
+    Total + 10 AS [Addition example],
+    Total - 10 AS [Subtraction example]
+FROM
+    invoices
+ORDER BY
+    Total DESC;
+</code></pre>
+
+<h4 id="filtering-with-where">Filtering with <code>WHERE</code>:</h4>
+<pre class="codehilite"><code class="language-sql">SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE Total = 1.98
+ORDER BY InvoiceDate;
+</code></pre>
+
+<p><code>WHERE</code> always comes after the <code>FROM</code> but before the <code>ORDER BY</code>.</p>
+<p><code>BETWEEN</code> gives a range, e.g. <code>WHERE Total BETWEEN 1.98 AND 5.00</code></p>
+<h4 id="searching-in-text">Searching in text:</h4>
+<pre class="codehilite"><code class="language-sql">SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE BillingCity IN ('Tucson', 'Paris', 'London')
+ORDER BY Total
+</code></pre>
+
+<h4 id="wildcard-search-with-like">Wildcard search with LIKE</h4>
+<pre class="codehilite"><code class="language-sql">SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE BillingCity LIKE 'T%'
+ORDER BY Total
+</code></pre>
+
+<p>(You can do a <code>NOT LIKE 'T%'</code> to invert the results)</p>
+<h4 id="filtering-by-date">Filtering by date</h4>
+<pre class="codehilite"><code class="language-sql">SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE InvoiceDate = '2009-01-03 00:00:00'
+ORDER BY Total
+</code></pre>
+
+<h4 id="something-more-interesting">Something more interesting:</h4>
+<pre class="codehilite"><code class="language-sql">SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE InvoiceDate BETWEEN '2009-01-01 00:00:00' AND '2009-12-31 23:59:59'
+ORDER BY InvoiceDate
+</code></pre>
+
+<h4 id="using-the-date-function">Using the Date() function</h4>
+<p>Let's you skip the time, for instance.</p>
+<pre class="codehilite"><code class="language-sql">SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE DATE(InvoiceDate) = '2009-01-03'
+ORDER BY Total
+</code></pre>
+
+<h4 id="multiple-andor">Multiple AND/OR:</h4>
+<pre class="codehilite"><code class="language-sql">SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE BillingCity LIKE 'p%' OR BillingCity LIKE 'd%'
+ORDER BY Total
+</code></pre>
+
+<h4 id="specifying-order">Specifying order:</h4>
+<pre class="codehilite"><code class="language-sql">SELECT InvoiceDate, BillingAddress, BillingCity, Total
+FROM invoices
+WHERE Total &gt; 1.98 AND (BillingCity LIKE 'p%' OR
+    BillingCity LIKE 'd%')
+ORDER BY Total
+</code></pre>
+
+<h4 id="the-case-operator">The CASE operator</h4>
+<p>Lets you create a new, temporary field based on some conditions.</p>
+<pre class="codehilite"><code class="language-sql">SELECT
+    InvoiceDate,
+    BillingAddress,
+    BillingCity,
+    Total,
+    CASE
+    WHEN TOTAL &lt; 2.00 THEN 'Baseline Purchase'
+    WHEN TOTAL BETWEEN 2.00 AND 6.99 THEN 'Low Purchase'
+    WHEN TOTAL BETWEEN 7.00 AND 15.00 THEN 'Target Purchase'
+    ELSE 'Top Performers'
+    END AS PurchaseType
+FROM
+    invoices
+ORDER BY
+    BillingCity
+</code></pre>
+
+<ul>
+<li>Wrapped with <code>CASE</code> and <code>END</code></li>
+<li>Alias using <code>AS</code> to create the new label</li>
+<li><code>WHEN</code> and <code>ELSE</code> to specify the conditions</li>
+</ul>
+<p>Now to filter only top performers in the above case, it is trivial to add a
+<code>WHERE PurchaseType = 'Top Performers'</code> to the query.</p>
+<h3 id="working-with-multiple-tables">Working with multiple tables</h3>
+<p>Example of a <code>JOIN</code> clause:</p>
+<pre class="codehilite"><code class="language-sql">SELECT *
+FROM invoices
+INNER JOIN customers
+ON invoices.CustomerId = customers.CustomerId
+</code></pre>
+
+<p>Here the CustomerId column in customers table is a primary key, while CustomerId in invoices is a
+foreign key.</p>
+<p>With an alias this time:</p>
+<pre class="codehilite"><code class="language-sql">SELECT c.FirstName, c.LastName, i.InvoiceId, i.InvoiceDate, i.Total
+FROM invoices as i
+INNER JOIN customers as C
+ON i.CustomerId = c.CustomerId
+ORDER BY c.LastName
+</code></pre>
+
+<p>INNER JOIN shows the intersection of 2 tables. Any info in one table that is missing in the other is
+just ignored.</p>
+<h4 id="left-outer-join">LEFT OUTER JOIN</h4>
+<p>Combines all records in left with matching ones in right. Example:</p>
+<pre class="codehilite"><code class="language-sql">SELECT *
+FROM invocies AS i
+LEFT OUTER JOIN customers AS c
+ON i.CustomerId = c.CustomerId
+</code></pre>
+
+<p>SQLite will insert <code>NULL</code> data when there are no matching records in the right table.</p>
+<h4 id="right-outer-join">RIGHT OUTER JOIN</h4>
+<p>Same as LEFT, as you'd expect.</p>
+<h4 id="joining-more-than-2-tables">Joining more than 2 tables</h4>
+<p>Example:</p>
+<pre class="codehilite"><code class="language-sql">SELECT e.FirstName AS EmpFirstName, e.LastName AS EmpLastName, e.EmployeeId, c.FirstName AS CustomerFirstName, c.LastName AS CustomerLastName, c.SupportRepId, i.CustomerId, i.Total
+FROM invoices as i
+INNER JOIN customers as c
+ON i.CustomerId = c.CustomerId
+INNER JOIN employees as e
+ON c.SupportRepId = e.EmployeeId
+ORDER BY i.Total DESC
+LIMIT 10
+</code></pre>
+
+<h4 id="using-null-is-and-not">Using NULL, IS and NOT</h4>
+<p>Example: show all artists that do not have a corresponding entry in the album table:</p>
+<pre class="codehilite"><code class="language-sql">SELECT 
+    ar.ArtistId AS [ArtistId from Artists table],
+    al.ArtistId AS [ArtistId from Albums table],
+    ar.Name AS [Artist Name],
+    al.Title AS [Album]
+FROM artists AS ar
+LEFT OUTER JOIN albums AS al
+ON ar.ArtistId = al.ArtistId
+WHERE al.ArtistId IS NULL
+</code></pre>
+
+<h3 id="using-functions">Using Functions</h3>
+<p>Example: Counting occurrences:</p>
+<pre class="codehilite"><code class="language-sql">SELECT COUNT(LastName) AS [Name Count]
+FROM customers
+WHERE LastName LIKE 'B%'
+</code></pre>
+
+<h4 id="types-of-functions">Types of Functions</h4>
+<ul>
+<li>String: INSTR(), LENGTH(), LOWER(), LTRIM(), REPLACE(), RTRIM(), SUBSTR(), TRIM(), UPPER()</li>
+<li>Date: DATE(), DATETIME(), JULIANDAY(), STRFTIME(), TIME(), 'NOW'</li>
+<li>Aggregate: AVG(), COUNT(), MAX(), MIN(), SUM()</li>
+</ul>
+<h4 id="string-manipulation">String manipulation</h4>
+<p>Adds a space followed by LastName to FirstName:</p>
+<pre class="codehilite"><code class="language-sql">SELECT FirstName || ' ' || LastName AS [Full Name]
+etc.
+</code></pre>
+
+<p>Substring example, take first five chars of PostalCode:</p>
+<pre class="codehilite"><code class="language-sql">SELECT PostalCode, SUBSTR(PostalCode,1,5) AS [Five-digit Postal]
+etc.
+</code></pre>
+
+<h4 id="arguments-for-strftime">Arguments for STRFTIME</h4>
+<ul>
+<li><code>'%d'</code> - day of month: 00</li>
+<li><code>'%f'</code> - fractional seconds: SS.SSS</li>
+<li><code>'%H'</code> - hour: 00-24</li>
+<li><code>'%j'</code> - day of year 001-366</li>
+<li><code>'%J'</code> - Julian day number</li>
+<li><code>'%m'</code> - month: 01-12</li>
+<li><code>'%M'</code> - minute: 00-59</li>
+<li><code>'%s'</code> - seconds since 1970-01-01</li>
+<li><code>'%S'</code> - seconds: 00-59</li>
+<li><code>'%w'</code> - day of week: 0-6 (Sunday is 0)</li>
+<li><code>'%W'</code> - week of year: 00-53</li>
+<li><code>'%Y'</code> - year: 0000-9999</li>
+</ul>
+<p>Timestrings:</p>
+<ul>
+<li><code>'YYY-MM-DD'</code> - A date typed in Year-Month-Day format</li>
+<li><code>'now'</code> - Current date and time</li>
+<li><code>'DATETIME' field</code> - A databse field in a date and/or time format</li>
+</ul>
+<p>Modifiers:</p>
+<ul>
+<li><code>'+ X days'</code> - Add X days to the result</li>
+<li>Same as above for <code>months</code> and <code>years</code>, and <code>-</code> instead of <code>+</code></li>
+<li><code>'start of the day'</code> - modifies the time code to represent the beginning of the day</li>
+<li>Same as above for <code>month</code> and <code>year</code></li>
+</ul>
+<p>Examples:</p>
+<pre class="codehilite"><code class="language-sql">SELECT 
+STRFTIME('The year is %Y and day is %d and month is %m', 'now')
+AS [Text with Conversion specifications]
+</code></pre>
+
+<p>Example to calculate age:</p>
+<pre class="codehilite"><code class="language-sql">SELECT 
+    LastName,
+    FirstName,
+    STRFTIME('%Y-%m-%d', BirthDate) AS [Birthday No Timecode],
+    STRFTIME('%Y-%m-%d','now') - STRFTIME('%Y-%m-%d',BirthDate) AS [Age]
+FROM employees
+ORDER BY Age
+</code></pre>
+
+<h4 id="aggregations">Aggregations</h4>
+<p>Main ones are SUM(), AVG(), MIN(), MAX(), COUNT().</p>
+<p>Example:</p>
+<pre class="codehilite"><code class="language-sql">SELECT
+    SUM(Total) AS TotalSales,
+    AVG(Total) AS AverageSales,
+    ROUND(AVG(Total), 2) AS RoundedAverageSales,
+    MAX(Total) AS MaxSale,
+    MIN(Total) AS MinSale,
+    COUNT(*) AS SalesCount
+FROM invoices
+</code></pre>
+
+<p>The <code>*</code> in <code>COUNT(*)</code> ensures that all values are counted, even records with errors or nulls.</p>
+<p>Grouping Aggregates:</p>
+<pre class="codehilite"><code class="language-sql">SELECT
+    BillingCity,
+    AVG(Total)
+FROM invoices
+GROUP BY BillingCity
+ORDER BY BillingCity
+</code></pre>
+
+<p>Run this without GROUP BY and you will see that the response is messed up, i.e. it tries to print
+the BillingCity which is a multi-line reponse, and also the AVG(Total) which is a single row.</p>
+<h4 id="filtering-based-on-aggregates-with-having">Filtering based on Aggregates with HAVING</h4>
+<p><code>WHERE</code> does not work with functions. So if you want to show only rows where AVG exceeds 6, use <code>HAVING</code>:</p>
+<pre class="codehilite"><code class="language-sql">SELECT
+    BillingCity,
+    AVG(Total)
+FROM invoices
+GROUP BY BillingCity
+HAVING AVG(Total) &gt; 6
+ORDER BY BillingCity
+</code></pre>
+
+<p><code>HAVING</code> always comes after the <code>GROUP BY</code> clause.</p>
+<p>The <code>WHERE</code> clause tells SQL what data to include in the table. Once the information is filtered and
+aggregate functions are applied, <code>HAVING</code> acts as a further filter.</p>
+<h3 id="subqueries">Subqueries</h3>
+<p>Basically, one query inside another.</p>
+<p>Example: Find the Average of sales, and find all rows that were below this average. Since we can't
+use <code>WHERE</code> when you're using an aggregate function, you'd have to make a subquery and embed it in
+another. Example:</p>
+<pre class="codehilite"><code class="language-sql">SELECT
+    InvoiceDate,
+    BillingAddress,
+    BillingCity,
+    Total
+FROM invoices
+WHERE Total &lt; 
+(select 
+    AVG(Total)
+from invoices)
+ORDER BY Total DESC)
+</code></pre>
+
+<p>Another example, in a <code>SELECT</code> statement:</p>
+<pre class="codehilite"><code class="language-sql">SELECT
+    BillingCity,
+    AVG(Total) AS [City Average],
+    (select
+        avg(total)
+    from
+        invoices) AS [Global Average]
+FROM invoices
+GROUP BY BillingCity
+ORDER BY BillingCity
+</code></pre>
+
+<p>Another, in a <code>WHERE</code> clause, in this case we want to see which sales in 2014
+has beaten 2013's highest sale.</p>
+<pre class="codehilite"><code class="language-sql">SELECT
+    InvoiceDate,
+    BillingCity,
+    Total
+FROM
+    invoices
+WHERE
+    InvoiceDate &gt;= '2013-01-01' AND total &gt; 
+    (select
+        max(Total)
+    from invoices
+    where InvoiceDate &lt; '2013-01-01')
+</code></pre>
+
+<p>Here's one where we're interested in 3 invoces. We write a query to extract the
+dates they were purchased. Then we pipe that into another query and see all
+sales that happened in those dates.</p>
+<pre class="codehilite"><code class="language-sql">SELECT
+    InvoiceDate,
+    BillingAddress,
+    BillingCity
+FROM invoices
+WHERE InvoiceDate IN
+    (select InvoiceDate
+    from invoices
+    where InvoiceId in (251,252,255))
+</code></pre>
+
+<h4 id="distinct">DISTINCT</h4>
+<p>Here we want all tracks that do not appear in invoice_items i.e have never been
+bought. This is the query:</p>
+<pre class="codehilite"><code class="language-sql">select Name, composer from tracks where trackid not in
+(select DISTINCT TrackId from invoice_items)
+</code></pre>
+
+<p>Note that without the <code>DISTINCT</code> keyword, we would get a large result with lots
+of repetitions. So this is the equivalent of doing a <code>set(some_list)</code> in
+python.</p>
+<h3 id="views">Views</h3>
+<p>A virtual table that's basically a stored query that can be executed/references
+by other queries.</p>
+<p>Prefix a statement with <code>CREAE VIEW &lt;blah&gt; AS</code> to make one. Example:</p>
+<pre class="codehilite"><code class="language-sql">CREATE VIEW V_AvgTotal AS
+SELECT
+    ROUND(AVG(Total), 2) AS [Average Total]
+FROM invoices
+</code></pre>
+
+<p>Naming with a <code>V_</code> prefix is a good convention to follow.</p>
+<p>Another example for a joined query:</p>
+<pre class="codehilite"><code class="language-sql">CREATE VIEW V_Tracks_InvoiceItems AS
+SELECT
+    ii.InvoiceId,
+    ii.UnitPrice,
+    ii.Quantity,
+    t.Name,
+    t.Composer,
+    t.Milliseconds
+FROM
+    invoice_items ii
+INNER JOIN
+    tracks t
+ON ii.TrackId = t.Trackid
+</code></pre>
+
+<p>Now you can use this in some other query.</p>
+<p>To remove it:</p>
+<pre class="codehilite"><code class="language-sql">DROP VIEW V_Tracks_InvoiceItems
+</code></pre>
+
+<p>No data is deleted, just the view is removed.</p>
+<h3 id="dml-data-manipulation-language">DML (Data Manipulation Language)</h3>
+<p>This is about inserting/updating/deleting data. Simplest example:</p>
+<pre class="codehilite"><code class="language-sql">INSERT INTO artists (Name)
+VALUES ('Bob Marley')
+</code></pre>
+
+<p>Simple UPDATE:</p>
+<pre class="codehilite"><code class="language-sql">UPDATE employees SET PostalCode = '11202'
+WHERE EmployeeId = 9
+</code></pre>
+
+<p>And DELETE:</p>
+<pre class="codehilite"><code class="language-sql">DELETE FROM employees WHERE EmployeeId = 9
+</code></pre>
+
+<h2 id="cassandra-quickstart">Cassandra quickstart</h2>
+<p>I'm actually using ScyllaDB which is compatible with Cassandra.</p>
+<p><code>cqlsh</code> is it's shell.</p>
+<pre class="codehilite"><code class="language-sql">DESCRIBE keyspaces;
+USE &lt;name-of-keyspace&gt;;
+DESCRIBE tables;
+SELECT * FROM &lt;name-of-table&gt;;
+</code></pre>
+
+<h2 id="postgreql-quickstart">Postgreql quickstart</h2>
+<pre class="codehilite"><code class="language-sql">sudo -i -u postgres
+postgresql quickstart
+createuser --interactive
+createdb ttrssdb
+psql
+&gt;alter user ttrssuser with encrypted password 'blah';
+&gt;grant all privileges on database ttrssdb to ttrssuser;
+</code></pre>
+
+<h2 id="mysql-quick-start">MySql quick start</h2>
+<pre class="codehilite"><code class="language-sql">mysql&gt; create database habari;
+Query OK, 1 row affected (0.02 sec)
+
+mysql&gt; grant all on habari.* to 'habariuser'@'localhost' identified by 'blah';
+Query OK, 0 rows affected (0.06 sec)
+
+mysql&gt; flush privileges;
+Query OK, 0 rows affected (0.00 sec)
+</code></pre>
+
+<h2 id="sqlite-basics">Sqlite basics:</h2>
+<pre class="codehilite"><code class="language-sql">thaum ~/code/app$ sqlite perl.db
+SQLite version 2.8.17
+Enter &quot;.help&quot; for instructions
+sqlite&gt; .tables
+sqlite&gt; .schema
+sqlite&gt; create table perltest (id integer PRIMARY KEY,name varchar(10), salary integer);
+sqlite&gt; .tables
+perltest
+sqlite&gt; .headers on
+sqlite&gt; .mode column
+sqlite&gt; select * from perltest;
+sqlite&gt; insert into perltest values(1,'arun',12345);
+sqlite&gt; insert into perltest values(2,'brun',23456);
+sqlite&gt; select * from perltest;
+id          name        salary
+----------  ----------  ----------
+1           arun        12345
+2           brun        23456
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

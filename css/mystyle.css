@@ -1,0 +1,27 @@
+body {
+    background-color: #fdf6e3;
+    color: #002b36;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #002b36;
+}
+pre, code {
+    background-color: #fdf6e3;
+}
+.admonition {
+    background-color: #fdf6e3;
+}
+.navbar-default {
+    background-color: #002b36;
+    color: #fdf6e3;
+}
+.bs-sidenav {
+    background-color: #eee8d5;
+    color: #073642;
+}
+a, a:active, a:visited {
+	color: #d33682;
+}
+a:visited {
+	color: #D496B4;
+}

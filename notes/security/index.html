@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Arun S">
+        <link rel="canonical" href="https://notes.arunsr.in/notes/security/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>🔒 Security - arunsrin's notes</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/solarized-dark.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">arunsrin's notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">🏡 Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../about/" class="nav-link">🐧About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../books/" class="dropdown-item">📖Books</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2019/" class="dropdown-item">📚 2019</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2020/" class="dropdown-item">📚 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2021/" class="dropdown-item">📚 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2022/" class="dropdown-item">📚 2022</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Intro</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/intro/" class="dropdown-item">📃 Oxford - A Very Short Introduction Series</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/accounting/" class="dropdown-item">📃 Accounting</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/advertising/" class="dropdown-item">📃 Advertising</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/alexander/" class="dropdown-item">📃 Alexander the Great</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/anaesthesia/" class="dropdown-item">📃 Anaesthesia</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reviews</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/reviews/crypto101/" class="dropdown-item">📝 Crypto 101</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/despair/" class="dropdown-item">📝 Despair, by Vladimir Nabokov</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/eats-shoots-leaves/" class="dropdown-item">📝 Eats, Shoots & Leaves</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/flow/" class="dropdown-item">📝 Flow</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/good-math/" class="dropdown-item">📝 Good Math</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/happiness/" class="dropdown-item">📝 The Happiness Hypothesis</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/hate-inc/" class="dropdown-item">📝 Hate Inc.</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/how-to-read-a-book/" class="dropdown-item">📝 How To Read A Book</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/the-art-of-the-infinite/" class="dropdown-item">📝 The Art of the Infinite</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/thinking-climate-change/" class="dropdown-item">📝 The Thinking Person's Guide to Climate Change</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/we-are-our-brains/" class="dropdown-item">📝 We Are Our Brains</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../games/" class="dropdown-item">🎮Games</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2019-and-before/" class="dropdown-item">🎮 2019 and before</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2020/" class="dropdown-item">🎮 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2021/" class="dropdown-item">🎮 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2022/" class="dropdown-item">🎮 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../games/xboxone/" class="dropdown-item">🎮Xbox One</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Heroes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../heroes/chomsky/" class="dropdown-item">💭 Noam Chomsky</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/dawkins/" class="dropdown-item">🧬 Richard Dawkins</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/sagan/" class="dropdown-item">🌌 Carl Sagan</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/stallman/" class="dropdown-item">🐧 Richard Stallman</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ansible/" class="dropdown-item">🅰️ Ansible</a>
+</li>
+                                    
+<li>
+    <a href="../aws/" class="dropdown-item">☁️ AWS</a>
+</li>
+                                    
+<li>
+    <a href="../browsers/" class="dropdown-item">🌐 Browsers</a>
+</li>
+                                    
+<li>
+    <a href="../databases/" class="dropdown-item">💾 Databases</a>
+</li>
+                                    
+<li>
+    <a href="../docker/" class="dropdown-item">🐋 Docker</a>
+</li>
+                                    
+<li>
+    <a href="../editors/" class="dropdown-item">⌨️ Editors</a>
+</li>
+                                    
+<li>
+    <a href="../elastic/" class="dropdown-item">🔍 Elastic Stack</a>
+</li>
+                                    
+<li>
+    <a href="../git/" class="dropdown-item">💾 Git</a>
+</li>
+                                    
+<li>
+    <a href="../grafana/" class="dropdown-item">📈 Grafana</a>
+</li>
+                                    
+<li>
+    <a href="../k8s/" class="dropdown-item">☸️ Kubernetes</a>
+</li>
+                                    
+<li>
+    <a href="../kafka/" class="dropdown-item">🐞 Kafka</a>
+</li>
+                                    
+<li>
+    <a href="../networking/" class="dropdown-item">🕸️ Networking</a>
+</li>
+                                    
+<li>
+    <a href="../openssl/" class="dropdown-item">🔒 OpenSSL</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">🔒 Security</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux/" class="dropdown-item">🐧Linux</a>
+</li>
+            
+<li>
+    <a href="../linux/learnings-and-notes/" class="dropdown-item">🐧 Learnings/Notes</a>
+</li>
+            
+<li>
+    <a href="../linux/package-management/" class="dropdown-item">🐧 Package management</a>
+</li>
+            
+<li>
+    <a href="../linux/systemd/" class="dropdown-item">🐧Systemd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Programming</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../programming/" class="dropdown-item">💻Programming</a>
+</li>
+            
+<li>
+    <a href="../programming/go/" class="dropdown-item">🐹 Go</a>
+</li>
+            
+<li>
+    <a href="../programming/java/" class="dropdown-item">🍵 Java</a>
+</li>
+            
+<li>
+    <a href="../programming/python/" class="dropdown-item">🐍Python notes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../research/capitalism/" class="dropdown-item">💰 Capitalism</a>
+</li>
+                                    
+<li>
+    <a href="../../research/climate-change/" class="dropdown-item">🌡️ Climate Change</a>
+</li>
+                                    
+<li>
+    <a href="../../research/covid-19/" class="dropdown-item">🦠 COVID-19 References</a>
+</li>
+                                    
+<li>
+    <a href="../../research/cryptocurrencies/" class="dropdown-item">💸 Cryptocurrencies</a>
+</li>
+                                    
+<li>
+    <a href="../../research/philosophy/" class="dropdown-item">💭 Philosophy / Morality</a>
+</li>
+                                    
+<li>
+    <a href="../../research/privacy-internet/" class="dropdown-item">🔏 Online Privacy and the Internet</a>
+</li>
+                                    
+<li>
+    <a href="../../research/productivity/" class="dropdown-item">✅ Productivity</a>
+</li>
+                                    
+<li>
+    <a href="../../research/scepticism/" class="dropdown-item">💭 Scepticism</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../openssl/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../linux/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/arunsrin/arunsrin.mkdocs/blob/master/home/notes/security.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#security" class="nav-link">🔒 Security</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#query-list-of-ciphers-supported-by-a-server" class="nav-link">Query list of ciphers supported by a server</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#things-that-go-in-a-certificate" class="nav-link">Things that go in a certificate</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#selinux-example" class="nav-link">selinux example:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#selinuxnginx-error" class="nav-link">SELinux/Nginx error</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#selinux-apache-static-html" class="nav-link">SElinux Apache static html</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nmap-one-liners" class="nav-link">Nmap one liners</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#make-a-password-in-linux-without-adding-the-user" class="nav-link">Make a password in linux (without adding the user)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#iptables-port-forwarding" class="nav-link">IPtables port forwarding</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#open-firewall-ports-with-firewalld" class="nav-link">Open firewall ports with firewalld</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#centos-firewall-commands" class="nav-link">Centos firewall commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ssh-agent" class="nav-link">ssh-agent</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#apache-redirect-http-to-https" class="nav-link">Apache redirect http to https</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#letsencrypt-notes" class="nav-link">Letsencrypt notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#components-of-a-cipher-suite" class="nav-link">Components of a cipher suite</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="security">🔒 Security</h1>
+<h2 id="query-list-of-ciphers-supported-by-a-server">Query list of ciphers supported by a server</h2>
+<pre class="codehilite"><code class="language-sh">nmap --script ssl-enum-ciphers -p 443 example.com
+</code></pre>
+
+<h2 id="things-that-go-in-a-certificate">Things that go in a certificate</h2>
+<pre class="codehilite"><code>Subject: CN     the certificate owner's common name
+Subject: E      the certificate owner's email address
+Subject: T      the certificate owner's locality
+Subject: ST     the certificate owner's state of residence
+Subject: O      the organization to which the certificate owner belongs
+Subject: OU     the name of the organizational unit to which the certificate owner belongs
+Subject: C      the certificate owner's country of residence
+Subject: STREET the certificate owner's street address
+Subject: ALL    the certificate owner's complete distinguished name
+Serial  the certificate's serial number
+SignatureAlg    the algorithm used by the Certificate Authority to sign the certificate
+BeginDate       the date at which the certificate becomes valid
+EndDate the date at which the certificate becomes invalid
+PublicKey       the certificate's public key
+FriendlyName    the certificate's friendly name
+</code></pre>
+
+<h2 id="selinux-example">selinux example:</h2>
+<pre class="codehilite"><code class="language-sh">ls -Z file1
+-rwxrw-r-- user1 group1 unconfined_u:object_r:user_home_t:s0 file1
+</code></pre>
+
+<ul>
+<li>SELinux contexts follow the SELinux user:role:type:level syntax.</li>
+<li>Use the <code>ps -eZ</code> command to view the SELinux context for processes</li>
+<li>and <code>id -Z</code> for users</li>
+<li><code>seinfo -r</code> (part of setools-console): shows all available user roles: such as guest, unconfined, webadm, sysadm, dbadm, etc.</li>
+</ul>
+<p>also see <code>/etc/selinux/targeted/context/users</code></p>
+<h2 id="selinuxnginx-error">SELinux/Nginx error</h2>
+<p><code>sudo cat /var/log/audit/audit.log | grep nginx | grep denied</code>
+shows something like this:</p>
+<pre class="codehilite"><code>type=AVC msg=audit(1445306182.317:301): avc:  denied  { name_connect } for  pid=5939 comm&quot;nginx&quot; dest=4374 scontext=system&lt;sub&gt;u&lt;/sub&gt;:system&lt;sub&gt;r&lt;/sub&gt;:httpd&lt;sub&gt;t&lt;/sub&gt;:s0 tcontext=system&lt;sub&gt;u&lt;/sub&gt;:object&lt;sub&gt;r&lt;/sub&gt;:unreserved&lt;sub&gt;port&lt;/sub&gt;&lt;sub&gt;t&lt;/sub&gt;:s0 tclass=tcp&lt;sub&gt;socket&lt;/sub&gt;
+</code></pre>
+
+<p>Someone found that running the following commands fixed their issue:</p>
+<pre class="codehilite"><code class="language-sh">sudo cat /var/log/audit/audit.log | grep nginx | grep denied | audit2allow -M mynginx
+sudo semodule -i mynginx.pp
+</code></pre>
+
+<p>Or something like this:</p>
+<pre class="codehilite"><code class="language-sh">chcon -Rt httpd_sys_content_t /srv/www/myapp/
+</code></pre>
+
+<p>..to change the security context of the directory recursively so nginx will be allowed to serve it. Followed by:</p>
+<pre class="codehilite"><code class="language-sh">setsebool -P httpd_can_network_connect 1
+</code></pre>
+
+<h2 id="selinux-apache-static-html">SElinux Apache static html</h2>
+<ul>
+<li>Change the context of the file:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">sudo chcon -R -v -t httpd_sys_rw_content_t index.html
+</code></pre>
+
+<ul>
+<li>This might have happened because we copied a file from <code>~</code> to
+    <code>/var/www</code>, which caused it to retain its original context.</li>
+</ul>
+<h2 id="nmap-one-liners">Nmap one liners</h2>
+<ul>
+<li>Port scan, os detection:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">nmap -sS -P0 -sV -O 192.168.0.58
+</code></pre>
+
+<ul>
+<li>All active IPs in a network</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">nmap -sP 192.168.0.*
+</code></pre>
+
+<ul>
+<li>Ping a range of IPs</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">nmap -sP 192.168.0.2-254
+</code></pre>
+
+<ul>
+<li>Find unused IPs in a subnet</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">nmap -T4 -sP 192.168.0.0/24 &amp;&amp; egrep &quot;00:00:00:00:00:00&quot; /proc/net/arp
+</code></pre>
+
+<h2 id="make-a-password-in-linux-without-adding-the-user">Make a password in linux (without adding the user)</h2>
+<ul>
+<li><code>whois</code> package: provides <code>mkpasswd</code></li>
+</ul>
+<pre class="codehilite"><code class="language-sh">mkpasswd --method=SHA-512
+</code></pre>
+
+<h2 id="iptables-port-forwarding">IPtables port forwarding</h2>
+<p>Use case: make tomcat on port 8443 listen on port 443.</p>
+<pre class="codehilite"><code class="language-sh">sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+</code></pre>
+
+<p>This will forward all traffic coming in on port 443 to the tomcat
+server listening on 8443.</p>
+<p>(picked from here: <a href="https://mihail.stoynov.com/2011/04/04/howto-start-tomcat-on-port-80-without-root-privileges/">https://mihail.stoynov.com/2011/04/04/howto-start-tomcat-on-port-80-without-root-privileges/</a>)</p>
+<p>To view, the usual <code>-L</code> and <code>-F</code> won't show anything. Instead, use:</p>
+<pre class="codehilite"><code class="language-sh">iptables -L -t nat
+</code></pre>
+
+<pre class="codehilite"><code class="language-sh">iptables -F -t nat
+</code></pre>
+
+<h2 id="open-firewall-ports-with-firewalld">Open firewall ports with firewalld</h2>
+<pre class="codehilite"><code class="language-sh">firewall-cmd --permanent --add-port=5672/tcp
+</code></pre>
+
+<pre class="codehilite"><code class="language-sh">firewall-cmd --reload
+</code></pre>
+
+<h2 id="centos-firewall-commands">Centos firewall commands</h2>
+<pre class="codehilite"><code class="language-sh">firewall-cmd --state
+firewall-cmd --get-zones
+firewall-cmd --list-all-zones
+firewall-cmd --get-default-zone
+firewall-cmd --list-services  # currently enabled in this zone
+firewall-cmd --get-services   # all
+firewall-cmd --add-service=https --permanent
+firewall-cmd --add-service=http --permanent
+</code></pre>
+
+<h2 id="ssh-agent">ssh-agent</h2>
+<ul>
+<li>You start an ssh-agent by running something like:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">eval `ssh-agent`
+</code></pre>
+
+<ul>
+<li>You can then feed it keys, with ssh-add like this:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">ssh-add /home/test/.ssh/id_rsa
+</code></pre>
+
+<p>or, if your key is in the default location, you can just do:</p>
+<pre class="codehilite"><code class="language-sh">ssh-add
+</code></pre>
+
+<p>or just put this in <code>.bashrc</code>:</p>
+<pre class="codehilite"><code class="language-sh">if [ -z &quot;$SSH_AUTH_SOCK&quot; ] ; then
+  eval `ssh-agent -s`
+  ssh-add
+fi
+</code></pre>
+
+<p>but this prompts for the passphrase the first time it is invoked. so do this instead:</p>
+<pre class="codehilite"><code class="language-sh">#!/usr/bin/expect -f
+spawn ssh-add /home/user/.ssh/id_rsa
+expect &quot;Enter passphrase for /home/user/.ssh/id_rsa:&quot;
+send &quot;passphrase\n&quot;;
+interact
+</code></pre>
+
+<h2 id="apache-redirect-http-to-https">Apache redirect http to https</h2>
+<pre class="codehilite"><code>NameVirtualHost *:80
+&lt;VirtualHost *:80&gt;
+   ServerName mysite.example.com
+   DocumentRoot /usr/local/apache2/htdocs 
+   Redirect permanent / https://mysite.example.com/
+&lt;/VirtualHost&gt;
+</code></pre>
+
+<h2 id="letsencrypt-notes">Letsencrypt notes</h2>
+<pre class="codehilite"><code class="language-sh">sudo dnf install httpd -y
+sudo dnf install mod_ssl -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+</code></pre>
+
+<ul>
+<li>Add <code>ServerName</code> and a <code>VirtualHost</code> at a minimum</li>
+<li>now run <code>letsencrypt-auto</code> and fill out the stuff</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">    sudo cp /etc/letsencrypt/options-ssl-apache.conf /etc/httpd/conf.d
+    sudo systemctl restart httpd
+</code></pre>
+
+<ul>
+<li>To renew:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">letsencrypt-auto renew
+</code></pre>
+
+<h2 id="components-of-a-cipher-suite">Components of a cipher suite</h2>
+<p>The algorithms that make up a typical cipher suite are the following:</p>
+<ul>
+<li><em>Key Exchange Algorithm</em> - dictates the manner by which symmetric keys
+    will be exchanged;</li>
+<li><em>Authentication Algorithm</em> - dictates how server authentication and
+    (if needed) client authentication will be carried out.</li>
+<li><em>Bulk Encryption Algorithm</em> - dictates which symmetric key algorithm
+    will be used to encrypt the actual data; and</li>
+<li><em>Message Authentication Code (MAC) algorithm</em> - dictates the method
+    the connection will use to carry out data integrity checks.</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

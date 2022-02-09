@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Arun S">
+        <link rel="canonical" href="https://notes.arunsr.in/notes/networking/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>🕸️ Networking - arunsrin's notes</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/solarized-dark.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">arunsrin's notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">🏡 Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../about/" class="nav-link">🐧About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../books/" class="dropdown-item">📖Books</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2019/" class="dropdown-item">📚 2019</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2020/" class="dropdown-item">📚 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2021/" class="dropdown-item">📚 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2022/" class="dropdown-item">📚 2022</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Intro</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/intro/" class="dropdown-item">📃 Oxford - A Very Short Introduction Series</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/accounting/" class="dropdown-item">📃 Accounting</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/advertising/" class="dropdown-item">📃 Advertising</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/alexander/" class="dropdown-item">📃 Alexander the Great</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/anaesthesia/" class="dropdown-item">📃 Anaesthesia</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reviews</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/reviews/crypto101/" class="dropdown-item">📝 Crypto 101</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/despair/" class="dropdown-item">📝 Despair, by Vladimir Nabokov</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/eats-shoots-leaves/" class="dropdown-item">📝 Eats, Shoots & Leaves</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/flow/" class="dropdown-item">📝 Flow</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/good-math/" class="dropdown-item">📝 Good Math</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/happiness/" class="dropdown-item">📝 The Happiness Hypothesis</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/hate-inc/" class="dropdown-item">📝 Hate Inc.</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/how-to-read-a-book/" class="dropdown-item">📝 How To Read A Book</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/the-art-of-the-infinite/" class="dropdown-item">📝 The Art of the Infinite</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/thinking-climate-change/" class="dropdown-item">📝 The Thinking Person's Guide to Climate Change</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/we-are-our-brains/" class="dropdown-item">📝 We Are Our Brains</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../games/" class="dropdown-item">🎮Games</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2019-and-before/" class="dropdown-item">🎮 2019 and before</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2020/" class="dropdown-item">🎮 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2021/" class="dropdown-item">🎮 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2022/" class="dropdown-item">🎮 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../games/xboxone/" class="dropdown-item">🎮Xbox One</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Heroes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../heroes/chomsky/" class="dropdown-item">💭 Noam Chomsky</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/dawkins/" class="dropdown-item">🧬 Richard Dawkins</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/sagan/" class="dropdown-item">🌌 Carl Sagan</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/stallman/" class="dropdown-item">🐧 Richard Stallman</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ansible/" class="dropdown-item">🅰️ Ansible</a>
+</li>
+                                    
+<li>
+    <a href="../aws/" class="dropdown-item">☁️ AWS</a>
+</li>
+                                    
+<li>
+    <a href="../browsers/" class="dropdown-item">🌐 Browsers</a>
+</li>
+                                    
+<li>
+    <a href="../databases/" class="dropdown-item">💾 Databases</a>
+</li>
+                                    
+<li>
+    <a href="../docker/" class="dropdown-item">🐋 Docker</a>
+</li>
+                                    
+<li>
+    <a href="../editors/" class="dropdown-item">⌨️ Editors</a>
+</li>
+                                    
+<li>
+    <a href="../elastic/" class="dropdown-item">🔍 Elastic Stack</a>
+</li>
+                                    
+<li>
+    <a href="../git/" class="dropdown-item">💾 Git</a>
+</li>
+                                    
+<li>
+    <a href="../grafana/" class="dropdown-item">📈 Grafana</a>
+</li>
+                                    
+<li>
+    <a href="../k8s/" class="dropdown-item">☸️ Kubernetes</a>
+</li>
+                                    
+<li>
+    <a href="../kafka/" class="dropdown-item">🐞 Kafka</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">🕸️ Networking</a>
+</li>
+                                    
+<li>
+    <a href="../openssl/" class="dropdown-item">🔒 OpenSSL</a>
+</li>
+                                    
+<li>
+    <a href="../security/" class="dropdown-item">🔒 Security</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux/" class="dropdown-item">🐧Linux</a>
+</li>
+            
+<li>
+    <a href="../linux/learnings-and-notes/" class="dropdown-item">🐧 Learnings/Notes</a>
+</li>
+            
+<li>
+    <a href="../linux/package-management/" class="dropdown-item">🐧 Package management</a>
+</li>
+            
+<li>
+    <a href="../linux/systemd/" class="dropdown-item">🐧Systemd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Programming</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../programming/" class="dropdown-item">💻Programming</a>
+</li>
+            
+<li>
+    <a href="../programming/go/" class="dropdown-item">🐹 Go</a>
+</li>
+            
+<li>
+    <a href="../programming/java/" class="dropdown-item">🍵 Java</a>
+</li>
+            
+<li>
+    <a href="../programming/python/" class="dropdown-item">🐍Python notes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../research/capitalism/" class="dropdown-item">💰 Capitalism</a>
+</li>
+                                    
+<li>
+    <a href="../../research/climate-change/" class="dropdown-item">🌡️ Climate Change</a>
+</li>
+                                    
+<li>
+    <a href="../../research/covid-19/" class="dropdown-item">🦠 COVID-19 References</a>
+</li>
+                                    
+<li>
+    <a href="../../research/cryptocurrencies/" class="dropdown-item">💸 Cryptocurrencies</a>
+</li>
+                                    
+<li>
+    <a href="../../research/philosophy/" class="dropdown-item">💭 Philosophy / Morality</a>
+</li>
+                                    
+<li>
+    <a href="../../research/privacy-internet/" class="dropdown-item">🔏 Online Privacy and the Internet</a>
+</li>
+                                    
+<li>
+    <a href="../../research/productivity/" class="dropdown-item">✅ Productivity</a>
+</li>
+                                    
+<li>
+    <a href="../../research/scepticism/" class="dropdown-item">💭 Scepticism</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../kafka/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../openssl/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/arunsrin/arunsrin.mkdocs/blob/master/home/notes/networking.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#networking" class="nav-link">🕸️ Networking</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#iperf" class="nav-link">iperf</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#udp-client" class="nav-link">UDP Client</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#udp-server" class="nav-link">UDP Server</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#curl-tips" class="nav-link">Curl tips</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#if-more-than-10-telnet-sessions-to-a-server-fail" class="nav-link">If more than 10 telnet sessions to a server fail</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#start-xinetd-with-debugs-turned-on" class="nav-link">Start xinetd with debugs turned on</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#check-duplicate-ip-with-arping" class="nav-link">Check duplicate ip with arping</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#test-tcp-connections-with-nc" class="nav-link">Test tcp connections with nc</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#force-ntp-sync" class="nav-link">Force NTP sync</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="networking">🕸️ Networking</h1>
+<h2 id="iperf">iperf</h2>
+<p>This link is quite nice: https://www.golinuxcloud.com/linux-monitor-network-traffic/</p>
+<p>How to use iperf:</p>
+<p>Whitelist port 5201 on your security group and firewall.</p>
+<p>Then start the server first:</p>
+<p><code>iperf3 -i 5 -s</code></p>
+<p>Then the client:</p>
+<p><code>iperf3 -i 5 -t 60 -c &lt;IP/hostname of the server&gt;</code></p>
+<p>It gives a nice report but apparently isn’t good for latency checks, only
+bandwidth.</p>
+<h2 id="udp-client">UDP Client</h2>
+<p>From <a href="https://pymotw.com/2/socket/udp.html">PyMOTW</a> :</p>
+<pre class="codehilite"><code class="language-python">import socket
+import sys
+
+# Create a UDP socket
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+server_address = ('192.168.0.100', 8080)
+message = 'This is the message.  It will be repeated.'
+
+try:
+
+    # Send data
+    print &gt;&gt;sys.stderr, 'sending &quot;%s&quot;' % message
+    sent = sock.sendto(message, server_address)
+
+    # Receive response
+    print &gt;&gt;sys.stderr, 'waiting to receive'
+    data, server = sock.recvfrom(4096)
+    print &gt;&gt;sys.stderr, 'received &quot;%s&quot;' % data
+
+finally:
+    print &gt;&gt;sys.stderr, 'closing socket'
+    sock.close()
+</code></pre>
+
+<h2 id="udp-server">UDP Server</h2>
+<p>From <a href="https://pymotw.com/2/socket/udp.html">PyMOTW</a> :</p>
+<pre class="codehilite"><code class="language-python">import socket
+import sys
+
+# Create a TCP/IP socket
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+# Bind the socket to the port
+server_address = ('localhost', 10000)
+print &gt;&gt;sys.stderr, 'starting up on %s port %s' % server_address
+sock.bind(server_address)
+while True:
+    print &gt;&gt;sys.stderr, '\nwaiting to receive message'
+    data, address = sock.recvfrom(4096)
+
+    print &gt;&gt;sys.stderr, 'received %s bytes from %s' % (len(data), address)
+    print &gt;&gt;sys.stderr, data
+
+    if data:
+        sent = sock.sendto(data, address)
+        print &gt;&gt;sys.stderr, 'sent %s bytes back to %s' % (sent, address)
+</code></pre>
+
+<h2 id="curl-tips">Curl tips</h2>
+<ul>
+<li>Show headers with <code>-I</code> and change request type with <code>-X</code>. e.g.</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">curl -I -X DELETE  http://localhost/blah
+</code></pre>
+
+<ul>
+<li>To add a header in the outgoing request, use <code>-H</code>:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">curl --header &quot;X-MyHeader: 123&quot; www.google.com
+</code></pre>
+
+<ul>
+<li>Follow redirects with <code>-l</code></li>
+<li>
+<p>Disable security check with <code>-k</code></p>
+</li>
+<li>
+<p>Send content with <code>-d</code>:</p>
+</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">curl -X POST --header &quot;Content-Type: application/json&quot; -d '{&quot;test&quot;: true}' http://localhost/blah
+</code></pre>
+
+<h2 id="if-more-than-10-telnet-sessions-to-a-server-fail">If more than 10 telnet sessions to a server fail</h2>
+<p><code>per_source = 10</code>
+in <code>/etc/xinetd.d/telnet</code> or <code>/etc/xinetd.conf</code></p>
+<h2 id="start-xinetd-with-debugs-turned-on">Start xinetd with debugs turned on</h2>
+<pre class="codehilite"><code class="language-sh">/usr/sbin/xinetd -f /etc/xinetd.conf -d
+</code></pre>
+
+<h2 id="check-duplicate-ip-with-arping">Check duplicate ip with arping</h2>
+<pre class="codehilite"><code class="language-sh">bash-4.2 ~$ arping 192.168.0.58 -D -c 3 -I ens32
+ARPING 192.168.0.58 from 0.0.0.0 ens32
+Unicast reply from 192.168.0.58 [18:E7:28:2E:92:9C]  1.747ms
+Sent 1 probes (1 broadcast(s))
+Received 1 response(s)
+bash-4.2 ~$ echo $?
+1
+bash-4.2 ~$
+</code></pre>
+
+<ul>
+<li>exit status of 0 confirms a duplicate ip</li>
+</ul>
+<h2 id="test-tcp-connections-with-nc">Test tcp connections with nc</h2>
+<p>(from <a href="http://unix.stackexchange.com/questions/73767/how-to-check-whether-firewall-opened-for-a-port-but-not-listening-on-the-port">http://unix.stackexchange.com/questions/73767/how-to-check-whether-firewall-opened-for-a-port-but-not-listening-on-the-port</a>)</p>
+<pre class="codehilite"><code class="language-sh">nc -vz targetServer portNum
+</code></pre>
+
+<p>For example:</p>
+<pre class="codehilite"><code class="language-sh">bash-3.2 ~$ nc -vz erdos 22
+Connection to erdos 22 port [tcp/ssh] succeeded!
+bash-3.2 ~$
+</code></pre>
+
+<h2 id="force-ntp-sync">Force NTP sync</h2>
+<pre class="codehilite"><code class="language-sh">sudo systemctl stop ntpd
+sudo ntpdate -s time.nist.gov
+sudo systemctl start ntpd
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

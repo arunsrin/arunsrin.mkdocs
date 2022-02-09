@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Arun S">
+        <link rel="canonical" href="https://notes.arunsr.in/notes/aws/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>☁️ AWS - arunsrin's notes</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/solarized-dark.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">arunsrin's notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">🏡 Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../about/" class="nav-link">🐧About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../books/" class="dropdown-item">📖Books</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2019/" class="dropdown-item">📚 2019</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2020/" class="dropdown-item">📚 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2021/" class="dropdown-item">📚 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2022/" class="dropdown-item">📚 2022</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Intro</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/intro/" class="dropdown-item">📃 Oxford - A Very Short Introduction Series</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/accounting/" class="dropdown-item">📃 Accounting</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/advertising/" class="dropdown-item">📃 Advertising</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/alexander/" class="dropdown-item">📃 Alexander the Great</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/anaesthesia/" class="dropdown-item">📃 Anaesthesia</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reviews</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/reviews/crypto101/" class="dropdown-item">📝 Crypto 101</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/despair/" class="dropdown-item">📝 Despair, by Vladimir Nabokov</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/eats-shoots-leaves/" class="dropdown-item">📝 Eats, Shoots & Leaves</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/flow/" class="dropdown-item">📝 Flow</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/good-math/" class="dropdown-item">📝 Good Math</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/happiness/" class="dropdown-item">📝 The Happiness Hypothesis</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/hate-inc/" class="dropdown-item">📝 Hate Inc.</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/how-to-read-a-book/" class="dropdown-item">📝 How To Read A Book</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/the-art-of-the-infinite/" class="dropdown-item">📝 The Art of the Infinite</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/thinking-climate-change/" class="dropdown-item">📝 The Thinking Person's Guide to Climate Change</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/we-are-our-brains/" class="dropdown-item">📝 We Are Our Brains</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../games/" class="dropdown-item">🎮Games</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2019-and-before/" class="dropdown-item">🎮 2019 and before</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2020/" class="dropdown-item">🎮 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2021/" class="dropdown-item">🎮 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2022/" class="dropdown-item">🎮 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../games/xboxone/" class="dropdown-item">🎮Xbox One</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Heroes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../heroes/chomsky/" class="dropdown-item">💭 Noam Chomsky</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/dawkins/" class="dropdown-item">🧬 Richard Dawkins</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/sagan/" class="dropdown-item">🌌 Carl Sagan</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/stallman/" class="dropdown-item">🐧 Richard Stallman</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ansible/" class="dropdown-item">🅰️ Ansible</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">☁️ AWS</a>
+</li>
+                                    
+<li>
+    <a href="../browsers/" class="dropdown-item">🌐 Browsers</a>
+</li>
+                                    
+<li>
+    <a href="../databases/" class="dropdown-item">💾 Databases</a>
+</li>
+                                    
+<li>
+    <a href="../docker/" class="dropdown-item">🐋 Docker</a>
+</li>
+                                    
+<li>
+    <a href="../editors/" class="dropdown-item">⌨️ Editors</a>
+</li>
+                                    
+<li>
+    <a href="../elastic/" class="dropdown-item">🔍 Elastic Stack</a>
+</li>
+                                    
+<li>
+    <a href="../git/" class="dropdown-item">💾 Git</a>
+</li>
+                                    
+<li>
+    <a href="../grafana/" class="dropdown-item">📈 Grafana</a>
+</li>
+                                    
+<li>
+    <a href="../k8s/" class="dropdown-item">☸️ Kubernetes</a>
+</li>
+                                    
+<li>
+    <a href="../kafka/" class="dropdown-item">🐞 Kafka</a>
+</li>
+                                    
+<li>
+    <a href="../networking/" class="dropdown-item">🕸️ Networking</a>
+</li>
+                                    
+<li>
+    <a href="../openssl/" class="dropdown-item">🔒 OpenSSL</a>
+</li>
+                                    
+<li>
+    <a href="../security/" class="dropdown-item">🔒 Security</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux/" class="dropdown-item">🐧Linux</a>
+</li>
+            
+<li>
+    <a href="../linux/learnings-and-notes/" class="dropdown-item">🐧 Learnings/Notes</a>
+</li>
+            
+<li>
+    <a href="../linux/package-management/" class="dropdown-item">🐧 Package management</a>
+</li>
+            
+<li>
+    <a href="../linux/systemd/" class="dropdown-item">🐧Systemd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Programming</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../programming/" class="dropdown-item">💻Programming</a>
+</li>
+            
+<li>
+    <a href="../programming/go/" class="dropdown-item">🐹 Go</a>
+</li>
+            
+<li>
+    <a href="../programming/java/" class="dropdown-item">🍵 Java</a>
+</li>
+            
+<li>
+    <a href="../programming/python/" class="dropdown-item">🐍Python notes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../research/capitalism/" class="dropdown-item">💰 Capitalism</a>
+</li>
+                                    
+<li>
+    <a href="../../research/climate-change/" class="dropdown-item">🌡️ Climate Change</a>
+</li>
+                                    
+<li>
+    <a href="../../research/covid-19/" class="dropdown-item">🦠 COVID-19 References</a>
+</li>
+                                    
+<li>
+    <a href="../../research/cryptocurrencies/" class="dropdown-item">💸 Cryptocurrencies</a>
+</li>
+                                    
+<li>
+    <a href="../../research/philosophy/" class="dropdown-item">💭 Philosophy / Morality</a>
+</li>
+                                    
+<li>
+    <a href="../../research/privacy-internet/" class="dropdown-item">🔏 Online Privacy and the Internet</a>
+</li>
+                                    
+<li>
+    <a href="../../research/productivity/" class="dropdown-item">✅ Productivity</a>
+</li>
+                                    
+<li>
+    <a href="../../research/scepticism/" class="dropdown-item">💭 Scepticism</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../ansible/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../browsers/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/arunsrin/arunsrin.mkdocs/blob/master/home/notes/aws.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#aws" class="nav-link">☁️ AWS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#cloudformation" class="nav-link">CloudFormation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#ec2" class="nav-link">EC2</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#instance-families" class="nav-link">Instance Families</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#eips" class="nav-link">EIPs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#spot-reserved-instances" class="nav-link">Spot / Reserved instances</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#programming-cli-sdk-cloudformation" class="nav-link">Programming: CLI, SDK, CloudFormation</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#setup-iam-first" class="nav-link">Setup IAM first</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#some-cli-commands-to-try" class="nav-link">Some CLI commands to try</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sdk" class="nav-link">SDK</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#blueprints-cloudformation" class="nav-link">Blueprints / CloudFormation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#updates" class="nav-link">Updates</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#template-vs-stack" class="nav-link">Template vs Stack</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#automation-cf-beanstalk-opsworks" class="nav-link">Automation: CF, Beanstalk, OpsWorks</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#cf-user-data" class="nav-link">CF User Data</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cf-variables" class="nav-link">CF Variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#elastic-beanstalk" class="nav-link">Elastic Beanstalk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#create-the-application" class="nav-link">Create the application</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#create-a-version" class="nav-link">Create a version</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#create-an-environment" class="nav-link">Create an environment</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cleanup" class="nav-link">Cleanup</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#opsworks" class="nav-link">OpsWorks</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#securing-aws-iam-sg-vpc" class="nav-link">Securing AWS: IAM, SG, VPC</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#systems-manager" class="nav-link">Systems Manager</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#iam" class="nav-link">IAM</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sg" class="nav-link">SG</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vpc" class="nav-link">VPC</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#lambda" class="nav-link">Lambda</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#creating-a-lambda" class="nav-link">Creating a lambda</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#alerting" class="nav-link">Alerting</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cloudwatch-cloudtrail" class="nav-link">CloudWatch / CloudTrail</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#serverless-application-model" class="nav-link">Serverless Application Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#stitching-it-together" class="nav-link">Stitching it together</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#data-storage" class="nav-link">Data Storage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#s3" class="nav-link">S3</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#versioning" class="nav-link">Versioning</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#access" class="nav-link">Access</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#static-website-hosting" class="nav-link">Static website hosting</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#things-to-note" class="nav-link">Things to note</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#glacier" class="nav-link">Glacier</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#references" class="nav-link">References</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="aws">☁️ AWS</h1>
+<p>Most of this is from <em>Amazon Web Services in Action, IInd edition</em>.</p>
+<h1 id="cloudformation">CloudFormation</h1>
+<p>Use CloudFormation to create a wordpress infra using these services:</p>
+<ul>
+<li>ELB - ALB specifically</li>
+<li>EC2 - Let's try 2 instances</li>
+<li>RDS - For MySql</li>
+<li>EFS - Using NFSv4.1 for User uploads</li>
+<li>Security Groups - Firewall</li>
+</ul>
+<p>Full yaml written by the authors is <a href="https://s3.amazonaws.com/awsinaction-code2/chapter02/template.yaml">here</a>.</p>
+<p>Well that was fast. The template file externalizes the keypair so you can put
+your own from the drop down.</p>
+<pre class="codehilite"><code class="language-yaml">Parameters:
+  KeyName:
+    Description: 'Key Pair name'
+    Type: 'AWS::EC2::KeyPair::KeyName'
+    Default: mykey
+</code></pre>
+
+<p>It adds an SG under <code>WebServerSecurityGroup</code> for ports 22 and 80.</p>
+<p>There's a <code>LaunchConfiguration</code> section that's a bit like cloud-init (?), they
+specify the conf files here for apache/php, download the wordpress tgz and
+untar, etc.</p>
+<p>Also a mount command is run there to mount the EFS that is also created and
+made available to this deployment.</p>
+<p>The <code>Database</code> section creates the RDS micro instance.</p>
+<p>Looks like you can refer to other blocks in the file like this: <code>GatewayId:
+!Ref InternetGateway</code>. And can even run some sort of queries on top:
+<code>AvailabilityZone: !Select [1, !GetAZs '']</code>.</p>
+<p>As <code>ASG</code> is also created and it sets current count to 4.</p>
+<h1 id="ec2">EC2</h1>
+<h2 id="instance-families">Instance Families</h2>
+<p>To decode the naming convention e.g. <code>t2.micro</code>:</p>
+<ul>
+<li>T - Cheap. Burst to higher perf for short periods.</li>
+<li>M - General Purpose</li>
+<li>C - Compute optimized</li>
+<li>R - Memory optimized</li>
+<li>D - Storage optimized, huge HDD</li>
+<li>I - Storage optimized, huge SSD</li>
+<li>X - Huge capacity, focus on memory, up to 1952 GB Mem and 128 virtual cores</li>
+<li>F - Accelerated computing based on FPGAs</li>
+<li>P,G and CG - Accelerated computing based on GPUs</li>
+</ul>
+<p>The second part of the name, the <code>2</code> in <code>t2</code>, refers to the
+generation. So this is the 2nd generation of the T family, of
+size <code>micro</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Stopped VMs incur no charges (unless you have attached resources like storage)</p>
+</div>
+<h2 id="eips">EIPs</h2>
+<p>EIPs (elastic IPs) give you a fixed IP that you can associate to an EC2
+instance. Otherwise the IP is going to change across reboots.</p>
+<p>Seems very straightforward actually, create an EIP and you can associate to an
+instance or a specific interface.</p>
+<p>You can also create a new Network Interface, attach it to the instance, and
+attach another EIP to that interface.</p>
+<h2 id="spot-reserved-instances">Spot / Reserved instances</h2>
+<p>Spot: You bid for unused capacity in a DC. Price based on supply and demand.</p>
+<p>Reserved: Use if you need VMs for a year or longer. Pay for a given time frame,
+and get a discount. You pay even if you don't use it.</p>
+<ul>
+<li>No upfront, 1 year term</li>
+<li>Partial upfront, 1 or 3 year term</li>
+<li>All upfront, 1 or 3 year term</li>
+</ul>
+<p>Potential savings may go up to 60%. You can also make scheduled reservations,
+e.g. every week day from 9 AM to 5PM.</p>
+<p>For spot instances, you set a bidding price. If the current spot price is lower
+than your bid, an instance is spun up and your job runs. If the spot price then
+exceeds your price, your VM is <em>terminated</em>. Good for batch processing jobs.</p>
+<h1 id="programming-cli-sdk-cloudformation">Programming: CLI, SDK, CloudFormation</h1>
+<h2 id="setup-iam-first">Setup IAM first</h2>
+<p>IAM -&gt; Add User -&gt; </p>
+<ul>
+<li>Name: <em>my-cli</em></li>
+<li>Access type: <code>Programmatic</code></li>
+<li>Permissions: Attach Existing Policies Directly</li>
+<li><code>AdministratorAccess</code> gives us everything</li>
+</ul>
+<p>Then copy the access ID and key over somewhere safe.</p>
+<p>Run <code>aws configure</code> to set things up.</p>
+<pre class="codehilite"><code class="language-bash"> aws configure
+ AWS Access Key ID [None]: &lt;redacted&gt;
+ AWS Secret Access Key [None]: &lt;redacted&gt;
+ Default region name [None]: us-east-1
+ Default output format [None]: json
+ ~
+</code></pre>
+
+<h2 id="some-cli-commands-to-try">Some CLI commands to try</h2>
+<p>This is pretty much like the <code>openstack</code> CLI.</p>
+<ul>
+<li><code>aws ec2 describe-regions</code></li>
+<li><code>aws ec2 describe-instances --filters "Name=instance-type,Values=t2.micro"</code> - Using some filters</li>
+</ul>
+<p>There is a <code>--query</code> arg that uses <em>JMESPath</em>, e.g.</p>
+<ul>
+<li><code>aws ec2 describe-images --query "Images[0].ImageId"</code></li>
+</ul>
+<h2 id="sdk">SDK</h2>
+<p>Similarly, you can use the SDK for better control. e.g. <code>ec2.describeImages({ ... })</code></p>
+<h2 id="blueprints-cloudformation">Blueprints / CloudFormation</h2>
+<p>Covered above already in brief. Contains:</p>
+<ul>
+<li>Format version</li>
+<li>Description</li>
+<li>Parameters - These are things you can set in the UI via drop-down etc, like ssh keys, AZ names, SG, etc</li>
+<li>You can also set default values, remove echo (for sensitive text), specify allowed values and so on.</li>
+<li>Resources - instances, network, LB, EIP etc</li>
+<li>Outputs - return something from the template, like the generated hostname</li>
+<li>Use <code>!GetAtt</code> for this. e.g. <code>!GetAtt 'Server.PublicDnsName'</code></li>
+</ul>
+<h2 id="updates">Updates</h2>
+<p>Normally if you want to increase CPU/Mem, you'd have to power down, edit
+settings, power back up. CF makes it all declarative. In this case, change the
+<code>InstanceType</code> and redeploy, and it will figure out what to do.</p>
+<h2 id="template-vs-stack">Template vs Stack</h2>
+<p>If you run a template to create a certain infrastructure, it's called a stack.
+Think of template as a class and stack as the object instantiated by it.</p>
+<h1 id="automation-cf-beanstalk-opsworks">Automation: CF, Beanstalk, OpsWorks</h1>
+<ul>
+<li>Elastic Beanstalk: fixed runtimes and conventions <ul>
+<li>Config Management Tools: PHP, NodeJS, .Net</li>
+<li>Deployment Runtime: Java, Python, Ruby, Go, Docker</li>
+</ul>
+</li>
+<li>OpsWorks: just chef, ugh<ul>
+<li>Config Management Tools: PHP, NodeJS</li>
+<li>Deployment Runtime: Java, Ruby, or any custom one</li>
+</ul>
+</li>
+<li>CF: write shell scripts that run post-install<ul>
+<li>Config Management Tools: any</li>
+<li>Deployment Runtime: any</li>
+</ul>
+</li>
+</ul>
+<h2 id="cf-user-data">CF User Data</h2>
+<p>Find it at <code>http://169.254.169.254/latest/user-data</code>. Upto 16kb can be injected
+into the VM at boot time.</p>
+<p>It needs to be in base64 format though, so you inject it like
+this:</p>
+<pre class="codehilite"><code>UserData:
+  'Fn::Base64': !Sub |
+    #!/bin/bash -x
+    export MY_PASSWORD=&quot;${MY_PASSWORD}&quot;
+    /usr/bin/start.sh
+</code></pre>
+
+<h2 id="cf-variables">CF Variables</h2>
+<p>Just use <code>!Sub</code>, for instance:</p>
+<pre class="codehilite"><code>!Sub 'Your VPD id is ${VPC}' # same as !Ref VPC
+!Sub '${VPC.CidrBlock}' # same as !GetAtt 'VPC.CidrBlock'
+</code></pre>
+
+<h2 id="elastic-beanstalk">Elastic Beanstalk</h2>
+<p>OS and runtime managed by AWS. Logical blocks are:</p>
+<ul>
+<li>An <em>application</em> which contains versions, environments and configurations.</li>
+<li>A <em>version</em> which identifies a specific release.</li>
+<li>A <em>configuration template</em> for app and platform configs.</li>
+<li>An <em>environment</em> where a specific version and config will be deployed.</li>
+</ul>
+<h2 id="create-the-application">Create the application</h2>
+<p><code>aws elasticbeanstalk create-application --application-name etherpad</code></p>
+<h2 id="create-a-version">Create a version</h2>
+<p>Must exist in S3.</p>
+<pre class="codehilite"><code>aws elasticbeanstalk create-application-version --application-name etherpad \
+ --version-label 1 \
+ --source-bundle &quot;S3Bucket=awsinaction-code2,S3Key=chapter05/etherpad.zip&quot;
+</code></pre>
+
+<h2 id="create-an-environment">Create an environment</h2>
+<p>See what PaaS offerings exist:</p>
+<pre class="codehilite"><code>aws elasticbeanstalk list-available-solution-stacks
+# for the nodeJS one we need in this example:
+aws elasticbeanstalk list-available-solution-stacks --output text \
+ --query &quot;SolutionStacks[?contains(@, 'running Node.js')] | [0]&quot;
+</code></pre>
+
+<p>There's a bunch of stuff for IIS, Java, PHP, Python, Ruby, Tomcat, Go...</p>
+<p>Then create it:</p>
+<pre class="codehilite"><code>$ aws elasticbeanstalk create-environment --environment-name etherpad \
+ --application-name etherpad \
+ --option-settings Namespace=aws:elasticbeanstalk:environment,\
+ OptionName=EnvironmentType,Value=SingleInstance \                 1
+ --solution-stack-name &quot;$SolutionStackName&quot; \
+ --version-label 1
+</code></pre>
+
+<h2 id="cleanup">Cleanup</h2>
+<p>Destroy the environment with <code>terminate-environment</code>, and the
+application with <code>delete-application</code>.</p>
+<h2 id="opsworks">OpsWorks</h2>
+<p>um let's move on, it's Chef.</p>
+<h1 id="securing-aws-iam-sg-vpc">Securing AWS: IAM, SG, VPC</h1>
+<p>Usual stuff here, pretty familiar with app and OS security
+which is not covered anyway. SG for limiting network access,
+VPC for private networks, IAM for RBAC.</p>
+<h2 id="systems-manager">Systems Manager</h2>
+<p>Lets you manage all your instances from a single pane, run
+remote commands on all of them, and so on.</p>
+<p>Also let's you directly access your resources rather than via ssh.</p>
+<h2 id="iam">IAM</h2>
+<ul>
+<li><em>user</em></li>
+<li><em>group</em></li>
+<li><em>role</em></li>
+<li><em>policy</em></li>
+</ul>
+<p>Use IAM users for API access. Allows fine-grained association
+to groups and resources.</p>
+<h3 id="policies">Policies</h3>
+<p>An example:</p>
+<pre class="codehilite"><code class="language-json">{
+  &quot;Version&quot;: &quot;2012-10-17&quot;,
+  &quot;Statement&quot;: [{
+    &quot;Sid&quot;: &quot;1&quot;,
+    &quot;Effect&quot;: &quot;Allow&quot;,
+    &quot;Action&quot;: &quot;ec2:*&quot;,
+    &quot;Resource&quot;: &quot;*&quot;
+  }, {
+    &quot;Sid&quot;: &quot;2&quot;,
+    &quot;Effect&quot;: &quot;Deny&quot;,                      1
+    &quot;Action&quot;: &quot;ec2:TerminateInstances&quot;,    2
+    &quot;Resource&quot;: &quot;*&quot;
+  }]
+}
+</code></pre>
+
+<p>In this case, a user attached to this policy could do
+everything in ec2 except terminate the instances.</p>
+<p>If something is both Denied and Allowed, Deny takes
+precedence.</p>
+<h3 id="arn">ARN</h3>
+<p>An AWS Resource Name (ARN) is a unique identifier with this structure:</p>
+<p><code>arn:aws:ec2:us-east-1:123456789:instance/i-zxcv123v</code></p>
+<p>Service / Region / Account ID / Resource type / Resource</p>
+<p>Account ID is 12 digits.</p>
+<p>Run <code>aws iam get-user</code> to see what you're logged in as, what
+your account id is, etc.</p>
+<h3 id="kinds-of-policies">Kinds of policies</h3>
+<ul>
+<li>Managed policy - Can be reused in your account. AWS
+maintans some (admin, read-only etc), customers can maintain
+their own.</li>
+<li>Inline policy - Belongs to a specific role/user/group.</li>
+</ul>
+<h3 id="creating-my-iam-admin-user">Creating my IAM admin user</h3>
+<pre class="codehilite"><code>aws iam create-group --group-name &quot;admin&quot;
+
+#verify with
+aws iam list-groups
+
+aws iam attach-group-policy --group-name &quot;admin&quot; \
+ --policy-arn &quot;arn:aws:iam::aws:policy/AdministratorAccess&quot;
+
+# verify with
+aws iam list-attached-group-policies --group-name admin
+
+aws iam create-user --user-name &quot;arunsrin&quot;
+
+# verify with
+aws iam list-users
+
+# add to group
+aws iam add-user-to-group --group-name &quot;admin&quot; --user-name &quot;arunsrin&quot;
+
+# set password
+export AWS_PASSWORD='&lt;your-password&gt;'
+aws iam create-login-profile --user-name &quot;arunsrin&quot; --password &quot;$AWS_PASSWORD&quot;
+</code></pre>
+
+<p>Then login to <code>https://$ACCOUNT_ID/signin.aws.amazon.com/console</code> and set up the
+following in the account security settings:</p>
+<ul>
+<li>Access keys</li>
+<li>MFA</li>
+<li>Upload SSH keys to AWS CodeCommit</li>
+</ul>
+<h3 id="authenticating-aws-resources-with-roles">Authenticating AWS resources with roles</h3>
+<p>An EC2 instance might need to talk to S3 and so on. Instead of using IAM users
+and uploading those secrets to each instance, use IAM Roles instead. The
+credentials are automatically injected into the instance.</p>
+<p>In CF you can just declare an inline policy giving access to an instance to a
+specific API.</p>
+<h2 id="sg">SG</h2>
+<p>Create and use <a href="https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html">VPC Flow
+Logs</a> to debug
+problems in this layer.</p>
+<p>The source/dest of an SG can either be an IP address or another SG. A good use
+case for the latter is a bastion host. You can define a SG to only allow SSH to
+the rest of the environment if the source is the bastion instance, irrespective
+of its IP.</p>
+<p>Example that allows ssh to the bastion host only from a public IP, and ssh to
+all other instances only <em>from</em> the bastion host's SG:</p>
+<pre class="codehilite"><code>SecurityGroupBastionHost:
+  Type: 'AWS::EC2::SecurityGroup'
+  Properties:
+    GroupDescription: 'Allowing incoming SSH and ICPM from anywhere.'
+    VpcId: !Ref VPC
+    SecurityGroupIngress:
+    - IpProtocol: icmp
+      FromPort: &quot;-1&quot;
+      ToPort: &quot;-1&quot;
+      CidrIp: '0.0.0.0/0'
+    - IpProtocol: tcp
+      FromPort: '22'
+      ToPort: '22'
+      CidrIp: !Sub '${IpForSSH}/32'
+SecurityGroupInstance:
+  Type: 'AWS::EC2::SecurityGroup'
+  Properties:
+    GroupDescription: 'Allowing incoming SSH from the Bastion Host.'
+    VpcId: !Ref VPC
+    SecurityGroupIngress:
+    - IpProtocol: tcp
+      FromPort: '22'
+      ToPort: '22'
+      SourceSecurityGroupId: !Ref SecurityGroupBastionHost
+</code></pre>
+
+<h2 id="vpc">VPC</h2>
+<p>Private address ranges:
+- <code>10.0.0.0/8</code>
+- <code>172.16.0.0/12</code>
+- <code>192.168.0.0/16</code></p>
+<p>Use a subnet to separate concerns. Private for DB, backend, Public for
+frontend, etc. Goes well with the SG concept above to restrict traffic between
+subnets.</p>
+<p>One can attach an <em>Internet Gateway</em> to a VPC to NAT public traffic to the
+private IPs.</p>
+<p>You can also create <em>Network ACLs</em> and attach to a VPC. Unlike SGs though,
+these are stateless. i.e. for TCP and any bidirectional traffic to work, you'd
+need to explicitly mention ingress and egress for, say, port 22. Also consider
+that incoming connections will use an ephemeral port.. Also the ordering
+matters here and first matching rule is applied and rest are skipped.</p>
+<p>Overall, stick to SGs and use NACLs only for finetuning.</p>
+<h3 id="implementation">Implementation</h3>
+<p>To create an overall VPC with a public subnet that can be reached from the
+outside world:</p>
+<ul>
+<li><code>AWS::EC2::VPC</code> creates the VPC with a certain overall CIDR range.</li>
+<li><code>AWS::EC2::InternetGateway</code> connects you to the outside world.</li>
+<li>
+<p><code>AWS::EC2::VPCGatewayAttachment</code> connects the above 2.</p>
+</li>
+<li>
+<p><code>AWS::EC2::Subnet</code> carve out a smaller new subnet from the VPC above.</p>
+</li>
+<li><code>AWS::EC2::RouteTable</code> routeTable linked to VPC above.</li>
+<li><code>AWS::EC2::SubnetRouteTableAssociation</code> links the 2 above</li>
+<li><code>AWS::EC2::Route</code> specifies a routing rule from the InternetGateway to the RouteTable</li>
+<li><code>AWS::EC2::NetworkAcl</code> firewall rules</li>
+<li><code>AWS::EC2::SubnetNetworkAclAssociation</code> Connect Network Acl to Subnet</li>
+</ul>
+<p>For a private subnet that you want to restrict, you'd skiip the InternetGateway
+bits. As long as its in the same VPC, entities in other subnets can reach each
+other.</p>
+<p>Don't forget to attach the SecurityGroup and SubnetId to the EC2 instance,
+under NetworkInterfaces.</p>
+<p>For devices in an internal subnet to connect to the outside world, use a NAT
+gateway in a public subnet and create a route to it from the inside:</p>
+<ul>
+<li><code>AWS::EC2::Subnet</code> dedicated subnet for public nat</li>
+<li><code>AWS::EC2::RouteTable</code> in the overall VPC</li>
+<li><code>AWS::EC2::Route</code> allowing 0.0.0.0 egress from RouteTable to InternetGateway</li>
+<li><code>AWS::EC2::EIP</code> elastic IP for the Nat Gateway</li>
+<li><code>AWS::EC2::NatGateway</code> with above elastic IP and the Subnet created initially</li>
+<li><code>AWS::EC2::Route</code> routes 0.0.0.0 egress from internal RouteTable to NatGateway</li>
+</ul>
+<p>Since traffic via a NAT Gateway is billed, 2 alternatives are:
+- Use a public subnet if possible, instead of a private one
+- Use <code>VPC endpoints</code> for accessing AWS services like S3</p>
+<h1 id="lambda">Lambda</h1>
+<ul>
+<li>No updates, no remote access</li>
+<li>Billed by invocation</li>
+<li>Integrated with other AWS infra well</li>
+<li>Java, Node, C#, Python, Go</li>
+<li>Publish metrics to CloudWatch by default</li>
+</ul>
+<h2 id="creating-a-lambda">Creating a lambda</h2>
+<p>Lots of blueprints available.</p>
+<p>Seems pretty straightforward to create. We selected a
+blueprint called <code>lambda-canary</code>, a simple python script that
+hits a site and checks for a string.</p>
+<p>Scheduling uses cron syntax but also a <code>rate</code> syntax, e.g.
+<code>rate(1 hour)</code>. EventBridge does this.</p>
+<p>On submission, you get a nice editor to tweak your code, a
+tab to Test it, Monitor it, and so on.</p>
+<h2 id="alerting">Alerting</h2>
+<p>Now to get an email alert when something changes, you need to
+use CloudWatch. Each metric published by lambda has:
+- Invocations: how many times it was called successfully or unsuccessfully
+- Errors: exceptions, timeouts and other failures in the code
+- Duration
+- Throttles: If we hit a limit and AWS throttles the number of invocations of this lambda, it shows up here.</p>
+<p>Errors &amp; Throttles are good metrics to create alerts.</p>
+<ul>
+<li>Go to CloudWatch in the console</li>
+<li>Alarms -&gt; Create Alarm</li>
+<li>Select metrics -&gt; Lambda -&gt; by Function Name -&gt; arunsrin-site-healthcheck | Errors</li>
+<li>Proceed. Select <code>Sum</code> as the statistic</li>
+<li><code>Static</code> Condition, whenever Error is <code>&gt;=</code> a fixed value, say, <code>2</code></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>lambda functions run outside your VPC by default and have
+full internet access. To access the parts within your
+private network in your VPC, you'd have to define the
+VPC, subnets and SG for your lambda function</p>
+</div>
+<h2 id="cloudwatch-cloudtrail">CloudWatch / CloudTrail</h2>
+<p>So far we have seen its metrics, logs and alarms. But it does
+events too. Any state change in an EC2 instance results in a
+new emit. We can detect those events in a lambda function and
+take certain actions.</p>
+<p><em>CloudTrail</em> is the component that raises events.</p>
+<p>You write a rule to filter certain events, like <em>RunInstances</em>.</p>
+<p>Then for python you would implement a function like this:</p>
+<pre class="codehilite"><code class="language-py">def lambda_handler(event, context):
+  # insert your code
+  return
+</code></pre>
+
+<ul>
+<li>300 second limit for each invocation</li>
+<li>Cold start takes time: download dependencies, start runtime..</li>
+</ul>
+<h2 id="serverless-application-model">Serverless Application Model</h2>
+<p>An extension of CF that let's you define lambdas. Your
+scripts in the folder are bundled and uploaded.</p>
+<h2 id="stitching-it-together">Stitching it together</h2>
+<p>To make a backend app in this stack you would use something
+like these:</p>
+<ul>
+<li>API Gateway - Secure and scalable REST APIs</li>
+<li>Lambda - triggered by above</li>
+<li>Object store and NoSQL DB - used by above</li>
+</ul>
+<h1 id="data-storage">Data Storage</h1>
+<ul>
+<li>S3 - access via AWS API, third party tools</li>
+<li>Glacier - very slow</li>
+<li>EBS (SSD) - attached to instance via network</li>
+<li>EC2 Instance Store (SSD) - attached to instance directly</li>
+<li>EFS - NFSv4.1 - attached via network</li>
+<li>RDS - MySQL, SSD</li>
+<li>Elasticache - Redis / memcached protocol</li>
+<li>DynamoDB - access via AWS API (SDKs, CLI)</li>
+</ul>
+<h1 id="s3">S3</h1>
+<p>Make a bucket:</p>
+<pre class="codehilite"><code class="language-sh">$ aws s3 mb s3://arunsrin
+make_bucket: arunsrin
+$
+</code></pre>
+
+<p>Upload:</p>
+<pre class="codehilite"><code class="language-sh">aws s3 sync ~/code/dotfiles/ s3://arunsrin/dotfiles
+</code></pre>
+
+<p>List contents:</p>
+<pre class="codehilite"><code class="language-sh">aws s3 ls 
+aws s3 ls arunsrin/
+aws s3 ls arunsrin/dotfiles/
+</code></pre>
+
+<p>Download:</p>
+<pre class="codehilite"><code class="language-sh">aws s3 cp --recursrive s3://arunsrin s3backup
+</code></pre>
+
+<p>Remove:</p>
+<pre class="codehilite"><code class="language-sh">aws s3 rm --recursive s3://arunsrin/dotfiles
+</code></pre>
+
+<h2 id="versioning">Versioning</h2>
+<p>Disabled by default. Replacing a key with different content will wipe out the
+old data. Turn on versioning:</p>
+<pre class="codehilite"><code class="language-sh">aws s3api put-bucket-versioning --bucket arunsrin \
+ --versioning-configuration Status=Enabled
+</code></pre>
+
+<h2 id="access">Access</h2>
+<p>Create a bucket policy and upload it. Essentially we want to Allow Access, to
+Anyone, to be able to GetObjects from s3, from our Bucket:</p>
+<pre class="codehilite"><code class="language-json">{
+  &quot;Version&quot;:&quot;2012-10-17&quot;,
+  &quot;Statement&quot;:[
+    {
+      &quot;Sid&quot;:&quot;AddPerm&quot;,
+      &quot;Effect&quot;:&quot;Allow&quot;,
+      &quot;Principal&quot;: &quot;*&quot;,
+      &quot;Action&quot;:[&quot;s3:GetObject&quot;],
+      &quot;Resource&quot;:[&quot;arn:aws:s3:::$BucketName/*&quot;]
+    }
+  ]
+}
+</code></pre>
+
+<p>Then upload it:</p>
+<pre class="codehilite"><code class="language-sh">aws s3api put-bucket-policy --bucket arunsrin-uploads --policy file://s3-policy.json
+</code></pre>
+
+<h2 id="static-website-hosting">Static website hosting</h2>
+<p>Do the above to make it publicly accessible, then upload your html files, and
+do this:</p>
+<pre class="codehilite"><code class="language-sh">aws s3 website s3://$BucketName --index-document helloworld.html
+</code></pre>
+
+<p>You can access it on a url like this:</p>
+<p><code>http://$BucketName.s3-website-$Region.amazonaws.com</code></p>
+<p>E.g. mine is http://arunsrin-uploads.s3-website-us-east-1.amazonaws.com/</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>At this point I tried to have a CNAME from my domain to the above, and
+realized it didn't work.</p>
+</div>
+<p>Apparently the CNAME and bucket name have to match. So I had to make a new
+bucket with the correct name and copy the content over, and re-enable public
+access and static website.</p>
+<pre class="codehilite"><code class="language-sh">aws s3 mb s3://uploads.arunsr.in
+aws s3 sync s3://arunsrin-uploads s3://uploads.arunsr.in
+aws s3 rb --force s3://arunsrin-uploads
+aws s3 website s3://uploads.arunsr.in --index-document index.html
+aws s3api put-bucket-policy --bucket uploads.arunsr.in --policy file://s3-policy.json
+</code></pre>
+
+<p>Now <a href="http://uploads.arunsr.in/">http://uploads.arunsr.in/</a> works :)</p>
+<p>But SSL doesn't, TODO see CloudFront for that bit.</p>
+<h2 id="things-to-note">Things to note</h2>
+<p>s3 is eventually consistent. i.e. concurrent creates and deletes will always be
+atomic, but occassionally you might get stale data.</p>
+<p>For better i/o performance, don't name all your keys starting with same
+characters, like image0, image1, image2..</p>
+<p>Using <code>foo/bar</code> gives a folder-like experience while browsing the contents of
+<code>foo/</code> but technically the key is still <code>foo/bar</code>.</p>
+<h1 id="glacier">Glacier</h1>
+<ul>
+<li>Very slow, takes minutes to hours to retrieve data.</li>
+<li>Storage is cheap, putting and getting out data is pricey.</li>
+</ul>
+<p>One can add a <em>lifecycle rule</em> in S3 to archive or delete data after a set
+number of days, or move them to glacier.</p>
+<h1 id="references">References</h1>
+<ul>
+<li><a href="https://github.com/widdix/aws-cf-templates">Cloudformation templates</a></li>
+<li><a href="https://aws.amazon.com/quickstart/?solutions-all.sort-by=item.additionalFields.sortDate&amp;solutions-all.sort-order=desc&amp;awsf.filter-tech-category=*all&amp;awsf.filter-industry=*all&amp;awsf.filter-content-type=*all">AWS quick starts</a></li>
+<li><a href="https://iam.cloudonaut.io/">List of IAM policies</a></li>
+<li>AWS Lambda in Action, by Danilo Poccia</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

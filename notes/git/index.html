@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Arun S">
+        <link rel="canonical" href="https://notes.arunsr.in/notes/git/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>💾 Git - arunsrin's notes</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/solarized-dark.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">arunsrin's notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">🏡 Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../about/" class="nav-link">🐧About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../books/" class="dropdown-item">📖Books</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2019/" class="dropdown-item">📚 2019</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2020/" class="dropdown-item">📚 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2021/" class="dropdown-item">📚 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2022/" class="dropdown-item">📚 2022</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Intro</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/intro/" class="dropdown-item">📃 Oxford - A Very Short Introduction Series</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/accounting/" class="dropdown-item">📃 Accounting</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/advertising/" class="dropdown-item">📃 Advertising</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/alexander/" class="dropdown-item">📃 Alexander the Great</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/anaesthesia/" class="dropdown-item">📃 Anaesthesia</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reviews</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/reviews/crypto101/" class="dropdown-item">📝 Crypto 101</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/despair/" class="dropdown-item">📝 Despair, by Vladimir Nabokov</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/eats-shoots-leaves/" class="dropdown-item">📝 Eats, Shoots & Leaves</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/flow/" class="dropdown-item">📝 Flow</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/good-math/" class="dropdown-item">📝 Good Math</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/happiness/" class="dropdown-item">📝 The Happiness Hypothesis</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/hate-inc/" class="dropdown-item">📝 Hate Inc.</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/how-to-read-a-book/" class="dropdown-item">📝 How To Read A Book</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/the-art-of-the-infinite/" class="dropdown-item">📝 The Art of the Infinite</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/thinking-climate-change/" class="dropdown-item">📝 The Thinking Person's Guide to Climate Change</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/we-are-our-brains/" class="dropdown-item">📝 We Are Our Brains</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../games/" class="dropdown-item">🎮Games</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2019-and-before/" class="dropdown-item">🎮 2019 and before</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2020/" class="dropdown-item">🎮 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2021/" class="dropdown-item">🎮 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2022/" class="dropdown-item">🎮 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../games/xboxone/" class="dropdown-item">🎮Xbox One</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Heroes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../heroes/chomsky/" class="dropdown-item">💭 Noam Chomsky</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/dawkins/" class="dropdown-item">🧬 Richard Dawkins</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/sagan/" class="dropdown-item">🌌 Carl Sagan</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/stallman/" class="dropdown-item">🐧 Richard Stallman</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ansible/" class="dropdown-item">🅰️ Ansible</a>
+</li>
+                                    
+<li>
+    <a href="../aws/" class="dropdown-item">☁️ AWS</a>
+</li>
+                                    
+<li>
+    <a href="../browsers/" class="dropdown-item">🌐 Browsers</a>
+</li>
+                                    
+<li>
+    <a href="../databases/" class="dropdown-item">💾 Databases</a>
+</li>
+                                    
+<li>
+    <a href="../docker/" class="dropdown-item">🐋 Docker</a>
+</li>
+                                    
+<li>
+    <a href="../editors/" class="dropdown-item">⌨️ Editors</a>
+</li>
+                                    
+<li>
+    <a href="../elastic/" class="dropdown-item">🔍 Elastic Stack</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">💾 Git</a>
+</li>
+                                    
+<li>
+    <a href="../grafana/" class="dropdown-item">📈 Grafana</a>
+</li>
+                                    
+<li>
+    <a href="../k8s/" class="dropdown-item">☸️ Kubernetes</a>
+</li>
+                                    
+<li>
+    <a href="../kafka/" class="dropdown-item">🐞 Kafka</a>
+</li>
+                                    
+<li>
+    <a href="../networking/" class="dropdown-item">🕸️ Networking</a>
+</li>
+                                    
+<li>
+    <a href="../openssl/" class="dropdown-item">🔒 OpenSSL</a>
+</li>
+                                    
+<li>
+    <a href="../security/" class="dropdown-item">🔒 Security</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux/" class="dropdown-item">🐧Linux</a>
+</li>
+            
+<li>
+    <a href="../linux/learnings-and-notes/" class="dropdown-item">🐧 Learnings/Notes</a>
+</li>
+            
+<li>
+    <a href="../linux/package-management/" class="dropdown-item">🐧 Package management</a>
+</li>
+            
+<li>
+    <a href="../linux/systemd/" class="dropdown-item">🐧Systemd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Programming</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../programming/" class="dropdown-item">💻Programming</a>
+</li>
+            
+<li>
+    <a href="../programming/go/" class="dropdown-item">🐹 Go</a>
+</li>
+            
+<li>
+    <a href="../programming/java/" class="dropdown-item">🍵 Java</a>
+</li>
+            
+<li>
+    <a href="../programming/python/" class="dropdown-item">🐍Python notes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../research/capitalism/" class="dropdown-item">💰 Capitalism</a>
+</li>
+                                    
+<li>
+    <a href="../../research/climate-change/" class="dropdown-item">🌡️ Climate Change</a>
+</li>
+                                    
+<li>
+    <a href="../../research/covid-19/" class="dropdown-item">🦠 COVID-19 References</a>
+</li>
+                                    
+<li>
+    <a href="../../research/cryptocurrencies/" class="dropdown-item">💸 Cryptocurrencies</a>
+</li>
+                                    
+<li>
+    <a href="../../research/philosophy/" class="dropdown-item">💭 Philosophy / Morality</a>
+</li>
+                                    
+<li>
+    <a href="../../research/privacy-internet/" class="dropdown-item">🔏 Online Privacy and the Internet</a>
+</li>
+                                    
+<li>
+    <a href="../../research/productivity/" class="dropdown-item">✅ Productivity</a>
+</li>
+                                    
+<li>
+    <a href="../../research/scepticism/" class="dropdown-item">💭 Scepticism</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../elastic/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../grafana/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/arunsrin/arunsrin.mkdocs/blob/master/home/notes/git.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#git" class="nav-link">💾 Git</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#separate-git-configurations-for-work-and-play" class="nav-link">Separate git configurations for work and play</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#create-an-empty-commit" class="nav-link">Create an empty commit</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#show-parents-of-a-merge-commit" class="nav-link">Show parents of a merge commit</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#show-files-changed-between-two-commit-ids" class="nav-link">Show files changed between two commit IDs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#color-coded-git-output" class="nav-link">Color coded git output</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#git-objects" class="nav-link">Git objects</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#reverting-a-reverted-commit-in-git" class="nav-link">Reverting a reverted commit in git</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#using-git-stash-to-save-changes-temporarily" class="nav-link">Using git stash to save changes temporarily</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#view-commits-that-arent-in-master" class="nav-link">View commits that aren't in master</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#bitbucket-checkout-a-pull-request" class="nav-link">Bitbucket: checkout a pull request</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#git-rebase-vs-normal-pull" class="nav-link">Git rebase vs normal pull</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#git-log-on-a-file" class="nav-link">Git log on a file</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#submodules" class="nav-link">Submodules</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#working-with-remotes" class="nav-link">Working with remotes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#leaderboards" class="nav-link">Leaderboards</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hide-whitespace-noise" class="nav-link">Hide Whitespace Noise</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#show-words-that-have-changed-inline" class="nav-link">Show words that have changed inline</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#see-what-everyone-is-up-to" class="nav-link">See what everyone is up to</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#generate-a-changelog" class="nav-link">Generate a changelog</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#view-complex-logs" class="nav-link">View complex logs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#handy-aliases" class="nav-link">Handy aliases</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="git">💾 Git</h1>
+<h2 id="separate-git-configurations-for-work-and-play">Separate git configurations for work and play</h2>
+<p>Put something like this in your <code>~/.gitconfig</code>:</p>
+<pre class="codehilite"><code>[includeIf &quot;gitdir:~/work/&quot;]
+    path = ~/.gitconfig.work
+
+[includeIf &quot;gitdir:~/code/&quot;]
+    path = ~/.gitconfig.personal
+</code></pre>
+
+<p>If your work repos are in <code>~/work</code>, you can have a separate user/email etc for
+repos in that folder.</p>
+<h2 id="create-an-empty-commit">Create an empty commit</h2>
+<p><code>git commit --allow-empty -m "blah blah"</code></p>
+<p>Useful if you have a gitops workflow and just want to raise a PR to trigger
+something from there.</p>
+<h2 id="show-parents-of-a-merge-commit">Show parents of a merge commit</h2>
+<pre class="codehilite"><code class="language-sh">git cat-file -p &lt;commit&gt;
+</code></pre>
+
+<p>or</p>
+<pre class="codehilite"><code class="language-sh">git show --pretty=raw &lt;commit&gt;
+</code></pre>
+
+<p>Both these show similar information: the committer, the parent(s),
+commit text and so on.</p>
+<h2 id="show-files-changed-between-two-commit-ids">Show files changed between two commit IDs</h2>
+<p>Now that you have the two parents of a merged request (see above tip),
+you can see all files changed between its two parents with a command
+like this:</p>
+<pre class="codehilite"><code class="language-sh">git diff --name-only &lt;sha1&gt; &lt;sha2&gt;
+</code></pre>
+
+<h2 id="color-coded-git-output">Color coded git output</h2>
+<pre class="codehilite"><code class="language-sh">git config --global color.ui true
+</code></pre>
+
+<h2 id="git-objects">Git objects</h2>
+<ul>
+<li>Tree</li>
+<li>Blob</li>
+<li>Commit</li>
+<li>Tag</li>
+</ul>
+<h2 id="reverting-a-reverted-commit-in-git">Reverting a reverted commit in git</h2>
+<p>If you've reverted a recent commit with:</p>
+<pre class="codehilite"><code class="language-sh">git reset HEAD^
+</code></pre>
+
+<p>You can undo the revert with this:</p>
+<pre class="codehilite"><code class="language-sh">git reset HEAD@{1}
+</code></pre>
+
+<h2 id="using-git-stash-to-save-changes-temporarily">Using git stash to save changes temporarily</h2>
+<ul>
+<li>First do a <code>git add</code> (if its a new file to be tracked), then <code>git stash</code></li>
+<li>Check with <code>git stash list</code></li>
+<li>Reapply with <code>git stash apply</code></li>
+<li>Otherwise use <code>git stash pop</code> to recover the files and discard the stash</li>
+<li>Creating a branch from a stash:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">git stash branch testchanges
+</code></pre>
+
+<h2 id="view-commits-that-arent-in-master">View commits that aren't in master</h2>
+<ul>
+<li>To see commits that have not yet merged to master:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">git log --no-merges master..
+</code></pre>
+
+<h2 id="bitbucket-checkout-a-pull-request">Bitbucket: checkout a pull request</h2>
+<ul>
+<li>From here: <a href="https://gist.github.com/hongymagic/6339056">https://gist.github.com/hongymagic/6339056</a></li>
+</ul>
+<p>First add this to <code>.git/config</code> under the <code>origin</code> section:</p>
+<pre class="codehilite"><code class="language-git">    fetch = +refs/pull-requests/*:refs/remotes/origin/pull-requests/*
+</code></pre>
+
+<p>Then fetch the pull requests:</p>
+<pre class="codehilite"><code class="language-sh">git fetch origin
+</code></pre>
+
+<p>Then checkout the one you want:</p>
+<pre class="codehilite"><code class="language-sh">git checkout pull-requests/1000/from
+</code></pre>
+
+<h2 id="git-rebase-vs-normal-pull">Git rebase vs normal pull</h2>
+<ul>
+<li>Instead of a normal pull, try this:</li>
+</ul>
+<p><code>git pull --rebase origin master</code></p>
+<ul>
+<li>And make it permanent with this: <code>git config --global pull.rebase true</code></li>
+<li>'The <code>--rebase</code> option tells Git to move all of Mary's commits to the
+    tip of the master branch after synchronising it with the changes
+    from the central repository.'</li>
+<li>From here:
+    <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow">https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow</a></li>
+<li>This removes the superfluous 'merge commit' that comes up normally.</li>
+<li>After fixing a merge conflict:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">git add &lt;some-file&gt;
+git rebase --continue
+</code></pre>
+
+<ul>
+<li>To abort:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">git rebase --abort
+</code></pre>
+
+<ul>
+<li>Finally:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">git push origin master
+</code></pre>
+
+<h2 id="git-log-on-a-file">Git log on a file</h2>
+<pre class="codehilite"><code class="language-sh">git log -p filename
+</code></pre>
+
+<p>actually do this:</p>
+<pre class="codehilite"><code class="language-sh">git log --follow filename
+</code></pre>
+
+<h2 id="submodules">Submodules</h2>
+<ul>
+<li>To update all submodules:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">git submodule update --init --recursive
+</code></pre>
+
+<ul>
+<li>To fetch the latest code from a submodule:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">    cd &lt;submodule-folder&gt;
+    git pull
+    cd ..
+    git commit -am &quot;bumping up submodule version&quot;
+</code></pre>
+
+<p>Then merge the code. The next time the parent repository is pulled,
+updating the submodule will get the latest commit in it.</p>
+<h2 id="working-with-remotes">Working with remotes</h2>
+<ul>
+<li>Changing a remote's name</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">git remote origin set-url http://some-other-url
+</code></pre>
+
+<ul>
+<li>Adding a remote</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">git remote add newremote http://newremote-url
+</code></pre>
+
+<ul>
+<li>Then as usual push/pull to and from these remotes</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">git pull origin master
+
+git push newremote master
+</code></pre>
+
+<h2 id="leaderboards">Leaderboards</h2>
+<pre class="codehilite"><code class="language-sh">git shortlog -sn
+</code></pre>
+
+<h2 id="hide-whitespace-noise">Hide Whitespace Noise</h2>
+<p>Good when some one changes indentations and a whole lot of rubbish
+comes).</p>
+<pre class="codehilite"><code class="language-sh">git diff -w
+</code></pre>
+
+<h2 id="show-words-that-have-changed-inline">Show words that have changed inline</h2>
+<pre class="codehilite"><code class="language-sh">git diff --word-diff
+</code></pre>
+
+<h2 id="see-what-everyone-is-up-to">See what everyone is up to</h2>
+<pre class="codehilite"><code class="language-sh">git log --all --oneline --no-merges
+</code></pre>
+
+<h2 id="generate-a-changelog">Generate a changelog</h2>
+<pre class="codehilite"><code class="language-sh">git log --oneline --no-merges &lt;last tag&gt;..HEAD
+</code></pre>
+
+<h2 id="view-complex-logs">View complex logs</h2>
+<pre class="codehilite"><code class="language-sh">git log --graph --all --decorate --stat --date=iso
+</code></pre>
+
+<h2 id="handy-aliases">Handy aliases</h2>
+<p>Put something like this in your <em>.gitconfig</em></p>
+<pre class="codehilite"><code>[alias]
+    st = status --branch --short
+    wat = log --graph --decorate --oneline -15
+    follow = log --follow -p
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

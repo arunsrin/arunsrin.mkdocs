@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Arun S">
+        <link rel="canonical" href="https://notes.arunsr.in/notes/linux/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>🐧Linux - arunsrin's notes</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/solarized-dark.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">arunsrin's notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">🏡 Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../about/" class="nav-link">🐧About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../books/" class="dropdown-item">📖Books</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2019/" class="dropdown-item">📚 2019</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2020/" class="dropdown-item">📚 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2021/" class="dropdown-item">📚 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2022/" class="dropdown-item">📚 2022</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Intro</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/intro/" class="dropdown-item">📃 Oxford - A Very Short Introduction Series</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/accounting/" class="dropdown-item">📃 Accounting</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/advertising/" class="dropdown-item">📃 Advertising</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/alexander/" class="dropdown-item">📃 Alexander the Great</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/anaesthesia/" class="dropdown-item">📃 Anaesthesia</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reviews</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/reviews/crypto101/" class="dropdown-item">📝 Crypto 101</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/despair/" class="dropdown-item">📝 Despair, by Vladimir Nabokov</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/eats-shoots-leaves/" class="dropdown-item">📝 Eats, Shoots & Leaves</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/flow/" class="dropdown-item">📝 Flow</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/good-math/" class="dropdown-item">📝 Good Math</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/happiness/" class="dropdown-item">📝 The Happiness Hypothesis</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/hate-inc/" class="dropdown-item">📝 Hate Inc.</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/how-to-read-a-book/" class="dropdown-item">📝 How To Read A Book</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/the-art-of-the-infinite/" class="dropdown-item">📝 The Art of the Infinite</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/thinking-climate-change/" class="dropdown-item">📝 The Thinking Person's Guide to Climate Change</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/we-are-our-brains/" class="dropdown-item">📝 We Are Our Brains</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../games/" class="dropdown-item">🎮Games</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2019-and-before/" class="dropdown-item">🎮 2019 and before</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2020/" class="dropdown-item">🎮 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2021/" class="dropdown-item">🎮 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2022/" class="dropdown-item">🎮 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../games/xboxone/" class="dropdown-item">🎮Xbox One</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Heroes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../heroes/chomsky/" class="dropdown-item">💭 Noam Chomsky</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/dawkins/" class="dropdown-item">🧬 Richard Dawkins</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/sagan/" class="dropdown-item">🌌 Carl Sagan</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/stallman/" class="dropdown-item">🐧 Richard Stallman</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ansible/" class="dropdown-item">🅰️ Ansible</a>
+</li>
+                                    
+<li>
+    <a href="../aws/" class="dropdown-item">☁️ AWS</a>
+</li>
+                                    
+<li>
+    <a href="../browsers/" class="dropdown-item">🌐 Browsers</a>
+</li>
+                                    
+<li>
+    <a href="../databases/" class="dropdown-item">💾 Databases</a>
+</li>
+                                    
+<li>
+    <a href="../docker/" class="dropdown-item">🐋 Docker</a>
+</li>
+                                    
+<li>
+    <a href="../editors/" class="dropdown-item">⌨️ Editors</a>
+</li>
+                                    
+<li>
+    <a href="../elastic/" class="dropdown-item">🔍 Elastic Stack</a>
+</li>
+                                    
+<li>
+    <a href="../git/" class="dropdown-item">💾 Git</a>
+</li>
+                                    
+<li>
+    <a href="../grafana/" class="dropdown-item">📈 Grafana</a>
+</li>
+                                    
+<li>
+    <a href="../k8s/" class="dropdown-item">☸️ Kubernetes</a>
+</li>
+                                    
+<li>
+    <a href="../kafka/" class="dropdown-item">🐞 Kafka</a>
+</li>
+                                    
+<li>
+    <a href="../networking/" class="dropdown-item">🕸️ Networking</a>
+</li>
+                                    
+<li>
+    <a href="../openssl/" class="dropdown-item">🔒 OpenSSL</a>
+</li>
+                                    
+<li>
+    <a href="../security/" class="dropdown-item">🔒 Security</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active">🐧Linux</a>
+</li>
+            
+<li>
+    <a href="learnings-and-notes/" class="dropdown-item">🐧 Learnings/Notes</a>
+</li>
+            
+<li>
+    <a href="package-management/" class="dropdown-item">🐧 Package management</a>
+</li>
+            
+<li>
+    <a href="systemd/" class="dropdown-item">🐧Systemd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Programming</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../programming/" class="dropdown-item">💻Programming</a>
+</li>
+            
+<li>
+    <a href="../programming/go/" class="dropdown-item">🐹 Go</a>
+</li>
+            
+<li>
+    <a href="../programming/java/" class="dropdown-item">🍵 Java</a>
+</li>
+            
+<li>
+    <a href="../programming/python/" class="dropdown-item">🐍Python notes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../research/capitalism/" class="dropdown-item">💰 Capitalism</a>
+</li>
+                                    
+<li>
+    <a href="../../research/climate-change/" class="dropdown-item">🌡️ Climate Change</a>
+</li>
+                                    
+<li>
+    <a href="../../research/covid-19/" class="dropdown-item">🦠 COVID-19 References</a>
+</li>
+                                    
+<li>
+    <a href="../../research/cryptocurrencies/" class="dropdown-item">💸 Cryptocurrencies</a>
+</li>
+                                    
+<li>
+    <a href="../../research/philosophy/" class="dropdown-item">💭 Philosophy / Morality</a>
+</li>
+                                    
+<li>
+    <a href="../../research/privacy-internet/" class="dropdown-item">🔏 Online Privacy and the Internet</a>
+</li>
+                                    
+<li>
+    <a href="../../research/productivity/" class="dropdown-item">✅ Productivity</a>
+</li>
+                                    
+<li>
+    <a href="../../research/scepticism/" class="dropdown-item">💭 Scepticism</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../security/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="learnings-and-notes/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/arunsrin/arunsrin.mkdocs/blob/master/home/notes/linux/index.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#linux" class="nav-link">🐧Linux</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#general-linux" class="nav-link">General Linux</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="linux">🐧Linux</h1>
+<p>My favourite OS. Been using it since 2004. Learnt the hard way, uphill
+both ways. I used to borrow DVDs from the library at work and give it
+a spin at home. I didn't have a working internet connection back then
+so I'd have to take notes on the error message, research them the next
+day at work, and fix it when I got back. Probably the most fruitful
+time I've had to date.</p>
+<p>I distro-hopped every few months, and my fondest memories are of
+Slackware and, well, FreeBSD. I had a ton of fun with my Desktop:
+setting up IPv6 tunnels, dynamic DNS, apache, squid, privoxy, and
+generally playing with minimiastic window managers and the shell.</p>
+<p>These days I stick with Fedora and love it.</p>
+<h2 id="general-linux">General Linux</h2>
+<h3 id="check-process-thread-utilization-and-cpu-attached-to">Check process, thread, utilization and CPU attached to</h3>
+<p><code>ps -mo pid,tid,%cpu,psr -p &lt;process_id&gt;</code></p>
+<h3 id="check-network-connections-made-by-a-process-with-strace">Check network connections made by a process with strace</h3>
+<p><code>strace -f -e trace=network -o /tmp/strace.txt -s 10000 &lt;cmd&gt; &lt;args&gt;</code></p>
+<h3 id="centos-7-sources">Centos 7 sources</h3>
+<p>Clone their helper repo first:</p>
+<pre class="codehilite"><code class="language-sh">git clone  https://git.centos.org/git/centos-git-common.git
+</code></pre>
+
+<p>Go to their <a href="https://git.centos.org">RPM project</a> and select a project
+to clone. I'm picking <code>coreutils</code> here. This repo has a SPEC file and
+the patches to the original source.</p>
+<pre class="codehilite"><code class="language-sh">git clone https://git.centos.org/r/rpms/coreutils.git
+</code></pre>
+
+<p>The master branch is always empty. Checkout their <code>c7</code> branch to see
+the SPECS and SOURCES folders for Centos 7, and run the helper script
+to fetch the source.</p>
+<pre class="codehilite"><code class="language-sh">git checkout c7
+../centos-git-common/get_sources.sh
+</code></pre>
+
+<h3 id="dnsmasq-custom-dns-server-for-a-domain">dnsmasq custom dns server for a domain</h3>
+<p>Add a specific record like this in the dnsmasq configuration:</p>
+<pre class="codehilite"><code>server=/mydomain.local/10.250.0.2
+</code></pre>
+
+<p>For everything else, dnsmasq will use the existing configuration in
+<code>/etc/resolv.conf</code>.</p>
+<p>More <a href="https://serverfault.com/questions/872109/resolv-conf-multiple-dns-servers-with-specific-domains">here</a></p>
+<h3 id="diff-and-patch">diff and patch</h3>
+<pre class="codehilite"><code class="language-sh">cp somepackage somepackage-new
+# make changes in somepackage-new
+diff -ruN somepackage somepackage-new &gt; mychanges.patch
+# give the patch to someone else, who can now do:
+cd somepackage
+patch -p1 &lt; mychanges.patch
+</code></pre>
+
+<p>More information than you'll ever need
+<a href="http://lists.landley.net/pipermail/toybox-landley.net/2019-January/010049.html">here</a>.</p>
+<h3 id="ccache-notes">ccache notes</h3>
+<p>Install from the repo as usual</p>
+<pre class="codehilite"><code class="language-sh">sudo yum install ccache -y
+</code></pre>
+
+<p>One way to set it up:</p>
+<pre class="codehilite"><code class="language-sh">bash-4.2 /bin$ cp ccache /usr/local/bin/
+bash-4.2 /bin$ ln -s ccache /usr/local/bin/gcc
+bash-4.2 /bin$ ln -s ccache /usr/local/bin/g++
+bash-4.2 /bin$ ln -s ccache /usr/local/bin/cc
+bash-4.2 /bin$ ln -s ccache /usr/local/bin/c++
+</code></pre>
+
+<h3 id="change-timezone-in-centos">Change timezone in centos:</h3>
+<pre class="codehilite"><code class="language-sh">ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+</code></pre>
+
+<p>For debian:</p>
+<pre class="codehilite"><code class="language-sh">timedatectl set-timezone Asia/Kolkata
+</code></pre>
+
+<h3 id="install-fonts-in-centoslinux">Install fonts in centos/linux:</h3>
+<p>System-wide : </p>
+<pre class="codehilite"><code class="language-sh">mkdir -p /usr/share/fonts/greatvibes
+</code></pre>
+
+<p>User only : </p>
+<pre class="codehilite"><code class="language-sh">mkdir ~/.fonts
+</code></pre>
+
+<p>Copy your font files in the appropriate folder and "register" them in the system with:</p>
+<pre class="codehilite"><code class="language-sh">fc-cache -f -v
+</code></pre>
+
+<h3 id="linux-date-conversion-epoch-to-human-readable">Linux date conversion (epoch to human readable)</h3>
+<p>Convert epoch time to human readable format:</p>
+<pre class="codehilite"><code class="language-sh">date -d @1445305686.222
+</code></pre>
+
+<h3 id="howto-add-swap-space">Howto add swap space:</h3>
+<pre class="codehilite"><code class="language-sh">free
+dd if=/dev/zero of=/var/swap.img bs=1024k count=1000
+mkswap /var/swap.img
+swapon /var/swap.img
+free
+</code></pre>
+
+<h3 id="if-df-shows-no-disk-space-even-after-deleting-files-check-this-output">If df shows no disk space even after deleting files, check this output:</h3>
+<pre class="codehilite"><code class="language-sh">sudo /usr/sbin/lsof | grep deleted
+</code></pre>
+
+<ul>
+<li>Space will not be freed for the files there.</li>
+<li>Restart those offending daemons to actually free the space up.</li>
+</ul>
+<p>If you don't have lsof, just use this:</p>
+<pre class="codehilite"><code class="language-sh">find /proc/*/fd -ls | grep  '(deleted)'
+</code></pre>
+
+<h3 id="useful-linux-diagnostic-commands">Useful linux diagnostic commands:</h3>
+<pre class="codehilite"><code class="language-sh">uptime
+dmesg | tail
+vmstat 1
+mpstat -P ALL 1
+pidstat 1
+iostat -xz 1
+free -m
+sar -n DEV 1
+sar -n TCP,ETCP 1
+top
+</code></pre>
+
+<h3 id="gnuscreen-scrollback">GNU/Screen scrollback:</h3>
+<p><code>Ctrl a Esc</code>
+(then use <code>Ctrl b/Ctrl f/Ctrl u/Ctrl d</code> etc)
+and <code>Esc</code> to end</p>
+<h3 id="quick-fsck-solaris">Quick fsck (solaris)</h3>
+<pre class="codehilite"><code class="language-sh">fsck -Fy ufs /dev/rdsk/c1d0s5
+</code></pre>
+
+<h3 id="debian-clean-up-orphaned-files">Debian - clean up orphaned files:</h3>
+<pre class="codehilite"><code class="language-sh">aptitude  remove --purge $(deborphan)
+</code></pre>
+
+<h3 id="see-filesystem-usage">See filesystem usage:</h3>
+<pre class="codehilite"><code class="language-sh">/usr/bin/du --total --summarize --human-readable --one-file-system
+</code></pre>
+
+<h3 id="gnuscreen-splitting-windows">GNU/Screen splitting windows</h3>
+<ul>
+<li><code>C-a V or C-a |</code>     split the screen vertically</li>
+<li><code>C-a X</code>              remove/detach the current split</li>
+<li><code>C-a S</code>              split horizontally</li>
+<li><code>C-a tab</code>            cycle between windows</li>
+</ul>
+<h3 id="tmux-keybindings">Tmux keybindings</h3>
+<ul>
+<li><code>Ctrl-b %</code> (Split the window vertically)</li>
+<li><code>Ctrl-b :</code> "split-window" (Split window horizontally)</li>
+<li><code>Ctrl-b o</code> (Goto next pane)</li>
+<li><code>Ctrl-b q</code> (Show pane numbers, when the numbers show up type the key to goto that pane)</li>
+<li><code>Ctrl-b {</code> (Move the current pane left)</li>
+<li><code>Ctrl-b }</code> (Move the current pane right)</li>
+</ul>
+<p>And here's my .tmux.conf</p>
+<pre class="codehilite"><code class="language-sh">set -g prefix C-a
+unbind C-b
+bind C-a send-prefix
+
+set -g default-terminal &quot;xterm-256color&quot;
+
+set -g history-limit 10000
+set -g set-titles-string &quot;#T&quot;
+
+unbind %
+bind | split-window -h
+bind - split-window -v
+</code></pre>
+
+<h3 id="colour-in-terminals">Colour in terminals</h3>
+<pre class="codehilite"><code class="language-sh">    arunsrin@ARUNSRIN-G2CA5 MINGW64 ~
+    $ printf &quot;\033[32mhi\033[0m&quot;
+    hi
+</code></pre>
+
+<ul>
+<li><code>\033</code> is Escape</li>
+<li>So <code>Escape + 3 + 2 + m</code> tells the terminal that everything from this
+    point onwards is in green.</li>
+<li>
+<p>And <code>Escape + [ + 0 + m</code> reverts it back to normal</p>
+</li>
+<li>
+<p>These are some sequences:</p>
+</li>
+</ul>
+<pre class="codehilite"><code>Sequence   What it Does
+ESC[1m     Bold, intensify foreground
+ESC[4m     Underscore
+ESC[5m     Blink
+ESC[7m     Reverse video
+ESC[0m     All attributes off
+</code></pre>
+
+<h3 id="bash-stty-coredump-etc">Bash Stty: Coredump etc</h3>
+<pre class="codehilite"><code class="language-sh">Ctrl \
+</code></pre>
+
+<p>or</p>
+<pre class="codehilite"><code class="language-sh">kill -SIGQUIT &lt;pid&gt;
+</code></pre>
+
+<p>Override it with:</p>
+<pre class="codehilite"><code class="language-sh">stty quit &lt;some-binding&gt;
+</code></pre>
+
+<p>Similarly for that age-old backspace not deleting a character problem:</p>
+<pre class="codehilite"><code class="language-sh">stty erase ^h
+</code></pre>
+
+<p>To see the current terminal capabilities, run:</p>
+<pre class="codehilite"><code class="language-sh">stty -a
+</code></pre>
+
+<h3 id="fix-for-xargs-errors-when-filenames-contain-spaces">Fix for xargs errors when filenames contain spaces</h3>
+<ul>
+<li><code>find</code> has a print0 option that uses null characters instead of \n as separators.</li>
+<li><code>xargs</code> has a -0 option that uses the same separator when working on the args. So:</li>
+</ul>
+<pre class="codehilite"><code class="language-sh">find . -name -print0 | xargs -0 ls -l
+</code></pre>
+
+<h3 id="bash-faster-navigation-with-cdpath">Bash faster navigation with cdpath</h3>
+<pre class="codehilite"><code class="language-sh">export CDPATH=:$HOME:$HOME/projects:$HOME/code/beech
+</code></pre>
+
+<ul>
+<li>cd'ing to a folder first looks at CWD, then rest of CDPATH</li>
+</ul>
+<h3 id="find">Find</h3>
+<p>with date filters</p>
+<ul>
+<li><code>find . -ctime -3</code> # created in the past 3 days</li>
+<li><code>find . -ctime +3</code> # older than 3 days</li>
+<li><code>find . -ctime 3</code> # created exactly 3 days back</li>
+<li><code>find . -ctime +3 -ctime -5</code> # created 3 - 5 days back</li>
+<li><code>find . -newer /tmp/somefile</code> # see somefile's timestamp and show files newer than it</li>
+<li>works great in conjunction with:</li>
+<li><code>touch 0607090016 /tmp/somefile</code> #i.e. 7th june, 9:00 am, 2016</li>
+<li><code>find . -maxdepth 1 -type d -ctime +38 -exec rm -rf  {} \;</code> delete all folders older than 38 days back.</li>
+<li>don't use atime much: every directory access changes its atime, so when find traverses through it, the inode's atime entry gets updated.</li>
+</ul>
+<h3 id="file-formatting-wrapping-etc">File formatting, wrapping etc</h3>
+<p>Huh, who knew this existed:</p>
+<pre class="codehilite"><code class="language-sh">cat &lt;some-verbose-output&gt; | fold -70
+</code></pre>
+
+<ul>
+<li>
+<p><code>fold -s</code> folds at whitespace</p>
+</li>
+<li>
+<p>Also look at the <code>fmt</code> command, which seems similar to emacs'
+    <code>fill-paragraph</code>.</p>
+</li>
+<li>
+<p><code>pr</code> gives a pretty display with margins, headers, and page numbers.</p>
+</li>
+</ul>
+<h3 id="deleting-files-with-odd-names">Deleting files with odd names</h3>
+<p>There's more than one way. Here's one: find the inode with <code>ls -i</code>, then delete with:</p>
+<pre class="codehilite"><code class="language-sh">find -inum &lt;inode-number&gt; -exec rm -i {} \;
+</code></pre>
+
+<h3 id="see-whitespace-with-cat">See whitespace with cat</h3>
+<p>Use this:</p>
+<pre class="codehilite"><code class="language-sh">cat -v -t -e &lt;somefile&gt;
+</code></pre>
+
+<ul>
+<li><code>-e</code>: Add a trailing <code>$</code> at the end of a line.</li>
+<li><code>-t</code>: Show tabs as <code>^I</code></li>
+</ul>
+<h3 id="stat-command-see-inode-information">Stat command: see inode information</h3>
+<p>The inode holds the address in the filesystem, access permissions, ctime/mtime etc</p>
+<pre class="codehilite"><code class="language-sh">    arunsrin@ARUNSRIN-G2CA5 MINGW64 ~
+    $ stat ntuser.ini
+      File: ‘ntuser.ini’
+      Size: 20              Blocks: 1          IO Block: 65536  regular file
+    Device: a4b221d6h/2763137494d   Inode: 562949953421373  Links: 1
+    Access: (0644/-rw-r--r--)  Uid: (1233064/arunsrin)   Gid: (1049089/ UNKNOWN)
+    Access: 2015-07-21 18:57:13.142410100 +0530
+    Modify: 2010-11-21 08:20:53.336035000 +0530
+    Change: 2016-06-06 09:18:05.239486700 +0530
+     Birth: 2015-07-21 18:57:13.142410100 +0530
+
+    arunsrin@ARUNSRIN-G2CA5 MINGW64 ~
+    $
+</code></pre>
+
+<p>If the filename is odd and you can't paste it easily in the terminal, just try</p>
+<pre class="codehilite"><code class="language-sh">ls -il
+</code></pre>
+
+<h3 id="bash-debugging">Bash debugging</h3>
+<p>Run the script with <code>-xv</code> in the shebang:</p>
+<pre class="codehilite"><code class="language-sh">#!/bin/bash -xv
+# do something
+</code></pre>
+
+<h3 id="bash-suppress-echo-for-reading-passwords">Bash suppress echo (for reading passwords)</h3>
+<p>In bash, while reading input from the user, if you want to suppress
+the echo on the screen (for sensitive inputs like passwords), do this:</p>
+<pre class="codehilite"><code class="language-sh">stty -echo
+read SECRETPASSWD
+stty echo
+</code></pre>
+
+<h3 id="ngrep">ngrep</h3>
+<p>Try this:</p>
+<pre class="codehilite"><code class="language-sh">sudo ngrep -d any &lt;word&gt; -q
+</code></pre>
+
+<p><code>-d any</code> listens on any interface</p>
+<p><code>-q</code> is quiet mode so those <code>#</code>'s don't show.</p>
+<h3 id="pretty-print-json">Pretty-print json</h3>
+<pre class="codehilite"><code class="language-sh">cat somefile.json | python -m json.tool
+</code></pre>
+
+<h3 id="wsl-passwd-reset">WSL passwd reset</h3>
+<p>From powershell, run this to directly login as the root user:</p>
+<pre class="codehilite"><code class="language-sh">wsl --user root
+</code></pre>
+
+<p>If you have more than one wsl distribution installed, list them with <code>wsl -l</code>
+and exec into that with this:</p>
+<pre class="codehilite"><code class="language-sh">wsl -d Ubuntu-20.04 --user root
+</code></pre>
+
+<p>Then you can do the usual <code>passwd</code> or <code>passwd &lt;user&gt;</code> to reset that password.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

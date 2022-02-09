@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Arun S">
+        <link rel="canonical" href="https://notes.arunsr.in/notes/grafana/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>📈 Grafana - arunsrin's notes</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/solarized-dark.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">arunsrin's notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">🏡 Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../about/" class="nav-link">🐧About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../books/" class="dropdown-item">📖Books</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2019/" class="dropdown-item">📚 2019</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2020/" class="dropdown-item">📚 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2021/" class="dropdown-item">📚 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2022/" class="dropdown-item">📚 2022</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Intro</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/intro/" class="dropdown-item">📃 Oxford - A Very Short Introduction Series</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/accounting/" class="dropdown-item">📃 Accounting</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/advertising/" class="dropdown-item">📃 Advertising</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/alexander/" class="dropdown-item">📃 Alexander the Great</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/anaesthesia/" class="dropdown-item">📃 Anaesthesia</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reviews</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/reviews/crypto101/" class="dropdown-item">📝 Crypto 101</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/despair/" class="dropdown-item">📝 Despair, by Vladimir Nabokov</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/eats-shoots-leaves/" class="dropdown-item">📝 Eats, Shoots & Leaves</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/flow/" class="dropdown-item">📝 Flow</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/good-math/" class="dropdown-item">📝 Good Math</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/happiness/" class="dropdown-item">📝 The Happiness Hypothesis</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/hate-inc/" class="dropdown-item">📝 Hate Inc.</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/how-to-read-a-book/" class="dropdown-item">📝 How To Read A Book</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/the-art-of-the-infinite/" class="dropdown-item">📝 The Art of the Infinite</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/thinking-climate-change/" class="dropdown-item">📝 The Thinking Person's Guide to Climate Change</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/we-are-our-brains/" class="dropdown-item">📝 We Are Our Brains</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../games/" class="dropdown-item">🎮Games</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2019-and-before/" class="dropdown-item">🎮 2019 and before</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2020/" class="dropdown-item">🎮 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2021/" class="dropdown-item">🎮 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2022/" class="dropdown-item">🎮 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../games/xboxone/" class="dropdown-item">🎮Xbox One</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Heroes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../heroes/chomsky/" class="dropdown-item">💭 Noam Chomsky</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/dawkins/" class="dropdown-item">🧬 Richard Dawkins</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/sagan/" class="dropdown-item">🌌 Carl Sagan</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/stallman/" class="dropdown-item">🐧 Richard Stallman</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ansible/" class="dropdown-item">🅰️ Ansible</a>
+</li>
+                                    
+<li>
+    <a href="../aws/" class="dropdown-item">☁️ AWS</a>
+</li>
+                                    
+<li>
+    <a href="../browsers/" class="dropdown-item">🌐 Browsers</a>
+</li>
+                                    
+<li>
+    <a href="../databases/" class="dropdown-item">💾 Databases</a>
+</li>
+                                    
+<li>
+    <a href="../docker/" class="dropdown-item">🐋 Docker</a>
+</li>
+                                    
+<li>
+    <a href="../editors/" class="dropdown-item">⌨️ Editors</a>
+</li>
+                                    
+<li>
+    <a href="../elastic/" class="dropdown-item">🔍 Elastic Stack</a>
+</li>
+                                    
+<li>
+    <a href="../git/" class="dropdown-item">💾 Git</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">📈 Grafana</a>
+</li>
+                                    
+<li>
+    <a href="../k8s/" class="dropdown-item">☸️ Kubernetes</a>
+</li>
+                                    
+<li>
+    <a href="../kafka/" class="dropdown-item">🐞 Kafka</a>
+</li>
+                                    
+<li>
+    <a href="../networking/" class="dropdown-item">🕸️ Networking</a>
+</li>
+                                    
+<li>
+    <a href="../openssl/" class="dropdown-item">🔒 OpenSSL</a>
+</li>
+                                    
+<li>
+    <a href="../security/" class="dropdown-item">🔒 Security</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux/" class="dropdown-item">🐧Linux</a>
+</li>
+            
+<li>
+    <a href="../linux/learnings-and-notes/" class="dropdown-item">🐧 Learnings/Notes</a>
+</li>
+            
+<li>
+    <a href="../linux/package-management/" class="dropdown-item">🐧 Package management</a>
+</li>
+            
+<li>
+    <a href="../linux/systemd/" class="dropdown-item">🐧Systemd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Programming</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../programming/" class="dropdown-item">💻Programming</a>
+</li>
+            
+<li>
+    <a href="../programming/go/" class="dropdown-item">🐹 Go</a>
+</li>
+            
+<li>
+    <a href="../programming/java/" class="dropdown-item">🍵 Java</a>
+</li>
+            
+<li>
+    <a href="../programming/python/" class="dropdown-item">🐍Python notes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../research/capitalism/" class="dropdown-item">💰 Capitalism</a>
+</li>
+                                    
+<li>
+    <a href="../../research/climate-change/" class="dropdown-item">🌡️ Climate Change</a>
+</li>
+                                    
+<li>
+    <a href="../../research/covid-19/" class="dropdown-item">🦠 COVID-19 References</a>
+</li>
+                                    
+<li>
+    <a href="../../research/cryptocurrencies/" class="dropdown-item">💸 Cryptocurrencies</a>
+</li>
+                                    
+<li>
+    <a href="../../research/philosophy/" class="dropdown-item">💭 Philosophy / Morality</a>
+</li>
+                                    
+<li>
+    <a href="../../research/privacy-internet/" class="dropdown-item">🔏 Online Privacy and the Internet</a>
+</li>
+                                    
+<li>
+    <a href="../../research/productivity/" class="dropdown-item">✅ Productivity</a>
+</li>
+                                    
+<li>
+    <a href="../../research/scepticism/" class="dropdown-item">💭 Scepticism</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../git/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../k8s/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/arunsrin/arunsrin.mkdocs/blob/master/home/notes/grafana.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#grafana" class="nav-link">📈 Grafana</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#installation" class="nav-link">Installation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#prometheus" class="nav-link">Prometheus</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#influx" class="nav-link">Influx</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="grafana">📈 Grafana</h1>
+<p>Most of these notes are from the book <em>Learn Grafana 7.0</em> by Eric Salituro.</p>
+<h2 id="installation">Installation</h2>
+<pre class="codehilite"><code class="language-sh">docker volume create grafana-storage
+docker run -d --name=grafana -p 3000:3000 \
+  -v grafana-storage:/var/lib/grafana \
+    grafana/grafana
+</code></pre>
+
+<p>Then in my virtualbox, I can access it at http://192.168.56.101:3000/login</p>
+<p><code>admin/admin</code> are the default credentials</p>
+<p>Install plugins like this:</p>
+<pre class="codehilite"><code class="language-sh">grafana-cli plugins install marcusolsson-csv-datasource
+</code></pre>
+
+<p>Then you can load csv data sources, and so on.</p>
+<h2 id="prometheus">Prometheus</h2>
+<h3 id="time-series-basics">Time Series Basics</h3>
+<p>We launched its container in <code>chapter04/docker-compose.yml</code> and made it query
+itself and grafana.</p>
+<p>Standard SQL query:</p>
+<pre class="codehilite"><code class="language-sql">SELECT some fields
+FROM some table
+WHERE fields match some criteria
+</code></pre>
+
+<p>But time series query:</p>
+<pre class="codehilite"><code class="language-sql">SELECT metric
+FROM some data store
+WHERE metric tags match some criteria
+AND in some time range
+</code></pre>
+
+<p>Time series data usually has A timestamp, a metric value and a set of key-value
+pairs for characterizing the data.</p>
+<h3 id="metrics-exposed-by-grafana">Metrics exposed by grafana</h3>
+<p>All the stuff scraped by prometheus for grafana are here:
+http://192.168.56.101:3000/metrics</p>
+<p>Snippet:</p>
+<pre class="codehilite"><code>go_gc_duration_seconds{quantile=&quot;0.25&quot;} 0.000129418
+go_gc_duration_seconds{quantile=&quot;0.5&quot;} 0.000391354
+go_gc_duration_seconds{quantile=&quot;0.75&quot;} 0.001348095
+go_gc_duration_seconds{quantile=&quot;1&quot;} 0.004575058
+go_gc_duration_seconds_sum 0.032182243
+go_gc_duration_seconds_count 37
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 120
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version=&quot;go1.17&quot;} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 1.747936e+07
+</code></pre>
+
+<p>So a corresponding query would be:</p>
+<p><code>go_goroutines{job="grafana"}</code></p>
+<p>Similarly for memory-related queries you would do:</p>
+<p><code>process_resident_memory_bytes{job=grafana}</code></p>
+<p>Next, although the guide told to see prometheus_http_requests_total, grafana
+said it was a counter so it should be converted to
+<code>rate(prometheus_http_requests_total[5m])</code></p>
+<p>I think they mean <code>grafana_http_request_duration_seconds_count</code> actually,
+that’s the one that has tags for method=GET.</p>
+<p>So I’m able to sum it like this:
+<code>sum(grafana_http_request_duration_seconds_count{method="GET"})</code></p>
+<h3 id="types-of-metrics-in-prometheus">Types of metrics in prometheus</h3>
+<ul>
+<li>Gauge</li>
+<li>Counter</li>
+<li>Histogram</li>
+<li>Summary - built-in preaggregated metric that can be graphed directly. E.g.
+<code>go_gc_duration_seconds</code> contains a histogram with 5 quantiles (0%, 25%, 50%,
+75%, 100%), the sum, and the count. You shouldn’t be aggregating these.</li>
+</ul>
+<p>Played around with the metrics browser and was able to get a rate of a
+counter-type metric like this:
+<code>rate(grafana_http_request_duration_seconds_count{handler="/api/live/ws",method="GET"}[$__interval])</code></p>
+<h3 id="aggregations-in-prometheus">Aggregations in prometheus</h3>
+<ul>
+<li>Sum - sum over dimensions</li>
+<li>Min - min over dimensions</li>
+<li>Max - max over dimensions</li>
+<li>Avg - average over dimensions</li>
+<li>Stddev - population standard deviation over dimensions</li>
+<li>Stdvar - population standard variance over dimensions</li>
+<li>Count - counts the number of elements in the vector</li>
+<li>Count_values - counts the number of elements with the same value</li>
+<li>Bottomk - smalles k elements by sample value</li>
+<li>Topk - largest k elements by sample value</li>
+<li>Quantile - calculates the φ quantile (0 &lt;= φ &lt;=1) over dimensions</li>
+</ul>
+<p>Use grafana’s built-in time interval variable for handling aggregation better,
+example <code>irate(http_request_total{handler="/search/",method="get"}[5m])</code></p>
+<p>Becomes:
+<code>irate(http_request_total{handler="/search/",method="get"}[$__interval])</code></p>
+<h2 id="influx">Influx</h2>
+<p>Such a pain to setup! Book is written for influx1 and I’m using v2.</p>
+<ul>
+<li>Influx 1 has a concept of databases</li>
+<li>Influx 2 has a concept of buckets. A bucket + a retention_policy maps to a
+database.</li>
+</ul>
+<h3 id="influx-v1-vs-v2-conversions">Influx v1 vs v2 conversions</h3>
+<p>Code was broken, had to add a token in an Authorization header to fix it.
+Corresponding curl commands:</p>
+<pre class="codehilite"><code class="language-sh">curl -G &quot;http://localhost:8086/query?db=sandbox&quot; \
+  --data-urlencode &quot;q=SHOW DATABASES&quot; \
+  --header &quot;Authorization: Token &lt;my-token&gt;&quot;
+
+curl --request POST \
+  &quot;http://localhost:8086/api/v2/write?org=arunsrin&amp;bucket=sandbox&amp;precision=ns&quot; \
+  --header &quot;Authorization: &lt;my-token&gt;&quot; \
+  --header &quot;Content-Type: text/plain; charset=utf-8&quot; \
+  --header &quot;Accept: application/json&quot; \
+  --data-binary '
+    airSensors,sensor_id=TLM0201 temperature=73.97038159354763,humidity=35.23103248356096,co=0.48445310567793615 1630424257000000000
+    airSensors,sensor_id=TLM0202 temperature=75.30007505999716,humidity=35.651929918691714,co=0.5141876544505826 1630424257000000000
+    '
+
+curl --request POST http://localhost:8086/api/v2/dbrps \
+  --header &quot;Authorization: Token &lt;my-token&gt;&quot; \
+  --header 'Content-type: application/json' \
+  --data '{
+    &quot;bucketID&quot;: &quot;52f73186dcfafc59&quot;,
+    &quot;database&quot;: &quot;sandboxdb&quot;,
+    &quot;default&quot;: true,
+    &quot;orgID&quot;: &quot;92f81bd52ec0ea4a&quot;,
+    &quot;retention_policy&quot;: &quot;example-rp&quot;
+    }'
+</code></pre>
+
+<p>To run the weather importer script with the correct auth token etc, do this:</p>
+<pre class="codehilite"><code class="language-sh">docker run --rm --network host --env-file ./.env-file -v &quot;${PWD}:/usr/src/app&quot; weather --input wx.txt --db sandbox2
+
+curl --request POST http://localhost:8086/api/v2/dbrps \
+  --header &quot;Authorization: Token &lt;my-token&gt;&quot; \
+  --header 'Content-type: application/json' \
+  --data '{
+      &quot;bucketID&quot;: &quot;f7f1e0158ac5e1dc&quot;,
+      &quot;database&quot;: &quot;sandboxdb2&quot;,
+      &quot;default&quot;: true,
+      &quot;orgID&quot;: &quot;92f81bd52ec0ea4a&quot;,
+      &quot;retention_policy&quot;: &quot;example-rp&quot;
+      }'
+</code></pre>
+
+<p>Here is how to map influx2 buckets to influx1 databases: https://ivanahuckova.medium.com/setting-up-influxdb-v2-flux-with-influxql-in-grafana-926599a19eeb</p>
+<h3 id="flux">Flux</h3>
+<p>Flux is a new query language where you can write stuff like this:</p>
+<pre class="codehilite"><code>// v.bucket, v.timeRangeStart, and v.timeRange stop are all variables supported by the flux plugin and influxdb
+  from(bucket: &quot;sandbox2&quot;)
+  |&gt; range(start: v.timeRangeStart, stop: v.timeRangeStop)
+  |&gt; filter(fn: (r) =&gt; r[&quot;_value&quot;] &gt;= 10 and r[&quot;_value&quot;] &lt;= 20)
+</code></pre>
+
+<p>Rather than traditional influx queries.</p>
+<p>See setup instructions here:
+- https://docs.influxdata.com/influxdb/v2.0/tools/grafana/?t=InfluxQL
+- https://docs.influxdata.com/flux/v0.x/query-data/influxdb/</p>
+<p>Sample data that we imported (this is called a line series or something):</p>
+<pre class="codehilite"><code>temperature,station=KSFO,name=San\ Francisco\,\ San\ Francisco\ International\ Airport,cwa=MTR,county=San\ Mateo,state=CA,tz=America/Los_Angeles,unit=wmoUnit:degC value=13.3 1633697760
+dewpoint,station=KSFO,name=San\ Francisco\,\ San\ Francisco\ International\ Airport,cwa=MTR,county=San\ Mateo,state=CA,tz=America/Los_Angeles,unit=wmoUnit:degC value=7.8 1633697760
+barometricPressure,station=KSFO,name=San\ Francisco\,\ San\ Francisco\ International\ Airport,cwa=MTR,county=San\ Mateo,state=CA,tz=America/Los_Angeles,unit=wmoUnit:Pa value=101730 1633697760
+seaLevelPressure,station=KSFO,name=San\ Francisco\,\ San\ Francisco\ International\ Airport,cwa=MTR,county=San\ Mateo,state=CA,tz=America/Los_Angeles,unit=wmoUnit:Pa value=101720 1633697760
+visibility,station=KSFO,name=San\ Francisco\,\ San\ Francisco\ International\ Airport,cwa=MTR,county=San\ Mateo,state=CA,tz=America/Los_Angeles,unit=wmoUnit:m value=16090 1633697760
+relativeHumidity,station=KSFO,name=San\ Francisco\,\ San\ Francisco\ International\ Airport,cwa=MTR,county=San\ Mateo,state=CA,tz=America/Los_Angeles,unit=wmoUnit:percent value=69.322490896102 1633697760
+temperature,station=KSFO,name=San\ Francisco\,\ San\ Francisco\ International\ Airport,cwa=MTR,county=San\ Mateo,state=CA,tz=America/Los_Angeles,unit=wmoUnit:degC value=13.9 1633672560
+dewpoint,station=KSFO,name=San\ Francisco\,\ San\ Francisco\ International\ Airport,cwa=MTR,county=San\ Mateo,state=CA,tz=America/Los_Angeles,unit=wmoUnit:degC value=8.3 1633672560
+windDirection,station=KSFO,name=San\ Francisco\,\ San\ Francisco\ International\ Airport,cwa=MTR,county=San\ Mateo,state=CA,tz=America/Los_Angeles,unit=wmoUnit:degree_(angle) value=270 1633672560
+windSpeed,station=KSFO,name=San\ Francisco\,\ San\ Francisco\ International\ Airport,cwa=MTR,county=San\ Mateo,state=CA,tz=America/Los_Angeles,unit=wmoUnit:km_h-1 value=18.36 1633672560
+</code></pre>
+
+<p>Ooh we can even apply maths and convert celsius to fahrenheit.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

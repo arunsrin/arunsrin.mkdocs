@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Arun S">
+        <link rel="canonical" href="https://notes.arunsr.in/notes/programming/java/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>🍵 Java - arunsrin's notes</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/solarized-dark.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">arunsrin's notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">🏡 Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../about/" class="nav-link">🐧About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../books/" class="dropdown-item">📖Books</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2019/" class="dropdown-item">📚 2019</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2020/" class="dropdown-item">📚 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2021/" class="dropdown-item">📚 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2022/" class="dropdown-item">📚 2022</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Intro</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../books/intro/" class="dropdown-item">📃 Oxford - A Very Short Introduction Series</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/accounting/" class="dropdown-item">📃 Accounting</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/advertising/" class="dropdown-item">📃 Advertising</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/alexander/" class="dropdown-item">📃 Alexander the Great</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/anaesthesia/" class="dropdown-item">📃 Anaesthesia</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reviews</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../books/reviews/crypto101/" class="dropdown-item">📝 Crypto 101</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/despair/" class="dropdown-item">📝 Despair, by Vladimir Nabokov</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/eats-shoots-leaves/" class="dropdown-item">📝 Eats, Shoots & Leaves</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/flow/" class="dropdown-item">📝 Flow</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/good-math/" class="dropdown-item">📝 Good Math</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/happiness/" class="dropdown-item">📝 The Happiness Hypothesis</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/hate-inc/" class="dropdown-item">📝 Hate Inc.</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/how-to-read-a-book/" class="dropdown-item">📝 How To Read A Book</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/the-art-of-the-infinite/" class="dropdown-item">📝 The Art of the Infinite</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/thinking-climate-change/" class="dropdown-item">📝 The Thinking Person's Guide to Climate Change</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/we-are-our-brains/" class="dropdown-item">📝 We Are Our Brains</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../games/" class="dropdown-item">🎮Games</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2019-and-before/" class="dropdown-item">🎮 2019 and before</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2020/" class="dropdown-item">🎮 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2021/" class="dropdown-item">🎮 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2022/" class="dropdown-item">🎮 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/xboxone/" class="dropdown-item">🎮Xbox One</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Heroes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../heroes/chomsky/" class="dropdown-item">💭 Noam Chomsky</a>
+</li>
+                                    
+<li>
+    <a href="../../../heroes/dawkins/" class="dropdown-item">🧬 Richard Dawkins</a>
+</li>
+                                    
+<li>
+    <a href="../../../heroes/sagan/" class="dropdown-item">🌌 Carl Sagan</a>
+</li>
+                                    
+<li>
+    <a href="../../../heroes/stallman/" class="dropdown-item">🐧 Richard Stallman</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ansible/" class="dropdown-item">🅰️ Ansible</a>
+</li>
+                                    
+<li>
+    <a href="../../aws/" class="dropdown-item">☁️ AWS</a>
+</li>
+                                    
+<li>
+    <a href="../../browsers/" class="dropdown-item">🌐 Browsers</a>
+</li>
+                                    
+<li>
+    <a href="../../databases/" class="dropdown-item">💾 Databases</a>
+</li>
+                                    
+<li>
+    <a href="../../docker/" class="dropdown-item">🐋 Docker</a>
+</li>
+                                    
+<li>
+    <a href="../../editors/" class="dropdown-item">⌨️ Editors</a>
+</li>
+                                    
+<li>
+    <a href="../../elastic/" class="dropdown-item">🔍 Elastic Stack</a>
+</li>
+                                    
+<li>
+    <a href="../../git/" class="dropdown-item">💾 Git</a>
+</li>
+                                    
+<li>
+    <a href="../../grafana/" class="dropdown-item">📈 Grafana</a>
+</li>
+                                    
+<li>
+    <a href="../../k8s/" class="dropdown-item">☸️ Kubernetes</a>
+</li>
+                                    
+<li>
+    <a href="../../kafka/" class="dropdown-item">🐞 Kafka</a>
+</li>
+                                    
+<li>
+    <a href="../../networking/" class="dropdown-item">🕸️ Networking</a>
+</li>
+                                    
+<li>
+    <a href="../../openssl/" class="dropdown-item">🔒 OpenSSL</a>
+</li>
+                                    
+<li>
+    <a href="../../security/" class="dropdown-item">🔒 Security</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../linux/" class="dropdown-item">🐧Linux</a>
+</li>
+            
+<li>
+    <a href="../../linux/learnings-and-notes/" class="dropdown-item">🐧 Learnings/Notes</a>
+</li>
+            
+<li>
+    <a href="../../linux/package-management/" class="dropdown-item">🐧 Package management</a>
+</li>
+            
+<li>
+    <a href="../../linux/systemd/" class="dropdown-item">🐧Systemd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Programming</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">💻Programming</a>
+</li>
+            
+<li>
+    <a href="../go/" class="dropdown-item">🐹 Go</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">🍵 Java</a>
+</li>
+            
+<li>
+    <a href="../python/" class="dropdown-item">🐍Python notes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../research/capitalism/" class="dropdown-item">💰 Capitalism</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/climate-change/" class="dropdown-item">🌡️ Climate Change</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/covid-19/" class="dropdown-item">🦠 COVID-19 References</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/cryptocurrencies/" class="dropdown-item">💸 Cryptocurrencies</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/philosophy/" class="dropdown-item">💭 Philosophy / Morality</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/privacy-internet/" class="dropdown-item">🔏 Online Privacy and the Internet</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/productivity/" class="dropdown-item">✅ Productivity</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/scepticism/" class="dropdown-item">💭 Scepticism</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../go/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../python/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/arunsrin/arunsrin.mkdocs/blob/master/home/notes/programming/java.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#java" class="nav-link">🍵 Java</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#maven-build-lifecycle-targets" class="nav-link">Maven build lifecycle targets</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#jconsole-over-ssh-with-socks-proxy" class="nav-link">JConsole over SSH with SOCKS Proxy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#jshell" class="nav-link">JShell</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#javap" class="nav-link">Javap</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#jar-files" class="nav-link">Jar files</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#runtimedebugging" class="nav-link">Runtime/debugging</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#maven" class="nav-link">Maven</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#interfaces" class="nav-link">Interfaces</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#field-types" class="nav-link">Field types</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#things-to-find-out-later" class="nav-link">Things to find out later</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="java">🍵 Java</h1>
+<p>Most of these notes are from the book <em>Java Projects</em> by <em>Peter Verhas</em>.</p>
+<h2 id="maven-build-lifecycle-targets">Maven build lifecycle targets</h2>
+<ul>
+<li><code>validate</code> - validate the project is correct and all necessary information is available</li>
+<li><code>compile</code> - compile the source code of the project</li>
+<li><code>test</code> - test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed</li>
+<li><code>package</code> - take the compiled code and package it in its distributable format, such as a JAR.</li>
+<li><code>verify</code> - run any checks on results of integration tests to ensure quality criteria are met</li>
+<li><code>install</code> - install the package into the local repository, for use as a dependency in other projects locally</li>
+<li><code>deploy</code> - done in the build environment, copies the final package to the remote repository for sharing with other developers and projects.</li>
+</ul>
+<p>From <a href="https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html">the official documentation</a>.</p>
+<h2 id="jconsole-over-ssh-with-socks-proxy">JConsole over SSH with SOCKS Proxy</h2>
+<p>This is from <a href="http://stackoverflow.com/questions/15093376/jconsole-over-ssh-local-port-forwarding">here</a>: 
+Create the SSH socks proxy locally on some free port (e.g. 7777):</p>
+<pre class="codehilite"><code>ssh -fN -D 7777 user@firewalled-host
+</code></pre>
+
+<p>Run JConsole by specifying the SOCKS proxy (e.g. localhost:7777) and
+the address for the JMX server (e.g. localhost:2147)</p>
+<pre class="codehilite"><code>jconsole -J-DsocksProxyHost=localhost -J-DsocksProxyPort=7777 service:jmx:rmi:///jndi/rmi://localhost:2147/jmxrmi -J-DsocksNonProxyHosts=
+</code></pre>
+
+<h2 id="jshell">JShell</h2>
+<ul>
+<li><code>/list -start</code> - shows modules imported at startup.</li>
+<li><code>/edit &lt;number&gt;</code> - edit that line in a new window.</li>
+<li><code>/set editor "vi"</code> - use vi instead of the default graphical edit pad.</li>
+<li><code>/save abc.java</code> - save current buffer to file.</li>
+<li><code>/load abc.java</code> - load from file into shell.</li>
+<li><code>/-1</code> - execute last snippet.</li>
+<li><code>/1</code> - execute first snippet.</li>
+<li><code>/drop N</code> - drop Nth snippet.</li>
+<li><code>/vars</code> - show only variables that were defined in snippets.</li>
+<li><code>/types</code> - show only classes that were defined in snippets.</li>
+</ul>
+<h2 id="javap">Javap</h2>
+<ul>
+<li>
+<p><code>javap TestDecompile.class</code> - decompile .class file to human
+  readable format. Does not show content of methods though.</p>
+</li>
+<li>
+<p><code>javap -c TestDecompile.class</code> - show jvm bytecode in human readable
+  -form, including methods.</p>
+</li>
+</ul>
+<h2 id="jar-files">Jar files</h2>
+<p>These are zip files that have a <code>META-INF</code> folder with a <code>Manifest.mf</code>
+file inside.</p>
+<p>To create a jar file:</p>
+<pre class="codehilite"><code class="language-sh">jar -cf hello.jar HelloWorld.class
+</code></pre>
+
+<p>And to run:</p>
+<pre class="codehilite"><code class="language-sh">java -cp hello.jar HelloWorld
+</code></pre>
+
+<p>To see contents of a jar:</p>
+<pre class="codehilite"><code class="language-sh">jar -tf hello.jar
+</code></pre>
+
+<h2 id="runtimedebugging">Runtime/debugging</h2>
+<ul>
+<li>
+<p><code>jps</code> - Shows all runnning java processes.</p>
+</li>
+<li>
+<p><code>jvisualvm</code> - If you have it, it shows the java processes on the
+  system with details on threads, profiler etc.</p>
+</li>
+<li>
+<p><code>-Xagentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=7896</code>
+  Use these args to start a process in debugging mode.</p>
+<ul>
+<li>
+<p><code>agentlib=jdwp</code> - Load the <code>jdwp</code> agent, for debugging.</p>
+</li>
+<li>
+<p><code>transport=dt_socket</code> - for connecting a debugging client over
+  the network.</p>
+</li>
+<li>
+<p><code>server=y</code> - this one is the server half of the debugging.</p>
+</li>
+<li>
+<p><code>suspend=y</code> - don't start executing until a client debugger
+  attaches.</p>
+</li>
+<li>
+<p><code>address=7896</code> - port we listen on.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="maven">Maven</h2>
+<ul>
+<li>
+<p>Expected directory structure: Java files are in <code>src/main/java</code> as
+  well as <code>src/test/java</code>. Resource files are under
+  <code>src/main/resources</code> and <code>src/test/resources</code>.</p>
+</li>
+<li>
+<p><code>mvn archetype:generate</code>: Generates a skeleton of a project based on
+  your inputs (package name, versioning, project name, etc).</p>
+</li>
+<li>
+<p>Edit <code>pom.xml</code> and set the jdk version there.. the default may be
+  old. Java 9 onwaards doesn't generate the <code>.class</code> format. You
+  should have this added to the default .xml file:</p>
+</li>
+</ul>
+<pre class="codehilite"><code class="language-xml">&lt;build&gt;
+    &lt;plugins&gt;
+      &lt;plugin&gt;
+        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+        &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+        &lt;version&gt;3.8.0&lt;/version&gt;
+        &lt;configuration&gt;
+            &lt;source&gt;1.11&lt;/source&gt;
+            &lt;target&gt;1.11&lt;/target&gt;
+            &lt;release&gt;11&lt;/release&gt;
+        &lt;/configuration&gt;
+      &lt;/plugin&gt;
+    &lt;/plugins&gt;
+  &lt;/build&gt;
+</code></pre>
+
+<ul>
+<li><code>mvn package</code> - compile, test, bundle.</li>
+</ul>
+<h2 id="interfaces">Interfaces</h2>
+<ul>
+<li>All fields (i.e. class variables) default to <code>static final</code>. All
+  methods default to <code>public</code>.</li>
+</ul>
+<h2 id="field-types">Field types</h2>
+<ul>
+<li>
+<p><code>static</code> - One instance per class, not per  object.</p>
+</li>
+<li>
+<p><code>final</code> - Initialized exactly once, either where declared or</p>
+</li>
+<li>
+<p>somewhere in the constructor. Immutable after that.</p>
+</li>
+<li>
+<p><code>transient</code> - Do not serialize/deserialize this field.</p>
+</li>
+<li>
+<p><code>volatile</code> - Treat as a field that may be accessed by multiple
+  threads. If not volatile, the value may be stored in a processor
+  cache or registry for faster access.</p>
+</li>
+</ul>
+<h2 id="things-to-find-out-later">Things to find out later</h2>
+<ul>
+<li>
+<p>See how to create a call graph in eclipse.</p>
+</li>
+<li>
+<p><code>final</code> keyword?</p>
+<ul>
+<li><em>Answer</em>: when used with a variable, it (a) blocks reassignment,
+  and (b) limits existence to that block. e.g. a <code>final String tmp = orig</code>
+  inside a for loop cannot be reassigned with a different
+  value. The value does not exist outside the block it is defined
+  in. Good practice to declare this often as it means a variable
+  is guaranteed not to change in value.</li>
+</ul>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

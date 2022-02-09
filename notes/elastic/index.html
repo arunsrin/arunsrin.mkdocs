@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Arun S">
+        <link rel="canonical" href="https://notes.arunsr.in/notes/elastic/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>🔍 Elastic Stack - arunsrin's notes</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/solarized-dark.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">arunsrin's notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">🏡 Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../about/" class="nav-link">🐧About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../books/" class="dropdown-item">📖Books</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2019/" class="dropdown-item">📚 2019</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2020/" class="dropdown-item">📚 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2021/" class="dropdown-item">📚 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../books/2022/" class="dropdown-item">📚 2022</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Intro</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/intro/" class="dropdown-item">📃 Oxford - A Very Short Introduction Series</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/accounting/" class="dropdown-item">📃 Accounting</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/advertising/" class="dropdown-item">📃 Advertising</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/alexander/" class="dropdown-item">📃 Alexander the Great</a>
+</li>
+            
+<li>
+    <a href="../../books/intro/anaesthesia/" class="dropdown-item">📃 Anaesthesia</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reviews</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../books/reviews/crypto101/" class="dropdown-item">📝 Crypto 101</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/despair/" class="dropdown-item">📝 Despair, by Vladimir Nabokov</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/eats-shoots-leaves/" class="dropdown-item">📝 Eats, Shoots & Leaves</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/flow/" class="dropdown-item">📝 Flow</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/good-math/" class="dropdown-item">📝 Good Math</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/happiness/" class="dropdown-item">📝 The Happiness Hypothesis</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/hate-inc/" class="dropdown-item">📝 Hate Inc.</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/how-to-read-a-book/" class="dropdown-item">📝 How To Read A Book</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/the-art-of-the-infinite/" class="dropdown-item">📝 The Art of the Infinite</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/thinking-climate-change/" class="dropdown-item">📝 The Thinking Person's Guide to Climate Change</a>
+</li>
+            
+<li>
+    <a href="../../books/reviews/we-are-our-brains/" class="dropdown-item">📝 We Are Our Brains</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../games/" class="dropdown-item">🎮Games</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2019-and-before/" class="dropdown-item">🎮 2019 and before</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2020/" class="dropdown-item">🎮 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2021/" class="dropdown-item">🎮 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../games/2022/" class="dropdown-item">🎮 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../games/xboxone/" class="dropdown-item">🎮Xbox One</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Heroes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../heroes/chomsky/" class="dropdown-item">💭 Noam Chomsky</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/dawkins/" class="dropdown-item">🧬 Richard Dawkins</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/sagan/" class="dropdown-item">🌌 Carl Sagan</a>
+</li>
+                                    
+<li>
+    <a href="../../heroes/stallman/" class="dropdown-item">🐧 Richard Stallman</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ansible/" class="dropdown-item">🅰️ Ansible</a>
+</li>
+                                    
+<li>
+    <a href="../aws/" class="dropdown-item">☁️ AWS</a>
+</li>
+                                    
+<li>
+    <a href="../browsers/" class="dropdown-item">🌐 Browsers</a>
+</li>
+                                    
+<li>
+    <a href="../databases/" class="dropdown-item">💾 Databases</a>
+</li>
+                                    
+<li>
+    <a href="../docker/" class="dropdown-item">🐋 Docker</a>
+</li>
+                                    
+<li>
+    <a href="../editors/" class="dropdown-item">⌨️ Editors</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">🔍 Elastic Stack</a>
+</li>
+                                    
+<li>
+    <a href="../git/" class="dropdown-item">💾 Git</a>
+</li>
+                                    
+<li>
+    <a href="../grafana/" class="dropdown-item">📈 Grafana</a>
+</li>
+                                    
+<li>
+    <a href="../k8s/" class="dropdown-item">☸️ Kubernetes</a>
+</li>
+                                    
+<li>
+    <a href="../kafka/" class="dropdown-item">🐞 Kafka</a>
+</li>
+                                    
+<li>
+    <a href="../networking/" class="dropdown-item">🕸️ Networking</a>
+</li>
+                                    
+<li>
+    <a href="../openssl/" class="dropdown-item">🔒 OpenSSL</a>
+</li>
+                                    
+<li>
+    <a href="../security/" class="dropdown-item">🔒 Security</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux/" class="dropdown-item">🐧Linux</a>
+</li>
+            
+<li>
+    <a href="../linux/learnings-and-notes/" class="dropdown-item">🐧 Learnings/Notes</a>
+</li>
+            
+<li>
+    <a href="../linux/package-management/" class="dropdown-item">🐧 Package management</a>
+</li>
+            
+<li>
+    <a href="../linux/systemd/" class="dropdown-item">🐧Systemd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Programming</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../programming/" class="dropdown-item">💻Programming</a>
+</li>
+            
+<li>
+    <a href="../programming/go/" class="dropdown-item">🐹 Go</a>
+</li>
+            
+<li>
+    <a href="../programming/java/" class="dropdown-item">🍵 Java</a>
+</li>
+            
+<li>
+    <a href="../programming/python/" class="dropdown-item">🐍Python notes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../research/capitalism/" class="dropdown-item">💰 Capitalism</a>
+</li>
+                                    
+<li>
+    <a href="../../research/climate-change/" class="dropdown-item">🌡️ Climate Change</a>
+</li>
+                                    
+<li>
+    <a href="../../research/covid-19/" class="dropdown-item">🦠 COVID-19 References</a>
+</li>
+                                    
+<li>
+    <a href="../../research/cryptocurrencies/" class="dropdown-item">💸 Cryptocurrencies</a>
+</li>
+                                    
+<li>
+    <a href="../../research/philosophy/" class="dropdown-item">💭 Philosophy / Morality</a>
+</li>
+                                    
+<li>
+    <a href="../../research/privacy-internet/" class="dropdown-item">🔏 Online Privacy and the Internet</a>
+</li>
+                                    
+<li>
+    <a href="../../research/productivity/" class="dropdown-item">✅ Productivity</a>
+</li>
+                                    
+<li>
+    <a href="../../research/scepticism/" class="dropdown-item">💭 Scepticism</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../editors/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../git/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/arunsrin/arunsrin.mkdocs/blob/master/home/notes/elastic.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#elastic-stack" class="nav-link">🔍 Elastic Stack</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#using-the-kibana-console" class="nav-link">Using the Kibana Console</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#fundamentals" class="nav-link">Fundamentals</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#shards-and-replicas" class="nav-link">Shards and Replicas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#core-datatypes" class="nav-link">Core DataTypes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#complex-datatypes" class="nav-link">Complex DataTypes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#other-datatypes" class="nav-link">Other DataTypes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#indexes" class="nav-link">Indexes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#crud-apis" class="nav-link">CRUD APIs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#updating-a-mapping" class="nav-link">Updating a mapping</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#rest-api-overview" class="nav-link">REST API overview</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#searching" class="nav-link">Searching</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#analytics-and-visualizing-data" class="nav-link">Analytics and Visualizing Data</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#term-queries" class="nav-link">Term queries</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#bucket-aggregations" class="nav-link">Bucket aggregations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#metric-aggregations" class="nav-link">Metric aggregations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#buckets-based-on-geospatial-data" class="nav-link">Buckets based on Geospatial data</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#logstash" class="nav-link">Logstash</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#input-plugins" class="nav-link">Input Plugins</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#output-plugins" class="nav-link">Output Plugins</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#filter-plugins" class="nav-link">Filter Plugins</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#codec-plugins" class="nav-link">Codec Plugins</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#elastic-pipelines" class="nav-link">Elastic Pipelines</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#beats" class="nav-link">Beats</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#kibana-notes" class="nav-link">Kibana Notes</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#initial-setup" class="nav-link">Initial Setup</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#queries" class="nav-link">Queries</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#kql" class="nav-link">KQL</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#visualizations" class="nav-link">Visualizations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#x-pack" class="nav-link">X-Pack</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="elastic-stack">🔍 Elastic Stack</h1>
+<p>These are notes from <em>Learning Elastic Stack 7.0</em>, by Pranav Shukla
+and Sharath Kumar MN.</p>
+<h2 id="using-the-kibana-console">Using the Kibana Console</h2>
+<p>Some simple APIs to warm up.</p>
+<ul>
+<li><code>GET /</code> &lt;- Prints version information</li>
+<li><code>GET &lt;index-name&gt;/_mappings</code> &lt;- schema/mappings of this index</li>
+<li><code>GET &lt;index-name&gt;/_doc/&lt;id_of_document&gt;</code> &lt;- Content of this document</li>
+</ul>
+<h1 id="fundamentals">Fundamentals</h1>
+<p>An <code>Index</code> is loosely analogous to a table, and a document to a
+record.  One Index can have only one <code>Type</code>.</p>
+<p><code>Types</code> are logical groupings same/similar documents in an
+<code>Index</code>. e.g.  Employees could be one Type and Orders could be
+another, even if both were json documents and both had several common
+fields.</p>
+<p><code>Documents</code>: basic unit of information. Contains multiple fields like
+date, logMessage, processName, etc. Internal fields that Elastic
+itself maintains: <code>_id</code> (unique identifier), <code>_type</code> (Document's type,
+e.g. _doc), <code>_index</code> (Index name where it is stored)</p>
+<p><code>Nodes</code> form together to form a <code>cluster</code>.</p>
+<h2 id="shards-and-replicas">Shards and Replicas</h2>
+<p>One can shard an index so that it is split into multiple segments,
+which will then reside on 1 or more nodes. By default 5 shards are
+made for every index. But if a node were to go down, those shards
+would be lost. So you can also create one replica for each shard,
+which will again be distributed in a slightly different order on the
+same nodes. Execution of queries is transparently distribute to either
+the primary or the replica shards.</p>
+<h2 id="core-datatypes">Core DataTypes</h2>
+<ul>
+<li>String datatypes: <ul>
+<li><code>text</code> - general lengthy text, elastic can do full-text search on this</li>
+<li><code>keyword</code> - let's you run some analytics on string fields, i.e. something you want to sort, filter, aggregate</li>
+</ul>
+</li>
+<li>Numeric datatypes:<ul>
+<li><code>byte</code>/<code>short</code>/<code>integer</code>/<code>long</code></li>
+<li><code>float</code>/<code>double</code></li>
+<li><code>half_float</code></li>
+<li><code>scaled_float</code></li>
+</ul>
+</li>
+<li><code>date</code> datatype</li>
+<li><code>boolean</code> datatype</li>
+<li><code>binary</code> datatype - arbitrary binary content, base64-encoded</li>
+<li>Range datatypes: <code>integer_range</code>, <code>float_range</code>, <code>long_range</code>, <code>double_range</code>, <code>date_range</code></li>
+</ul>
+<h2 id="complex-datatypes">Complex DataTypes</h2>
+<ul>
+<li><code>array</code> - no mixing, list of same types</li>
+<li><code>object</code> - allows inner objects within json documents</li>
+<li><code>nested</code> - arrays of inner objects, where each inner object needs to be independently queriable</li>
+</ul>
+<h2 id="other-datatypes">Other DataTypes</h2>
+<ul>
+<li><code>geo-point</code> datatype - stores geo-points as lat and long</li>
+<li><code>geo-shape</code> datatype - store geometric shapes like polygons, maps, etc. Allows queries that search within a shape</li>
+<li><code>ip</code> datatype - ipv4/ipv6</li>
+</ul>
+<h2 id="indexes">Indexes</h2>
+<p>Check <code>GET &lt;index-name&gt;/_mappings</code> in the dev console to see the
+fields and their types in this index.</p>
+<p>You will see stuff like this:</p>
+<pre class="codehilite"><code class="language-json">        &quot;file&quot; : {
+          &quot;type&quot; : &quot;text&quot;,
+          &quot;fields&quot; : {
+            &quot;keyword&quot; : {
+              &quot;type&quot; : &quot;keyword&quot;,
+              &quot;ignore_above&quot; : 256
+            }
+          }
+        },
+</code></pre>
+
+<p>What this means is, <code>file</code> is a field of type <code>text</code>, but it's also
+mapped as a <code>keyword</code> so you can also do analytics on it.</p>
+<p>An <em>Inverted Index</em> is built from all fields.</p>
+<h2 id="crud-apis">CRUD APIs</h2>
+<p>An <em>indexing operation</em> is basically the addition of a document to the
+index. Elastic parses all the fields and builds the inverted index.</p>
+<p>Use the <code>PUT</code> API to do this, with or without an id.</p>
+<p>Get it with this:</p>
+<p><code>GET &lt;index-name&gt;/_doc/&lt;id of document&gt;</code></p>
+<p>You can call an <code>UPDATE</code> with just a specific field (say, <code>price</code>) to
+update that field in the document. Elastic will version and maintain
+both copies. The <code>_version</code> field will be incremented.</p>
+<p>You can set the field <code>doc_as_upsert</code> to <code>true</code> and call a POST to
+<code>&lt;index&gt;/_update/&lt;id&gt;</code> to update if it exists or insert otherwise.</p>
+<p>You can even do some scripting when you call the POST, using Elastic's
+'painless' scripting language. e.g. to increment current value by 2.</p>
+<p><code>DELETE</code>: Call it on <code>&lt;index&gt;/_doc/&lt;id&gt;</code> as expected.</p>
+<h2 id="updating-a-mapping">Updating a mapping</h2>
+<p>In this example, the 'code' field is converted to a <code>keyword</code> type:</p>
+<pre class="codehilite"><code class="language-json">PUT /catalog/_mapping
+{
+  &quot;properties&quot;: {
+    &quot;code&quot;: {
+      &quot;type&quot;: &quot;keyword&quot;
+    }
+  }
+}
+</code></pre>
+
+<h1 id="rest-api-overview">REST API overview</h1>
+<p>Main categories:</p>
+<ul>
+<li>Document APIs</li>
+<li>Search APIs</li>
+<li>Aggregation APIs</li>
+<li>Indexes APIs</li>
+<li>Cluster APIs</li>
+<li>cat APIs</li>
+</ul>
+<p>For pretty printing while using curl, suffix <code>?pretty=true</code>. In the
+Console UI, it's turned on by default.</p>
+<h2 id="searching">Searching</h2>
+<p>Use the <code>_search</code> API: </p>
+<pre class="codehilite"><code>GET /_search
+</code></pre>
+
+<p>This prints ALL docs in ALL indexes, first 10 results only though.</p>
+<p>To search within an index:</p>
+<pre class="codehilite"><code class="language-json">GET /&lt;index-name&gt;/_search
+GET /&lt;index-name&gt;/_doc/_search
+</code></pre>
+
+<p>In earlier versions of elastic, an index could have more than one
+type. In the above example, <code>_doc</code> is the type.</p>
+<p>In Elastic 7.0, only one type is supported. So the second GET is
+deprecated.</p>
+<p>To search across more than one index:</p>
+<pre class="codehilite"><code class="language-json">GET /catalog,my_index/_search
+</code></pre>
+
+<h1 id="analytics-and-visualizing-data">Analytics and Visualizing Data</h1>
+<p>Elastic has <em>Analyzers</em> that break down values of a field into terms,
+to make it searchable. This happens both during indexing and during
+searching. Final goal is for the searchable index to be created.</p>
+<p>Analyzers comprise of Character Filters, a Tokenizer, and Token
+Filters.</p>
+<p><em>Character filters</em> map strings to something else, e.g. :) maps to
+<em><em>smile</em></em>. They are run at the beginning of the processing chain in an
+analyzer.</p>
+<p><em>Token Filters</em> are used for use cases like, removing stop words
+(a/an/the), replacing everything to lowercase, etc.</p>
+<p>Apart from the (default) Standard Analyzer, there are <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-analyzers.html">many
+others</a>.</p>
+<p>To understand how the tokenization happens, here's an example:</p>
+<pre class="codehilite"><code class="language-json">GET /_analyze
+{
+  &quot;text&quot; : &quot;test analysis&quot;,
+  &quot;analyzer&quot;: &quot;standard&quot;
+}
+</code></pre>
+
+<p>Output:</p>
+<pre class="codehilite"><code class="language-json">{
+  &quot;tokens&quot; : [
+    {
+      &quot;token&quot; : &quot;test&quot;,
+      &quot;start_offset&quot; : 0,
+      &quot;end_offset&quot; : 4,
+      &quot;type&quot; : &quot;&lt;ALPHANUM&gt;&quot;,
+      &quot;position&quot; : 0
+    },
+    {
+      &quot;token&quot; : &quot;analysis&quot;,
+      &quot;start_offset&quot; : 5,
+      &quot;end_offset&quot; : 13,
+      &quot;type&quot; : &quot;&lt;ALPHANUM&gt;&quot;,
+      &quot;position&quot; : 1
+    }
+  ]
+}
+</code></pre>
+
+<p>With different analyzers and filters, the final tokens would be
+different.</p>
+<h2 id="term-queries">Term queries</h2>
+<p>You would use these in a search query to bypass the analysis stage and
+directly lookup the inverted index. Other more complex queries use
+these as a base.</p>
+<p>Types of term queries:</p>
+<ul>
+<li><code>range</code> query - e.g. to show all Products where the Price attibute
+is &gt;10 and &lt;=20.<ul>
+<li>You can boost the weight of the results by suppplying a <code>boost</code>
+  multipler.</li>
+<li>You can query date ranges e.g. from <code>now-7d</code> to <code>now</code>.</li>
+</ul>
+</li>
+<li><code>exists</code> query - Just tell if the field exists or not.</li>
+<li>Term query - e.g do an exact match for a certain manufacturer in a
+  Product index. Use the <code>keyword</code> type for this since keywords are
+  not indexed. <ul>
+<li>You can get the keyword by querying <code>&lt;fieldname&gt;.raw</code></li>
+</ul>
+</li>
+<li>Terms query - Same as above, but you can give multiple terms to
+  search for.</li>
+</ul>
+<p>And a few others, see the full list of
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/term-level-queries.html">term-levelqueries</a>
+here.</p>
+<p><code>match</code> queries do the actual full-text searching. However if you
+search in a keyword (like <code>datacenter.raw</code> which is a keyword field),
+it skips all that and does an exact match.</p>
+<p>You can set params for <code>fuzziness</code> in your search and it will return
+results accordingly e.g. victer will match with victor.</p>
+<h2 id="bucket-aggregations">Bucket aggregations</h2>
+<p>Like a GROUP BY basically. Example:</p>
+<pre class="codehilite"><code class="language-json">GET &lt;index_name&gt;/_search
+{
+    &quot;aggs&quot; {
+        &quot;byCategory&quot;: {
+            &quot;terms&quot;: {
+                &quot;field&quot;: &quot;category&quot;
+            }
+        }
+    },
+    &quot;size&quot;: 0
+}
+</code></pre>
+
+<ul>
+<li>The size is set to 0 so we don't get raw results, but only
+  the aggregated ones.</li>
+</ul>
+<p>You can also bucketize by numerical ranges, e.g. show me everything
+between 1 and 100, 100 and 1000, etc.</p>
+<h2 id="metric-aggregations">Metric aggregations</h2>
+<p>Like doing a COUNT or AVG etc on numeric data. It's all json instead
+of SQL. Example:</p>
+<pre class="codehilite"><code class="language-json">GET &lt;index_name&gt;/_search
+{
+    &quot;aggregations&quot;: {
+        &quot;download_max&quot; : {
+            &quot;max&quot;: {
+                &quot;field&quot;: &quot;downloadTotal&quot;
+            }
+        }
+    },
+    &quot;size&quot;: 0
+}
+</code></pre>
+
+<p>A Stats aggregation is similar but it basically does the sum, average,
+mix, max and count in a single shot.</p>
+<h2 id="buckets-based-on-geospatial-data">Buckets based on Geospatial data</h2>
+<ul>
+<li>Geodistance aggregation - based on a lat/long, query hits within a
+  certain radius.</li>
+<li>GeoHash grid aggregation - Divides the map into grids and searches
+  within a wide imprecise grid or narrower, more precise grids.</li>
+</ul>
+<h1 id="logstash">Logstash</h1>
+<p>I already know this quite well. Input/Filter/Output sections etc.</p>
+<h2 id="input-plugins">Input Plugins</h2>
+<ul>
+<li><code>file</code> is the most obvious, to read from a file.</li>
+<li><code>beats</code> tells logstash to pull from a beats daemon. Just takes a
+  <code>port</code> setting and nothing else.</li>
+<li><code>jdbc</code>: imports from a database. Each row becomes an event, each
+  column becomes a field. You can specify your sql statement and how
+  often to query.</li>
+<li><code>imap</code>: read mails!</li>
+</ul>
+<h2 id="output-plugins">Output Plugins</h2>
+<ul>
+<li><code>elasticsearch</code>, and <code>kafka</code> obviously.</li>
+<li><code>csv</code></li>
+<li><code>pagerduty</code> to send to PD. e.g. your input plugin could match all
+  5xx errors and output could directly page someone.</li>
+</ul>
+<h2 id="filter-plugins">Filter Plugins</h2>
+<p><code>grok</code> is the one I've used most but there are others.</p>
+<ul>
+<li><code>csv</code> - Tell it to <code>autodetect_columns</code> otherwise set yours
+  explicitly, and it will extract csv data.</li>
+<li><code>mutate</code> - You can <code>convert</code> fields here (Age to integer), <code>rename</code>
+  them (FName to FirstName), <code>strip</code> them, <code>uppercase</code> them,
+  etc. Looks quite powerful</li>
+<li><code>grok</code> - most poweful. match a line against an expression. Use
+  <code>%{PATTERN:FIELDNAME:type}</code> to match a pattern with a field and set
+  its type. Some in-built patterns are <code>TIMERSTAMP_ISO8601</code>,
+  <code>USERNAME</code>, <code>GREEDYDATA</code>. A nice list is
+  <a href="https://grokdebug.herokuapp.com/patterns#">here</a>.</li>
+<li><code>date</code> - You can set a pattern like <code>dd/MMM/YYY:HH:mm:ss Z</code> as your
+  case may be. Overrides the <code>@timestamp</code> field by default.</li>
+<li><code>geoip</code> - converts an ip to a geoip json (timezone, lat/long,
+  continent code, country name and code etc.)</li>
+<li><code>useragent</code> - converts a UA string based on Browserscope data, to
+  OS, browser, version fields.</li>
+</ul>
+<h2 id="codec-plugins">Codec Plugins</h2>
+<p>There are also 'codec' plugins to encode/decode events: these are hit
+just before the input stage, or just before it leaves the output
+stage. Examples:</p>
+<ul>
+<li><code>json</code>: treats data as json, otherwise falls back to plain text and
+  adds a <code>_jsonparsefailure</code> tag.</li>
+<li><code>rubydebug</code> for ruby stuff</li>
+<li><code>multiline</code> for merging multiple lines into a single event, think a
+  long backtrace. You can specify a regex e.g. any line that starts
+  with a space <code>"^\s "</code>, and logstash will merge it with the previous
+  event.</li>
+</ul>
+<h1 id="elastic-pipelines">Elastic Pipelines</h1>
+<p>Newer elastic versions have an 'ingest node', if you use this you can
+potentially skip all the filtering in logstash. These nodes can do the
+preprocessing before the indexing happens.</p>
+<p>You would define a pipeline, with a series of processors. Each
+processor transforms the document in some way.</p>
+<p>Some processors: gsub, grok, convert, remove, rename, etc. <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/processors.html">Full list
+of processor
+directives</a>.</p>
+<p>e.g. I've seen <code>dissect</code> used to do basically what <code>grok</code> does.</p>
+<p>You would use the <code>_ingest</code> API to play with pipelines.</p>
+<h1 id="beats">Beats</h1>
+<p>Lightweight shippers. A library called <code>libbeat</code> is used. Go is used
+so a single fat binary is all you need. Looks like this does the input
+and output part of logstash, and pipelines do the filter part.</p>
+<ul>
+<li><code>filebeat</code> - takes files and sends them to elastic, kafka, logstash,
+  etc.<ul>
+<li>You can use an out of the box module, consisting of path to look
+for logs, elastic Ingest pipeline to send to, elastic templates
+contianing field definitions, and sample kibana dashboards.</li>
+</ul>
+</li>
+<li><code>metricbeat</code> - like collectd.</li>
+<li><code>packetbeat</code> - real time packet analyzer, understands Application
+  layer like HTTP, MySQL, Redis etc.</li>
+<li><code>heartbeat</code> - check if service is up and reachable. Supports icmp,
+  tcp, http probes.</li>
+<li><code>winlogbeat</code> - Reads event logs using windows APIs.</li>
+<li><code>auditbeat</code> - Skips auditd and directly communicates with underling
+  audit framework apparently.</li>
+<li><code>journalbeat</code> - For journald.</li>
+<li><code>functionbeat</code> - For serverless.</li>
+</ul>
+<p>3rd party stuff: spring, nginx, mysql, mongo, apache, docker, kafka,
+redis, kafka, amazon*. Full list
+<a href="https://www.elastic.co/guide/en/beats/devguide/current/community-beats.html">here</a>.</p>
+<h1 id="kibana-notes">Kibana Notes</h1>
+<h2 id="initial-setup">Initial Setup</h2>
+<p>You must first create an index-pattern that aggregates your
+indexes. Then you would see all its fields, and can make each of them
+searchable, aggregatable, etc.</p>
+<h2 id="queries">Queries</h2>
+<p>Recollect the Term Queries section above. You can search for all those
+exact matches with <code>field:value</code>, e.g. <code>datacenter:sjc</code>.</p>
+<p>OOh you can also do wildcard searches, like this: <code>host:nginx*</code> will
+match all host fields with the value nginx01, nginx02, etc.</p>
+<p>MUST NOT is like this: <code>~response:200</code></p>
+<p>Ranges are like this: <code>response:[301 to 500]</code></p>
+<h2 id="kql">KQL</h2>
+<p><a href="https://www.elastic.co/guide/en/kibana/7.15/kuery-query.html">KQL Guide</a></p>
+<p>Example: <code>response:200 or geoip.city_name:Diedorf</code></p>
+<h2 id="visualizations">Visualizations</h2>
+<p>Kibana supports these 2 aggregations:
+- Bucket: like a GROUP BY.
+- Metric: you can plot Count, Average, Sum, Min, Max, Standard Deviation, etc.</p>
+<h1 id="x-pack">X-Pack</h1>
+<p>You'd see stuff like this on the sidebar: Maps, Machine Learning,
+Infrastructure, Logs, APM, Uptime, Dev Tools, Stack Monitoring.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

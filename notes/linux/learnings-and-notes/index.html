@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Arun S">
+        <link rel="canonical" href="https://notes.arunsr.in/notes/linux/learnings-and-notes/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>🐧 Learnings/Notes - arunsrin's notes</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/solarized-dark.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">arunsrin's notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">🏡 Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../about/" class="nav-link">🐧About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../books/" class="dropdown-item">📖Books</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2019/" class="dropdown-item">📚 2019</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2020/" class="dropdown-item">📚 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2021/" class="dropdown-item">📚 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../../books/2022/" class="dropdown-item">📚 2022</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Intro</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../books/intro/" class="dropdown-item">📃 Oxford - A Very Short Introduction Series</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/accounting/" class="dropdown-item">📃 Accounting</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/advertising/" class="dropdown-item">📃 Advertising</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/alexander/" class="dropdown-item">📃 Alexander the Great</a>
+</li>
+            
+<li>
+    <a href="../../../books/intro/anaesthesia/" class="dropdown-item">📃 Anaesthesia</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reviews</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../books/reviews/crypto101/" class="dropdown-item">📝 Crypto 101</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/despair/" class="dropdown-item">📝 Despair, by Vladimir Nabokov</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/eats-shoots-leaves/" class="dropdown-item">📝 Eats, Shoots & Leaves</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/flow/" class="dropdown-item">📝 Flow</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/good-math/" class="dropdown-item">📝 Good Math</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/happiness/" class="dropdown-item">📝 The Happiness Hypothesis</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/hate-inc/" class="dropdown-item">📝 Hate Inc.</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/how-to-read-a-book/" class="dropdown-item">📝 How To Read A Book</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/the-art-of-the-infinite/" class="dropdown-item">📝 The Art of the Infinite</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/thinking-climate-change/" class="dropdown-item">📝 The Thinking Person's Guide to Climate Change</a>
+</li>
+            
+<li>
+    <a href="../../../books/reviews/we-are-our-brains/" class="dropdown-item">📝 We Are Our Brains</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../games/" class="dropdown-item">🎮Games</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2019-and-before/" class="dropdown-item">🎮 2019 and before</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2020/" class="dropdown-item">🎮 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2021/" class="dropdown-item">🎮 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/2022/" class="dropdown-item">🎮 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../../games/xboxone/" class="dropdown-item">🎮Xbox One</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Heroes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../heroes/chomsky/" class="dropdown-item">💭 Noam Chomsky</a>
+</li>
+                                    
+<li>
+    <a href="../../../heroes/dawkins/" class="dropdown-item">🧬 Richard Dawkins</a>
+</li>
+                                    
+<li>
+    <a href="../../../heroes/sagan/" class="dropdown-item">🌌 Carl Sagan</a>
+</li>
+                                    
+<li>
+    <a href="../../../heroes/stallman/" class="dropdown-item">🐧 Richard Stallman</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ansible/" class="dropdown-item">🅰️ Ansible</a>
+</li>
+                                    
+<li>
+    <a href="../../aws/" class="dropdown-item">☁️ AWS</a>
+</li>
+                                    
+<li>
+    <a href="../../browsers/" class="dropdown-item">🌐 Browsers</a>
+</li>
+                                    
+<li>
+    <a href="../../databases/" class="dropdown-item">💾 Databases</a>
+</li>
+                                    
+<li>
+    <a href="../../docker/" class="dropdown-item">🐋 Docker</a>
+</li>
+                                    
+<li>
+    <a href="../../editors/" class="dropdown-item">⌨️ Editors</a>
+</li>
+                                    
+<li>
+    <a href="../../elastic/" class="dropdown-item">🔍 Elastic Stack</a>
+</li>
+                                    
+<li>
+    <a href="../../git/" class="dropdown-item">💾 Git</a>
+</li>
+                                    
+<li>
+    <a href="../../grafana/" class="dropdown-item">📈 Grafana</a>
+</li>
+                                    
+<li>
+    <a href="../../k8s/" class="dropdown-item">☸️ Kubernetes</a>
+</li>
+                                    
+<li>
+    <a href="../../kafka/" class="dropdown-item">🐞 Kafka</a>
+</li>
+                                    
+<li>
+    <a href="../../networking/" class="dropdown-item">🕸️ Networking</a>
+</li>
+                                    
+<li>
+    <a href="../../openssl/" class="dropdown-item">🔒 OpenSSL</a>
+</li>
+                                    
+<li>
+    <a href="../../security/" class="dropdown-item">🔒 Security</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">🐧Linux</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">🐧 Learnings/Notes</a>
+</li>
+            
+<li>
+    <a href="../package-management/" class="dropdown-item">🐧 Package management</a>
+</li>
+            
+<li>
+    <a href="../systemd/" class="dropdown-item">🐧Systemd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Programming</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../programming/" class="dropdown-item">💻Programming</a>
+</li>
+            
+<li>
+    <a href="../../programming/go/" class="dropdown-item">🐹 Go</a>
+</li>
+            
+<li>
+    <a href="../../programming/java/" class="dropdown-item">🍵 Java</a>
+</li>
+            
+<li>
+    <a href="../../programming/python/" class="dropdown-item">🐍Python notes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../research/capitalism/" class="dropdown-item">💰 Capitalism</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/climate-change/" class="dropdown-item">🌡️ Climate Change</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/covid-19/" class="dropdown-item">🦠 COVID-19 References</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/cryptocurrencies/" class="dropdown-item">💸 Cryptocurrencies</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/philosophy/" class="dropdown-item">💭 Philosophy / Morality</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/privacy-internet/" class="dropdown-item">🔏 Online Privacy and the Internet</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/productivity/" class="dropdown-item">✅ Productivity</a>
+</li>
+                                    
+<li>
+    <a href="../../../research/scepticism/" class="dropdown-item">💭 Scepticism</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../package-management/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/arunsrin/arunsrin.mkdocs/blob/master/home/notes/linux/learnings-and-notes.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#learningsnotes" class="nav-link">🐧 Learnings/Notes</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#linuxs-cfs-completely-fair-scheduler" class="nav-link">Linux's CFS: Completely Fair Scheduler</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#memory-layout-in-linux" class="nav-link">Memory layout in Linux</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#docker-notes" class="nav-link">Docker Notes:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vagrant-notes" class="nav-link">Vagrant notes:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ansible-notes" class="nav-link">Ansible notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#linux-ad-hoc-daemonization" class="nav-link">Linux ad-hoc daemonization</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#linux-ctime-vs-mtime" class="nav-link">linux ctime vs mtime</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#soft-vs-hard-links" class="nav-link">soft vs hard links</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="learningsnotes">🐧 Learnings/Notes</h1>
+<h2 id="linuxs-cfs-completely-fair-scheduler">Linux's CFS: Completely Fair Scheduler</h2>
+<ul>
+<li>On a single cpu, the available cpu cycles are divided among all the
+    threads in proportion to their weights.</li>
+<li>The weight <code>= priority =</code> niceness.</li>
+<li>Threads are organized in a runqueue (implemented as a red-black tree).</li>
+<li>A thread exceeding its timeslice is pre-empted and the next one is given a slice.</li>
+<li>In multicore systems, each core has its own runqueue.</li>
+<li>But this may not always be fair (since one core may run one
+    low-priority thread while the other may run several high-priority
+    threads, inefficiently)</li>
+<li>So linux has a load balancer that periodically keeps the queus in balance.</li>
+<li>Load balancing is a costly operation (both computation and
+    commuication operations are expensive) so it is kept at a minimum if
+    possible.</li>
+</ul>
+<h2 id="memory-layout-in-linux">Memory layout in Linux</h2>
+<ul>
+<li>32-bit: 3:1 ratio: out of 4gb, 3gb is for users and 1gb for kernel</li>
+<li>64-bit: 1:1: out of 128TB, 64TB is for users and 64 for kernel.</li>
+<li>So the kernel memory starts at 0xffff80000000<snip>000 in 64-bit,
+    and 0xc000000 in 32-bit.</li>
+<li>For a user process, Stack size is 8mb by default (see ulimit -s).</li>
+<li>Stack occupies top of the address space and grows down.</li>
+<li>The botttom of the stack contains env variables, prog name and **args</li>
+<li>Below the stack is memmap which has stuff linked dynamically and
+    mapped by the kernel at runtime.</li>
+<li>Then is the heap.</li>
+<li>Then there's bss/data/program text.</li>
+<li>text is usually read-only.</li>
+<li>stack and data are non-executable (to prevent (partially) overflows).</li>
+</ul>
+<h2 id="docker-notes">Docker Notes:</h2>
+<ul>
+<li>apache mesos: get a lot of compute clusters looking like a single system.</li>
+<li>Docker Trusted Registry: on-prem repository service</li>
+<li>Machine: configures docker on cloud instances</li>
+<li>Swarm: deploys containers in clusters. (Docker's version of Kubernetes)</li>
+<li>Compose: use YAML templates ofr multiple application deployments.</li>
+<li>Tutum - like compose for cloud deployment. New acquisition.</li>
+<li>OpenStack Havana supports docker as a hypervisor.</li>
+<li><code>docker run -d</code> (detaches and runs as a daemon)</li>
+<li>use <code>docker start -i asdasdas123 bash</code> to connect to an existing
+    instance. (or actually attach).</li>
+<li>use <code>docker exec</code> if you want another process in an existing
+    container. better than attach since attach just reattaches to the
+    original pid1 process.</li>
+<li><code>docker rename</code> renames an existing container. otherwise <code>--name</code> while starting.</li>
+<li><code>docker ps -a</code> shows non-running containers.</li>
+<li>names are auto-generated if you don't specify them :)</li>
+<li>=docker run &#x2013;name loopdate -d centos /bin/sh -c "while true; do date; sleep 3; done"=</li>
+<li>(daemonize example)</li>
+<li><code>docker logs  --tail 0 -f loopdate</code></li>
+<li>(to see the live logs for the example above)</li>
+<li><code>docker cp /etc/hostname asdasd123132:/tmp</code></li>
+<li><code>docker run --restart &lt;etc&gt;</code>: sets a policy to restart if it
+    stops. doesn't start a new container, just restarts the same id.</li>
+<li>NUMA - Non-Uniform Memory Access.</li>
+<li><code>/var/lib/docker/containers/&lt;id&gt;</code></li>
+<li><code>/var/lib/docker/aufs/diff/&lt;id&gt;</code>: see the CopyOnWrite diffs between this instance and the base layers.</li>
+<li><code>docker diff &lt;id&gt;</code>: shows files changed in a container.</li>
+<li><code>docker inspect loopdate|less</code> : json metadata, e.g. ipaddress.</li>
+<li><code>docker history &lt;image&gt;</code> shows the history of commands used to build that image.</li>
+<li>'latest' is a convention but need not be latest.. e.g. ubuntu sets
+    'latest' to their LTS release 14.04, and not to bleeding edge.</li>
+<li>creating images: either 'commit' an existing container, or specify a dockerfile.</li>
+<li>you can save and package to tar file instead of pushing to a registry.</li>
+<li><code>docker images -a</code>: show intermediate images (these don't have tags)</li>
+<li><code>docker rm `docker ps --no-trunc -aq`</code> (remove everything)</li>
+<li>sample commit command:
+    <code>docker commit --change 'CMD ["/usr/sbin/httpd","-D","FOREGROUND"]'  --change 'ENV APACHE_RUN_USER www-data'  --change 'ENV APACHE_RUN_GROUP www-data' 26cb lab/websvr:v0.2</code></li>
+<li>do a <code>docker pull &lt;image&gt;</code> before use if you want to speed up your boxes.</li>
+<li>docker registry is opensource, and v1.6+ is in go and supports parallel downloads.</li>
+<li>registry:latest is 0.9, and is a python app. deprecated.</li>
+<li><code>docker run -p 5000:5000 -d registry:2</code> &#x2013;gives a web interface for registry v2.</li>
+<li><code>docker tag arun/myapache localhost:5000/myapache</code>, followed by a
+    <code>push</code>: pushes myapache to the local registry.</li>
+<li><code>docker save/load</code>: tar a repo (i.e. image), including parent layers
+    and tags and versions, for local circulation.</li>
+<li><code>docker export</code> is like save, but flattens the filesystem.</li>
+<li>build a docker image from a dockerfile: docker build some/path</li>
+<li>use <code>--link</code> to link two containers together (adds to each container's
+    hosts file). newer versions have advanced networking: put associated
+    containers in a single subnet , and allow them to talk to each
+    other.</li>
+</ul>
+<h2 id="vagrant-notes">Vagrant notes:</h2>
+<h3 id="setup">setup:</h3>
+<ul>
+<li><code>vagrant init</code></li>
+<li><code>vagrant box add centos/7</code></li>
+<li>mention the same box in the vagrantfile</li>
+</ul>
+<h3 id="start">start:</h3>
+<ul>
+<li><code>vagrant up</code></li>
+<li><code>vagrant ssh</code></li>
+</ul>
+<h3 id="stop">stop:</h3>
+<ul>
+<li><code>vagrant suspend</code> # save state and stop</li>
+<li><code>vagrant halt</code> # graceful shutdown</li>
+<li><code>vagrant destroy</code> # wipe out hd etc</li>
+</ul>
+<h2 id="ansible-notes">Ansible notes</h2>
+<ul>
+<li>Modules are wrappers for administration commands (like ping, apt, yum, copy, etc).</li>
+<li>Always use these instead of shell exec since modules are idempotent:
+    you specify the state you want to be in, and the commands are run
+    appropriately.</li>
+<li>A task contains a module to be run, along with Facts or conditions or anything else.</li>
+<li>Handlers can do everything tasks can, and are triggered by tasks
+    when conditions are met. e.g. 'start nginx' would be a handler
+    called in 'install nginx'.</li>
+<li>Roles organize multiple tasks in one coherent whole (e.g. installing
+    nginx may require adding a repo, copying certs, installing the rpm
+    and starting the server).</li>
+<li>Roles are organized like this: files, handlers, meta, templates, tasks, vars.</li>
+<li>Except files and templates, a main.yml file present in all other
+    folders will be executed automatically.</li>
+<li>Files have static files, e.g. httpd.conf, certs etc.</li>
+<li>Handlers have triggers obviously</li>
+<li>Meta has dependencies and other metadata. e.g. run the ssl role
+    before starting the nginx role.</li>
+<li>Templates are based on jinja2.</li>
+<li>Variables have vars that are used to fill the templates.</li>
+<li>Tasks have the main logic.</li>
+<li>To run the whole role, just call the main yaml: <code>ansible-playbook -s main.yml</code></li>
+<li>Facts are metadata gathered by ansible on init: num<sub>processors</sub>,
+    cores, interfaces, mounts etc. you can use these vars in your
+    templates.</li>
+<li>ansible-vault can be used to encrypt vars and files in a role.</li>
+</ul>
+<h2 id="linux-ad-hoc-daemonization">Linux ad-hoc daemonization</h2>
+<ul>
+<li>If a script is running in a terminal and you want to daemonize it, do this:</li>
+<li><code>Ctrl-Z</code> to suspend it</li>
+<li><code>bg</code> to make it a background job</li>
+<li><code>disown -h %job-id</code> where <code>job-id</code> is what bg returned. This removes
+    the command from the shell's job list, so it won't get a SIGHUP when
+    the terminal closes.</li>
+</ul>
+<h2 id="linux-ctime-vs-mtime">linux ctime vs mtime</h2>
+<ul>
+<li>ctime is for inode, mtime is for contents</li>
+<li>e.g. chmod changes ctime. <code>echo "asd"&gt;&gt;file</code> changes mtime.</li>
+</ul>
+<h2 id="soft-vs-hard-links">soft vs hard links</h2>
+<h3 id="hard-links">Hard links:</h3>
+<ul>
+<li>Two filenames in a folder pointing to the exact same inode.</li>
+<li>There is no distinction between the link and the original.</li>
+<li>This means you can delete one file and the other will still exist!</li>
+<li>Cannot traverse filesystems. cannot hard link directories</li>
+</ul>
+<h3 id="soft-links">Soft links:</h3>
+<ul>
+<li>A new kind of file that has its own inode entry. the OS knows how to
+    traverse from it to the parent.</li>
+<li>
+<p>No limitations.</p>
+</li>
+<li>
+<p>When a user runs mkdir, along with creating a directory, mkdir
+    internally creates a hard-link called '..' pointing to the
+    parent. that's why cd .. takes you to the parent, and that way '..'
+    doesn't take up space in the filesystem either. Similarly another
+    hardlink called '.' is created inside that folder, linking to the
+    folder itself in the parent.</p>
+</li>
+</ul>
+<p>i.e. if you have test/child:</p>
+<pre class="codehilite"><code class="language-sh">cd child
+ls -ail
+.   inode1  # child's inode
+..  inode2  # parent's inode
+cd ..
+ls -ail
+. inode2   # parent's inode
+.. inode4  # parent's parent's inode
+child inode1
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
