@@ -2,6 +2,7 @@
 
 This page was getting too big so I've split up my gaming history to each year:
 
+- [2022](2022.md)
 - [2021](2021.md)
 - [2020](2020.md)
 - [2019 and before](2019-and-before.md)
