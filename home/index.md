@@ -48,6 +48,7 @@ so on.
     - [🐹Go](notes/programming/go.md)
     - [🍵Java](notes/programming/java.md)
     - [🐍Python](notes/programming/python.md)
+- [🔥Prometheus](notes/prometheus.md)
 - [🔒Security](notes/security.md)
 
 ## 🎮Games
