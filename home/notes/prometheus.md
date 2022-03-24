@@ -94,3 +94,25 @@ that were in the remaining buckets. `le` is a bucket label here.
     No further calculations can happen on a quantile, like sum or avg.
 
 
+## Functions
+
+`increase` is just syntactic sugar, and displays the `rate` * `range` where the
+range is something like `[5m]`.
+
+`rate` is for counters, and if your instance restarts, `rate` will
+automatically account for it. So metrics like 5, 7, 12, <restart happens>, 3,
+6... will be interpreted as 5, 7, 12, 15, 18...
+
+`resets` counts the number of times this has happened, so is helpful to detect
+the number of times your process has restarted. E.g.
+`resets(process_cpu_seconds_total[1h])`
+
+Similarly `changes` tells you how often a gauge changed, and is useful for
+gauges that don't change very often.
+
+## Recording Rules
+
+A way to run queries periodically. Helps to speed up dashboards or use the
+results elsewhere. Useful to reduce cardinality: when you have a slow query,
+you can split it up and use a recording rule. Prometheus will output a new
+metric that you can use in the outer query.
