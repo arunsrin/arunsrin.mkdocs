@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block footer %}
+       {% if page and page.meta.revision_date %}<br>
+       <small>Last revised on: {{ page.meta.revision_date }}</small>
+       {% endif %}
+{% endblock %}
