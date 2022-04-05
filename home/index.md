@@ -90,7 +90,7 @@ hosted on [NFSN](https://nearlyfreespeech.net).
 
 ## 🌐External Links
 
-- [My Blog](https://blog.arunsr.in) - I double commit my content here too because there's times when
+- [My Blog](https://arunsr.in) - I double commit my content here too because there's times when
   I liked wordpress (I can post my artwork there) and times when I like this mkdocs site.
   Structurally I like the garden-like feel of this site more than chronological format of  a blog)
 
