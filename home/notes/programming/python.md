@@ -1,5 +1,11 @@
 # 🐍Python notes
 
+## pip: upgrade all packages in a virtual env
+
+```sh
+pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
+```
+
 ## Modern Python (2021 edition)
 
 I use Python heavily but still prefer tools and libraries from the 2.x days. Here are some newer
@@ -215,6 +221,28 @@ do so. Once you `submit` a function to these, you will get back a
 `Future` object, and you can get the actual result in
 `Future.result()`. Instead of `run_in_loop` you would do a
 `run_in_executor`.
+
+## Event-Driven Programming
+
+- Callback-based: 1:1 binding between the object that emits the event and the
+  handler that executes some logic based on that event. e.g. GUI toolkits.
+- Subject-based: Many subscribers can `register` to a Subject, which will then
+  `notify` all subscribers whenever any event is triggered. one-to-many.
+- Topic-based: Write to a topic, and forget about it. One or more handlers can
+  subscribe to that topic. Completely decoupled.
+
+## Metaprogramming
+
+Useful packages:
+
+- `inflection`
+- `macropy3`
+- `falcon`
+- `hy`
+
+Class decorators return a class instead of a function object, example
+`@dataclass` and `@runtime_checkable`.
+
 
 ---
 
