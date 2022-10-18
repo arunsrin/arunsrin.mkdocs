@@ -9,6 +9,8 @@ In late-2021 I got a new laptop and it is great that Game Pass
 Ultimate gives you access to a lot of the console portfolio, with
 saves sync'd neatly between the two.
 
+In 2022 I upgraded to an Xbox Series X.
+
 Here are the games I've completed (i.e. seen the end credits, I'm not an
 achievement hunter) in the past few years:
 

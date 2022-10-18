@@ -90,15 +90,15 @@ hosted on [NFSN](https://nearlyfreespeech.net).
 
 ## 🌐External Links
 
-- [My Blog](https://arunsr.in) - I double commit my content here too because there's times when
+- [My Blog](https://arunsrin.wordpress.com) - I double commit my content here too because there's times when
   I liked wordpress (I can post my artwork there) and times when I like this mkdocs site.
   Structurally I like the garden-like feel of this site more than chronological format of  a blog)
 
-- [Asha's blog](https://asha.arunsr.in) - My daughter's wordpress blog. She
+- [Asha's blog](https://pinkwedelia.wordpress.com) - My daughter's wordpress blog. She
 writes all the content, I just help with uploading images and post
 tagging/cateogorization.
 
-- [Siddharth's blog](https://siddharth.arunsr.in) - My son's wordpress. I help
+- [Siddharth's blog](https://astrogrug.wordpress.com) - My son's wordpress. I help
 him with choosing titles and uploading pics, he figures out the rest.
 
 - Books I own, on [LibraryThing](https://www.librarything.com/catalog/indeliblestamp) and [GoodReads](https://www.goodreads.com/user/show/103052357-arun-s).
