@@ -60,7 +60,6 @@ Current-gen: I have an [🎮Xbox One](games/xboxone.md)
 
 Here is a list of games played per year:
 
-- [🎮2023](games/2023.md)
 - [🎮2022](games/2022.md)
 - [🎮2021](games/2021.md)
 - [🎮2020](games/2020.md)
