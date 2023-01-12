@@ -17,6 +17,7 @@ Me and my [books](books/index.md)
 
 Here is a list of books read per year, starting November 2019.
 
+- [📚2023](books/2023.md)
 - [📚2022](books/2022.md)
 - [📚2021](books/2021.md)
 - [📚2020](books/2020.md)
@@ -59,6 +60,7 @@ Current-gen: I have an [🎮Xbox One](games/xboxone.md)
 
 Here is a list of games played per year:
 
+- [🎮2023](games/2023.md)
 - [🎮2022](games/2022.md)
 - [🎮2021](games/2021.md)
 - [🎮2020](games/2020.md)
