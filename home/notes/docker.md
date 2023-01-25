@@ -25,6 +25,8 @@ Some [kubernetes](k8s.md) notes are here.
 -   `docker pull arun/mynewcontainer` - Pull from docker hub or some other registry.
 -   `docker run arun/mynewcontainer` &#x2013;name test -d /usr/bin/nginx - daemonize and run a pulled image. RUN IS FOR IMAGES.
 -   `docker run --rm -it --link myredis:redis redis /bin/bash` - Woah. We ran another container and linked it to the existing 'myredis' container as 'redis' on the new one, i.e. /etc/hosts has an entry called 'redis' pointing to the old one.
+- `docker system info` - Versions and other useful info.
+- `docker system df -v` - Shows shared and unique image size usage, very useful to understand real disk utilization.
 
 ## Cleanup
 
