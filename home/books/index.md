@@ -12,6 +12,7 @@ For non-fiction I like writers like Richard Dawkins and Noam Chomsky.
 
 Here is a chronological list of books I've read, every month.
 
+- [2023](2023.md)
 - [2022](2022.md)
 - [2021](2021.md)
 - [2020](2020.md)
