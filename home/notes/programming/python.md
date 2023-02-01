@@ -73,7 +73,7 @@ wait-for-it --service 0.0.0.0:8000 -- curl localhost:8000
 
 ## Debugging
 
-Here's a 2 lines that drops you into a shell:
+Here's a 2 liner that drops you into a shell:
 
 ```sh
 python3 -m pdb -c continue script.py
@@ -245,12 +245,6 @@ Class decorators return a class instead of a function object, example
 
 
 ---
-
-## Python3 on centos (using scl):
-
-``` sh
-scl enable python33 bash
-```
 
 ## Design patterns
 

@@ -14,7 +14,7 @@ once in a while to archive great pages (like LWN's weekly news).
 
 - [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb): If you're a Vi person (I'm an Emacs guy usually), this will make you feel right at home in the browser. There's nothing as peaceful as using j/k to scroll, `f` to highlight links and open them, etc, all from the keyboard.
 
-- [Dark Reader](https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofpc): Just turned this on now and my eyes are thanking it already. Dark mode everywhere!
+- ~~[Dark Reader](https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofpc): Just turned this on now and my eyes are thanking it already. Dark mode everywhere!~~
 
 - [uBlock Origin](https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak): Adblocker of choice. Set it up, forget about it. It's only when I see someone else's browser that I realize how improved my own browsing experience is.
 

@@ -12,7 +12,7 @@ Slackware and, well, FreeBSD. I had a ton of fun with my Desktop:
 setting up IPv6 tunnels, dynamic DNS, apache, squid, privoxy, and
 generally playing with minimiastic window managers and the shell.
 
-These days I stick with Fedora and love it.
+These days I stick with ~~Fedora~~ WSL-2 and love it.
 
 ## General Linux
 
