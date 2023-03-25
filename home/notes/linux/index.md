@@ -14,6 +14,13 @@ generally playing with minimiastic window managers and the shell.
 
 These days I stick with ~~Fedora~~ WSL-2 and love it.
 
+## dotfiles
+
+My dotfiles are [here](https://github.com/arunsrin/dotfiles). I use
+asdf to manage several packages, and stock ubuntu for the rest. The
+repo has dotfiles for my vim/emacs setups, starship (for a nice
+prompt), and a few other tools.
+
 ## General Linux
 
 ### Check process, thread, utilization and CPU attached to
