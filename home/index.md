@@ -57,7 +57,7 @@ so on.
 
 Me and my [games](games/index.md)
 
-Current-gen: I have an [🎮Xbox Series X](games/xboxone.md)
+Current-gen: I have an [🎮Xbox Series X](games/xbox.md)
 
 Here is a list of games played per year:
 

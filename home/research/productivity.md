@@ -4,7 +4,7 @@
 
 Once a week I have a 'Planning' session. I skim through my To Dos, what I did this week and what I want to do the next week. This is purely for my personal hobbies and not for work. For example, on one week I might binge-watch a TV show that just came out, so the next week I try to spend more time reading. In this slot, I also skim through my long-term hobby goals, and see what medium / short term steps I'm taking towards reaching them.
 
-Right now I like to balance my team between [reading](../books/index.md) and [playing games](../games/xboxone.md). 
+Right now I like to balance my team between [reading](../books/index.md) and [playing games](../games/xbox.md). 
 
 Art is something I want to get better at so I try to do something there as well.
 
