@@ -3,6 +3,13 @@
 I prefer single-player Action Adventure open-world games. Bonus points if it has
 a good story.
 
+Prior to 2018 I have had:
+
+- PS Vita
+- Nintendo 3DS
+- Nintendo DS Lite
+- Playstation 2
+
 Since 2018 I've had an [Xbox One S](xbox.md).
 
 In late-2021 I got a new laptop and it is great that Game Pass
