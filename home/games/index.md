@@ -7,16 +7,13 @@ Prior to 2018 I have had:
 
 - PS Vita
 - Nintendo 3DS
+- Nintendo Wii
 - Nintendo DS Lite
 - Playstation 2
 
-Since 2018 I've had an [Xbox One S](xbox.md).
+Since 2018 I've had an Xbox One S.
 
-In late-2021 I got a new laptop and it is great that Game Pass
-Ultimate gives you access to a lot of the console portfolio, with
-saves sync'd neatly between the two.
-
-In 2022 I upgraded to an Xbox Series X.
+In 2022 I upgraded to an [Xbox Series X](xbox.md).
 
 In 2023 I did the 3 year Live Gold -> Game Pass Ultimate conversion
 'trick' and am now set till 2026!

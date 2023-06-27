@@ -1,4 +1,4 @@
-# 🎮Xbox One
+# 🎮Xbox Series X
 
 This page was getting too big so I've split up my gaming history to each year:
 
@@ -10,7 +10,7 @@ This page was getting too big so I've split up my gaming history to each year:
 
 I love my xbox because this is the console where I have formed memories of:
 
-- playing co-op games with my kids (like Rayman),
+- playing co-op games with my kids (like Rayman Legends),
 - playing through an entire series (like Gears and Halo),
 - discovering games through Game Pass that I'd've never have otherwise
-  tried (like The Gunk)
+  tried (like Immortality)
