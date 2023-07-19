@@ -14,6 +14,22 @@ Put something like this in your `~/.gitconfig`:
 If your work repos are in `~/work`, you can have a separate user/email etc for
 repos in that folder.
 
+## Delete a tag that's already pushed
+
+```sh
+git tag -d <tag_name>
+git push --delete origin <tag_name>
+```
+
+## Signing commited commits
+
+If you want to sign the last `N` commits that you have already pushed:
+
+```sh
+git rebase --signoff -S HEAD~N
+git push -f
+```
+
 ## Create an empty commit
 
 `git commit --allow-empty -m "blah blah"`
