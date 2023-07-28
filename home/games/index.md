@@ -3,20 +3,19 @@
 I prefer single-player Action Adventure open-world games. Bonus points if it has
 a good story.
 
+As of 2023 I primarily game on the following:
+
+- [Xbox Series X](xbox.md)
+- Nintendo Switch Lite
+
 Prior to 2018 I have had:
 
+- Xbox One S
 - PS Vita
 - Nintendo 3DS
 - Nintendo Wii
 - Nintendo DS Lite
 - Playstation 2
-
-Since 2018 I've had an Xbox One S.
-
-In 2022 I upgraded to an [Xbox Series X](xbox.md).
-
-In 2023 I did the 3 year Live Gold -> Game Pass Ultimate conversion
-'trick' and am now set till 2026!
 
 Here are the games I've completed (i.e. seen the end credits, I'm not an
 achievement hunter) in the past few years:
