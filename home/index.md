@@ -18,6 +18,7 @@ Me and my [books](books/index.md)
 
 Here is a list of books read per year, starting November 2019.
 
+- [📚2024](books/2024.md)
 - [📚2023](books/2023.md)
 - [📚2022](books/2022.md)
 - [📚2021](books/2021.md)
