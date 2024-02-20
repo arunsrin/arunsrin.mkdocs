@@ -64,6 +64,7 @@ Current-gen: I have an [🎮Xbox Series X](games/xbox.md)
 
 Here is a list of games played per year:
 
+- [🎮2024](games/2024.md)
 - [🎮2023](games/2023.md)
 - [🎮2022](games/2022.md)
 - [🎮2021](games/2021.md)
@@ -92,26 +93,33 @@ sections. But this is an attempt to weave something from those saved links.
 See [About](about.md) for more about me. This site is built using the
 lovely [MkDocs](http://www.mkdocs.org), a python-based static site
 generator. The content is written in markdown using GNU Emacs. It is
-hosted on [NFSN](https://nearlyfreespeech.net).
+hosted on [Cloudflare](https://cloudflare.com/).
 
 ## 🌐External Links
 
-- [My Blog](https://arunsrin.wordpress.com) - I double commit my content here too because there's times when
-  I liked wordpress (I can post my artwork there) and times when I like this mkdocs site.
-  Structurally I like the garden-like feel of this site more than chronological format of  a blog)
+- ☠️[My Blog](https://arunsrin.wordpress.com) - I double commit my
+  content here too because there's times when I liked wordpress (I can
+  post my artwork there) and times when I like this mkdocs site.
+  Structurally I like the garden-like feel of this site more than
+  chronological format of a blog). Abandoned, at this point.
 
-- [Asha's blog](https://pinkwedelia.wordpress.com) - My daughter's wordpress blog. She
-writes all the content, I just help with uploading images and post
-tagging/cateogorization.
+- ☠️[Asha's blog](https://pinkwedelia.wordpress.com) - My daughter's
+wordpress blog. She writes all the content, I just help with uploading
+images and post tagging/cateogorization.
 
-- [Siddharth's blog](https://astrogrug.wordpress.com) - My son's wordpress. I help
-him with choosing titles and uploading pics, he figures out the rest.
+- ☠️[Siddharth's blog](https://astrogrug.wordpress.com) - My son's
+wordpress. I help him with choosing titles and uploading pics, he
+figures out the rest.
 
-- Books I own, on [LibraryThing](https://www.librarything.com/catalog/indeliblestamp) and [GoodReads](https://www.goodreads.com/user/show/103052357-arun-s).
+- Books I own, on
+  [LibraryThing](https://www.librarything.com/catalog/indeliblestamp)
+  and
+  [GoodReads](https://www.goodreads.com/user/show/103052357-arun-s).
 
-- [Github Profile](https://github.com/arunsrin/) - Mostly this site and my dotfiles.
+- [Github Profile](https://github.com/arunsrin/) - Mostly this site
+  and my dotfiles.
 
-- [My Steam Profile](https://steamcommunity.com/id/indeliblestamp) - Not used much.
+- ☠️[My Steam Profile](https://steamcommunity.com/id/indeliblestamp) - Not used much.
 
 - [My TrueAchievements
 Profile](https://www.trueachievements.com/gamer/arunsrin) - I'm not an

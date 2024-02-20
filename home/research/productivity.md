@@ -1,24 +1,45 @@
 # ✅ Productivity
 
-## Hobby Planning
+## Summary
 
-Once a week I have a 'Planning' session. I skim through my To Dos, what I did this week and what I want to do the next week. This is purely for my personal hobbies and not for work. For example, on one week I might binge-watch a TV show that just came out, so the next week I try to spend more time reading. In this slot, I also skim through my long-term hobby goals, and see what medium / short term steps I'm taking towards reaching them.
+I've tried a crapload of tools for tasks, notes, bookmarking, scheduling and
+what not. I realize I was more interested in trying new things than in really
+'maximizing' my 'productivity'.
 
-Right now I like to balance my team between [reading](../books/index.md) and [playing games](../games/xbox.md). 
+These days I'm in a high-stress job involving a lot of churn and
+unpredictability, and I've found that checklists are /very/ useful and MS ToDo
+is a decent enough app to settle down with.
 
-Art is something I want to get better at so I try to do something there as well.
+Bookmarks are overrated.
+
+Note taking is, at least for me, an obsessive habit
+and immensely useful at work but fairly useless for personal goals.
 
 ## Tools
 
 I like and highly recommend the following tools:
 
-- MS To Do - this has an indispensable feature called 'Plan My Day' which is the first thing I do every morning. Makes it quite easy to surface things that you had scheduled for a particular day. Cross Platform, so it's really easy to add and review periodically.
-- OneNote - After using text-based editors for years, I've taken a liking to tools that support images. OneNote does this well with a great interface, 3 levels of 'folder' hierarchy and great integration with my stylus.
-- [Vim](../notes/editors.md) / [Typora](https://typora.io/) - I'm torn between markdown as a store of data and OneNote. Typora seems to bridge both worlds with a really nice UI and seamless integration for images.
+- MS To Do - this has an indispensable feature called 'Plan My Day' which is
+the first thing I do every morning. Makes it quite easy to surface things that
+you had scheduled for a particular day. Cross Platform, so it's really easy to
+add and review periodically.
+
+- OneNote - After using text-based editors for years, I've taken a liking to
+tools that support images. OneNote does this well with a great interface, 3
+levels of 'folder' hierarchy and great integration with my stylus. I pretty
+much use this as a whiteboarding app these days and nothing much else.
+
+- [Vim](../notes/editors.md) / [Typora](https://typora.io/) - I'm torn between
+markdown as a store of data and OneNote. Typora seems to bridge both worlds
+with a really nice UI and seamless integration for images. I use this at work
+for taking notes, documenting what I did each day, and so on.
 
 # References
 
 ## Note Taking - Analog
+
+To be honest I like the idea of notebooks more than actually using them.
+
 - [Research on non-linear note taking](http://www.idemployee.id.tue.nl/g.w.m.rauterberg/amme/makany-et-al-2008.pdf)
 - [Some analog To Do systems](https://www.hongkiat.com/blog/to-do-lists-by-hand/). For those who
   want to try something other than Bullet Journals.

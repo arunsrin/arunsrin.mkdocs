@@ -20,6 +20,7 @@ Prior to 2018 I have had:
 Here are the games I've completed (i.e. seen the end credits, I'm not an
 achievement hunter) in the past few years:
 
+- [2024](2024.md)
 - [2023](2023.md)
 - [2022](2022.md)
 - [2021](2021.md)

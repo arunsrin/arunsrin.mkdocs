@@ -1,6 +1,13 @@
 # 💭 Scepticism
 
-Sometimes I get into arguments with people about some fairly interesting topics. Other times it's on stupid things they read on social media and swallow without a second thought. Here are some well written articles on interesting topics.
+I feel lucky to have grown up as the internet was starting out. I honed my
+debating skills in forums (talk.origins, James Randi's forum, and so on) and
+feel I have a pretty good bullshit detector thanks to that training.
+
+Sometimes I get into arguments with people about some fairly interesting
+topics. Other times it's on stupid things they read on social media and swallow
+without a second thought. Here are some well written articles on interesting
+topics.
 
 ## Behavioural Economics
 
@@ -10,14 +17,17 @@ Sometimes I get into arguments with people about some fairly interesting topics.
 
 ## GMOs
 
-People fear new technology. GMOs interest me because they stand on the thin line between fascinating technology and scary dystopia. I think they are a powerful tool for humanity and research in them should be encouraged.
+People fear new technology. GMOs interest me because they stand on the thin
+line between fascinating technology and scary dystopia. I think they are a
+powerful tool for humanity and research in them should be encouraged.
 
 - [21 year study](https://geneticliteracyproject.org/2018/02/19/gmo-corns-yield-human-health-benefits-vindicated-21-years-studies)
 - [Slate article](http://www.slate.com/articles/health_and_science/science/2015/07/are_gmos_safe_yes_the_case_against_them_is_full_of_fraud_lies_and_errors.html)
 
 ## Cell phone 'Radiation'
 
-There's more of this going around these days, with some geniuses linking 5G towers to COVID-19.
+There's more of this going around these days, with some geniuses linking 5G
+towers to COVID-19.
 
 - [Cell phones link to cancer](https://arstechnica.com/science/2017/12/california-heres-how-to-handle-unfounded-fears-of-cell-phone-cancer)
 - [Radio towers linked to cancer](http://www.dailytech.com/Radio+Tower+Fearing+Residents+Get+Punked+Vow+to+Continue+Their+Battle/article17418.htm)
@@ -29,7 +39,8 @@ There's more of this going around these days, with some geniuses linking 5G towe
 
 ## Vaccines
 
-There are fortunately no stupid people in my immediate community who are vaccine-averse.
+There are fortunately no stupid people in my immediate community who are
+vaccine-averse.
 
 - [Lots of info on RationalWiki](https://rationalwiki.org/wiki/Anti-vaccination_movement)
 - [Mercury, Vaccines, and Autism](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2376879/)
