@@ -6,4 +6,4 @@
 
 - [Australia's 2019/2020 forest fires](https://arstechnica.com/science/2020/01/whats-causing-australias-devastating-fire-weather/)
   
-- [My own notes](../books/reviews/thinking-climate-change.md) from the book *"The thinking person's guide to Climate Change"*
+- [My own notes](../../books/reviews/thinking-climate-change.md) from the book *"The thinking person's guide to Climate Change"*

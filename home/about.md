@@ -2,7 +2,7 @@
 
 I’m a software engineer in Bangalore who is addicted to [books](books/index.md). Classic
 Literature ([Vladimir Nabokov](books/reviews/despair.md)), Popular Science ([Richard
-Dawkins](heroes/dawkins.md)) and Science Fiction (Greg Egan) are the genres I prefer. The picture at the end of this page shows all the books I own, as of Feb 2015.
+Dawkins](archive/heroes/dawkins.md)) and Science Fiction (Greg Egan) are the genres I prefer. The picture at the end of this page shows all the books I own, as of Feb 2015.
 
 I seem to prefer breadth over depth, and enjoy playing games (mostly
 on my [Xbox Series X](games/xbox.md) these days), fiddling with
