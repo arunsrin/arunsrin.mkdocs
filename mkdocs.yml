@@ -22,4 +22,7 @@ theme:
   language: 'en'
   highlightjs: true
   nav_style: 'dark'
-
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn

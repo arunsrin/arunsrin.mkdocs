@@ -23,7 +23,7 @@ Here is a chronological list of books I've read, every month.
 
 Check my 'heroes' section for my favourite authors, such as:
 
-- [Richard Dawkins](../heroes/dawkins.md)
-- [Carl Sagan](../heroes/sagan.md)
-- [Noam Chomsky](../heroes/chomsky.md)
+- [Richard Dawkins](../archive/heroes/dawkins.md)
+- [Carl Sagan](../archive/heroes/sagan.md)
+- [Noam Chomsky](../archive/heroes/chomsky.md)
 

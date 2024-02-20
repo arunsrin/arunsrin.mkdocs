@@ -75,20 +75,6 @@ Here is a list of games played per year:
 
 - [Movies and TV](movies-and-tv.md) that I really like
 
-### 🏫Research
-
-Here are some notes and links I've collected in topics that interest me. Several
-are works in progress: I'm yet to move my large collection of bookmarks to these
-sections. But this is an attempt to weave something from those saved links.
-
-- [🦠COVID-19](research/covid-19.md)
-- [💸Cryptocurrencies](research/cryptocurrencies.md)
-- [✅Productivity](research/productivity.md)
-- [🌡️Climate Change](research/climate-change.md)
-- [💭Philosophy](research/philosophy.md)
-- [💭Scepticism](research/scepticism.md)
-- [🔏Online Privacy and the Internet](research/privacy-internet.md)
-- [💰Capitalism](research/capitalism.md)
 
 ---
 
@@ -136,6 +122,21 @@ achievement hunter but it tracks my Xbox progress quite well.
 !!!note
     These pages are less up to date than others. 
 
+### 🏫Research
+
+Here are some notes and links I've collected in topics that interest me. Several
+are works in progress: I'm yet to move my large collection of bookmarks to these
+sections. But this is an attempt to weave something from those saved links.
+
+- [🦠COVID-19](archive/research/covid-19.md)
+- [💸Cryptocurrencies](archive/research/cryptocurrencies.md)
+- [✅Productivity](archive/research/productivity.md)
+- [🌡️Climate Change](archive/research/climate-change.md)
+- [💭Philosophy](archive/research/philosophy.md)
+- [💭Scepticism](archive/research/scepticism.md)
+- [🔏Online Privacy and the Internet](archive/research/privacy-internet.md)
+- [💰Capitalism](archive/research/capitalism.md)
+
 ### 📝Book reviews
 
 Some notes / reviews of books:
@@ -167,8 +168,8 @@ Here are notes on Oxford's *Very Short Introduction To..* series.
 
 Some heroes that I look up to, in the tech and literary worlds mostly.
 
-- [🧬Richard Dawkins](heroes/dawkins.md)
-- [🌌Carl Sagan](heroes/sagan.md)
-- [🐧Richard Stallman](heroes/stallman.md)
-- [💭Noam Chomsky](heroes/chomsky.md)
+- [🧬Richard Dawkins](archive/heroes/dawkins.md)
+- [🌌Carl Sagan](archive/heroes/sagan.md)
+- [🐧Richard Stallman](archive/heroes/stallman.md)
+- [💭Noam Chomsky](archive/heroes/chomsky.md)
 
