@@ -4,7 +4,7 @@ Some kubernetes overview links, with a focus on networking.
 
 ## Terminal Enhancements
 
-(Cross posted from [here](https://www.arunsr.in/2021/07/16/k8s-terminal-enhancements/))
+(Cross posted from [here](https://arunsrin.wordpress.com/2021/07/16/k8s-terminal-enhancements/))
 
 ### k9s
 
