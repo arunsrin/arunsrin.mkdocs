@@ -3,17 +3,18 @@
 I prefer single-player Action Adventure open-world games. Bonus points if it has
 a good story.
 
-As of 2023 I primarily game on the following:
+As of 2024 I primarily game on the following:
 
 - [Xbox Series X](xbox.md)
+
+Prior to this I have had:
+
 - Nintendo Switch Lite
-
-Prior to 2018 I have had:
-
 - Xbox One S
 - PS Vita
 - Nintendo 3DS
 - Nintendo Wii
+- PSP
 - Nintendo DS Lite
 - Playstation 2
 
@@ -31,9 +32,8 @@ achievement hunter) in the past few years:
 
 These games have left a lasting impression on me. Check them out!
 
-- Titanfall 2
 - Assassin's Creed: Odyssey
-- Halo: Reach
+- Titanfall 2
 
 ## Favourites: legacy
 
