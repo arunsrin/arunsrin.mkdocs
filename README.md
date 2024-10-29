@@ -2,7 +2,7 @@
 
 Static site for all my snippets, notes, etc. Powered by the excellent [mkdocs](http://www.mkdocs.org/).
 
-Currently hosted at [https://www.arunsr.in](https://www.arunsr.in).
+Currently hosted using Cloudflare Pages, at [https://www.arunsr.in](https://www.arunsr.in).
 
 # Installation / Usage
 
