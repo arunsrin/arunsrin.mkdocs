@@ -29,3 +29,5 @@ validation:
   unrecognized_links: warn
 extra_javascript:
   - js/quotes.json
+extra_css:
+  - css/extra.css
