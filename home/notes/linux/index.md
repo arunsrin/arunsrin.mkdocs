@@ -12,7 +12,8 @@ Slackware and, well, FreeBSD. I had a ton of fun with my Desktop:
 setting up IPv6 tunnels, dynamic DNS, apache, squid, privoxy, and
 generally playing with minimiastic window managers and the shell.
 
-These days I stick with ~~Fedora~~ WSL-2 and love it.
+These days I stick with Fedora on my personal laptop and WSL-2 at 
+work, and love both.
 
 ## dotfiles
 
@@ -20,6 +21,15 @@ My dotfiles are [here](https://github.com/arunsrin/dotfiles). I use
 asdf to manage several packages, and stock ubuntu for the rest. The
 repo has dotfiles for my vim/emacs setups, starship (for a nice
 prompt), and a few other tools.
+
+## Gnome
+
+### Allow volume above 100%
+
+From [here](https://www.reddit.com/r/Fedora/comments/v2d8yr/comment/kgar1ts/)
+
+> You'll want to install the dconf-editor, navigate to
+> `org.gnome.desktop.sound` and set `allow-volume-above-100-percent` to true
 
 ## General Linux
 
