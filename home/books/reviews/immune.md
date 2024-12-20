@@ -1,4 +1,4 @@
-# Immune, by Phillip Dettmer
+# 📝 Immune, by Phillip Dettmer
 
 This is an incredible book and the brief notes I took below do not do justice
 to how well it is written.
@@ -23,24 +23,38 @@ will come and rip cells to pieces.
 - Dendritic cell - These have tentacles to probe what is going on, and pick up
 critical bits of information and send it all the way to the thymus where the
 Adaptive Immune system analyzes the signatures and prepares targeted attacks.
-- Neutrophil - explodes and spills acid everywhere (?)
-- Complement - like a piece of puzzle, they will match with a pathogen and identify it, and travel to the adaptive system to give that information.
+- Neutrophil - explodes and creates nets to trap everything around it.
+Dangerous to **self** as well, not just the **other**. So they have a short
+life.
 - Basophil - causes inflammation, what else?
 - Eosinophil - related to allergies I think
-- Mast cell - forgot this one
+- Mast cell - large cells that cause inflammation
 - Natural killer cell - this is trained to kill pathogens and infected cells
-but unlike T cells I think they are already trained and ready to deploy (?)
+but unlike T cells I think they are already trained and ready to deploy in the
+Innate part of the immune system. They see if MHC class 1 molecules are present
+in a cell. If not, they tell the cell to kill itself. Reason: some viruses that
+take hijack a cell have a camouflage where they hide the MHC class 1 and
+therefore from the outside it is not clear what is being built inside the cell.
+So absence of this information implies a hostile takeover.
 
 ## Adaptive Immune System 
 
 - Blank slate, filled up over a person's lifetime 
 - Targeted attacks, like a large encyclopaedia containing every possible threat 
 
-- T cell - this is trained to kill infected cells. It looks at an MCT 'window'
-on each cell to see what kind of proteins it is making.. and if the signature
-doesn't match, it tells that cell to kill itself.
-- B cell - produces antibodies which are these like these really tiny spikes
-that rip apart pathogens.
+- T cell - Helper, Killer, Memory, Regulatory T Cells etc. Helpers enrage
+macrophages and accelerate their work, coordinate orchestrate and activate the
+heavy weapons.
+- B cell - once antigens are presented to virgin b cells, it makes copies of
+itself, breaks down the antigens into smaller pieces and presents them in its
+'window' i.e. MHC class 2 molecules. Dendritic cells pick up these and activate
+corresponding T cells. Then when a B cell later meets its corresponding  T
+cell, it gets activated into a plasma cell (?)
+- Plasma cell - creates antibodies and releases them rapidly in the infection
+- MHC class 1 molecules: It is a 'window' on each cell to see what kind of
+proteins it is making.. and if the immune system sees something it doesn't like
+(e.g. a virus has taken over the cell and is making copies of itself), it tells
+that cell to kill itself.
 - Antibodies - really tiny spikes that rip apart pathogens.
 
 ---
@@ -54,7 +68,9 @@ Constantly created and pushed upwards. Then there is a spiky layer of
 Upper layers are all dead cells, so not hospitable for viruses. An acid (and
 salty layer) above it, which is again very corrosive.  
 
-pH – Power of Hydrogen – each -1 implies 10x more hydrogen I.e acidic. Similarly high pH I.e. alkaline means there is 10x less hydrogen ions. Both less and more pH are corrosive to life. 
+pH – Power of Hydrogen – each -1 implies 10x more hydrogen I.e acidic.
+Similarly high pH I.e. alkaline means there is 10x less hydrogen ions. Both
+less and more pH are corrosive to life. 
 
 
 --- 
@@ -75,8 +91,10 @@ smoking.
 
 --  
 
-Apoptosis - cells neatly kill themselves in a self recycling manner. Killer
-cells do their job by sending a signal to infected cells to do this. They look
-through a 'window' to see what kind of proteins these cells are building. If
-they see the bad kind e.g. Viruses, they tell the cell to self destruct. 
+## Apoptosis
+
+Cells neatly kill themselves in a self recycling manner. Killer cells do their
+job by sending a signal to infected cells to do this. They look through a
+'window' to see what kind of proteins these cells are building. If they see the
+bad kind e.g. Viruses, they tell the cell to self destruct. 
 
