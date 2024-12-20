@@ -141,17 +141,18 @@ sections. But this is an attempt to weave something from those saved links.
 
 Some notes / reviews of books:
 
-- [📝Despair](books/reviews/despair.md)
-- [📝The Happiness Hypothesis](books/reviews/happiness.md)
-- [📝How to Read a Book](books/reviews/how-to-read-a-book.md)
-- [📝Eats, Shoots & Leaves](books/reviews/eats-shoots-leaves.md)
-- [📝Good Math](books/reviews/good-math.md)
-- [📝Flow](books/reviews/flow.md)
-- [📝The Thinking Person's Guide to Climate Change](books/reviews/thinking-climate-change.md) (IN PROGRESS)
-- [📝Hate Inc.](books/reviews/hate-inc.md)
+- [📝Immune, by Phillip Dettmer (kurzgesagt)](books/reviews/immune.md)
+- [📝Despair, by Vladimir Nabokov](books/reviews/despair.md)
+- [📝The Happiness Hypothesis, by Jonathan Haidt](books/reviews/happiness.md)
+- [📝How to Read a Book, by Mortimer J. Adler and Charles Van Doren](books/reviews/how-to-read-a-book.md)
+- [📝Eats, Shoots & Leaves, by Lynne Truss](books/reviews/eats-shoots-leaves.md)
+- [📝Good Math, by Mark C. Chu-Carroll](books/reviews/good-math.md)
+- [📝Flow, Mihaly Csikszentmihalyi](books/reviews/flow.md)
+- [📝The Thinking Person's Guide to Climate Change, by Robert Henson](books/reviews/thinking-climate-change.md)
+- [📝Hate Inc., by Matt Taibbi](books/reviews/hate-inc.md)
 - [📝Crypto 101](books/reviews/crypto101.md)
-- [📝We are our brains](books/reviews/we-are-our-brains.md)
-- [📝The Art of the Infinite](books/reviews/the-art-of-the-infinite.md)
+- [📝We are our brains, by Dick Shwaab](books/reviews/we-are-our-brains.md)
+- [📝The Art of the Infinite, by Robert M Kaplan](books/reviews/the-art-of-the-infinite.md)
 
 Here are notes on Oxford's *Very Short Introduction To..* series.
 

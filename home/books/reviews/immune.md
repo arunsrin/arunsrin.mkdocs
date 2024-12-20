@@ -42,9 +42,11 @@ So absence of this information implies a hostile takeover.
 - Blank slate, filled up over a person's lifetime 
 - Targeted attacks, like a large encyclopaedia containing every possible threat 
 
+Important players:
+
 - T cell - Helper, Killer, Memory, Regulatory T Cells etc. Helpers enrage
 macrophages and accelerate their work, coordinate orchestrate and activate the
-heavy weapons.
+heavy weapons
 - B cell - once antigens are presented to virgin b cells, it makes copies of
 itself, breaks down the antigens into smaller pieces and presents them in its
 'window' i.e. MHC class 2 molecules. Dendritic cells pick up these and activate
@@ -89,7 +91,7 @@ On the other hand, things that weaken or suppress your immune system: stress!
 smoking.
 
 
---  
+---  
 
 ## Apoptosis
 
