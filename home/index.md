@@ -122,6 +122,23 @@ achievement hunter but it tracks my Xbox progress quite well.
 !!!note
     These pages are less up to date than others. 
 
+### 📝Book reviews
+
+Some notes / reviews of books:
+
+- [📝Think Like a Stoic, by Massimo Pigliucci](books/reviews/think-like-a-stoic.md)
+- [📝Immune, by Phillip Dettmer (kurzgesagt)](books/reviews/immune.md)
+- [📝Despair, by Vladimir Nabokov](books/reviews/despair.md)
+- [📝The Happiness Hypothesis, by Jonathan Haidt](books/reviews/happiness.md)
+- [📝How to Read a Book, by Mortimer J. Adler and Charles Van Doren](books/reviews/how-to-read-a-book.md)
+- [📝Eats, Shoots & Leaves, by Lynne Truss](books/reviews/eats-shoots-leaves.md)
+- [📝Good Math, by Mark C. Chu-Carroll](books/reviews/good-math.md)
+- [📝Flow, Mihaly Csikszentmihalyi](books/reviews/flow.md)
+- [📝The Thinking Person's Guide to Climate Change, by Robert Henson](books/reviews/thinking-climate-change.md)
+- [📝Hate Inc., by Matt Taibbi](books/reviews/hate-inc.md)
+- [📝Crypto 101](books/reviews/crypto101.md)
+- [📝We are our brains, by Dick Shwaab](books/reviews/we-are-our-brains.md)
+- [📝The Art of the Infinite, by Robert M Kaplan](books/reviews/the-art-of-the-infinite.md)
 ### 🏫Research
 
 Here are some notes and links I've collected in topics that interest me. Several
@@ -137,22 +154,6 @@ sections. But this is an attempt to weave something from those saved links.
 - [🔏Online Privacy and the Internet](archive/research/privacy-internet.md)
 - [💰Capitalism](archive/research/capitalism.md)
 
-### 📝Book reviews
-
-Some notes / reviews of books:
-
-- [📝Immune, by Phillip Dettmer (kurzgesagt)](books/reviews/immune.md)
-- [📝Despair, by Vladimir Nabokov](books/reviews/despair.md)
-- [📝The Happiness Hypothesis, by Jonathan Haidt](books/reviews/happiness.md)
-- [📝How to Read a Book, by Mortimer J. Adler and Charles Van Doren](books/reviews/how-to-read-a-book.md)
-- [📝Eats, Shoots & Leaves, by Lynne Truss](books/reviews/eats-shoots-leaves.md)
-- [📝Good Math, by Mark C. Chu-Carroll](books/reviews/good-math.md)
-- [📝Flow, Mihaly Csikszentmihalyi](books/reviews/flow.md)
-- [📝The Thinking Person's Guide to Climate Change, by Robert Henson](books/reviews/thinking-climate-change.md)
-- [📝Hate Inc., by Matt Taibbi](books/reviews/hate-inc.md)
-- [📝Crypto 101](books/reviews/crypto101.md)
-- [📝We are our brains, by Dick Shwaab](books/reviews/we-are-our-brains.md)
-- [📝The Art of the Infinite, by Robert M Kaplan](books/reviews/the-art-of-the-infinite.md)
 
 Here are notes on Oxford's *Very Short Introduction To..* series.
 
