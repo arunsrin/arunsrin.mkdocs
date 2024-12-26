@@ -30,5 +30,5 @@ validation:
 #extra_javascript:
 #  - path: js/quotes.json
 #    defer: true
-# extra_css:
-#   - css/extra.css
+extra_css:
+  - css/extra.css
