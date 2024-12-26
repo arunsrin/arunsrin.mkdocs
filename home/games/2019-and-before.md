@@ -1,4 +1,4 @@
-# 🎮 2019 and before
+# 🎮 Games played in 2019 and before
 
 I got my Xbox One in 2018 and it rekindled my love of gaming. Prior
 to this I had a few handhelds (Vita and 3DS) and played a bit on my
