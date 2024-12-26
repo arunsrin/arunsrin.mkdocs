@@ -233,23 +233,46 @@
       {%- block scripts %}
 
       <script>
-        fetch('{{ base_url }}/static/quotes.json')
-          .then(response => response.json())
-          .then(data => {
-            const quotes = data.quotes;
-            const randomIndex = Math.floor(Math.random() * quotes.length);
-            const randomQuote = quotes[randomIndex];
+        const QUOTE_STORAGE_KEY = 'quotes';
+        const EXPIRY_STORAGE_KEY = 'quotes_expiry';
+        const EXPIRY_TIME = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
 
-            const quoteElement = document.getElementById('quote');
-            quoteElement.textContent = `"${randomQuote.text}"`;
-            const quoteAuthorElement = document.getElementById('quote-author');
-            quoteAuthorElement.textContent = `${randomQuote.author}`;
-          })
-          .catch(error => {
-            console.error('Error loading quotes:', error);
-            const quoteElement = document.getElementById('quote');
-            quoteElement.textContent = 'Error loading quotes. Please try again later.';
-          });
+        function fetchQuotes() {
+          fetch('{{ base_url }}/static/quotes.json')
+            .then(response => response.json())
+            .then(data => {
+              const quotes = data.quotes;
+              localStorage.setItem(QUOTE_STORAGE_KEY, JSON.stringify(quotes));
+              localStorage.setItem(EXPIRY_STORAGE_KEY, Date.now() + EXPIRY_TIME);
+              displayRandomQuote(quotes);
+            })
+            .catch(error => {
+              console.error('Error loading quotes:', error);
+              document.getElementById('quote').textContent = 'Error loading quotes. Please try again later.';
+            });
+        }
+
+        function displayRandomQuote(quotes) {
+          const randomIndex = Math.floor(Math.random() * quotes.length);
+          const randomQuote = quotes[randomIndex];
+          document.getElementById('quote').textContent = `"${randomQuote.text}"`;
+          document.getElementById('quote-author').textContent = `${randomQuote.author}`;
+        }
+
+        function loadQuotes() {
+          const expiry = localStorage.getItem(EXPIRY_STORAGE_KEY);
+          const quotes = localStorage.getItem(QUOTE_STORAGE_KEY);
+
+          if (!quotes || !expiry || Date.now() > expiry) {
+            fetchQuotes();
+          } else {
+            displayRandomQuote(JSON.parse(quotes));
+          }
+        }
+
+        // Call this function on page load
+        window.onload = loadQuotes;
+
       </script>
         <script src="{{ 'js/bootstrap.bundle.min.js'|url }}"></script>
         <script>
