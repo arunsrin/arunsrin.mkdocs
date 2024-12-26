@@ -11,4 +11,4 @@ GNU/Linux (~~Fedora~~, ~~MATE~~, WSL2 on windows,
 
 I have an adorable little daughter (Update Mar-2016 — and son!)
 
-![My Books](img/mybooks.png)
+![My Books](static/mybooks.png)

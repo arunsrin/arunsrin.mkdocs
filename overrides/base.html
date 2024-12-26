@@ -9,7 +9,7 @@
         {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
         {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
         {% if config.site_favicon %}<link rel="shortcut icon" href="{{ config.site_favicon|url }}">
-        {% else %}<link rel="shortcut icon" href="{{ 'img/favicon.ico'|url }}">{% endif %}
+        {% else %}<link rel="shortcut icon" href="{{ 'static/favicon.ico'|url }}">{% endif %}
       {%- endblock %}
 
       {%- block htmltitle %}
@@ -233,7 +233,7 @@
       {%- block scripts %}
 
       <script>
-        fetch('{{ base_url }}/js/quotes.json')
+        fetch('{{ base_url }}/static/quotes.json')
           .then(response => response.json())
           .then(data => {
             const quotes = data.quotes;
