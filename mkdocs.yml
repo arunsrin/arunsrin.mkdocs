@@ -28,6 +28,7 @@ validation:
   absolute_links: warn
   unrecognized_links: warn
 extra_javascript:
-  - js/quotes.json
-extra_css:
-  - css/extra.css
+  - path: js/quotes.json
+    defer: true
+# extra_css:
+#   - css/extra.css
