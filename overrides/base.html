@@ -332,7 +332,7 @@
             let cleanedText = text.replace(/\*/g, '');
 
             // Add line breaks before `-` bullets
-            cleanedText = cleanedText.replace(/([- ])/g, '<br>$1');
+            cleanedText = cleanedText.replace(/\-\ /g, '<br>- ');
 
             // Preserve double line breaks for paragraphs
             cleanedText = cleanedText.replace(/\n\n/g, '<br><br>');
