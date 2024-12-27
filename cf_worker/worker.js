@@ -47,7 +47,7 @@ async function handlePost(request, env, event) {
       body: JSON.stringify({
         model: "gpt-4o-mini",
         messages: [
-          { role: "system", content: "Summarize the following HTML document, and focus on summarizing the content not the styling, navigation, footer or layout. Say 'This page' instead of 'This html document'. Focus on content with a heart emoji, if present. The response should not have markup like asterisks. I'm the author of all content you are summarizing, so you can refer to me, the author as 'Arun'." },
+          { role: "system", content: "Summarize the following HTML document, preferably in about 150 words, and focus on summarizing the content not the styling, navigation, footer or layout. Say 'This page' instead of 'This html document'. Focus on content with a heart emoji, if present. The response should not have markup like asterisks. I'm the author of all content you are summarizing, so you can refer to me, the author as 'Arun'. Use 2 newlines for paragraphs." },
           { role: "user", content: pageText }
         ],
         max_tokens: 150
