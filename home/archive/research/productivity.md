@@ -29,7 +29,7 @@ tools that support images. OneNote does this well with a great interface, 3
 levels of 'folder' hierarchy and great integration with my stylus. I pretty
 much use this as a whiteboarding app these days and nothing much else.
 
-- [Vim](../../notes/editors.md) / [Typora](https://typora.io/) - I'm torn between
+- [Vim](../../tech/editors.md) / [Typora](https://typora.io/) - I'm torn between
 markdown as a store of data and OneNote. Typora seems to bridge both worlds
 with a really nice UI and seamless integration for images. I use this at work
 for taking notes, documenting what I did each day, and so on.

@@ -2,7 +2,7 @@
 
 Notes from reading the excellent book at <https://www.crypto101.io/>
 
-Other [security](../../notes/security.md) notes.
+Other [security](../../tech/security.md) notes.
 
 ## Block ciphers
 

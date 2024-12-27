@@ -7,7 +7,7 @@ Dawkins](archive/heroes/dawkins.md)) and Science Fiction (Greg Egan) are the gen
 I seem to prefer breadth over depth, and enjoy playing games (mostly
 on my [Xbox Series X](games/xbox.md) these days), fiddling with
 GNU/Linux (~~Fedora~~, ~~MATE~~, WSL2 on windows,
-[Emacs](notes/editors.md)) and [Python](notes/programming/python.md).
+[Emacs](tech/editors.md)) and [Python](tech/programming/python.md).
 
 I have an adorable little daughter (Update Mar-2016 — and son!)
 

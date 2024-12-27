@@ -30,31 +30,31 @@ Here is a list of books read per year, starting November 2019.
 One-liners for a variety of tools I use regularly.. Linux, openssl and
 so on.
 
-- [🅰️Ansible](notes/ansible.md)
-- [☁️AWS](notes/aws.md)
-- [🌐Browsers](notes/browsers.md)
-- [💾Databases](notes/databases.md)
-- [🐋Docker](notes/docker.md)
-- [⌨️Editors](notes/editors.md)
-- [🔍Elastic Stack](notes/elastic.md)
-- [💾Git](notes/git.md)
-- [📈Grafana](notes/grafana.md)
-- [🐞Kafka](notes/kafka.md)
-- [☸️Kubernetes](notes/k8s.md)
-- [🐧Linux](notes/linux/index.md)
-    - [🐧Package Management](notes/linux/package-management.md)
-    - [🐧Learnings & Notes](notes/linux/learnings-and-notes.md)
-    - [🐧SystemD](notes/linux/systemd.md)
-- [🕸️Networking](notes/networking.md)
-- [🔒OpenSSL](notes/openssl.md)
-- [💻Programming](notes/programming/index.md)
-    - [🐹Go](notes/programming/go.md)
-    - [🍵Java](notes/programming/java.md)
-    - [▶️Powershell](notes/programming/powershell.md)
-    - [🐍Python](notes/programming/python.md)
-- [🔥Prometheus](notes/prometheus.md)
-- [🔒Security](notes/security.md)
-- [🪟Windows](notes/windows.md)
+- [🅰️Ansible](tech/ansible.md)
+- [☁️AWS](tech/aws.md)
+- [🌐Browsers](tech/browsers.md)
+- [💾Databases](tech/databases.md)
+- [🐋Docker](tech/docker.md)
+- [⌨️Editors](tech/editors.md)
+- [🔍Elastic Stack](tech/elastic.md)
+- [💾Git](tech/git.md)
+- [📈Grafana](tech/grafana.md)
+- [🐞Kafka](tech/kafka.md)
+- [☸️Kubernetes](tech/k8s.md)
+- [🐧Linux](tech/linux/index.md)
+    - [🐧Package Management](tech/linux/package-management.md)
+    - [🐧Learnings & Notes](tech/linux/learnings-and-notes.md)
+    - [🐧SystemD](tech/linux/systemd.md)
+- [🕸️Networking](tech/networking.md)
+- [🔒OpenSSL](tech/openssl.md)
+- [💻Programming](tech/programming/index.md)
+    - [🐹Go](tech/programming/go.md)
+    - [🍵Java](tech/programming/java.md)
+    - [▶️Powershell](tech/programming/powershell.md)
+    - [🐍Python](tech/programming/python.md)
+- [🔥Prometheus](tech/prometheus.md)
+- [🔒Security](tech/security.md)
+- [🪟Windows](tech/windows.md)
 
 ## 🎮Games
 
@@ -73,7 +73,7 @@ Here is a list of games played per year:
 
 ## 📺Other media
 
-- [Movies and TV](movies-and-tv.md) that I really like
+- [Movies and TV](archive/movies-and-tv.md) that I really like
 
 
 ---
