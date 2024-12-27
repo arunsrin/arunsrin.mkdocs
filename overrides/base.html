@@ -284,6 +284,12 @@
         <script>
           async function summarizePage() {
             const pageUrl = window.location.href;
+
+            // Add loading indicator
+            const summarizeButton = document.getElementById('summarize-button');
+            summarizeButton.disabled = true;
+            summarizeButton.innerText = "Summarizing...";
+
             const response = await fetch('https://summarizer1.arunsrin.workers.dev/summarize', {
               method: 'POST',
               headers: {
@@ -292,8 +298,29 @@
               },
               body: JSON.stringify({ url: pageUrl })
             });
-            const data = await response.json();
-            alert(data.summary);
+
+            summarizeButton.disabled = false;
+            summarizeButton.innerText = "Summarize";
+
+            const summaryContainer = document.getElementById('summary-container');
+
+            if (response.ok) {
+              const data = await response.json();
+
+              // Display the summary directly on the page
+              summaryContainer.innerHTML = `
+            <div style="margin-top: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
+                <h3>Summary</h3>
+                <p>${data.summary}</p>
+            </div>
+        `;
+            } else {
+              summaryContainer.innerHTML = `
+            <div style="margin-top: 20px; color: red;">
+                Failed to summarize the page. Please try again later.
+            </div>
+        `;
+            }
           }
         </script>
         {%- for script in config.extra_javascript %}
