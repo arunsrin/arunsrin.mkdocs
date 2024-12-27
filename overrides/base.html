@@ -211,6 +211,7 @@
             <div class="row">
                 {%- block content %}
                     <button id="summarize-button" onclick="summarizePage()">Summarize this page</button>
+                    <div id="summary-container"></div>
                     <div class="col-md-3">{% include "toc.html" %}</div>
                     <div class="col-md-9" role="main">{% include "content.html" %}</div>
                 {%- endblock %}
