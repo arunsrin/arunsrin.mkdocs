@@ -308,11 +308,13 @@
             if (response.ok) {
               const data = await response.json();
 
-              // Display the summary directly on the page
+              // Format and clean the summary text
+              const formattedSummary = formatText(data.summary);
+
               summaryContainer.innerHTML = `
             <div style="margin-top: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
                 <h3>Summary</h3>
-                <p>${data.summary}</p>
+                <p>${formattedSummary}</p>
             </div>
         `;
             } else {
@@ -322,6 +324,20 @@
             </div>
         `;
             }
+          }
+
+          // Function to clean and format the text
+          function formatText(text) {
+            // Remove markdown asterisks
+            let cleanedText = text.replace(/\*/g, '');
+
+            // Add line breaks before `-` bullets
+            cleanedText = cleanedText.replace(/([- ])/g, '<br>$1');
+
+            // Preserve double line breaks for paragraphs
+            cleanedText = cleanedText.replace(/\n\n/g, '<br><br>');
+
+            return cleanedText;
           }
         </script>
         {%- for script in config.extra_javascript %}
