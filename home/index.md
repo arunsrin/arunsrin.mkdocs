@@ -30,6 +30,7 @@ Here is a list of books read per year, starting November 2019.
 One-liners for a variety of tools I use regularly.. Linux, openssl and
 so on.
 
+- [🧠AI](tech/ai.md)
 - [🅰️Ansible](tech/ansible.md)
 - [☁️AWS](tech/aws.md)
 - [🌐Browsers](tech/browsers.md)
