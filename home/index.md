@@ -95,11 +95,11 @@ hosted on [Cloudflare](https://cloudflare.com/).
   Structurally I like the garden-like feel of this site more than
   chronological format of a blog). Abandoned, at this point.
 
-- ☠️[Asha's blog](https://pinkwedelia.wordpress.com) - My daughter's
+- 🦄[Asha's blog](https://pinkwedelia.wordpress.com) - My daughter's
 wordpress blog. She writes all the content, I just help with uploading
 images and post tagging/cateogorization.
 
-- ☠️[Siddharth's blog](https://astrogrug.wordpress.com) - My son's
+- 🐥[Siddharth's blog](https://astrogrug.wordpress.com) - My son's
 wordpress. I help him with choosing titles and uploading pics, he
 figures out the rest.
 
