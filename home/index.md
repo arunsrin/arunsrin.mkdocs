@@ -66,6 +66,7 @@ Current-gen: I have an [🎮Xbox Series X](games/xbox.md)
 
 Here is a list of games played per year:
 
+- [🎮2025](games/2025.md)
 - [🎮2024](games/2024.md)
 - [🎮2023](games/2023.md)
 - [🎮2022](games/2022.md)
