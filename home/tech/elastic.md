@@ -445,3 +445,4 @@ Kibana supports these 2 aggregations:
 
 You'd see stuff like this on the sidebar: Maps, Machine Learning,
 Infrastructure, Logs, APM, Uptime, Dev Tools, Stack Monitoring.
+

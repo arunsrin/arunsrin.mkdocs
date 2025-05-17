@@ -243,3 +243,4 @@ The algorithms that make up a typical cipher suite are the following:
     will be used to encrypt the actual data; and
 -   *Message Authentication Code (MAC) algorithm* - dictates the method
     the connection will use to carry out data integrity checks.
+

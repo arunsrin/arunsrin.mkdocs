@@ -44,3 +44,4 @@ On CentOS 7, you have to enable the persistent storage of log messages:
 Otherwise, the journal log messages are not retained between
 boots. This is the default on Fedora 19+.
 
+

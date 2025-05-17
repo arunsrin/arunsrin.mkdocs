@@ -1,0 +1,12 @@
+# Auto-detect text files and handle line endings
+* text=auto
+
+# Explicitly set line endings for specific file types
+*.md text eol=lf
+*.txt text eol=crlf
+*.sh text eol=lf
+
+# Treat binary files as binary (no line ending conversion)
+*.jpg binary
+*.png binary
+*.exe binary

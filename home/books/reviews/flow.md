@@ -51,3 +51,4 @@ Here are some sections from the book that caught my attention:
 The middle quote is a satisfactory answer to my question on what differentiates
 mindless passive hobbies from effort-intensive active ones: the latter create
 better versions of ourselves.
+

@@ -22,3 +22,4 @@ charges me based on usage, whereas chatgpt pro is a flat $20/month.
 
 Here is the link: [https://chat.arunsr.in/](https://chat.arunsr.in/) (It needs a
 login and I do not plan to open this up for anyone else).
+

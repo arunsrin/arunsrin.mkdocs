@@ -56,3 +56,4 @@ vaccine-averse.
 
 - Mark McCarron is his own internet rabbit hole. Here's an article of his on a Spam/Email alternative: [We've found the perfect solution to spam • The Register](https://www.theregister.co.uk/2003/07/09/weve_found_the_perfect_solution/). He's also written a cipher called crystalline. Read his comments to see how defensive and out of touch with reality he is.
 
+

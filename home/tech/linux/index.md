@@ -448,3 +448,4 @@ wsl -d Ubuntu-20.04 --user root
 ```
 
 Then you can do the usual `passwd` or `passwd <user>` to reset that password.
+

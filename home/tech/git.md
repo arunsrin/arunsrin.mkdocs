@@ -264,3 +264,4 @@ Put something like this in your *.gitconfig*
         st = status --branch --short
         wat = log --graph --decorate --oneline -15
         follow = log --follow -p
+

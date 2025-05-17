@@ -184,3 +184,4 @@ ls -ail
 .. inode4  # parent's parent's inode
 child inode1
 ```
+

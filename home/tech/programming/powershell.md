@@ -84,3 +84,4 @@ Get-process @splat
 Useful for readability, breaking long lines into smaller chunks. And for
 setting a conditional parameter in the dictionary and invoking the command with
 it.
+

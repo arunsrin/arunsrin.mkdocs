@@ -130,3 +130,4 @@ without data loss.
 Similar to fault tolerance. If more instances are added to a Kafka streams
 application, some tasks will be migrated to the new ones.
 
+

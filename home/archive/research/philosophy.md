@@ -30,3 +30,4 @@ notes of it [here](../../books/reviews/think-like-a-stoic.md).
 - [Chomsky on Education](https://chomsky.info/warfare02)
 - [Moral Foundations by Jonathan Haidt](http://www.moralfoundations.org)
 
+

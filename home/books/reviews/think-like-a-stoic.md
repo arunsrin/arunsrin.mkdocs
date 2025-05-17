@@ -150,3 +150,4 @@ The last few chapters condenses Aurelius's meditations, and took some
 interesting real life problems and gave the Stoic's response to them.
 
 ---
+

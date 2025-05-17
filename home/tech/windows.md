@@ -7,3 +7,4 @@
   # Note the InterfaceIndex here
   Set-NetConnectionProfile -InterfaceIndex <id>  -NetworkCategory Private
 ```
+

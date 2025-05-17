@@ -178,3 +178,4 @@ You'd expect a book about advertising to be persuasive and effective
 in convincing you that it is worthy of existence. This book did not
 succeed in changing my view. I still view it as a cancer inflicted on
 society.
+

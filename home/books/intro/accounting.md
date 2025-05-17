@@ -284,3 +284,4 @@ they've taken loans) or to pay owners
 - How much is it borrowing i.e. more borrowing -> more future growth
 
 See satyam scan: initial disclosed reports and follow up reality.
+

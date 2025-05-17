@@ -15,3 +15,4 @@ I love my xbox because this is the console where I have formed memories of:
 - playing through an entire series (like Gears and Halo),
 - discovering games through Game Pass that I'd've never have otherwise
   tried (like Immortality)
+

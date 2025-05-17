@@ -32,3 +32,4 @@ example of how densely informative each of Chomsky's statements is.
 
 - Collected notes on [capitalism](../research/capitalism.md)
 
+

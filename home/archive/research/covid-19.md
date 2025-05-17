@@ -35,3 +35,4 @@ I'm keeping a diary of interesting links to track the COVID-19 epidemic.
 - [BBMP daily bulletins](http://bbmp.gov.in/en/covid19bulletins). Very nice charts.
 - [Hospital beds allocated and available currently](http://chbms.bbmpgov.in/portal/reports1/hreport.html).
 
+

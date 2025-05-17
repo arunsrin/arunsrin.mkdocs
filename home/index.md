@@ -178,3 +178,4 @@ Some heroes that I look up to, in the tech and literary worlds mostly.
 - [🐧Richard Stallman](archive/heroes/stallman.md)
 - [💭Noam Chomsky](archive/heroes/chomsky.md)
 
+

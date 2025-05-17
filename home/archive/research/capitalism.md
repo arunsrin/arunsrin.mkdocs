@@ -21,3 +21,4 @@ determined by the publisher up front, and the seller just gets a flat
 privatization](https://www.currentaffairs.org/2019/10/beware-arguments-for-privatization/):
 Has a nice table of the Fortune 100, where a number of government
 entities (mainly China's) frequent the top list.
+

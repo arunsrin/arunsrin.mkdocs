@@ -41,3 +41,4 @@ Notes taken while reading the excellent *We are our brains* by Dick Shwaab.
 -   Cataplexy - too much emotion leads to patient seemingly becoming
     unconscious. They lose muscle tension and collapse but are fully
     aware otherwise.
+

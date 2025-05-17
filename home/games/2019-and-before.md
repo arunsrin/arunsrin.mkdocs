@@ -4,7 +4,7 @@ I got my Xbox One in 2018 and it rekindled my love of gaming. Prior
 to this I had a few handhelds (Vita and 3DS) and played a bit on my
 PC.
 
-The ones with a ♥ are highly recommended.
+The ones with a ❤️ are highly recommended.
 
 ## Far Cry 4
 
@@ -16,12 +16,12 @@ played it first.
 Fun game, great visuals and stealth sections. Little disappointed with the
 overall game. I can't put my hand to exactly what felt wrong.
 
-## ♥**Far Cry 5**
+## ❤️**Far Cry 5**
 
 Probably my favourite game on the console so far. Amazing open world, supports
 a lot of play styles, nice co-op AI partners.
 
-## ♥**Rayman Legends**
+## ❤️**Rayman Legends**
 
 My kids love this. Exquisite level design & music. You can go back to this a
 hundred times and not get bored.
@@ -55,13 +55,13 @@ Lovely little gem of a game.
 
 Pretty fun game except for the brooding protagonist.
 
-## ♥**Titanfall 2**
+## ❤️**Titanfall 2**
 
 Absolutely phenomenal single-player campaign. One of the few games I've gone
 back to and replayed. Constantly throws new things at you. And the movement in
 this game is just *sublime*.
 
-## ♥**Rise of the Tomb Raider**
+## ❤️**Rise of the Tomb Raider**
 
 Probably my favourite series. I have fond memories of playing *Tomb Raider:
 Legend* on my PS2. I love how *vertical* this whole game is.
@@ -100,5 +100,6 @@ design but really hated the gameplay. I felt like the smallest mistake in the
 stealth gameplay messed the entire level and didn't want to reload and replay
 each time I made a mistake. So I switched to a more lethal approach to finish
 the game.
+
 
 

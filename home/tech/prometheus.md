@@ -116,3 +116,4 @@ A way to run queries periodically. Helps to speed up dashboards or use the
 results elsewhere. Useful to reduce cardinality: when you have a slow query,
 you can split it up and use a recording rule. Prometheus will output a new
 metric that you can use in the outer query.
+

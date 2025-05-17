@@ -52,3 +52,4 @@ This command shows what other packages need to be installed for a queried packag
 ``` sh
 yum deplist nginx
 ```
+

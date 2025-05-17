@@ -38,3 +38,4 @@ resources (like Service -> Endpoint) in a tree
 - [Ingress system](https://www.joyfulbikeshedding.com/blog/2018-03-26-studying-the-kubernetes-ingress-system.html)
 - [Another k8s networking](https://cloudnativelabs.github.io/post/2017-04-18-kubernetes-networking/)
 - [Another k8s networking link](https://dzone.com/articles/how-to-understand-and-setup-kubernetes-networking)
+

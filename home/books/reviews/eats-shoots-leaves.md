@@ -22,3 +22,4 @@ semi-literate lower-case-ridden style of the smart phone generation, of course.
 What still matters is to adhere to some semblance of rules.
 
 As a self-deprecating, fun rant, this was an enjoyable read.
+
