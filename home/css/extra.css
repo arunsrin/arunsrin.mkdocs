@@ -1,4 +1,12 @@
+/* Import Ubuntu font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 /* Change header color */
 .bg-primary {
     background-image: linear-gradient(#40E0D0,#2fa4e7 75%,#2c9ad9) !important;
+}
+
+/* Apply Ubuntu font to the entire site */
+html, body, * {
+    font-family: 'Ubuntu', sans-serif;
 }
