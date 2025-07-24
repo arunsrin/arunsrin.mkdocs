@@ -2,7 +2,7 @@
 
 Welcome to my home page.
 
-## ⬇️What's here
+# ⬇️What's here
 
 I read a lot of [books](books/index.md) but want to turn that into a
 more active hobby that ties into writing in some way. So you will find
@@ -12,7 +12,7 @@ On the software side, I've collected some notes over time on various
 things that interest me. They're not burned in my memory like the
 Emacs/readline keybindings, so I've felt the need to dump them here.
 
-## 📖Books
+# 📖Books
 
 Me and my [books](books/index.md)
 
@@ -26,7 +26,7 @@ Here is a list of books read per year, starting November 2019.
 - [📚2020](books/2020.md)
 - [📚2019](books/2019.md)
 
-## 💻Tech Notes
+# 💻Tech Notes
 
 One-liners for a variety of tools I use regularly.. Linux, openssl and
 so on.
@@ -58,7 +58,7 @@ so on.
 - [🔒Security](tech/security.md)
 - [🪟Windows](tech/windows.md)
 
-## 🎮Games
+# 🎮Games
 
 Me and my [games](games/index.md)
 
@@ -74,21 +74,21 @@ Here is a list of games played per year:
 - [🎮2020](games/2020.md)
 - [🎮2019 and before](games/2019-and-before.md)
 
-## 📺Other media
+# 📺Other media
 
 - [Movies and TV](archive/movies-and-tv.md) that I really like
 
 
 ---
 
-## 🐧About
+# 🐧About
 
 See [About](about.md) for more about me. This site is built using the
 lovely [MkDocs](http://www.mkdocs.org), a python-based static site
 generator. The content is written in markdown using GNU Emacs. It is
 hosted on [Cloudflare](https://cloudflare.com/).
 
-## 🌐External Links
+# 🌐External Links
 
 - ☠️[My Blog](https://arunsrin.wordpress.com) - I double commit my
   content here too because there's times when I liked wordpress (I can
@@ -120,12 +120,12 @@ achievement hunter but it tracks my Xbox progress quite well.
 
 ---
 
-## ♻️Older Stuff
+# ♻️Older Stuff
 
 !!!note
     These pages are less up to date than others. 
 
-### 📝Book reviews
+## 📝Book reviews
 
 Some notes / reviews of books:
 
@@ -142,7 +142,8 @@ Some notes / reviews of books:
 - [📝Crypto 101](books/reviews/crypto101.md)
 - [📝We are our brains, by Dick Shwaab](books/reviews/we-are-our-brains.md)
 - [📝The Art of the Infinite, by Robert M Kaplan](books/reviews/the-art-of-the-infinite.md)
-### 🏫Research
+
+## 🏫Research
 
 Here are some notes and links I've collected in topics that interest me. Several
 are works in progress: I'm yet to move my large collection of bookmarks to these
@@ -169,7 +170,7 @@ Here are notes on Oxford's *Very Short Introduction To..* series.
 
 ... and abandoned after this brief start.
 
-### 🦸Role Models
+## 🦸Role Models
 
 Some heroes that I look up to, in the tech and literary worlds mostly.
 

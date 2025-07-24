@@ -17,33 +17,51 @@ markdown_extensions:
         guess_lang: true
   - toc:
         permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 theme:
   name: 'material'
   palette:
-    primary: 'cyan'
-    accent: 'cyan'
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: 'cyan'
+      accent: 'light green'
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: 'blue grey'
+      accent: 'deep-orange'
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
   font:
     text: 'Ubuntu'
-    code: 'Roboto Mono'
+    code: 'Ubuntu Mono'
   color_mode: 'auto'
   favicon: 'static/favicon.ico'
-  logo: 'static/favicon.ico'
+  icon:
+    logo: material/notebook-edit-outline
   custom_dir: overrides
-  user_color_mode_toggle: 'true'
   language: 'en'
   highlightjs: true
   features:
     # Enhanced navigation
-    #- navigation.instant          # SPA-like navigation
-    #- navigation.instant.prefetch # Prefetch on hover
-    #- navigation.instant.progress # Progress indicator
-    #- navigation.tracking         # Update URL on scroll
+    - navigation.tracking         # Update URL on scroll
     - navigation.tabs             # Top-level tabs
     - navigation.sections         # Group sections
-    - navigation.expand           # Expand all sections
     - navigation.path             # Breadcrumbs
     - navigation.top              # Back to top button
     - navigation.footer           # Previous/next navigation
+
+    # other enhancements
+    - toc.follow                  # sidebar scrolls with the page
     
     # Content enhancements
     - content.code.copy           # Copy code buttons
@@ -52,7 +70,6 @@ theme:
     
     # Search improvements
     - search.suggest              # Search suggestions
-    - search.highlight            # Highlight search terms
 validation:
   omitted_files: warn
   absolute_links: warn

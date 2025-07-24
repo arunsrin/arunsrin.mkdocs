@@ -1,33 +1,6 @@
-/* Import Ubuntu font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
 /* Change header color */
 .bg-primary {
     background-image: linear-gradient(#40E0D0,#2fa4e7 75%,#2c9ad9) !important;
-}
-
-/* Apply Ubuntu font to the entire site */
-html, body, * {
-    font-family: 'Ubuntu', sans-serif;
-}
-/* docs/stylesheets/extra.css */
-/* Smooth page transitions */
-.md-content__inner {
-    animation: fadeIn 0.9s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Smooth hover effects for navigation */
-.md-nav__link {
-    transition: color 0.9s, background-color 3.2s;
-}
-
-.md-nav__link:hover {
-    background-color: var(--md-primary-fg-color--transparent);
 }
 
 /* Smooth scrolling */
@@ -61,5 +34,18 @@ html {
     border-radius: var(--base-border-radius);
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@keyframes fade {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1);}
+  50% { transform: scale(1.15);}
+}
+.md-header__button.md-logo svg {
+  animation: fade 1s infinite;
+  animation: pulse 1s infinite;
 }
 
