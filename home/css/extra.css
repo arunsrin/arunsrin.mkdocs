@@ -10,3 +10,56 @@
 html, body, * {
     font-family: 'Ubuntu', sans-serif;
 }
+/* docs/stylesheets/extra.css */
+/* Smooth page transitions */
+.md-content__inner {
+    animation: fadeIn 0.9s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Smooth hover effects for navigation */
+.md-nav__link {
+    transition: color 0.9s, background-color 3.2s;
+}
+
+.md-nav__link:hover {
+    background-color: var(--md-primary-fg-color--transparent);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+/* Rounded corners for modern look */
+:root {
+    --base-border-radius: 0.5rem;
+}
+
+/* Enhanced buttons */
+.md-button {
+    border-radius: var(--base-border-radius);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.md-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Better code blocks */
+.md-typeset pre {
+    border-radius: var(--base-border-radius);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Enhanced tables */
+.md-typeset table:not([class]) {
+    border-radius: var(--base-border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+

@@ -4,6 +4,7 @@ site_description: The truth shall make ye fret.
 site_author: Arun S
 docs_dir: home
 site_dir: public
+repo_name: arunsrin.mkdocs
 repo_url: https://github.com/arunsrin/arunsrin.mkdocs
 edit_uri: blob/master/home/
 plugins:
@@ -14,21 +15,50 @@ markdown_extensions:
   - admonition
   - codehilite:
         guess_lang: true
-# extra_css:
-#   - "css/mystyle.css"
+  - toc:
+        permalink: true
 theme:
-  name: 'mkdocs'
+  name: 'material'
+  palette:
+    primary: 'cyan'
+    accent: 'cyan'
+  font:
+    text: 'Ubuntu'
+    code: 'Roboto Mono'
   color_mode: 'auto'
+  favicon: 'static/favicon.ico'
+  logo: 'static/favicon.ico'
   custom_dir: overrides
   user_color_mode_toggle: 'true'
   language: 'en'
   highlightjs: true
+  features:
+    # Enhanced navigation
+    #- navigation.instant          # SPA-like navigation
+    #- navigation.instant.prefetch # Prefetch on hover
+    #- navigation.instant.progress # Progress indicator
+    #- navigation.tracking         # Update URL on scroll
+    - navigation.tabs             # Top-level tabs
+    - navigation.sections         # Group sections
+    - navigation.expand           # Expand all sections
+    - navigation.path             # Breadcrumbs
+    - navigation.top              # Back to top button
+    - navigation.footer           # Previous/next navigation
+    
+    # Content enhancements
+    - content.code.copy           # Copy code buttons
+    - content.action.edit         # Edit page button
+    - content.tooltips            # Enhanced tooltips
+    
+    # Search improvements
+    - search.suggest              # Search suggestions
+    - search.highlight            # Highlight search terms
 validation:
   omitted_files: warn
   absolute_links: warn
   unrecognized_links: warn
-#extra_javascript:
-#  - path: js/quotes.json
-#    defer: true
+extra_javascript:
+  - path: static/quotes.js
+    defer: true
 extra_css:
   - css/extra.css
