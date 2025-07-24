@@ -11,7 +11,7 @@ Some simple APIs to warm up.
 - `GET <index-name>/_mappings` <- schema/mappings of this index
 - `GET <index-name>/_doc/<id_of_document>` <- Content of this document
 
-# Fundamentals
+## Fundamentals
 
 An `Index` is loosely analogous to a table, and a document to a
 record.  One Index can have only one `Type`.
@@ -28,7 +28,7 @@ e.g. _doc), `_index` (Index name where it is stored)
 
 `Nodes` form together to form a `cluster`.
 
-## Shards and Replicas
+### Shards and Replicas
 
 One can shard an index so that it is split into multiple segments,
 which will then reside on 1 or more nodes. By default 5 shards are
@@ -38,7 +38,7 @@ which will again be distributed in a slightly different order on the
 same nodes. Execution of queries is transparently distribute to either
 the primary or the replica shards.
 
-## Core DataTypes
+### Core DataTypes
 
 - String datatypes: 
 	- `text` - general lengthy text, elastic can do full-text search on this
@@ -53,17 +53,17 @@ the primary or the replica shards.
 - `binary` datatype - arbitrary binary content, base64-encoded
 - Range datatypes: `integer_range`, `float_range`, `long_range`, `double_range`, `date_range`
 
-## Complex DataTypes
+### Complex DataTypes
 - `array` - no mixing, list of same types
 - `object` - allows inner objects within json documents
 - `nested` - arrays of inner objects, where each inner object needs to be independently queriable
 
-## Other DataTypes
+### Other DataTypes
 - `geo-point` datatype - stores geo-points as lat and long
 - `geo-shape` datatype - store geometric shapes like polygons, maps, etc. Allows queries that search within a shape
 - `ip` datatype - ipv4/ipv6
 
-## Indexes
+### Indexes
 
 Check `GET <index-name>/_mappings` in the dev console to see the
 fields and their types in this index.
@@ -87,7 +87,7 @@ mapped as a `keyword` so you can also do analytics on it.
 
 An *Inverted Index* is built from all fields.
 
-## CRUD APIs
+### CRUD APIs
 
 An *indexing operation* is basically the addition of a document to the
 index. Elastic parses all the fields and builds the inverted index.
@@ -110,7 +110,7 @@ You can even do some scripting when you call the POST, using Elastic's
 
 `DELETE`: Call it on `<index>/_doc/<id>` as expected.
 
-## Updating a mapping
+### Updating a mapping
 
 In this example, the 'code' field is converted to a `keyword` type:
 
@@ -125,7 +125,7 @@ PUT /catalog/_mapping
 }
 ```
 
-# REST API overview
+## REST API overview
 
 Main categories:
 
@@ -139,7 +139,7 @@ Main categories:
 For pretty printing while using curl, suffix `?pretty=true`. In the
 Console UI, it's turned on by default.
 
-## Searching
+### Searching
 
 Use the `_search` API: 
 
@@ -169,7 +169,7 @@ To search across more than one index:
 GET /catalog,my_index/_search
 ```
 
-# Analytics and Visualizing Data
+## Analytics and Visualizing Data
 
 Elastic has *Analyzers* that break down values of a field into terms,
 to make it searchable. This happens both during indexing and during
@@ -224,7 +224,7 @@ Output:
 With different analyzers and filters, the final tokens would be
 different.
 
-## Term queries
+### Term queries
 
 You would use these in a search query to bypass the analysis stage and
 directly lookup the inverted index. Other more complex queries use
@@ -256,7 +256,7 @@ it skips all that and does an exact match.
 You can set params for `fuzziness` in your search and it will return
 results accordingly e.g. victer will match with victor.
 
-## Bucket aggregations
+### Bucket aggregations
 
 Like a GROUP BY basically. Example:
 
@@ -280,7 +280,7 @@ GET <index_name>/_search
 You can also bucketize by numerical ranges, e.g. show me everything
 between 1 and 100, 100 and 1000, etc.
 
-## Metric aggregations
+### Metric aggregations
 
 Like doing a COUNT or AVG etc on numeric data. It's all json instead
 of SQL. Example:
@@ -302,18 +302,18 @@ GET <index_name>/_search
 A Stats aggregation is similar but it basically does the sum, average,
 mix, max and count in a single shot.
 
-## Buckets based on Geospatial data
+### Buckets based on Geospatial data
 
 - Geodistance aggregation - based on a lat/long, query hits within a
   certain radius.
 - GeoHash grid aggregation - Divides the map into grids and searches
   within a wide imprecise grid or narrower, more precise grids.
 
-# Logstash
+## Logstash
 
 I already know this quite well. Input/Filter/Output sections etc.
 
-## Input Plugins
+### Input Plugins
 
 - `file` is the most obvious, to read from a file.
 - `beats` tells logstash to pull from a beats daemon. Just takes a
@@ -323,14 +323,14 @@ I already know this quite well. Input/Filter/Output sections etc.
   often to query.
 - `imap`: read mails!
 
-## Output Plugins
+### Output Plugins
 
 - `elasticsearch`, and `kafka` obviously.
 - `csv`
 - `pagerduty` to send to PD. e.g. your input plugin could match all
   5xx errors and output could directly page someone.
 
-## Filter Plugins
+### Filter Plugins
 
 `grok` is the one I've used most but there are others.
 
@@ -351,7 +351,7 @@ I already know this quite well. Input/Filter/Output sections etc.
 - `useragent` - converts a UA string based on Browserscope data, to
   OS, browser, version fields.
 
-## Codec Plugins
+### Codec Plugins
 
 There are also 'codec' plugins to encode/decode events: these are hit
 just before the input stage, or just before it leaves the output
@@ -365,7 +365,7 @@ stage. Examples:
   with a space `"^\s "`, and logstash will merge it with the previous
   event.
 
-# Elastic Pipelines
+## Elastic Pipelines
 
 Newer elastic versions have an 'ingest node', if you use this you can
 potentially skip all the filtering in logstash. These nodes can do the
@@ -382,7 +382,7 @@ e.g. I've seen `dissect` used to do basically what `grok` does.
 
 You would use the `_ingest` API to play with pipelines.
 
-# Beats
+## Beats
 
 Lightweight shippers. A library called `libbeat` is used. Go is used
 so a single fat binary is all you need. Looks like this does the input
@@ -409,15 +409,15 @@ redis, kafka, amazon*. Full list
 [here](https://www.elastic.co/guide/en/beats/devguide/current/community-beats.html).
 
 
-# Kibana Notes
+## Kibana Notes
 
-## Initial Setup
+### Initial Setup
 
 You must first create an index-pattern that aggregates your
 indexes. Then you would see all its fields, and can make each of them
 searchable, aggregatable, etc.
 
-## Queries
+### Queries
 
 Recollect the Term Queries section above. You can search for all those
 exact matches with `field:value`, e.g. `datacenter:sjc`.
@@ -429,19 +429,19 @@ MUST NOT is like this: `~response:200`
 
 Ranges are like this: `response:[301 to 500]`
 
-## KQL
+### KQL
 
 [KQL Guide](https://www.elastic.co/guide/en/kibana/7.15/kuery-query.html)
 
 Example: `response:200 or geoip.city_name:Diedorf`
 
-## Visualizations
+### Visualizations
 
 Kibana supports these 2 aggregations:
 - Bucket: like a GROUP BY.
 - Metric: you can plot Count, Average, Sum, Min, Max, Standard Deviation, etc.
 
-# X-Pack
+## X-Pack
 
 You'd see stuff like this on the sidebar: Maps, Machine Learning,
 Infrastructure, Logs, APM, Uptime, Dev Tools, Stack Monitoring.

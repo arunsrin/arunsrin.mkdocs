@@ -2,7 +2,7 @@
 
 Most of this is from *Amazon Web Services in Action, IInd edition*.
 
-# CloudFormation
+## CloudFormation
 
 Use CloudFormation to create a wordpress infra using these services:
 
@@ -42,9 +42,9 @@ Looks like you can refer to other blocks in the file like this: `GatewayId:
 
 As `ASG` is also created and it sets current count to 4.
 
-# EC2
+## EC2
 
-## Instance Families
+### Instance Families
 
 To decode the naming convention e.g. `t2.micro`:
 
@@ -65,7 +65,7 @@ size `micro`.
 !!!note
     Stopped VMs incur no charges (unless you have attached resources like storage)
   
-## EIPs
+### EIPs
 
 EIPs (elastic IPs) give you a fixed IP that you can associate to an EC2
 instance. Otherwise the IP is going to change across reboots.
@@ -76,7 +76,7 @@ instance or a specific interface.
 You can also create a new Network Interface, attach it to the instance, and
 attach another EIP to that interface.
 
-## Spot / Reserved instances
+### Spot / Reserved instances
 
 Spot: You bid for unused capacity in a DC. Price based on supply and demand.
 
@@ -94,9 +94,9 @@ For spot instances, you set a bidding price. If the current spot price is lower
 than your bid, an instance is spun up and your job runs. If the spot price then
 exceeds your price, your VM is *terminated*. Good for batch processing jobs.
 
-# Programming: CLI, SDK, CloudFormation
+## Programming: CLI, SDK, CloudFormation
 
-## Setup IAM first
+### Setup IAM first
 
 IAM -> Add User -> 
 
@@ -118,7 +118,7 @@ Run `aws configure` to set things up.
  ~
 ```
 
-## Some CLI commands to try
+### Some CLI commands to try
 
 This is pretty much like the `openstack` CLI.
 
@@ -129,11 +129,11 @@ There is a `--query` arg that uses *JMESPath*, e.g.
 
 - `aws ec2 describe-images --query "Images[0].ImageId"`
 
-## SDK
+### SDK
 
 Similarly, you can use the SDK for better control. e.g. `ec2.describeImages({ ... })`
 
-## Blueprints / CloudFormation
+### Blueprints / CloudFormation
 
 Covered above already in brief. Contains:
 
@@ -145,18 +145,18 @@ Covered above already in brief. Contains:
 - Outputs - return something from the template, like the generated hostname
   - Use `!GetAtt` for this. e.g. `!GetAtt 'Server.PublicDnsName'`
 
-## Updates
+### Updates
 
 Normally if you want to increase CPU/Mem, you'd have to power down, edit
 settings, power back up. CF makes it all declarative. In this case, change the
 `InstanceType` and redeploy, and it will figure out what to do.
 
-## Template vs Stack
+### Template vs Stack
 
 If you run a template to create a certain infrastructure, it's called a stack.
 Think of template as a class and stack as the object instantiated by it.
 
-# Automation: CF, Beanstalk, OpsWorks
+## Automation: CF, Beanstalk, OpsWorks
 
 - Elastic Beanstalk: fixed runtimes and conventions 
     - Config Management Tools: PHP, NodeJS, .Net
@@ -168,7 +168,7 @@ Think of template as a class and stack as the object instantiated by it.
     - Config Management Tools: any
     - Deployment Runtime: any
 
-## CF User Data
+### CF User Data
 
 Find it at `http://169.254.169.254/latest/user-data`. Upto 16kb can be injected
 into the VM at boot time.
@@ -184,7 +184,7 @@ UserData:
     /usr/bin/start.sh
 ```
 
-## CF Variables
+### CF Variables
 
 Just use `!Sub`, for instance:
 
@@ -193,7 +193,7 @@ Just use `!Sub`, for instance:
 !Sub '${VPC.CidrBlock}' # same as !GetAtt 'VPC.CidrBlock'
 ```
 
-## Elastic Beanstalk
+### Elastic Beanstalk
 
 OS and runtime managed by AWS. Logical blocks are:
 
@@ -202,11 +202,11 @@ OS and runtime managed by AWS. Logical blocks are:
 - A *configuration template* for app and platform configs.
 - An *environment* where a specific version and config will be deployed.
 
-## Create the application
+### Create the application
 
 `aws elasticbeanstalk create-application --application-name etherpad`
 
-## Create a version
+### Create a version
 
 Must exist in S3.
 
@@ -216,7 +216,7 @@ aws elasticbeanstalk create-application-version --application-name etherpad \
  --source-bundle "S3Bucket=awsinaction-code2,S3Key=chapter05/etherpad.zip"
 ```
  
-## Create an environment
+### Create an environment
 
 See what PaaS offerings exist:
 
@@ -240,29 +240,29 @@ $ aws elasticbeanstalk create-environment --environment-name etherpad \
  --version-label 1
 ```
 
-## Cleanup
+### Cleanup
 
 Destroy the environment with `terminate-environment`, and the
 application with `delete-application`.
 
-## OpsWorks
+### OpsWorks
 
 um let's move on, it's Chef.
 
-# Securing AWS: IAM, SG, VPC
+## Securing AWS: IAM, SG, VPC
 
 Usual stuff here, pretty familiar with app and OS security
 which is not covered anyway. SG for limiting network access,
 VPC for private networks, IAM for RBAC.
 
-## Systems Manager
+### Systems Manager
 
 Lets you manage all your instances from a single pane, run
 remote commands on all of them, and so on.
 
 Also let's you directly access your resources rather than via ssh.
 
-## IAM
+### IAM
 
 - *user*
 - *group*
@@ -273,7 +273,7 @@ Use IAM users for API access. Allows fine-grained association
 to groups and resources.
 
 
-### Policies
+#### Policies
 
 An example:
 
@@ -300,7 +300,7 @@ everything in ec2 except terminate the instances.
 If something is both Denied and Allowed, Deny takes
 precedence.
 
-### ARN
+#### ARN
 
 An AWS Resource Name (ARN) is a unique identifier with this structure:
 
@@ -313,14 +313,14 @@ Account ID is 12 digits.
 Run `aws iam get-user` to see what you're logged in as, what
 your account id is, etc.
 
-### Kinds of policies
+#### Kinds of policies
 
 - Managed policy - Can be reused in your account. AWS
 maintans some (admin, read-only etc), customers can maintain
 their own.
 - Inline policy - Belongs to a specific role/user/group.
 
-### Creating my IAM admin user
+#### Creating my IAM admin user
 
 ```
 aws iam create-group --group-name "admin"
@@ -355,7 +355,7 @@ following in the account security settings:
 - MFA
 - Upload SSH keys to AWS CodeCommit
 
-### Authenticating AWS resources with roles
+#### Authenticating AWS resources with roles
 
 An EC2 instance might need to talk to S3 and so on. Instead of using IAM users
 and uploading those secrets to each instance, use IAM Roles instead. The
@@ -364,7 +364,7 @@ credentials are automatically injected into the instance.
 In CF you can just declare an inline policy giving access to an instance to a
 specific API.
 
-## SG
+### SG
 
 Create and use [VPC Flow
 Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html) to debug
@@ -405,7 +405,7 @@ SecurityGroupInstance:
       SourceSecurityGroupId: !Ref SecurityGroupBastionHost
 ```
 
-## VPC
+### VPC
 
 Private address ranges:
 - `10.0.0.0/8`
@@ -427,7 +427,7 @@ matters here and first matching rule is applied and rest are skipped.
 
 Overall, stick to SGs and use NACLs only for finetuning.
 
-### Implementation
+#### Implementation
 
 To create an overall VPC with a public subnet that can be reached from the
 outside world:
@@ -464,7 +464,7 @@ Since traffic via a NAT Gateway is billed, 2 alternatives are:
 - Use a public subnet if possible, instead of a private one
 - Use `VPC endpoints` for accessing AWS services like S3
 
-# Lambda
+## Lambda
 
 - No updates, no remote access
 - Billed by invocation
@@ -472,7 +472,7 @@ Since traffic via a NAT Gateway is billed, 2 alternatives are:
 - Java, Node, C#, Python, Go
 - Publish metrics to CloudWatch by default
 
-## Creating a lambda
+### Creating a lambda
 
 Lots of blueprints available.
 
@@ -486,7 +486,7 @@ Scheduling uses cron syntax but also a `rate` syntax, e.g.
 On submission, you get a nice editor to tweak your code, a
 tab to Test it, Monitor it, and so on.
 
-## Alerting
+### Alerting
 
 Now to get an email alert when something changes, you need to
 use CloudWatch. Each metric published by lambda has:
@@ -509,7 +509,7 @@ Errors & Throttles are good metrics to create alerts.
     private network in your VPC, you'd have to define the
     VPC, subnets and SG for your lambda function
 
-## CloudWatch / CloudTrail
+### CloudWatch / CloudTrail
 
 So far we have seen its metrics, logs and alarms. But it does
 events too. Any state change in an EC2 instance results in a
@@ -532,12 +532,12 @@ def lambda_handler(event, context):
 - 300 second limit for each invocation
 - Cold start takes time: download dependencies, start runtime..
 
-## Serverless Application Model
+### Serverless Application Model
 
 An extension of CF that let's you define lambdas. Your
 scripts in the folder are bundled and uploaded.
 
-## Stitching it together
+### Stitching it together
 
 To make a backend app in this stack you would use something
 like these:
@@ -546,7 +546,7 @@ like these:
 - Lambda - triggered by above
 - Object store and NoSQL DB - used by above
 
-# Data Storage
+## Data Storage
 
 - S3 - access via AWS API, third party tools
 - Glacier - very slow
@@ -557,7 +557,7 @@ like these:
 - Elasticache - Redis / memcached protocol
 - DynamoDB - access via AWS API (SDKs, CLI)
 
-# S3
+## S3
 
 Make a bucket:
 
@@ -593,7 +593,7 @@ Remove:
 aws s3 rm --recursive s3://arunsrin/dotfiles
 ```
 
-## Versioning
+### Versioning
 
 Disabled by default. Replacing a key with different content will wipe out the
 old data. Turn on versioning:
@@ -603,7 +603,7 @@ aws s3api put-bucket-versioning --bucket arunsrin \
  --versioning-configuration Status=Enabled
 ```
 
-## Access
+### Access
 
 Create a bucket policy and upload it. Essentially we want to Allow Access, to
 Anyone, to be able to GetObjects from s3, from our Bucket:
@@ -629,7 +629,7 @@ Then upload it:
 aws s3api put-bucket-policy --bucket arunsrin-uploads --policy file://s3-policy.json
 ```
 
-## Static website hosting
+### Static website hosting
 
 Do the above to make it publicly accessible, then upload your html files, and
 do this:
@@ -664,7 +664,7 @@ Now [http://uploads.arunsr.in/](http://uploads.arunsr.in/) works :)
 
 But SSL doesn't, TODO see CloudFront for that bit.
 
-## Things to note
+### Things to note
 
 s3 is eventually consistent. i.e. concurrent creates and deletes will always be
 atomic, but occassionally you might get stale data.
@@ -675,7 +675,7 @@ characters, like image0, image1, image2..
 Using `foo/bar` gives a folder-like experience while browsing the contents of
 `foo/` but technically the key is still `foo/bar`.
 
-# Glacier
+## Glacier
 
 - Very slow, takes minutes to hours to retrieve data.
 - Storage is cheap, putting and getting out data is pricey.
@@ -683,7 +683,7 @@ Using `foo/bar` gives a folder-like experience while browsing the contents of
 One can add a *lifecycle rule* in S3 to archive or delete data after a set
 number of days, or move them to glacier.
 
-# References
+## References
 
 - [Cloudformation templates](https://github.com/widdix/aws-cf-templates)
 - [AWS quick starts](https://aws.amazon.com/quickstart/?solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc&awsf.filter-tech-category=*all&awsf.filter-industry=*all&awsf.filter-content-type=*all)

@@ -2,9 +2,9 @@
 
 Notes from the book *Learning Go*, by Jon Bodner.
 
-# Setup, Environment
+## Setup, Environment
 
-## Difference between `go get` and `go install`:
+### Difference between `go get` and `go install`:
 
 See [here](https://stackoverflow.com/questions/24878737/what-is-the-difference-between-go-get-and-go-install#24878851).
 Basically `go get` downloads the source to $GOPATH/src along with the
@@ -12,16 +12,16 @@ dependencies, and the latter compiles.
 
 `go install` is recommended. Ignore `go get`.
 
-## Hey
+### Hey
 [hey](https://github.com/rakyll) for load testing http services. Install with:
 
 `go install github.com/rakyll/hey@latest`
 
-## Vi
+### Vi
 
 Install vim-go: it comes with a massive set of tools.
 
-## goimports
+### goimports
 [goimports](https://pkg.go.dev/golang.org/x/tools/cmd/goimports) for some neat stuff that gofmt doesn't do. Install with:
 
 `go install golang.org/x/tools/cmd/goimports@latest`
@@ -32,7 +32,7 @@ And run with:
 
 Vi: Just save it.
 
-## Linting with golint
+### Linting with golint
 
 Install: `go install golang.org/x/lint/golint@latest`
 
@@ -40,7 +40,7 @@ Run: `golint ./...`
 
 Vi: `:GoLint`
 
-## SA with govet
+### SA with govet
 
 Run: `go vet ./...`
 
@@ -52,7 +52,7 @@ Install: `go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@lat
 
 Run: `shadow ./...`
 
-## Combine golint, govet with golangci-lint
+### Combine golint, govet with golangci-lint
 
 This tool runs 10 different linters by default and support dozens others.
 
@@ -60,7 +60,7 @@ Install: [see official docs](https://golangci-lint.run/usage/install/)
 
 Run: `golangci-lint run`
 
-## vim-go notes
+### vim-go notes
 
 - Code completion is with `Ctrl-x Ctrl-o`
 - `:Tagbar` is bound to `F8`
@@ -68,7 +68,7 @@ Run: `golangci-lint run`
   - :`GoDefStack` shows you how deep you've jumped, `GoDefPop` or `Ctrl-T` just
   pops to the last hop
 
-## Sample makefile
+### Sample makefile
 
 ```
 .DEFAULT_GOAL := build
@@ -91,9 +91,9 @@ build: vet
 .PHONY:build
 ```
 
-# Basic Types
+## Basic Types
 
-## Type Conversions
+### Type Conversions
 
 Very strict here unlike JS / python.  One can't just treat non-empty strings
 like "asd" as true for example.  No other type can be converted to a bool, even
@@ -102,7 +102,7 @@ explicitly.  The way to do that is to use comparison operators (==, !=, >=,
 
 e.g. `x == 0` will return `true` or `false`.
 
-## var versus :=
+### var versus :=
 
 Most verbose way:
 
@@ -158,7 +158,7 @@ later. Keep only immutable variables there, and the rest inside functions.
 - Don't use `:=` with type conversions, just use `var` there.
 - If initialization to 0 is expected, use `var x int` instead of `x := 0`.
 
-## const
+### const
 
 Only works at compile time, so can only be assigned to:
 
@@ -188,15 +188,15 @@ var d byte = x
 As you'd expect, doing something like `const x int64 = 0` can only let you
 assign that const to another int64.
 
-## Unused variables
+### Unused variables
 
 Not applicable to const's since these are detected and stubbed out from the
 final binary. For normal vars though, its a compilation error to declare a var
 and not use it.
 
-# Composite Types
+## Composite Types
 
-## Arrays
+### Arrays
 
 Rigid, don't use directly.
 
@@ -227,7 +227,7 @@ the same variable.
 Really just don't use this. Arrays are backing stores for slices and this is
 what you'd want to use.
 
-## Slices
+### Slices
 
 Length is /not/ part of the type. You don't specify the size when declaring:
 
@@ -268,7 +268,7 @@ x = append(x, y...)
     copy. So append works on the copy and returns it back to the caller. So we
     re-assign the new value to that variable.
     
-### capacity
+#### capacity
 
 The Go runtime will increase the size of a slice when the number of elements
 exceeds the default allocation, e.g. by doubling it or increasing by 25%, based
@@ -277,7 +277,7 @@ on the number of elements that are already there.
 The built-in function `cap` returns the current capacity of the slice, and
 `make` is used to create a new slice.
 
-### make
+#### make
 
 Like malloc. Will create a slice of fixed capacity and length, and initialize
 to 0.
@@ -298,7 +298,7 @@ To specify initial capacity as well:
 Runtime panic if you initialize a slice with a variable for the capacity and it
 turns out to be lesser than length. Or compile time if you do it with literals.
 
-### idiomatic way of declaring slices
+#### idiomatic way of declaring slices
 
 - `var data []int` // if you expect it to stay nil. Has 0 length
 - `var x = []int{}` // empty slice literal i.e. non-nil
@@ -307,7 +307,7 @@ turns out to be lesser than length. Or compile time if you do it with literals.
 - When unsure, use a zero length slice with a specified capacity so that
 `append` works easily.
 
-### slicing
+#### slicing
 
 Similar to python. But does NOT copy the data. You get two variables that share
 the same data. This gets really messy when you `append` to a sliced slice :(
@@ -323,7 +323,7 @@ original slice is used when you do the append.
     `y := x[2:4:4]` //Subslice y does not share anything beyond the 4th
     position with the parent.
 
-### copy
+#### copy
 
 Safe way of creating an independent slice.
 
@@ -334,7 +334,7 @@ num := copy(y, x) // Returns number of elements copied. Y is the target slice.
 fmt.Println(y, num) // Prints [1 2 3 4] 4
 ```
 
-## Strings, runes, bytes
+### Strings, runes, bytes
 
 UTF-8, unless specified.
 
@@ -343,7 +343,7 @@ UTF-8, unless specified.
 `byte` is the underlying structure, `rune` is the UTF code point, and `string` is what the user sees.
 
 
-## Maps
+### Maps
 
 Make a map where key is a string, value is an int:
 
@@ -377,7 +377,7 @@ i.e. Value stored in the map is `1` and there is indeed a value present for that
 
 `delete(m1, "hello")` deletes that key/value.
 
-## Sets
+### Sets
 
 Don't exist natively but you can make a map with bool values to
 get a similar data structure.
@@ -393,7 +393,7 @@ get a similar data structure.
 
 Use third-party libraries for Union, Intersection, etc.
 
-## Structs
+### Structs
 
 ```go
 	type person struct {
@@ -407,7 +407,7 @@ Use third-party libraries for Union, Intersection, etc.
 	e2 := person{"sid", 5678}
 ```
 
-### Anonymous struct
+#### Anonymous struct
 
 ```go
 	pet := struct {
@@ -420,7 +420,7 @@ Use third-party libraries for Union, Intersection, etc.
     Type conversions between 2 structs are ONLY possible if order and
     names and types all match.
 
-# Blocks
+## Blocks
 
 Anything outside a function is in the *package* block.
 
@@ -458,12 +458,12 @@ code/learninggo/ch04 via  v1.16.3 ❯ shadow blocks.go
 code/learninggo/ch04 via  v1.16.3 ❯
 ```
 
-## if
+### if
 
 Fairly obvious. Also, let's you define a variable inside the if
 condition that you can then use in the rest of the block.
 
-## for
+### for
 
 Simple, C-style:
 
@@ -513,7 +513,7 @@ for-range style:
 - `for` copies `i` and `v` and gives it to you. So modifying it
 will not modify the upstream value you're iterating through.
 
-## switch
+### switch
 
 Example:
 
@@ -544,18 +544,18 @@ to the next case
 - `break` in a switch case will only break out of that case. Use
 labels to actually break out of the outer loop
 
-## Blank switch
+### Blank switch
 
 In the previous example, `size` compared with each `case`
 statement, and, if equal, that case is executed. In a blank
 switch, you could run any condition in the case, not just
 equality
 
-# Functions
+## Functions
 
 - No named or optional functional parameters.
 
-## Variadic functions
+### Variadic functions
 
 Exception is when it's at the end:
 
@@ -577,7 +577,7 @@ func blah(base int, rest ...int) {
 }
 ```
 
-## Mutliple return values
+### Mutliple return values
 
 Example 
 
@@ -591,7 +591,7 @@ an `error` type
     can't just treat it as a tuple and assign to a single
     variable like in python
 
-## Named return values
+### Named return values
 
 Example 
 
@@ -602,7 +602,7 @@ present in the function and initialized to default values.
 
 On the calling side, feel free to use any other name.
 
-## Blank returns
+### Blank returns
 
 Example
 
@@ -614,7 +614,7 @@ Example
 It returns the last value of a named return variable.. not
 idiomatic and prone to cause confusion.
 
-## Passing functions
+### Passing functions
 
 Here's a simple example:
 
@@ -637,7 +637,7 @@ func sub(i int, j int) int { return i - j }
     The example above is pretty poor. You would have quite a bit
     more error correction in the real world
 
-## Function Type Declarations
+### Function Type Declarations
 
 `type opFuncType func(int, int) int`
 
@@ -647,7 +647,7 @@ That would make the map in the above example much simpler:
 
 `var opMap = map[string]opFuncType {...}`
 
-## Anonymous functions
+### Anonymous functions
 
 ```go
 	i := 10
@@ -658,7 +658,7 @@ That would make the map in the above example much simpler:
 
 Useful while launching goroutines or with `defer`
 
-## Closures
+### Closures
 
 Functions inside functions. They can use and modify variables
 from the outer function.
@@ -702,7 +702,7 @@ func makeMult(base int) func(int) int {
     All of above are *Higher-order functions*, i.e. those that
     take a function as a parameter, or as a return value
 
-## defer
+### defer
 
 Here is a simple `cat` implementation. It uses `defer` to close
 file handles. `defer` is used to run something at the end of a
@@ -768,7 +768,7 @@ So that the caller can do this:
     // do the rest
 ```
 
-## call by value
+### call by value
 
 Anything you pass as a parameter is copied. Making modifications
 to it will NOT stick, if you pass a struct or int or string.
@@ -776,7 +776,7 @@ to it will NOT stick, if you pass a struct or int or string.
 If you pass a map or slice, you can modify the content but not
 the size.
 
-# Pointers
+## Pointers
 
 Example:
 
@@ -852,7 +852,7 @@ Commonly used in json parsing though.
     If you pass a nil pointer to a function, it cannot modify it.
     You can only a modify a pointer that has valid content.
 
-## Json parsing
+### Json parsing
 
 ```go
 	type person struct {
@@ -873,7 +873,7 @@ pattern become a norm in this use case.
 There is a perf *hit* if you use pointers for small data. Becomes
 an advantage only for large structs (~mb).
 
-## Maps vs slices
+### Maps vs slices
 
 A map is internally implemented as a pointer to a struct. So when
 passing maps to functions and modifying them inside, you would
@@ -897,7 +897,7 @@ capacity of the copy and not the original.
     Because of all the above it is simply best to assume that a
     slice is not modifiable.
 
-## Using slices as buffers
+### Using slices as buffers
 
 A good pattern is to make a single slice of fixed size and use it
 in a loop while processing I/O. This is better than allocating
@@ -942,7 +942,7 @@ it is passed to `process()`.
 While the length cannot be modified, `process()` can change the
 content that was sent to it.
 
-# Types, methods, interfaces
+## Types, methods, interfaces
 
 An *abstract type* specifies what a type should do, not how it is
 done.
@@ -1010,7 +1010,7 @@ func (c *ComplexNumber) increment() {
 !!!note
     getters and setters are not idiomatic. Just access directly.
 
-## iota
+### iota
 
 Equivalent of enums. Seems pretty crippled, ignore.
 
@@ -1029,12 +1029,12 @@ Initializes to 0 and auto-increments from there on.
 	fmt.Println(x)
 ```
 
-## Inheritance
+### Inheritance
 
 Not exactly. But you can *embed* a type in another. So the
 former's methods can be accessed in the outer type seamlessly.
 
-## Interfaces
+### Interfaces
 
 Example:
 
@@ -1055,7 +1055,7 @@ typing.
 !!note
     Idiom: Accept interfaces, return structs
 
-## interfaces and nil
+### interfaces and nil
 
 For an interface to be nil, both the type and the value must be
 nil.
@@ -1063,7 +1063,7 @@ nil.
 When the type is non-nil, it apparently is not straightforward to
 tell if the value is nil. Reflection helps here.
 
-## empty interfaces
+### empty interfaces
 
 They map to anything in go, and main use case is for open-ended
 stuff like json parsing.
@@ -1087,7 +1087,7 @@ So in the json parsing case you'd see something like this:
 The first `{}` is for making an empty interface, the second `{}`
 is for instantiating a map instance.
 
-## Type assertions and type switches
+### Type assertions and type switches
 
 ```go
 type MyInt int
@@ -1131,11 +1131,11 @@ People usually shadow the variable i.e. `i := i.(type)`
 
 In the above we had some estimates of the types. If you don't know the type at all, use Reflection.
 
-## WebApp example
+### WebApp example
 
 Too long to print here. [Here](https://gist.github.com/arunsrin/030f0818a6ead6c55243c15f190fa682) it is.
 
-# Errors
+## Errors
 
 Always return an `error` as the last return value. Simple
 example:
@@ -1158,7 +1158,7 @@ Reasons for returning instead of throwing:
 - Force developers to check and handle natively since all
 variables must be read in go
 
-## Alternate way
+### Alternate way
 
 Rather than `errors.New("some message")`, one can also do this:
 
@@ -1166,7 +1166,7 @@ Rather than `errors.New("some message")`, one can also do this:
   fmt.ErrorF("%d isn't even", i)
 ```
 
-## Sentinel Errors
+### Sentinel Errors
 
 Their names start with `Err` by convention, and indicate that
 no further processing is possible.
@@ -1178,7 +1178,7 @@ So use carefully, or just pick one that's already there.
 
 Looks messy actually, just don't do it.
 
-## Adding more info
+### Adding more info
 
 Since the error interface is just a string:
 
@@ -1206,7 +1206,7 @@ And use it in your code like this:
   }
 ```
 
-## Wrapping errors
+### Wrapping errors
 
 You can chain your information to a downstream error using
 `fmt.Errorf`'s `%w` verb.
@@ -1246,7 +1246,7 @@ pointer to an interface.
 
 Don't use this unless you know what you're doing.
 
-## panic and recover
+### panic and recover
 
 When a panic happens:
 - current function exits immediately
@@ -1288,7 +1288,7 @@ func div60(i int) {
 }
 ```
 
-# Modules, Packages, Imports
+## Modules, Packages, Imports
 
 Core concepts: 
 
@@ -1326,7 +1326,7 @@ A `replace` section let's you override a module's location,
 and an `exclude` section prevents a specific version from
 being used.
 
-## Packages
+### Packages
 
 Say you have 2 packages, `formatter` and `math` in 2 subfolders in your module. Use them with the full path in your `main.go` like so:
 
@@ -1351,14 +1351,14 @@ Use good naming conventions:
 - Bad: `util.ExtractNames`, `util.FormatNames`
 - Good: `extract.Names`, `format.Names`
 
-## Good module conventions
+### Good module conventions
 
 - Create a `cmd/` directory, with one sub-folder for each
 binary built from the module.
 - All other go code go into packages inside a `pkg/`
 directory.
 
-## Overrides
+### Overrides
 
 Example: Both `crypto/rand` and `math/rand` exist. So the equivalent of python's `import blah as blah2` is:
 
@@ -1371,25 +1371,25 @@ import (
 )
 ```
 
-## godoc
+### godoc
 
 Place the comment above the thing being documented, with no
 new lines in between.
 
 Before the package declaration: package-level comments.
 
-## internal Packages
+### internal Packages
 
 When defines as `internal`, everything exported by that
 Package is only visible to other sibling packages.
 
-## init Function
+### init Function
 
 Avoid. A function called `init()` with no parameters and
 return values. Gets run the first time a package is
 referenced by another.
 
-## Check available versions of a module
+### Check available versions of a module
 
 ```sh
 go list -m -versions github.com/learning-go-book/simpletax
@@ -1401,7 +1401,7 @@ To downgrade to a specific version:
 go get github.com/learning-go-book/simpletax@v1.0.0
 ```
 
-## Major versions
+### Major versions
 
 For all versions apart from 0 and 1, the module path must end
 in `vN` where `N` is the major version. E.g.
@@ -1414,13 +1414,13 @@ your README, LICENSE fiiles.
 - Create a branch called `v2` or keep version 2 in master and
 create a branch called `v1` for the legacy version.
 
-## Vendoring
+### Vendoring
 
 Keep copies of dependencies inside your module.
 
 `go mod vendor`
 
-## Module Proxy Server
+### Module Proxy Server
 
 go's mirror. First tries there, and downloads and caches if
 not present.
@@ -1435,7 +1435,7 @@ GOPROXY="https://gocenter.io,direct"`
 - Disable the behaviour: `export GOPROXY=direct`
 - Run your own
 
-### Private proxy servers
+#### Private proxy servers
 
 Set `GOPRIVATE`:
 
@@ -1443,7 +1443,7 @@ Set `GOPRIVATE`:
 
 Anything matching the above will be downloaded directly.
 
-# Standard Library
+## Standard Library
 
 Useful stuff from the standard library
 
@@ -1453,7 +1453,7 @@ From `math/rand`: `rand.Intn(10)` returns a random number between 0 and 10. Seed
 
 `os.Args` like python's `sys.argv`
 
-# Third Party
+## Third Party
 
 Useful stuff from the ecosystem. Search in this page for details.
 
@@ -1464,11 +1464,11 @@ Useful stuff from the ecosystem. Search in this page for details.
 
 The equivalent of pypi here is [pkg.go.dev](https://pkg.go.dev). It automatically indexes open-source go projects.
 
-# References
+## References
 
 - Learning Go, by Jon Bodner
 
-## Queued
+### Queued
 
 - [official code review comments](https://github.com/golang/go/wiki/CodeReviewComments)
 - [Effective Go](https://golang.org/doc/effective_go)

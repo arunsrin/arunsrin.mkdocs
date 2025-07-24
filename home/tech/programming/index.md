@@ -6,11 +6,11 @@ Check these pages for language-specific notes:
 - [Go](go.md)
 - [Java](java.md)
 
-# Other languages
+## Other languages
 
-## HTML / CSS
+### HTML / CSS
 
-### HTML header
+#### HTML header
 
 ``` html
 <html lang="en">
@@ -21,7 +21,7 @@ Check these pages for language-specific notes:
 -   `head` has metadata, one of which is `title` (to fill the tab bar).
 -   `html` has tags for 'article', 'header', and 'figure' now!
 
-### CSS
+#### CSS
 
 -   Use classes to segregate your content. Call it with a leading '.' in css. e.g.
 
@@ -36,7 +36,7 @@ Check these pages for language-specific notes:
 ##main-title { color: green }
 ```
 
-### FORMS
+#### FORMS
 
 ``` html
 <label for="nickname">Please enter your nickname</label>
@@ -58,7 +58,7 @@ There are 3 groups of elements in the way the browser stacks them:
 -   block level: p, div, article (browser inserts CRLF)
 -   inline block level : input, textarea (can be resized)
 
-## tcl: xml parsing example
+### tcl: xml parsing example
 
 ``` tcl
 package require tdom
@@ -73,9 +73,9 @@ set dom [dom parse $XML]
 set recording [$dom documentElement]
 ```
 
-# Other study notes
+## Other study notes
 
-## TCP
+### TCP
 
 -   Use `SO_REUSEADDR` when stopping/starting servers: the OS will keep a
     socket alive for ~4 minutes after it's closed in case it has to
@@ -106,17 +106,17 @@ set recording [$dom documentElement]
 -   Similarly `socket.gethostbyname('abc.com')` or `gethostbyaddr('1.2.3.4')`
 -   So self ip address is `socket.gethostbyname(socket.getfqdn())`
 
-## Unicode in DNS:
+### Unicode in DNS:
 
 -   RFC 3492 specifies the IDNA codec that maps a unicode hostname to an
     ascii representation.
 -   The lookup is performed for the encoded ascii string only.
 
-## UTF-8
+### UTF-8
 
 -   utf-8: 1-4 bytes. use setlocale() to switch encodings
 
-## example of unicode encoding:
+### example of unicode encoding:
 
 -   character "¢"= code point U+00A2 = 00000000 10100010 → 11000010
     10100010 → hexadecimal C2 A2
@@ -125,7 +125,7 @@ set recording [$dom documentElement]
     represent this character), followed by the data. The continuation
     bytes always start with a 10.
 
-## example 2:
+### example 2:
 
 -   The following string contains 4 utf-8 characters:
 
@@ -138,12 +138,12 @@ set recording [$dom documentElement]
     identical string literals in the same address, so modifying one will
     affect the other)
 
-## Levenshtein Distance
+### Levenshtein Distance
 
 -   Used in fuzzy searching (e.g. 'git lgo' which autocorrects and recommends 'log')
 -   Used to measure the difference between two strings
 
-## Algorithmic Complexity
+### Algorithmic Complexity
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 

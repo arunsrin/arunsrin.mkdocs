@@ -31,7 +31,7 @@ Remove-Item -> rm
 Write-Output -> cat
 ```
 
-### Exercise
+## Exercise
 
 Create an empty file, pipe some content to it and display the result.
 
@@ -43,7 +43,7 @@ add-content -value "this is like echo > " -path .\helloworld.txt # this is corre
 get-content .\helloworld.txt
 ```
 
-### Common parameters
+## Common parameters
 
 Almost all commands support commonparameters like these: 
 
@@ -59,7 +59,7 @@ similar to above
 
 More in `Get-Help about_CommonParameters`
 
-### Providers
+## Providers
 
 Specialized interfaces to a service or dataset, e.g. `Alias`, `Environment`,
 `Filesystem`, `Function`, `Variable`, `Registry`, `Certificate`, `WSMan`.
@@ -69,7 +69,7 @@ about_<ProviderName>_Provider`.
 
 To see all content in a provider, do this: `get-childitem environment::`
 
-### Splatting
+## Splatting
 
 Sort-of like using a dict to store the cmd and args.
 
