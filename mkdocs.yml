@@ -13,13 +13,15 @@ plugins:
 # Extensions
 markdown_extensions:
   - admonition
+  - attr_list
   - codehilite:
         guess_lang: true
-  - toc:
-        permalink: true
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+        permalink: true
 theme:
   name: 'material'
   palette:
