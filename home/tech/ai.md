@@ -1,5 +1,7 @@
 # 🧠AI
 
+## Pros
+
 I'm enjoying playing with LLMs these days. Here are some ways it has improved
 my life:
 
@@ -8,18 +10,25 @@ my life:
   create. It knew how to integrate this into mkdocs, and generated a
   bunch of quotes too :)
 
-- The 'Summarize this page' button on each page talks to the chatgpt
-  API and returns a brief summary. Again, I asked chatgpt to help
-  design the whole flow using Cloudflare workers.
+- Planning my hobbies: roadmap for how to enjoy chess more, how to draw better
+  and so on.
 
+## Cons
 
-## Hosting
+As someone who has a lot of respect for the Free Software community and who
+also enjoys drawing, it pains me to see how LLMs have scraped and
+[stolen](https://www.theatlantic.com/technology/archive/2025/03/libgen-meta-openai/682093/)
+terabytes of content in order to train themselves. The hypocrisy of these
+companies is apalling.
 
-I now have an [openwebui](https://openwebui.com/) instance running on a cheap
-[ovh](https://ovhcloud.com/) VM. The steps were really trivial, and overall
-this appears to be a cheaper/better alternative to chatgpt pro. This approach
-charges me based on usage, whereas chatgpt pro is a flat $20/month.
+Here are some thoughtful links that go deeper:
 
-Here is the link: [https://chat.arunsr.in/](https://chat.arunsr.in/) (It needs a
-login and I do not plan to open this up for anyone else).
+- [Chomsky on AI](https://chomsky.info/20230503-2/) - His stance is very clear,
+  as a scientist it does not have any value for him as it does not model the
+  human brain in any way. And he does not care about the engineering aspects.
 
+- [The Hater's Guide to the AI
+  Bubble](https://www.wheresyoured.at/the-haters-gui/) - Ed Zitron really hates
+  how AI is being hyped and he raises some fair points on the economic
+  unsustainability of it all. I'm not an expert here but I suppose time will
+  tell if he is right.
