@@ -23,6 +23,7 @@ Yay!
 
 ## ctags
 
+- `ctags -e -R -f TAGS` - recurses and generates a tags file for emacs
 - `ctags -R .` - generates the tags file with exuberant-tags
   - works for python, c, c++ and quite a few more I think.
 - `Ctrl+]` jumps to definition.
