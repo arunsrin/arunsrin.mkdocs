@@ -237,10 +237,6 @@
     "author": "Heraclitus"
   },
   {
-    "text": "He who fears death will never do anything worthy of a living man.",
-    "author": "Seneca"
-  },
-  {
     "text":  "We live in capitalism. Its power seems inescapable. So did the divine right of kings. Any human power can be resisted and changed by human beings.",
     "author": "Ursula K. Le Guin"
   },
@@ -249,12 +245,16 @@
     "author": "Epictetus"
   },
   {
-    "text":  "Go into the arts. I'm not kidding. The arts are not a way to make a living. They are a very human way of making life more bearable. Practising an art, no moatter  how well or badly, is a way to make your soul grow, for heaven's sake.",
+    "text":  "Go into the arts. I'm not kidding. The arts are not a way to make a living. They are a very human way of making life more bearable. Practising an art, no matter  how well or badly, is a way to make your soul grow, for heaven's sake.",
     "author": "Kurt Vonnegut"
   },
   {
     "text":  "Would you have a great empire? Rule over yourself.",
     "author": "Publius Syrus"
+  },
+  {
+    "text":  "Excellence withers without an adversary",
+    "author": "Seneca"
   }
   ]
 }
