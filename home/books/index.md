@@ -28,4 +28,10 @@ Check my 'heroes' section for my favourite authors, such as:
 - [Carl Sagan](../archive/heroes/sagan.md)
 - [Noam Chomsky](../archive/heroes/chomsky.md)
 
+## 📖Books I own
+
+This is not up to date and I've stowed most of them away. But it is a good
+representation of my tastes.
+
+![My Books](../static/mybooks.png)
 

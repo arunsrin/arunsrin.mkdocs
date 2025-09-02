@@ -9,7 +9,7 @@ repo_url: https://github.com/arunsrin/arunsrin.mkdocs
 edit_uri: blob/master/home/
 plugins:
   - search
-  - git-revision-date
+  # - git-revision-date
 # Extensions
 markdown_extensions:
   - admonition

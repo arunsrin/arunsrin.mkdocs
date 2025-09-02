@@ -23,18 +23,7 @@ generator - for this website. I write content in markdown and push it to a
 builds and pushes the site to [Cloudflare
 Pages](https://pages.cloudflare.com/). 
 
-I also use [Cloudflare Workers](https://workers.cloudflare.com/) to execute the
-`Summarize this page` button that you see on top of each page. This sends the
-page contents to Chatgpt (*4o-mini* for now), which returns a summary.
-
 There are some tiny easter eggs here and there.. look around!
 
 These days I primarily write content using vim on a terminal.
-
-## 📖Books I own
-
-This is not up to date and I've stowed most of them away. But it is a good
-representation of my tastes.
-
-![My Books](static/mybooks.png)
 
