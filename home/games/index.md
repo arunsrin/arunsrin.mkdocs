@@ -5,18 +5,20 @@ a good story.
 
 As of 2024 I primarily game on the following:
 
-- [Xbox Series X](xbox.md)
+- ❤️ [Xbox Series X](xbox.md)
+- Nintendo Switch
 
 Prior to this I have had:
 
+- Meta Quest 3s (didn't use it much, traded it for a Switch)
 - Nintendo Switch Lite
-- Xbox One S
+- ❤️Xbox One S (started gaming with my kids with this one, nothing comes close to Rayman Legends)
 - PS Vita
 - Nintendo 3DS
 - Nintendo Wii
 - PSP
 - Nintendo DS Lite
-- Playstation 2
+- ❤️Playstation 2 (the first console I bought with my own money. Fond memories of Persona 3)
 
 Here are the games I've completed (i.e. seen the end credits, I'm not an
 achievement hunter) in the past few years:
