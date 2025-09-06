@@ -6,15 +6,16 @@ a good story.
 As of 2024 I primarily game on the following:
 
 - ❤️ [Xbox Series X](xbox.md)
-- Nintendo Switch
+- Nintendo Switch (its screen is /so/ much better than the Switch Lite's)
 
 Prior to this I have had:
 
 - Meta Quest 3s (didn't use it much, traded it for a Switch)
-- Nintendo Switch Lite
+- Nintendo Switch Lite (didn't use it much, sold it after a few months of disuse)
 - ❤️Xbox One S (started gaming with my kids with this one, nothing comes close to Rayman Legends)
 - PS Vita
 - Nintendo 3DS
+- ❤️PC (multiple generations: fond memories of Doom, Quake, Half Life 1 & 2, Portal 1 & 2, Bioshock, Braid...)
 - Nintendo Wii
 - PSP
 - Nintendo DS Lite
@@ -37,6 +38,7 @@ These games have left a lasting impression on me. Check them out!
 
 - Assassin's Creed: Odyssey
 - Titanfall 2
+- Clair Obscur: Expedition 33
 
 ## Favourites: legacy
 
