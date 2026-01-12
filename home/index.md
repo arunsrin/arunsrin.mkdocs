@@ -56,6 +56,7 @@ Emacs/readline keybindings, so I've felt the need to dump them here.
 
     Here is a list of books read per year, starting November 2019.
 
+    - [📚2026](books/2026.md)
     - [📚2025](books/2025.md)
     - [📚2024](books/2024.md)
     - [📚2023](books/2023.md)
@@ -71,6 +72,7 @@ Emacs/readline keybindings, so I've felt the need to dump them here.
 
     Here is a list of games played per year:
 
+    - [🎮2026](games/2026.md)
     - [🎮2025](games/2025.md)
     - [🎮2024](games/2024.md)
     - [🎮2023](games/2023.md)
