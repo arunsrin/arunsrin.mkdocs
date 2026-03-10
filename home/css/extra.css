@@ -44,8 +44,7 @@ html {
   0%, 100% { transform: scale(1);}
   50% { transform: scale(1.15);}
 }
-.md-header__button.md-logo svg {
-  animation: fade 1s infinite;
-  animation: pulse 1s infinite;
+.md-header__button.md-logo:hover svg {
+  animation: fade 1.5s infinite alternate, pulse 1.5s infinite alternate;
 }
 

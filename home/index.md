@@ -4,13 +4,14 @@ Welcome to my home page.
 
 # ⬇️What's here
 
-I read a lot of [books](books/index.md) but want to turn that into a
-more active hobby that ties into writing in some way. So you will find
-a list of books I've read, and reviews of some of them.
+I read a lot of [books](books/index.md) and aim to turn that into a
+more active hobby that ties into writing. Consequently, you will find
+a list of books I've read, along with reviews for some of them.
 
-On the software side, I've collected some notes over time on various
-things that interest me. They're not burned in my memory like the
-Emacs/readline keybindings, so I've felt the need to dump them here.
+On the software side, I've collected notes over time on various
+topics that interest me. Since they're not always as "burned in" as
+my Emacs or Readline keybindings, I've gathered them here for easy
+reference.
 
 <div class="grid cards" markdown>
 
@@ -100,18 +101,18 @@ hosted on [Cloudflare](https://cloudflare.com/).
 
 # 🌐External Links
 
-- ☠️[My Blog](https://arunsrin.wordpress.com) - I double commit my
-  content here too because there's times when I liked wordpress (I can
-  post my artwork there) and times when I like this mkdocs site.
-  Structurally I like the garden-like feel of this site more than
-  chronological format of a blog). Abandoned, at this point.
+- ☠️[My Blog](https://arunsrin.wordpress.com) - I used to cross-post my
+  content here too; there were times when I liked WordPress (to post
+  my artwork) and times when I liked this MkDocs site. Structurally,
+  I prefer the digital-garden feel of this site over the
+  chronological format of a blog. Abandoned at this point.
 
 - 🦄[Asha's blog](https://pinkwedelia.wordpress.com) - My daughter's
-wordpress blog. She writes all the content, I just help with uploading
-images and post tagging/cateogorization.
+WordPress blog. She writes all the content; I just help with uploading
+images and post tagging/categorization.
 
 - 🐥[Siddharth's blog](https://astrogrug.wordpress.com) - My son's
-wordpress. I help him with choosing titles and uploading pics, he
+WordPress. I help him with choosing titles and uploading pics; he
 figures out the rest.
 
 - Books I own, on

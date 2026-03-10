@@ -58,9 +58,11 @@ More [here](https://docs.docker.com/develop/develop-images/build_enhancements/).
 
 ## Dockerfile
 
-    FROM centos:7
-    MAINTAINER Beech Team <beechbld@cisco.com>
-    RUN yum update && yum install -y emacs
+```dockerfile
+FROM centos:7
+LABEL maintainer="Beech Team <beechbld@cisco.com>"
+RUN yum update && yum install -y emacs
+```
 
 Note: each command creates a layer, so try to squeeze stuff into a single command.
 
@@ -87,33 +89,33 @@ mentioning the command, i.e.
 docker run test/emacs .bashrc
 ```
 
-COPY in a Dockerfile instructs docker to copy a file from the host to the container. e.g.
+`COPY` in a Dockerfile instructs Docker to copy a file from the host to the container. e.g.
 
 `COPY entrypoint.sh /`
 
-VOLUME is used to just use the host's filesystem for persistent data. e.g.
+`VOLUME` is used to define a mount point for persistent data. Note that in a Dockerfile, you can only specify the path *inside* the container. e.g.
 
-`VOLUME /home/arunsrin/data:/root/data`
+`VOLUME /root/data`
 
-To do it at run time, do this:
+To map it to a host directory at runtime, use the `-v` flag:
 
 ``` sh
 docker run -it -v `pwd`:/root arunsrin/testpy
 ```
 
-Instead of VOLUME, if you use ADD or COPY, it'll be baked into the
+Instead of `VOLUME`, if you use `ADD` or `COPY`, it'll be baked into the
 image and available to anyone who downloads
-it. e.g. requirements.txt. Use ADD or COPY for making it part of the
-image, and VOLUME for sharing data between host and container. Unlike
-COPY, ADD also accepts URLs as a source, and unpacks it if its an
+it. e.g. `requirements.txt`. Use `ADD` or `COPY` for making it part of the
+image, and `VOLUME` for sharing data between host and container. Unlike
+`COPY`, `ADD` also accepts URLs as a source, and unpacks it if it's an
 archive. e.g.  
 
 `ADD . /python-oauth`
 
-When running a command like `docker build -t asda/asd .` , the '.' is
-the build context. It's contents are tar'd and sent to the docker
-daemon so that ADD and COPY commands work seamlessly. Don't run this
-on a large folder like `~` !!
+When running a command like `docker build -t asda/asd .`, the `.` is
+the build context. Its contents are tar'd and sent to the Docker
+daemon so that `ADD` and `COPY` commands work seamlessly. Don't run this
+on a large folder like `~`!!
 
 ## docker-compose: stop all containers when one dies
 

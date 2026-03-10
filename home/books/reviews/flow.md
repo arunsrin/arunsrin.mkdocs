@@ -16,7 +16,7 @@ The author categorizes activities with good 'flow' if they meet these criteria:
 - Requires concentration
 - Has clear goals and immediate feedback
 - Removes awareness of everyday frustrations
-- Exercises control over ones own actions
+- Exercises control over one's own actions
 - Concern for self disappears
 - Sense of time altered
 
