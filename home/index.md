@@ -81,7 +81,7 @@ reference.
 
 -   :material-television:{ .lg .middle } Other media
 
-    - [Movies and TV](interests/media.md) that I really like
+    - [Movies and TV](other-interests/media.md) that I really like
 
 
 </div>
@@ -156,14 +156,14 @@ These pages cover other various topics I've researched or feel passionate about.
 
     Curated notes and links on topics that interest me.
 
-    - [🦠COVID-19](interests/research/covid-19.md)
-    - [💸Cryptocurrencies](interests/research/cryptocurrencies.md)
-    - [✅Productivity](interests/research/productivity.md)
-    - [🌡️Climate Change](interests/research/climate-change.md)
-    - [💭Philosophy](interests/research/philosophy.md)
-    - [💭Scepticism](interests/research/scepticism.md)
-    - [🔏Online Privacy and the Internet](interests/research/privacy-internet.md)
-    - [💰Capitalism](interests/research/capitalism.md)
+    - [🦠COVID-19](other-interests/research/covid-19.md)
+    - [💸Cryptocurrencies](other-interests/research/cryptocurrencies.md)
+    - [✅Productivity](other-interests/research/productivity.md)
+    - [🌡️Climate Change](other-interests/research/climate-change.md)
+    - [💭Philosophy](other-interests/research/philosophy.md)
+    - [💭Scepticism](other-interests/research/scepticism.md)
+    - [🔏Online Privacy and the Internet](other-interests/research/privacy-internet.md)
+    - [💰Capitalism](other-interests/research/capitalism.md)
 
 
     Here are notes on Oxford's *Very Short Introduction To..* series.
@@ -181,9 +181,9 @@ These pages cover other various topics I've researched or feel passionate about.
 
     People whose work and principles I find inspiring.
 
-    - [🧬Richard Dawkins](interests/people/dawkins.md)
-    - [🌌Carl Sagan](interests/people/sagan.md)
-    - [🐧Richard Stallman](interests/people/stallman.md)
-    - [💭Noam Chomsky](interests/people/chomsky.md)
+    - [🧬Richard Dawkins](other-interests/people/dawkins.md)
+    - [🌌Carl Sagan](other-interests/people/sagan.md)
+    - [🐧Richard Stallman](other-interests/people/stallman.md)
+    - [💭Noam Chomsky](other-interests/people/chomsky.md)
 
 
