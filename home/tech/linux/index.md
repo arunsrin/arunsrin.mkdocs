@@ -41,7 +41,18 @@ From [here](https://www.reddit.com/r/Fedora/comments/v2d8yr/comment/kgar1ts/)
 
 `strace -f -e trace=network -o /tmp/strace.txt -s 10000 <cmd> <args>`
 
-### Centos 7 sources
+### Modern Networking: iproute2
+
+The old `ifconfig`, `route`, and `netstat` commands are deprecated. Use the `ip` suite instead:
+- `ip addr` - View IP addresses (replaces `ifconfig`).
+- `ip link` - View/manage network interfaces.
+- `ip route` - View/manage the routing table (replaces `route`).
+- `ss -tulpn` - View listening ports (replaces `netstat -tulpn`).
+
+### Centos 7 sources (LEGACY)
+
+!!! warning
+    CentOS 7 reached End of Life (EOL) on June 30, 2024. These notes are preserved for legacy maintenance only.
 
 Clone their helper repo first:
 
@@ -189,7 +200,7 @@ iostat -xz 1
 free -m
 sar -n DEV 1
 sar -n TCP,ETCP 1
-top
+top # or use htop / btop for a better TUI
 ```
 
 ### GNU/Screen scrollback:

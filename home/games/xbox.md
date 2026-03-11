@@ -1,20 +1,17 @@
-# 🎮Xbox Series X
+# 🎮 Xbox Series X
 
-This page was getting too big so I've split up my gaming history to each year:
-
-- [2026](2026.md)
-- [2025](2025.md)
-- [2024](2024.md)
-- [2023](2023.md)
-- [2022](2022.md)
-- [2021](2021.md)
-- [2020](2020.md)
-- [2019 and before](2019-and-before.md)
-
-I love my xbox because this is the console where I have formed memories of:
+I love my Xbox because this is the console where I have formed memories of:
 
 - playing co-op games with my kids (like Rayman Legends),
 - playing through an entire series (like Gears and Halo),
-- discovering games through Game Pass that I'd've never have otherwise
-  tried (like Immortality)
+- discovering games through Game Pass that I'd've never otherwise tried (like Immortality)
 
+## 🕹️ Game History by Category
+
+- [🤺 Action & Adventure](action-adventure/index.md)
+- [🤖 Sci-Fi & Cyberpunk](sci-fi-cyberpunk/index.md)
+- [🪄 Fantasy & Myth](fantasy-myth/index.md)
+- [🔫 Shooters (FPS)](fps/index.md)
+- [🎭 Story-Driven & Interactive](story-interactive/index.md)
+- [🧩 Platformers & Puzzles](platform-puzzle/index.md)
+- [♟️ RPG & Strategy](rpg-strategy/index.md)

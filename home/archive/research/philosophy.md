@@ -16,7 +16,7 @@ have control over.
 ## Some good books
 
 I highly recommend *Think Like A Stoic*, by Massimo Pigliucci. I took some
-notes of it [here](../../books/reviews/think-like-a-stoic.md).
+notes of it [here](../../books/non-fiction/philosophy/think-like-a-stoic.md).
 
 - The Happiness Hypothesis and The Righteous Mind, by Jonathan Haidt
 - The Mind's I, by Douglas Hofstadter

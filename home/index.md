@@ -55,16 +55,14 @@ reference.
 
     Me and my [books](books/index.md)
 
-    Here is a list of books read per year, starting November 2019.
-
-    - [📚2026](books/2026.md)
-    - [📚2025](books/2025.md)
-    - [📚2024](books/2024.md)
-    - [📚2023](books/2023.md)
-    - [📚2022](books/2022.md)
-    - [📚2021](books/2021.md)
-    - [📚2020](books/2020.md)
-    - [📚2019](books/2019.md)
+    - [🌌 Hard Sci-Fi](books/fiction/sci-fi/index.md)
+    - [🏛️ Classics](books/fiction/classics/index.md)
+    - [📚 Literary Fiction](books/fiction/literary/index.md)
+    - [🏰 Fantasy](books/fiction/fantasy/index.md)
+    - [🧬 Science](books/non-fiction/science/index.md)
+    - [💭 Philosophy](books/non-fiction/philosophy/index.md)
+    - [📜 History](books/non-fiction/history/index.md)
+    - [✍️ Literature & Writing](books/non-fiction/writing/index.md)
 
 
 -   :material-controller:{ .lg .middle } Me and my [games](games/index.md)
@@ -73,14 +71,13 @@ reference.
 
     Here is a list of games played per year:
 
-    - [🎮2026](games/2026.md)
-    - [🎮2025](games/2025.md)
-    - [🎮2024](games/2024.md)
-    - [🎮2023](games/2023.md)
-    - [🎮2022](games/2022.md)
-    - [🎮2021](games/2021.md)
-    - [🎮2020](games/2020.md)
-    - [🎮2019 and before](games/2019-and-before.md)
+    - [🤺 Action & Adventure](games/action-adventure/index.md)
+    - [🤖 Sci-Fi & Cyberpunk](games/sci-fi-cyberpunk/index.md)
+    - [🪄 Fantasy & Myth](games/fantasy-myth/index.md)
+    - [🔫 Shooters](games/fps/index.md)
+    - [🎭 Story-Driven](games/story-interactive/index.md)
+    - [🧩 Platformers & Puzzles](games/platform-puzzle/index.md)
+    - [♟️ RPG & Strategy](games/rpg-strategy/index.md)
 
 -   :material-television:{ .lg .middle } Other media
 
@@ -143,19 +140,19 @@ achievement hunter but it tracks my Xbox progress quite well.
 
     Some notes / reviews of books:
 
-    - [📝Think Like a Stoic, by Massimo Pigliucci](books/reviews/think-like-a-stoic.md)
-    - [📝Immune, by Phillip Dettmer (kurzgesagt)](books/reviews/immune.md)
-    - [📝Despair, by Vladimir Nabokov](books/reviews/despair.md)
-    - [📝The Happiness Hypothesis, by Jonathan Haidt](books/reviews/happiness.md)
-    - [📝How to Read a Book, by Mortimer J. Adler and Charles Van Doren](books/reviews/how-to-read-a-book.md)
-    - [📝Eats, Shoots & Leaves, by Lynne Truss](books/reviews/eats-shoots-leaves.md)
-    - [📝Good Math, by Mark C. Chu-Carroll](books/reviews/good-math.md)
-    - [📝Flow, Mihaly Csikszentmihalyi](books/reviews/flow.md)
-    - [📝The Thinking Person's Guide to Climate Change, by Robert Henson](books/reviews/thinking-climate-change.md)
-    - [📝Hate Inc., by Matt Taibbi](books/reviews/hate-inc.md)
-    - [📝Crypto 101](books/reviews/crypto101.md)
-    - [📝We are our brains, by Dick Shwaab](books/reviews/we-are-our-brains.md)
-    - [📝The Art of the Infinite, by Robert M Kaplan](books/reviews/the-art-of-the-infinite.md)
+    - [📝Think Like a Stoic, by Massimo Pigliucci](books/non-fiction/philosophy/think-like-a-stoic.md)
+    - [📝Immune, by Phillip Dettmer (kurzgesagt)](books/non-fiction/science/immune.md)
+    - [📝Despair, by Vladimir Nabokov](books/fiction/literary/despair.md)
+    - [📝The Happiness Hypothesis, by Jonathan Haidt](books/non-fiction/psychology/happiness.md)
+    - [📝How to Read a Book, by Mortimer J. Adler and Charles Van Doren](books/non-fiction/writing/how-to-read-a-book.md)
+    - [📝Eats, Shoots & Leaves, by Lynne Truss](books/non-fiction/writing/eats-shoots-leaves.md)
+    - [📝Good Math, by Mark C. Chu-Carroll](books/non-fiction/math/good-math.md)
+    - [📝Flow, Mihaly Csikszentmihalyi](books/non-fiction/psychology/flow.md)
+    - [📝The Thinking Person's Guide to Climate Change, by Robert Henson](books/non-fiction/science/thinking-climate-change.md)
+    - [📝Hate Inc., by Matt Taibbi](books/non-fiction/history/hate-inc.md)
+    - [📝Crypto 101](books/non-fiction/science/crypto101.md)
+    - [📝We are our brains, by Dick Shwaab](books/non-fiction/psychology/we-are-our-brains.md)
+    - [📝The Art of the Infinite, by Robert M Kaplan](books/non-fiction/math/the-art-of-the-infinite.md)
 
 -   :material-microscope:{ .lg .middle } __Research__
 

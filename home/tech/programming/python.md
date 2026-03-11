@@ -6,15 +6,23 @@
 pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
 ```
 
-## Modern Python (2021 edition)
+## Modern Python (2026 edition)
 
-I use Python heavily but still prefer tools and libraries from the 2.x days. Here are some newer
-tools/packages/learnings that I want to upgrade to. Some of the notes below are from reading *Expert
-Python Programming, 3rd Edition*.
+I use Python heavily and keep up with the evolving ecosystem. Here are the current standard tools and libraries.
 
-### black
+### ruff
 
-- Auto-formats your files, like `go fmt`. Just run and forget.
+The "new hotness" in the Python world. It's an extremely fast linter and formatter written in Rust that replaces `flake8`, `black`, `isort`, and more.
+
+```sh
+pip install ruff
+ruff check .      # Linting
+ruff format .     # Formatting
+```
+
+### black (Legacy Formatter)
+
+- Auto-formats your files, like `go fmt`. Still widely used but being superseded by `ruff`.
 - I just selected this as the formatter in vscode. For manual usage, just pip install and run:
 
 ```sh

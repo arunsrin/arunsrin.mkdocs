@@ -113,18 +113,23 @@ nmap -T4 -sP 192.168.0.0/24 && egrep "00:00:00:00:00:00" /proc/net/arp
 mkpasswd --method=SHA-512
 ```
 
-## IPtables port forwarding
+## IPtables and nftables
 
+`iptables` is the classic firewall tool, but modern Linux distributions (Fedora, Debian, etc.) have moved to **`nftables`**.
+
+### Port forwarding (iptables)
 Use case: make tomcat on port 8443 listen on port 443.
 
 ``` sh
-sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-port 8443
 ```
 
-This will forward all traffic coming in on port 443 to the tomcat
-server listening on 8443.
+### Port forwarding (nftables)
+``` sh
+nft add rule ip nat PREROUTING tcp dport 443 counter redirect to :8443
+```
 
-(picked from here: <https://mihail.stoynov.com/2011/04/04/howto-start-tomcat-on-port-80-without-root-privileges/>)
+...
 
 To view, the usual `-L` and `-F` won't show anything. Instead, use:
 
@@ -199,36 +204,26 @@ interact
 
 ## Apache redirect http to https
 
-```
-NameVirtualHost *:80
+```apache
 <VirtualHost *:80>
    ServerName mysite.example.com
-   DocumentRoot /usr/local/apache2/htdocs 
+   DocumentRoot /var/www/html
    Redirect permanent / https://mysite.example.com/
 </VirtualHost>
 ```
 
-## Letsencrypt notes
+## Certbot (Let's Encrypt)
+
+The `letsencrypt-auto` script is deprecated. Use **`certbot`** instead.
 
 ``` sh
-sudo dnf install httpd -y
-sudo dnf install mod_ssl -y
-sudo systemctl start httpd
-sudo systemctl enable httpd
+sudo dnf install certbot python3-certbot-apache -y
+sudo certbot --apache
 ```
 
--   Add `ServerName` and a `VirtualHost` at a minimum
--   now run `letsencrypt-auto` and fill out the stuff
-
+- To renew:
 ``` sh
-    sudo cp /etc/letsencrypt/options-ssl-apache.conf /etc/httpd/conf.d
-    sudo systemctl restart httpd
-```
-
--   To renew:
-
-``` sh
-letsencrypt-auto renew
+sudo certbot renew
 ```
 
 ## Components of a cipher suite

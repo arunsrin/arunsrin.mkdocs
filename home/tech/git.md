@@ -122,47 +122,37 @@ First add this to `.git/config` under the `origin` section:
 Then fetch the pull requests:
 
 ``` sh
-git fetch origin
-```
+## Modern Git: switch and restore
 
-Then checkout the one you want:
+Instead of the overloaded `git checkout`, use:
+
+- `git switch <branch-name>` - Switch to a branch.
+- `git switch -c <new-branch>` - Create and switch to a new branch.
+- `git restore <file>` - Unstage or discard changes in a file.
+
+## View commits that aren't in main
+
+-   To see commits that have not yet merged to main:
 
 ``` sh
-git checkout pull-requests/1000/from
+git log --no-merges main..
 ```
+
+...
 
 ## Git rebase vs normal pull
 
 -   Instead of a normal pull, try this:
 
-`git pull --rebase origin master`
+`git pull --rebase origin main`
 
 -   And make it permanent with this: `git config --global pull.rebase true`
--   'The `--rebase` option tells Git to move all of Mary's commits to the
-    tip of the master branch after synchronising it with the changes
-    from the central repository.'
--   From here:
-    <https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow>
 -   This removes the superfluous 'merge commit' that comes up normally.
--   After fixing a merge conflict:
-
-``` sh
-git add <some-file>
-git rebase --continue
-```
-
--   To abort:
-
-``` sh
-git rebase --abort
-```
-
 -   Finally:
 
 ``` sh
-git push origin master
+git push origin main
 ```
-
 ## Git log on a file
 
 ``` sh

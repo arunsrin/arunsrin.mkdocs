@@ -18,10 +18,7 @@ Then the client:
 
 It gives a nice report but apparently isn’t good for latency checks, only
 bandwidth.
-
-## UDP Client
-
-From [PyMOTW](https://pymotw.com/2/socket/udp.html) :
+## UDP Client (Python 3)
 
 ``` python
 import socket
@@ -30,61 +27,67 @@ import sys
 # Create a UDP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-server_address = ('192.168.0.100', 8080)
-message = 'This is the message.  It will be repeated.'
+server_address = ('127.0.0.1', 10000)
+message = b'This is the message. It will be repeated.'
 
 try:
-
     # Send data
-    print >>sys.stderr, 'sending "%s"' % message
+    print(f'sending "{message!r}"', file=sys.stderr)
     sent = sock.sendto(message, server_address)
 
     # Receive response
-    print >>sys.stderr, 'waiting to receive'
+    print('waiting to receive', file=sys.stderr)
     data, server = sock.recvfrom(4096)
-    print >>sys.stderr, 'received "%s"' % data
+    print(f'received "{data!r}"', file=sys.stderr)
 
 finally:
-    print >>sys.stderr, 'closing socket'
+    print('closing socket', file=sys.stderr)
     sock.close()
 ```
 
-## UDP Server
-
-From [PyMOTW](https://pymotw.com/2/socket/udp.html) :
+## UDP Server (Python 3)
 
 ``` python
 import socket
 import sys
 
-# Create a TCP/IP socket
+# Create a UDP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Bind the socket to the port
 server_address = ('localhost', 10000)
-print >>sys.stderr, 'starting up on %s port %s' % server_address
+print(f'starting up on {server_address[0]} port {server_address[1]}', file=sys.stderr)
 sock.bind(server_address)
+
 while True:
-    print >>sys.stderr, '\nwaiting to receive message'
+    print('\nwaiting to receive message', file=sys.stderr)
     data, address = sock.recvfrom(4096)
-    
-    print >>sys.stderr, 'received %s bytes from %s' % (len(data), address)
-    print >>sys.stderr, data
-    
+
+    print(f'received {len(data)} bytes from {address}', file=sys.stderr)
+    print(data, file=sys.stderr)
+
     if data:
         sent = sock.sendto(data, address)
-        print >>sys.stderr, 'sent %s bytes back to %s' % (sent, address)
-
+        print(f'sent {sent} bytes back to {address}', file=sys.stderr)
 ```
 
-## Curl tips
+...
 
--   Show headers with `-I` and change request type with `-X`. e.g.
+## Force NTP sync
+
+Modern systems often use `chrony`. To force a sync:
 
 ``` sh
-curl -I -X DELETE  http://localhost/blah
+sudo chronyc -a makestep
 ```
 
+On older systems using `ntpdate`:
+
+``` sh
+sudo systemctl stop ntpd
+sudo ntpdate -s time.nist.gov
+sudo systemctl start ntpd
+```
 -   To add a header in the outgoing request, use `-H`:
 
 ``` sh

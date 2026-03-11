@@ -17,14 +17,12 @@ Emacs.
 On a new machine I clone this repo, copy the dotfiles over and:
 
 - If emacs, just start it. It downloads all the packages and I'm good to go.
-- If vim, I clone `vundle` first, then start vim and do a `:PluginInstall`.
-
-Yay!
+- If vim, I use **`vim-plug`** (or the older `Vundle`). Start vim and do a `:PlugInstall`.
 
 ## ctags
 
-- `ctags -e -R -f TAGS` - recurses and generates a tags file for emacs
-- `ctags -R .` - generates the tags file with exuberant-tags
+- `ctags -e -R -f TAGS` - recurses and generates a tags file for Emacs.
+- `ctags -R .` - generates the tags file. **Universal Ctags** is the modern, maintained fork to use over the old Exuberant Ctags.
   - works for python, c, c++ and quite a few more I think.
 - `Ctrl+]` jumps to definition.
 - `Ctrl+t` jumps back.

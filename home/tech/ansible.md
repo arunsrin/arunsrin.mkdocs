@@ -10,18 +10,15 @@ understanding of it.
 Verify the critical paths with this:
 
 ```sh
-~/code/learnansible via  v3.8.10 (.ans) took 11s ❯ ansible-inventory --version
-ansible-inventory [core 2.11.4]
+~/code/learnansible via  v3.12.0 (.ans) ❯ ansible-inventory --version
+ansible-inventory [core 2.16.x]
   config file = /home/arunsrin/.ansible.cfg
-  configured module search path = ['/home/arunsrin/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /home/arunsrin/code/learnansible/.ans/lib/python3.8/site-packages/ansible
-  ansible collection location = /home/arunsrin/.ansible/collections:/usr/share/ansible/collections
-  executable location = /home/arunsrin/code/learnansible/.ans/bin/ansible-inventory
-  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
-  jinja version = 3.0.1
-  libyaml = True
-~/code/learnansible via  v3.8.10 (.ans) ❯
+...
 ```
+
+### Modern Ansible Tooling
+
+While `ansible-playbook` is the classic way to run tasks, the modern ecosystem now prefers **Ansible Navigator** (`ansible-navigator`) for a more consistent, containerized execution environment and a rich TUI.
 
 ### Aside: Oracle OCI config
 

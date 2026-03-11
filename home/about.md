@@ -1,7 +1,7 @@
 # 🐧About
 
 I’m a software engineer in Bangalore who is addicted to [books](books/index.md). Classic
-Literature ([Vladimir Nabokov](books/reviews/despair.md)), Popular Science ([Richard
+Literature ([Vladimir Nabokov](books/fiction/literary/despair.md)), Popular Science ([Richard
 Dawkins](archive/heroes/dawkins.md)) and Science Fiction (Greg Egan) are the
 genres I prefer. The picture at the end of this page shows all the books I own,
 as of Feb 2015.

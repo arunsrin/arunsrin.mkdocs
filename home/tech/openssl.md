@@ -130,12 +130,18 @@ openssl rsa -in privateKey.pem -out newPrivateKey.pem
 
 ## Create a self signed certificate and key
 
-This is done as - 
+Note: Use at least 2048-bit RSA keys. RSA 1024 is considered insecure.
 
--   Create a private key - using RSA
+-   Create a private key - using RSA (2048 bit)
 
 ``` sh
-openssl genrsa -out privkey.pem 1024
+openssl genrsa -out privkey.pem 2048
+```
+
+-   Or create a modern Elliptic Curve key (ED25519)
+
+``` sh
+openssl genpkey -algorithm ED25519 -out privkey.pem
 ```
 
 -   Create a self signed certificate

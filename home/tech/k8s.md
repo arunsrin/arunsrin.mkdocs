@@ -4,33 +4,29 @@ Some kubernetes overview links, with a focus on networking.
 
 ## Terminal Enhancements
 
-(Cross posted from [here](https://arunsrin.wordpress.com/2021/07/16/k8s-terminal-enhancements/))
-
 ### k9s
 
 Get it [here](https://k9scli.io/). My go-to cluster navigator of choice. Very
-vim-like in behaviour.
+vim-like in behavior.
 
-### kubectl plugins
+### k3s / kind / minikube
 
-Get [krew](https://krew.sigs.k8s.io/) which is a plugin manager for kubectl. I
-installed these plugins to start with:
+For local development:
+- **k3s**: Lightweight Kubernetes, great for IoT and Edge but also amazing for local labs.
+- **kind**: Run Kubernetes inside Docker. Fast and reliable for CI/CD.
 
-- [ctx](https://github.com/ahmetb/kubectx) – Easily switch between contexts.
-Integrates out of the box with fzf so it’s pretty sweet
-- [ns](https://github.com/ahmetb/kubectx) – Same, for switching namespaces
-rapidly
-- [tail](https://github.com/boz/kail) – Tails across all pods in a service,
-among other things
-- [tree](https://github.com/ahmetb/kubectl-tree) – shows the hierarchy of
-resources (like Service -> Endpoint) in a tree
+### Cilium and eBPF
+
+Modern Kubernetes networking is moving towards **eBPF** for performance and security. **Cilium** is the leading CNI in this space, replacing traditional iptables-based kube-proxy in many environments.
 
 ## Books
 
-- *Kubernetes in Action* by Marko Luksa.
+- *Kubernetes in Action* by Marko Luksa. (Get the 2nd Edition for updated content).
+- *Cloud Native Infrastructure with Azure* (or your cloud of choice).
 
 ## Links
 
+- [Cilium: eBPF-based Networking](https://cilium.io/)
 - [A guide to the k8s networking model](https://sookocheff.com/post/kubernetes/understanding-kubernetes-networking-model/) - Thoroughly detailed, best link of the lot.
 - [Network Plugins](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/) - official docs.
 - [Understanding k8s networking](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/)

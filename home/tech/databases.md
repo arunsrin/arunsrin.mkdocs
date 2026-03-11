@@ -528,29 +528,26 @@ DESCRIBE tables;
 SELECT * FROM <name-of-table>;
 ```
 
-## Postgreql quickstart
+## PostgreSQL quickstart
 
 ``` sql
 sudo -i -u postgres
-postgresql quickstart
-createuser --interactive
-createdb ttrssdb
 psql
->alter user ttrssuser with encrypted password 'blah';
->grant all privileges on database ttrssdb to ttrssuser;
+# Inside psql:
+# CREATE DATABASE ttrssdb;
+# CREATE USER ttrssuser WITH ENCRYPTED PASSWORD 'blah';
+# GRANT ALL PRIVILEGES ON DATABASE ttrssdb TO ttrssuser;
 ```
 
-## MySql quick start
+## MySQL / MariaDB quick start
+
+Modern MySQL/MariaDB prefers creating the user first, then granting permissions.
 
 ``` sql
-mysql> create database habari;
-Query OK, 1 row affected (0.02 sec)
-
-mysql> grant all on habari.* to 'habariuser'@'localhost' identified by 'blah';
-Query OK, 0 rows affected (0.06 sec)
-
-mysql> flush privileges;
-Query OK, 0 rows affected (0.00 sec)
+mysql> CREATE DATABASE habari;
+mysql> CREATE USER 'habariuser'@'localhost' IDENTIFIED BY 'blah';
+mysql> GRANT ALL PRIVILEGES ON habari.* TO 'habariuser'@'localhost';
+mysql> FLUSH PRIVILEGES;
 ```
 
 ## Sqlite basics:
