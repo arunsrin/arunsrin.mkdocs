@@ -5,7 +5,7 @@ tags:
   - astronomy
 ---
 
-# 🌌 Carl Sagan
+# :material-weather-night:{ .anim-rotate } Carl Sagan
 
 ## Why
 

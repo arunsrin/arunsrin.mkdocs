@@ -5,7 +5,7 @@ tags:
   - tools
 ---
 
-# ✅ Productivity
+# :material-check-circle:{ .anim-flip } Productivity
 
 ## Summary
 

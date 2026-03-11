@@ -5,7 +5,7 @@ tags:
   - sci-fi
 ---
 
-# 🌌 Hard Sci-Fi & Speculative Fiction
+# :material-weather-night:{ .anim-fade } Hard Sci-Fi & Speculative Fiction
 
 A collection of notes and reviews on authors who explore the boundaries of physics, consciousness, and the future.
 

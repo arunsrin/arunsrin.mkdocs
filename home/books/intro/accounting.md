@@ -5,7 +5,7 @@ tags:
   - accounting
 ---
 
-# 📃 Accounting
+# :material-file-document-outline:{ .anim-heart } Accounting
 # Introduction
 
 Apparently, the need to keep accounting was a key driver in the

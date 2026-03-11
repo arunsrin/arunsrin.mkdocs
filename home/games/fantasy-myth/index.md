@@ -5,7 +5,7 @@ tags:
   - myth
 ---
 
-# 🪄 Fantasy & Myth
+# :material-auto-fix:{ .anim-pulse } Fantasy & Myth
 
 Legendary creatures, magical realms, and mythological epics.
 

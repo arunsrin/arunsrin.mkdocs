@@ -5,7 +5,7 @@ tags:
   - philosophy
 ---
 
-# 💭 Philosophy
+# :material-thought-bubble:{ .anim-bounce } Philosophy
 
 Investigations into ethics, existence, and the principles of thought.
 

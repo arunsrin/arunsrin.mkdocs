@@ -5,7 +5,7 @@ tags:
   - ethics
 ---
 
-# 💭 Philosophy / Morality
+# :material-thought-bubble:{ .anim-rotate } Philosophy / Morality
 
 ## Personal stance
 

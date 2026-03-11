@@ -4,7 +4,7 @@ tags:
   - containers
 ---
 
-# 🐋 Docker
+# :simple-docker:{ .anim-fade } Docker
 
 Once you get a bit of a rhythm with docker, it becomes pretty
 fun. Here are notes I took while reading some Docker books. Two good

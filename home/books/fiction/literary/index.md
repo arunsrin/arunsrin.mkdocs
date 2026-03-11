@@ -5,7 +5,7 @@ tags:
   - literary
 ---
 
-# 📚 Literary Fiction
+# :material-library:{ .anim-rotate } Literary Fiction
 
 Contemporary works exploring the human condition.
 

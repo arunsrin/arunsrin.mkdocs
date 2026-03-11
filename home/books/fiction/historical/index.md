@@ -5,7 +5,7 @@ tags:
   - historical
 ---
 
-# ⏳ Historical Fiction
+# :material-timer-sand:{ .anim-rotate } Historical Fiction
 
 History reimagined through narrative, blending fact and speculation to bring the past to life.
 

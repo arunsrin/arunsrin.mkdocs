@@ -5,7 +5,7 @@ tags:
   - hub
 ---
 
-# 🎮 Games
+# :material-controller-classic:{ .anim-pulse } Games
 
 I prefer single-player Action Adventure open-world games. Bonus points if it has
 a good story.

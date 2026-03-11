@@ -4,7 +4,7 @@ tags:
   - tools
 ---
 
-# 🕸️ Networking
+# :material-lan:{ .anim-heart } Networking
 
 ## iperf
 

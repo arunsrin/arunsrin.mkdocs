@@ -5,7 +5,7 @@ tags:
   - psychology
 ---
 
-# 🧠 Psychology & Neuroscience
+# :material-brain:{ .anim-flip } Psychology & Neuroscience
 
 Understanding the mind, behavior, and the complexities of human nature.
 

@@ -5,7 +5,7 @@ tags:
   - mystery
 ---
 
-# 🕵️ Mystery & Thriller
+# :material-incognito:{ .anim-bounce } Mystery & Thriller
 
 Tales of suspense, crime, and intrigue.
 

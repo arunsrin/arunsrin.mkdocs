@@ -4,7 +4,7 @@ tags:
   - wsl
 ---
 
-# 🪟 Windows
+# :material-microsoft-windows:{ .anim-bounce } Windows
 
 ## Change a wireless network to Private
 

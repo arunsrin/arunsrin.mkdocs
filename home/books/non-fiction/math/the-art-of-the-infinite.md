@@ -5,7 +5,7 @@ tags:
   - philosophy
 ---
 
-# 📝 The Art of the Infinite
+# :material-pencil:{ .anim-heart } The Art of the Infinite
 
 This is the kind of book I wish I’d read 20 years back.
 

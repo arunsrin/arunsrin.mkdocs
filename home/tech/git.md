@@ -4,7 +4,7 @@ tags:
   - vcs
 ---
 
-# 💾 Git
+# :material-database:{ .anim-fade } Git
 
 ## Separate git configurations for work and play
 

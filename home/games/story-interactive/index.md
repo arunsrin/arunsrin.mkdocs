@@ -5,7 +5,7 @@ tags:
   - interactive
 ---
 
-# 🎭 Story-Driven & Interactive
+# :material-drama-masks:{ .anim-flip } Story-Driven & Interactive
 
 Choices matter. Narrative-heavy experiences and interactive cinema.
 

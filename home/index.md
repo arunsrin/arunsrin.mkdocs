@@ -4,11 +4,11 @@ tags:
   - index
 ---
 
-# 🏡 Home
+# :material-home-variant:{ .anim-pulse } Home
 
 Welcome to my home page.
 
-# ⬇️What's here
+# :material-arrow-down-bold-circle-outline:{ .anim-bounce } What's here
 
 I read a lot of [books](books/index.md) and aim to turn that into a
 more active hobby that ties into writing. Consequently, you will find
@@ -95,14 +95,14 @@ reference.
 
 ---
 
-# 🐧About
+# :material-penguin:{ .anim-flip } About
 
 See [About](about.md) for more about me. This site is built using the
 lovely [MkDocs](http://www.mkdocs.org), a python-based static site
 generator. The content is written in markdown using GNU Emacs. It is
 hosted on [Cloudflare](https://cloudflare.com/).
 
-# 🌐External Links
+# :material-earth:{ .anim-rotate } External Links
 
 - ☠️[My Blog](https://arunsrin.wordpress.com) - I used to cross-post my
   content here too; there were times when I liked WordPress (to post
@@ -134,7 +134,7 @@ achievement hunter but it tracks my Xbox progress quite well.
 
 ---
 
-# 🪴 Digital Garden
+# :material-sprout:{ .anim-heart } Digital Garden
 
 These pages cover other various topics I've researched or feel passionate about.
 

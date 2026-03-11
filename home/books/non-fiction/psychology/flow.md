@@ -5,7 +5,7 @@ tags:
   - productivity
 ---
 
-# 📝 Flow
+# :material-pencil:{ .anim-rotate } Flow
 
 I've long been interested in Active vs Passive hobbies, why one is better than
 the others, and so on. Here's a [nice reddit

@@ -5,7 +5,7 @@ tags:
   - climate
 ---
 
-# 📝 The Thinking Person's Guide to Climate Change
+# :material-pencil:{ .anim-heart } The Thinking Person's Guide to Climate Change
 
 *Author:* Robert Henson
 

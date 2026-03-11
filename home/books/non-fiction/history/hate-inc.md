@@ -5,7 +5,7 @@ tags:
   - media
 ---
 
-# 📝 Hate Inc.
+# :material-pencil:{ .anim-flip } Hate Inc.
 
 *Full Title*: Hate Inc.: Why Today's Media Makes Us Despise One Another
 

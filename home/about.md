@@ -4,7 +4,7 @@ tags:
   - profile
 ---
 
-# 🐧About
+# :material-penguin:{ .anim-heart }About
 
 I’m a software engineer in Bangalore who is addicted to [books](books/index.md). Classic
 Literature ([Vladimir Nabokov](books/fiction/literary/despair.md)), Popular Science ([Richard

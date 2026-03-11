@@ -4,7 +4,7 @@ tags:
   - tips
 ---
 
-# 🐧 Learnings/Notes
+# :material-penguin:{ .anim-bounce } Learnings/Notes
 
 
 ## Linux's CFS: Completely Fair Scheduler

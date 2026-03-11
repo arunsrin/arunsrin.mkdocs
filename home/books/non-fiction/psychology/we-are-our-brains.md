@@ -5,7 +5,7 @@ tags:
   - neuroscience
 ---
 
-# 📝 We Are Our Brains
+# :material-pencil:{ .anim-flip } We Are Our Brains
 
 Notes taken while reading the excellent *We are our brains* by Dick Shwaab.
 

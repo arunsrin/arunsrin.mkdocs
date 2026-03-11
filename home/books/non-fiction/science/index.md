@@ -5,7 +5,7 @@ tags:
   - science
 ---
 
-# 🧬 Science
+# :material-dna:{ .anim-fade } Science
 
 Exploring the natural world, from the depths of the ocean to the complexities of the human immune system.
 

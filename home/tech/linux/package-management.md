@@ -4,7 +4,7 @@ tags:
   - packaging
 ---
 
-# 🐧 Package management
+# :material-penguin:{ .anim-heart } Package management
 
 ## Sort RPMs by size
 

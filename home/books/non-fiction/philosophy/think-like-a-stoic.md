@@ -5,7 +5,7 @@ tags:
   - stoicism
 ---
 
-# 📝Think Like A Stoic, by Massimo Pigliucci
+# :material-pencil:{ .anim-bounce }Think Like A Stoic, by Massimo Pigliucci
 
 These are just some random thoughts I jotted during my listen, so I'm not sure
 that it will be very useful for someone else. Don't take it to be a

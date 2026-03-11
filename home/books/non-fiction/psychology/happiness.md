@@ -5,7 +5,7 @@ tags:
   - philosophy
 ---
 
-# 📝 The Happiness Hypothesis
+# :material-pencil:{ .anim-flip } The Happiness Hypothesis
 
 This book is written by Jonathan Haidt. I’d read his other book, The Righteous
 Mind, and enjoyed it. I liked this one as well. What follows is not really a

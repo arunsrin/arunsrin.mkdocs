@@ -5,7 +5,7 @@ tags:
   - privacy
 ---
 
-# 🔏 Online Privacy and the Internet
+# :material-lock-check:{ .anim-bounce } Online Privacy and the Internet
 
 On blocking ads, filter bubbles, fake news and the like.
 

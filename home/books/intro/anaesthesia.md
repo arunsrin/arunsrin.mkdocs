@@ -5,7 +5,7 @@ tags:
   - medicine
 ---
 
-# 📃 Anaesthesia
+# :material-file-document-outline:{ .anim-pulse } Anaesthesia
 
 # Suspended Animation: Concepts of Anaesthesia
 

@@ -5,7 +5,7 @@ tags:
   - atheism
 ---
 
-# 🧬 Richard Dawkins
+# :material-dna:{ .anim-heart } Richard Dawkins
 
 ## Why
 

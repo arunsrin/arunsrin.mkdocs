@@ -4,7 +4,7 @@ tags:
   - monitoring
 ---
 
-# 🔥Prometheus
+# :material-fire:{ .anim-fade }Prometheus
 
 I'm familiar with the architecture etc, and am currently interested in the
 querying side of things. So here are my notes from reading *Prometheus: Up &

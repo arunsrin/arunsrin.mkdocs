@@ -5,7 +5,7 @@ tags:
   - analysis
 ---
 
-# 📝 How To Read A Book
+# :material-pencil:{ .anim-fade } How To Read A Book
 ## By Mortimer J. Adler and Charles Van Doren
 
 Reading this was a turning point for me. For a lifetime, I'd read

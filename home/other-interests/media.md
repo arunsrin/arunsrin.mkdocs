@@ -5,7 +5,7 @@ tags:
   - tv
 ---
 
-# 📺Movies
+# :material-television-classic:{ .anim-flip }Movies
 
 I'm a bit of a movie snob and prefer ones where the
 director's love shines through. Commercially-focused movies

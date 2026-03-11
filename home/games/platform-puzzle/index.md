@@ -5,7 +5,7 @@ tags:
   - puzzle
 ---
 
-# 🧩 Platformers & Puzzles
+# :material-puzzle:{ .anim-heart } Platformers & Puzzles
 
 Timing, logic, and creative problem-solving.
 

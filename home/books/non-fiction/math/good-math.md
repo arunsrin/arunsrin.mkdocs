@@ -5,7 +5,7 @@ tags:
   - programming
 ---
 
-# 📝 Good Math
+# :material-pencil:{ .anim-rotate } Good Math
 
 *Full Title:* Good Math: A Geek's Guide to the Beauty of Numbers, Logic, and Computation
 

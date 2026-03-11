@@ -5,7 +5,7 @@ tags:
   - history
 ---
 
-# 📜 History
+# :material-history:{ .anim-heart } History
 
 Chronicles of the past, from ancient republics to modern global conflicts.
 

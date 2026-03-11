@@ -5,7 +5,7 @@ tags:
   - history
 ---
 
-# 📃 Alexander the Great
+# :material-file-document-outline:{ .anim-bounce } Alexander the Great
 
 # Introduction
 

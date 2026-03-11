@@ -5,7 +5,7 @@ tags:
   - strategy
 ---
 
-# ♟️ RPG & Strategy
+# :material-chess-knight:{ .anim-flip } RPG & Strategy
 
 Tactical combat, character builds, and complex systems.
 

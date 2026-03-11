@@ -5,7 +5,7 @@ tags:
   - writing
 ---
 
-# ✍️ Literature & Writing
+# :material-pen-nib:{ .anim-flip } Literature & Writing
 
 Analysis of the written word, guides to better writing, and deep dives into the mechanics of language.
 

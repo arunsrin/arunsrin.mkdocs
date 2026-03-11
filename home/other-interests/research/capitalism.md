@@ -5,7 +5,7 @@ tags:
   - politics
 ---
 
-# 💰 Capitalism
+# :material-cash-multiple:{ .anim-heart } Capitalism
 
 Unfettered capitalism is the root of all evil.
 

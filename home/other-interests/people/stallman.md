@@ -5,7 +5,7 @@ tags:
   - free-software
 ---
 
-# 🐧 Richard Stallman
+# :material-penguin:{ .anim-rotate } Richard Stallman
 
 ## Why
 

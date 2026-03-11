@@ -5,7 +5,7 @@ tags:
   - classics
 ---
 
-# 🏛️ Classics
+# :material-columns:{ .anim-fade } Classics
 
 Foundational literature. The old books are always the best!
 

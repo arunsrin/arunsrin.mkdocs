@@ -5,7 +5,7 @@ tags:
   - politics
 ---
 
-# 💭 Noam Chomsky
+# :material-thought-bubble:{ .anim-bounce } Noam Chomsky
 
 ## Why
 

@@ -5,7 +5,7 @@ tags:
   - console
 ---
 
-# 🎮 Xbox Series X
+# :material-controller-classic:{ .anim-heart } Xbox Series X
 
 I love my Xbox because this is the console where I have formed memories of:
 

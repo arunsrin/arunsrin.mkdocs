@@ -5,7 +5,7 @@ tags:
   - health
 ---
 
-# 📝 Immune, by Phillip Dettmer
+# :material-pencil:{ .anim-fade } Immune, by Phillip Dettmer
 
 This is an incredible book and the brief notes I took below do not do justice
 to how well it is written.

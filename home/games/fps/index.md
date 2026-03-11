@@ -5,7 +5,7 @@ tags:
   - fps
 ---
 
-# 🔫 Shooters (FPS)
+# :material-target:{ .anim-rotate } Shooters (FPS)
 
 Fast-paced action and military epics.
 

@@ -5,7 +5,7 @@ tags:
   - logic
 ---
 
-# 💭 Scepticism
+# :material-thought-bubble:{ .anim-heart } Scepticism
 
 I feel lucky to have grown up as the internet was starting out. I honed my
 debating skills in forums (talk.origins, James Randi's forum, and so on) and

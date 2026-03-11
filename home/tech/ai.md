@@ -4,7 +4,7 @@ tags:
   - llm
 ---
 
-# 🧠 AI
+# :material-brain:{ .anim-bounce } AI
 
 ## Benefits
 

@@ -4,7 +4,7 @@ tags:
   - systemd
 ---
 
-# 🐧Systemd
+# :material-penguin:{ .anim-heart }Systemd
 
 ## Socket activation
 

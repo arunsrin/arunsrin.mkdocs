@@ -5,7 +5,7 @@ tags:
   - grammar
 ---
 
-# 📝 Eats, Shoots & Leaves
+# :material-pencil:{ .anim-pulse } Eats, Shoots & Leaves
 
 *Author:* Lynne Truss
 

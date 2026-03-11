@@ -5,7 +5,7 @@ tags:
   - os
 ---
 
-# 🐧Linux
+# :material-penguin:{ .anim-rotate }Linux
 
 My favourite OS. Been using it since 2004. Learnt the hard way, uphill
 both ways. I used to borrow DVDs from the library at work and give it

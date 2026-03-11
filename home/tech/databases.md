@@ -4,7 +4,7 @@ tags:
   - sql
 ---
 
-# 💾 Databases
+# :material-database:{ .anim-flip } Databases
 
 [Elastic](elastic.md) notes are in a sibling page.
 

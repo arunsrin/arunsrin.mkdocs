@@ -4,7 +4,7 @@ tags:
   - linux
 ---
 
-# 🔒 Security
+# :material-lock:{ .anim-flip } Security
 
 ## Query list of ciphers supported by a server
 

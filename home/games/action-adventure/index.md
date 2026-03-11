@@ -5,7 +5,7 @@ tags:
   - adventure
 ---
 
-# 🤺 Action & Adventure
+# :material-sword:{ .anim-flip } Action & Adventure
 
 Exploration, stealth, and high-octane action.
 

@@ -5,7 +5,7 @@ tags:
   - advertising
 ---
 
-# 📃 Advertising
+# :material-file-document-outline:{ .anim-flip } Advertising
 
 # Introduction
 

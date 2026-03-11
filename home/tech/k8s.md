@@ -4,7 +4,7 @@ tags:
   - containers
 ---
 
-# ☸️ Kubernetes
+# :material-kubernetes:{ .anim-flip } Kubernetes
 
 Some kubernetes overview links, with a focus on networking.
 
