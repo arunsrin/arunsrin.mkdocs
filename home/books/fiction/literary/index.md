@@ -1,6 +1,6 @@
 # 📚 Literary Fiction
 
-A collection of contemporary and modern works exploring the human condition through refined prose and complex structure.
+Contemporary works exploring the human condition.
 
 ### ❤️When We Cease To Understand The World, by Benjamin Labatut (2025)
 Literature collides with Science as the author probes the edges of human understanding during the Second World War. Blending fiction with real events turns out to be a marvelous choice.

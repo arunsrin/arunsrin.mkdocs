@@ -1,6 +1,6 @@
 # 📖 Books
 
-This section transitions from a simple reading log to a structured analysis of literature and thought.
+Books I've read in the past few years (since 2016) are mentioned here:
 
 ## 🎭 Fiction
 

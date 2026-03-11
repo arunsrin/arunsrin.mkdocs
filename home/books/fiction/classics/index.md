@@ -1,14 +1,6 @@
 # 🏛️ Classics
 
-Structural and thematic analysis of foundational literature.
-
-### Geoffrey Chaucer
-Analysis of *The Canterbury Tales* and the evolution of Middle English literature.
-
-### Homer
-Notes on *The Iliad* and *The Odyssey*.
-
----
+Foundational literature. The old books are always the best!
 
 ### The Iliad and The Odyssey, by Gareth Hinds (2025)
 These are graphic novel versions of the Iliad and the Odyssey. I really loved the art style.
