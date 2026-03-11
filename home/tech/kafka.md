@@ -1,3 +1,9 @@
+---
+tags:
+  - kafka
+  - messaging
+---
+
 # 🐞 Kafka 
 
 These notes are based on a series of posts I read, starting with [this

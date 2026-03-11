@@ -1,3 +1,9 @@
+---
+tags:
+  - browsers
+  - web
+---
+
 # 🌐 Browsers
 
 I've settled on, surprisingly, MS Edge as my primary browser. The bits I like:

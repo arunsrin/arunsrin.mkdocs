@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - writing
+  - analysis
+---
+
 # 📝 How To Read A Book
 ## By Mortimer J. Adler and Charles Van Doren
 

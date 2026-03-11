@@ -1,3 +1,10 @@
+---
+tags:
+  - research
+  - tech
+  - privacy
+---
+
 # 🔏 Online Privacy and the Internet
 
 On blocking ads, filter bubbles, fake news and the like.

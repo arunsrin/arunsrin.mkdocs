@@ -1,3 +1,9 @@
+---
+tags:
+  - kubernetes
+  - containers
+---
+
 # ☸️ Kubernetes
 
 Some kubernetes overview links, with a focus on networking.

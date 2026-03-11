@@ -1,3 +1,11 @@
+---
+tags:
+  - books
+  - fiction
+  - literary
+  - nabokov
+---
+
 # 📝 Despair, by Vladimir Nabokov
 
 I reread this book this month. Nabokov’s protagonists are always fascinating.

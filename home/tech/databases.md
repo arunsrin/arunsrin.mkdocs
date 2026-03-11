@@ -1,3 +1,9 @@
+---
+tags:
+  - databases
+  - sql
+---
+
 # 💾 Databases
 
 [Elastic](elastic.md) notes are in a sibling page.

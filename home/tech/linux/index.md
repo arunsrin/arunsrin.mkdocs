@@ -1,3 +1,10 @@
+---
+tags:
+  - linux
+  - sysadmin
+  - os
+---
+
 # 🐧Linux
 
 My favourite OS. Been using it since 2004. Learnt the hard way, uphill

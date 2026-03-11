@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - philosophy
+  - stoicism
+---
+
 # 📝Think Like A Stoic, by Massimo Pigliucci
 
 These are just some random thoughts I jotted during my listen, so I'm not sure

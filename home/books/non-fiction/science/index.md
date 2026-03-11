@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - non-fiction
+  - science
+---
+
 # 🧬 Science
 
 Exploring the natural world, from the depths of the ocean to the complexities of the human immune system.

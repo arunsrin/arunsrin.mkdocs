@@ -9,14 +9,138 @@ repo_url: https://github.com/arunsrin/arunsrin.mkdocs
 edit_uri: blob/master/home/
 plugins:
   - search
-  # - git-revision-date
+  - tags:
+      tags_allowed:
+        - about
+        - accounting
+        - action
+        - adventure
+        - advertising
+        - ai
+        - analysis
+        - ansible
+        - astronomy
+        - atheism
+        - automation
+        - aws
+        - books
+        - browsers
+        - classics
+        - climate
+        - cloud
+        - coding
+        - console
+        - containers
+        - crypto
+        - cyberpunk
+        - databases
+        - development
+        - docker
+        - economics
+        - editors
+        - elastic
+        - emacs
+        - environment
+        - ethics
+        - fantasy
+        - fiction
+        - finance
+        - fps
+        - free-software
+        - games
+        - gaming
+        - git
+        - go
+        - grafana
+        - grammar
+        - health
+        - historical
+        - history
+        - home
+        - hub
+        - index
+        - interactive
+        - intro
+        - java
+        - kafka
+        - kubernetes
+        - linguistics
+        - linux
+        - literary
+        - literature
+        - llm
+        - logic
+        - math
+        - media
+        - medicine
+        - messaging
+        - monitoring
+        - movies
+        - mystery
+        - myth
+        - nabokov
+        - networking
+        - neuroscience
+        - non-fiction
+        - openssl
+        - os
+        - packaging
+        - people
+        - philosophy
+        - platformer
+        - politics
+        - powershell
+        - privacy
+        - productivity
+        - profile
+        - programming
+        - prometheus
+        - psychology
+        - puzzle
+        - python
+        - reading
+        - reference
+        - research
+        - rpg
+        - science
+        - sci-fi
+        - scripting
+        - search
+        - security
+        - shooter
+        - sql
+        - stoicism
+        - story
+        - strategy
+        - sysadmin
+        - systemd
+        - tech
+        - tips
+        - tools
+        - tv
+        - vcs
+        - vim
+        - web
+        - windows
+        - writing
+        - wsl
+        - xbox
 # Extensions
 markdown_extensions:
   - admonition
   - attr_list
-  - codehilite:
-        guess_lang: true
   - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -50,28 +174,149 @@ theme:
   favicon: 'static/favicon.ico'
   icon:
     logo: material/notebook-edit-outline
+    tag:
+      id-python: material/language-python
+      id-linux: material/linux
+      id-ai: material/robot
+      id-ansible: simple/ansible
+      id-aws: fontawesome/brands/aws
+      id-docker: simple/docker
+      id-git: simple/git
+      id-kubernetes: material/kubernetes
+      id-windows: fontawesome/brands/windows
+      id-books: material/book-open-variant
+      id-games: material/controller-classic
+      id-science: material/flask
+      id-math: material/calculator
+      id-security: material/shield-check
+      id-monitoring: material/chart-bell-curve
+      id-search: material/magnify
+      id-databases: material/database
+      id-programming: material/code-tags
+      id-history: material/history
+      id-philosophy: material/thought-bubble
+      id-psychology: material/brain
+      id-writing: material/fountain-pen
+      id-movies: material/movie-open
+      id-tv: material/television-classic
+      id-people: material/account-group
+      id-research: material/microscope
+      id-economics: material/finance
+      id-politics: material/bank
+      id-privacy: material/incognito
+      id-productivity: material/check-circle
+      id-logic: material/lightbulb
+      id-cloud: material/cloud
+      id-automation: material/robot-industrial
+      id-web: material/web
+      id-containers: material/package-variant
+      id-vcs: material/source-branch
+      id-messaging: material/message-text
+      id-networking: material/lan
+      id-tools: material/tools
+      id-scripting: material/script-text
+      id-fiction: material/feather
+      id-non-fiction: material/clipboard-check
+      id-classics: material/view-column
+      id-fantasy: material/auto-fix
+      id-sci-fi: material/rocket-launch
+      id-mystery: material/magnify-expand
+      id-historical: material/calendar-clock
+      id-action: material/sword
+      id-adventure: material/map-marker-distance
+      id-shooter: material/target
+      id-fps: material/crosshairs-gps
+      id-puzzle: material/puzzle
+      id-rpg: material/shield-sword
+      id-strategy: material/chess-knight
+      id-cyberpunk: material/chip
+      id-xbox: fontawesome/brands/xbox
+      id-console: material/console
+      id-media: material/play-box-multiple
   custom_dir: overrides
   language: 'en'
-  highlightjs: true
   features:
     # Enhanced navigation
-    - navigation.tracking         # Update URL on scroll
-    - navigation.tabs             # Top-level tabs
-    - navigation.sections         # Group sections
-    - navigation.path             # Breadcrumbs
-    - navigation.top              # Back to top button
-    - navigation.footer           # Previous/next navigation
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - navigation.expand
 
     # other enhancements
-    - toc.follow                  # sidebar scrolls with the page
+    - toc.follow
     
     # Content enhancements
-    - content.code.copy           # Copy code buttons
-    - content.action.edit         # Edit page button
-    - content.tooltips            # Enhanced tooltips
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.tooltips
     
     # Search improvements
-    - search.suggest              # Search suggestions
+    - search.suggest
+    - search.highlight
+extra:
+  tags:
+    python: id-python
+    linux: id-linux
+    ai: id-ai
+    ansible: id-ansible
+    aws: id-aws
+    docker: id-docker
+    git: id-git
+    kubernetes: id-kubernetes
+    windows: id-windows
+    books: id-books
+    games: id-games
+    science: id-science
+    math: id-math
+    security: id-security
+    monitoring: id-monitoring
+    search: id-search
+    databases: id-databases
+    programming: id-programming
+    history: id-history
+    philosophy: id-philosophy
+    psychology: id-psychology
+    writing: id-writing
+    movies: id-movies
+    tv: id-tv
+    people: id-people
+    research: id-research
+    economics: id-economics
+    politics: id-politics
+    privacy: id-privacy
+    productivity: id-productivity
+    logic: id-logic
+    cloud: id-cloud
+    automation: id-automation
+    web: id-web
+    containers: id-containers
+    vcs: id-vcs
+    messaging: messaging
+    networking: id-networking
+    tools: id-tools
+    scripting: id-scripting
+    fiction: id-fiction
+    non-fiction: id-non-fiction
+    classics: id-classics
+    fantasy: id-fantasy
+    sci-fi: id-sci-fi
+    mystery: id-mystery
+    historical: id-historical
+    action: id-action
+    adventure: id-adventure
+    shooter: id-shooter
+    fps: id-fps
+    puzzle: id-puzzle
+    rpg: id-rpg
+    strategy: id-strategy
+    cyberpunk: id-cyberpunk
+    xbox: id-xbox
+    console: id-console
+    media: id-media
 validation:
   omitted_files: warn
   absolute_links: warn

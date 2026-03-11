@@ -1,3 +1,9 @@
+---
+tags:
+  - elastic
+  - search
+---
+
 # 🔍 Elastic Stack
 
 These are notes from *Learning Elastic Stack 7.0*, by Pranav Shukla

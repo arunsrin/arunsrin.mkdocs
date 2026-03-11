@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - fiction
+  - mystery
+---
+
 # 🕵️ Mystery & Thriller
 
 Tales of suspense, crime, and intrigue.

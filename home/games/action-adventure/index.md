@@ -1,3 +1,10 @@
+---
+tags:
+  - games
+  - action
+  - adventure
+---
+
 # 🤺 Action & Adventure
 
 Exploration, stealth, and high-octane action.

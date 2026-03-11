@@ -1,3 +1,10 @@
+---
+tags:
+  - people
+  - science
+  - atheism
+---
+
 # 🧬 Richard Dawkins
 
 ## Why

@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - science
+  - health
+---
+
 # 📝 Immune, by Phillip Dettmer
 
 This is an incredible book and the brief notes I took below do not do justice

@@ -1,3 +1,9 @@
+---
+tags:
+  - linux
+  - tips
+---
+
 # 🐧 Learnings/Notes
 
 

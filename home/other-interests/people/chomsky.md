@@ -1,3 +1,10 @@
+---
+tags:
+  - people
+  - linguistics
+  - politics
+---
+
 # 💭 Noam Chomsky
 
 ## Why

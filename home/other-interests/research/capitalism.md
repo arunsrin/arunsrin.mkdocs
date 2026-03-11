@@ -1,3 +1,10 @@
+---
+tags:
+  - research
+  - economics
+  - politics
+---
+
 # 💰 Capitalism
 
 Unfettered capitalism is the root of all evil.

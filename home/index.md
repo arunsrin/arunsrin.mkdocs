@@ -1,3 +1,9 @@
+---
+tags:
+  - home
+  - index
+---
+
 # 🏡 Home
 
 Welcome to my home page.

@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - intro
+  - medicine
+---
+
 # 📃 Anaesthesia
 
 # Suspended Animation: Concepts of Anaesthesia

@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - fiction
+  - fantasy
+---
+
 # 🏰 Fantasy
 
 Worlds of myth, magic, and the extraordinary.

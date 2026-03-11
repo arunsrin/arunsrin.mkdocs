@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - fiction
+  - historical
+---
+
 # ⏳ Historical Fiction
 
 History reimagined through narrative, blending fact and speculation to bring the past to life.

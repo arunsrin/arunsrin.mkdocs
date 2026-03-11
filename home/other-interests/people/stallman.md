@@ -1,3 +1,10 @@
+---
+tags:
+  - people
+  - tech
+  - free-software
+---
+
 # 🐧 Richard Stallman
 
 ## Why

@@ -1,3 +1,10 @@
+---
+tags:
+  - research
+  - philosophy
+  - ethics
+---
+
 # 💭 Philosophy / Morality
 
 ## Personal stance

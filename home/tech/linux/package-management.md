@@ -1,3 +1,9 @@
+---
+tags:
+  - linux
+  - packaging
+---
+
 # 🐧 Package management
 
 ## Sort RPMs by size

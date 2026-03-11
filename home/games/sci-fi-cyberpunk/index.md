@@ -1,3 +1,10 @@
+---
+tags:
+  - games
+  - sci-fi
+  - cyberpunk
+---
+
 # 🤖 Sci-Fi & Cyberpunk
 
 Futuristic worlds, neon lights, and high-tech exploration.

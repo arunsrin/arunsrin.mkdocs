@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - intro
+  - accounting
+---
+
 # 📃 Accounting
 # Introduction
 

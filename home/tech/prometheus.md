@@ -1,3 +1,9 @@
+---
+tags:
+  - prometheus
+  - monitoring
+---
+
 # 🔥Prometheus
 
 I'm familiar with the architecture etc, and am currently interested in the

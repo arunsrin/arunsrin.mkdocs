@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - math
+  - programming
+---
+
 # 📝 Good Math
 
 *Full Title:* Good Math: A Geek's Guide to the Beauty of Numbers, Logic, and Computation

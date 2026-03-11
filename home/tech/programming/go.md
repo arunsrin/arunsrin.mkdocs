@@ -1,3 +1,9 @@
+---
+tags:
+  - go
+  - programming
+---
+
 # 🐹 Go
 
 Notes from the book *Learning Go*, by Jon Bodner.

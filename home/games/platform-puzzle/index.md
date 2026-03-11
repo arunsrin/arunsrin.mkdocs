@@ -1,3 +1,10 @@
+---
+tags:
+  - games
+  - platformer
+  - puzzle
+---
+
 # 🧩 Platformers & Puzzles
 
 Timing, logic, and creative problem-solving.

@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - non-fiction
+  - philosophy
+---
+
 # 💭 Philosophy
 
 Investigations into ethics, existence, and the principles of thought.

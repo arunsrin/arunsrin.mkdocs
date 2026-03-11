@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - non-fiction
+  - math
+---
+
 # 🔢 Mathematics
 
 Exploring the beauty and logic of numbers, from ancient geometry to modern algorithms.

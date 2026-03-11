@@ -1,3 +1,9 @@
+---
+tags:
+  - openssl
+  - security
+---
+
 # 🔒 OpenSSL
 
 Some non-openssl [security](security.md) notes are in a sibling page.

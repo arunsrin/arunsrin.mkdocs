@@ -1,3 +1,10 @@
+---
+tags:
+  - editors
+  - emacs
+  - vim
+---
+
 # ⌨️ Editors
 
 My heart lies with GNU Emacs. It is probably my most used tool at work

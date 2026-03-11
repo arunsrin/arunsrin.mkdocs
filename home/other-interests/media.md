@@ -1,3 +1,10 @@
+---
+tags:
+  - media
+  - movies
+  - tv
+---
+
 # 📺Movies
 
 I'm a bit of a movie snob and prefer ones where the

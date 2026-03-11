@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - fiction
+  - literary
+---
+
 # 📚 Literary Fiction
 
 Contemporary works exploring the human condition.

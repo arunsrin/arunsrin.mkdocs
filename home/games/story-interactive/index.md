@@ -1,3 +1,10 @@
+---
+tags:
+  - games
+  - story
+  - interactive
+---
+
 # 🎭 Story-Driven & Interactive
 
 Choices matter. Narrative-heavy experiences and interactive cinema.

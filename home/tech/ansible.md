@@ -1,3 +1,9 @@
+---
+tags:
+  - ansible
+  - automation
+---
+
 # 🅰️ Ansible
 
 These are mostly notes from reading *Mastering Ansible*, by James Freeman and

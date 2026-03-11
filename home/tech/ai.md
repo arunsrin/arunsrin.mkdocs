@@ -1,3 +1,9 @@
+---
+tags:
+  - ai
+  - llm
+---
+
 # 🧠 AI
 
 ## Benefits

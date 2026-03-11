@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - non-fiction
+  - history
+---
+
 # 📜 History
 
 Chronicles of the past, from ancient republics to modern global conflicts.

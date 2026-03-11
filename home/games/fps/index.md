@@ -1,3 +1,10 @@
+---
+tags:
+  - games
+  - shooter
+  - fps
+---
+
 # 🔫 Shooters (FPS)
 
 Fast-paced action and military epics.

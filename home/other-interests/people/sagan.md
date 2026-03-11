@@ -1,3 +1,10 @@
+---
+tags:
+  - people
+  - science
+  - astronomy
+---
+
 # 🌌 Carl Sagan
 
 ## Why

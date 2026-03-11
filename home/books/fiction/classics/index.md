@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - fiction
+  - classics
+---
+
 # 🏛️ Classics
 
 Foundational literature. The old books are always the best!

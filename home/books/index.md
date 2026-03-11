@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - reading
+  - literature
+---
+
 # 📖 Books
 
 Books I've read in the past few years (since 2016) are mentioned here:

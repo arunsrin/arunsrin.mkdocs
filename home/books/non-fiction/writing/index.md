@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - non-fiction
+  - writing
+---
+
 # ✍️ Literature & Writing
 
 Analysis of the written word, guides to better writing, and deep dives into the mechanics of language.

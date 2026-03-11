@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - psychology
+  - productivity
+---
+
 # 📝 Flow
 
 I've long been interested in Active vs Passive hobbies, why one is better than

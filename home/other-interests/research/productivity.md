@@ -1,3 +1,10 @@
+---
+tags:
+  - research
+  - productivity
+  - tools
+---
+
 # ✅ Productivity
 
 ## Summary

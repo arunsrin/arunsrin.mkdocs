@@ -1,3 +1,9 @@
+---
+tags:
+  - windows
+  - wsl
+---
+
 # 🪟 Windows
 
 ## Change a wireless network to Private

@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - science
+  - climate
+---
+
 # 📝 The Thinking Person's Guide to Climate Change
 
 *Author:* Robert Henson

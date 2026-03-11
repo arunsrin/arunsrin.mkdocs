@@ -1,3 +1,9 @@
+---
+tags:
+  - security
+  - linux
+---
+
 # 🔒 Security
 
 ## Query list of ciphers supported by a server

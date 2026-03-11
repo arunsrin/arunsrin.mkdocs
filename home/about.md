@@ -1,3 +1,9 @@
+---
+tags:
+  - about
+  - profile
+---
+
 # 🐧About
 
 I’m a software engineer in Bangalore who is addicted to [books](books/index.md). Classic

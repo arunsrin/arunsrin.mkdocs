@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - science
+  - crypto
+---
+
 # 📝 Crypto 101
 
 Notes from reading the excellent book at <https://www.crypto101.io/>

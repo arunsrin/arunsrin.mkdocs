@@ -1,3 +1,10 @@
+---
+tags:
+  - games
+  - xbox
+  - console
+---
+
 # 🎮 Xbox Series X
 
 I love my Xbox because this is the console where I have formed memories of:

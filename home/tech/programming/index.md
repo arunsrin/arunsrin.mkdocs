@@ -1,3 +1,10 @@
+---
+tags:
+  - programming
+  - development
+  - coding
+---
+
 # 💻Programming
 
 Check these pages for language-specific notes:

@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - psychology
+  - philosophy
+---
+
 # 📝 The Happiness Hypothesis
 
 This book is written by Jonathan Haidt. I’d read his other book, The Righteous

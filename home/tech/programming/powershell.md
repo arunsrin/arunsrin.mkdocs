@@ -1,3 +1,9 @@
+---
+tags:
+  - powershell
+  - scripting
+---
+
 # ▶️ Powershell
 
 These notes are from **Mastering PowerShell Scripting - Fourth Edition**, by

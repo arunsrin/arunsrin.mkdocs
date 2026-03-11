@@ -1,3 +1,10 @@
+---
+tags:
+  - games
+  - rpg
+  - strategy
+---
+
 # ♟️ RPG & Strategy
 
 Tactical combat, character builds, and complex systems.

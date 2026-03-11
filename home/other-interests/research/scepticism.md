@@ -1,3 +1,10 @@
+---
+tags:
+  - research
+  - science
+  - logic
+---
+
 # 💭 Scepticism
 
 I feel lucky to have grown up as the internet was starting out. I honed my

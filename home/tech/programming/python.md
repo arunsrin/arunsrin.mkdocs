@@ -1,3 +1,9 @@
+---
+tags:
+  - python
+  - programming
+---
+
 # 🐍Python notes
 
 ## pip: upgrade all packages in a virtual env

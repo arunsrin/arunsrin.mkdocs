@@ -1,3 +1,9 @@
+---
+tags:
+  - git
+  - vcs
+---
+
 # 💾 Git
 
 ## Separate git configurations for work and play

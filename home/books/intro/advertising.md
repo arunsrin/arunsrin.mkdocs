@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - intro
+  - advertising
+---
+
 # 📃 Advertising
 
 # Introduction

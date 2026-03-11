@@ -1,3 +1,10 @@
+---
+tags:
+  - books
+  - fiction
+  - sci-fi
+---
+
 # 🌌 Hard Sci-Fi & Speculative Fiction
 
 A collection of notes and reviews on authors who explore the boundaries of physics, consciousness, and the future.

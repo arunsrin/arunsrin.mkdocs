@@ -1,3 +1,10 @@
+---
+tags:
+  - games
+  - gaming
+  - hub
+---
+
 # 🎮 Games
 
 I prefer single-player Action Adventure open-world games. Bonus points if it has
