@@ -2,14 +2,9 @@
 
 A collection of notes and reviews on authors who explore the boundaries of physics, consciousness, and the future.
 
-## Greg Egan
-Notes on *Permutation City*, *Diaspora*, and the *Orthogonal* series.
-
-### Axiomatic (2021)
+### Axiomatic, by Greg Egan (2021)
 A short story collection from one of my favourite hard-sci-fi writers. Excellent as always.
 
-## Peter Watts
-Deep dives into *Blindsight*, *Echopraxia*, and the *Rifters* trilogy.
 
 ### ❤️Leech, by Hiron Ennes (2025)
 This was recommended by the excellent Peter Watts. It has been a while since I've read a science fiction book this good! A parasitic hive-mind that inhabits a bunch of people meets a competitor in an atmospheric post-apocalyptic world. Finished this in a single long sitting.

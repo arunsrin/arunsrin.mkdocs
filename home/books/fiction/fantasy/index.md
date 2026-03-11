@@ -26,7 +26,7 @@ A good fantasy novel about a Torturer who is exiled from his guild.
 ### The Just City, by Jo Walton (2024)
 An excellent thought experiment. Athena and Apollo decide to implement Plato's 'Just City' in Atlantis, and recruit a bunch of children to form the first generation.
 
-### The Man Who Was Thursday: A Nightmare, by G.K. Chesterton (2024, 2020)
+### The Man Who Was Thursday: A Nightmare, by G.K. Chesterton (2024)
 Absolutely enjoyable. Every time this book seemed to be going in a predictable direction, it veered off course into a completely different one. Highly recommended.
 
 ### Circe & The Song of Achilles, by Madeline Miller (2020)
