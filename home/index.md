@@ -81,7 +81,7 @@ reference.
 
 -   :material-television:{ .lg .middle } Other media
 
-    - [Movies and TV](archive/movies-and-tv.md) that I really like
+    - [Movies and TV](interests/media.md) that I really like
 
 
 </div>
@@ -128,11 +128,9 @@ achievement hunter but it tracks my Xbox progress quite well.
 
 ---
 
-# ♻️Older Stuff
+# 🪴 Digital Garden
 
-!!!note
-    These pages are less up to date than others. 
-
+These pages cover other various topics I've researched or feel passionate about.
 
 <div class="grid cards" markdown>
 
@@ -156,18 +154,16 @@ achievement hunter but it tracks my Xbox progress quite well.
 
 -   :material-microscope:{ .lg .middle } __Research__
 
-    Here are some notes and links I've collected in topics that interest me. Several
-    are works in progress: I'm yet to move my large collection of bookmarks to these
-    sections. But this is an attempt to weave something from those saved links.
+    Curated notes and links on topics that interest me.
 
-    - [🦠COVID-19](archive/research/covid-19.md)
-    - [💸Cryptocurrencies](archive/research/cryptocurrencies.md)
-    - [✅Productivity](archive/research/productivity.md)
-    - [🌡️Climate Change](archive/research/climate-change.md)
-    - [💭Philosophy](archive/research/philosophy.md)
-    - [💭Scepticism](archive/research/scepticism.md)
-    - [🔏Online Privacy and the Internet](archive/research/privacy-internet.md)
-    - [💰Capitalism](archive/research/capitalism.md)
+    - [🦠COVID-19](interests/research/covid-19.md)
+    - [💸Cryptocurrencies](interests/research/cryptocurrencies.md)
+    - [✅Productivity](interests/research/productivity.md)
+    - [🌡️Climate Change](interests/research/climate-change.md)
+    - [💭Philosophy](interests/research/philosophy.md)
+    - [💭Scepticism](interests/research/scepticism.md)
+    - [🔏Online Privacy and the Internet](interests/research/privacy-internet.md)
+    - [💰Capitalism](interests/research/capitalism.md)
 
 
     Here are notes on Oxford's *Very Short Introduction To..* series.
@@ -183,11 +179,11 @@ achievement hunter but it tracks my Xbox progress quite well.
 
 -   :material-medal:{ .lg .middle } __Role Models__
 
-    Some heroes that I look up to, in the tech and literary worlds mostly.
+    People whose work and principles I find inspiring.
 
-    - [🧬Richard Dawkins](archive/heroes/dawkins.md)
-    - [🌌Carl Sagan](archive/heroes/sagan.md)
-    - [🐧Richard Stallman](archive/heroes/stallman.md)
-    - [💭Noam Chomsky](archive/heroes/chomsky.md)
+    - [🧬Richard Dawkins](interests/people/dawkins.md)
+    - [🌌Carl Sagan](interests/people/sagan.md)
+    - [🐧Richard Stallman](interests/people/stallman.md)
+    - [💭Noam Chomsky](interests/people/chomsky.md)
 
 
