@@ -4,7 +4,7 @@ tags:
   - programming
 ---
 
-# 🐹 Go
+# :simple-go:{ .anim-pulse } Go
 
 Notes from the book *Learning Go*, by Jon Bodner.
 

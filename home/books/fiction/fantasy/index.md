@@ -5,7 +5,7 @@ tags:
   - fantasy
 ---
 
-# 🏰 Fantasy
+# :material-auto-fix:{ .anim-rotate } Fantasy
 
 Worlds of myth, magic, and the extraordinary.
 

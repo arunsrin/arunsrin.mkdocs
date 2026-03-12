@@ -5,7 +5,7 @@ tags:
   - coding
 ---
 
-# 💻Programming
+# :material-code-tags:{ .anim-rotate } Programming
 
 Check these pages for language-specific notes:
 

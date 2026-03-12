@@ -5,7 +5,7 @@ tags:
   - cyberpunk
 ---
 
-# 🤖 Sci-Fi & Cyberpunk
+# :material-chip:{ .anim-rotate } Sci-Fi & Cyberpunk
 
 Futuristic worlds, neon lights, and high-tech exploration.
 

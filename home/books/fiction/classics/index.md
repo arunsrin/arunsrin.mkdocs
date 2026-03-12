@@ -5,7 +5,7 @@ tags:
   - classics
 ---
 
-# :material-columns:{ .anim-fade } Classics
+# :material-view-column:{ .anim-bounce } Classics
 
 Foundational literature. The old books are always the best!
 

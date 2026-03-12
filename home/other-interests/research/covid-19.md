@@ -5,7 +5,7 @@ tags:
   - history
 ---
 
-# 🦠 COVID-19 References
+# :material-virus:{ .anim-fade } COVID-19 References
 
 I'm keeping a diary of interesting links to track the COVID-19 epidemic.
 

@@ -4,7 +4,7 @@ tags:
   - scripting
 ---
 
-# ▶️ Powershell
+# :material-powershell:{ .anim-bounce } Powershell
 
 These notes are from **Mastering PowerShell Scripting - Fourth Edition**, by
 Chris Dent.

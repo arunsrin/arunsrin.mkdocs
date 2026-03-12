@@ -4,7 +4,7 @@ tags:
   - programming
 ---
 
-# 🍵 Java
+# :material-language-java:{ .anim-fade } Java
 
 Most of these notes are from the book *Java Projects* by *Peter Verhas*.
 

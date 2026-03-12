@@ -4,7 +4,7 @@ tags:
   - programming
 ---
 
-# 🐍Python notes
+# :material-language-python:{ .anim-heart } Python
 
 ## pip: upgrade all packages in a virtual env
 
