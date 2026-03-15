@@ -9,6 +9,12 @@ tags:
 
 Contemporary works exploring the human condition.
 
+### ❤️A Fine Balance, by Rohinton Mistry
+
+Unrelentingly bleak and stays with you long after you are done with it. Four lives intersect
+during India's Emergency. For a brief period, amidst the chaos and uncertainty, there is a
+glimmer of something better.
+
 ### ❤️When We Cease To Understand The World, by Benjamin Labatut (2025)
 Literature collides with Science as the author probes the edges of human understanding during the Second World War. Blending fiction with real events turns out to be a marvelous choice.
 
