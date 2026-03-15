@@ -37,6 +37,36 @@ The story of Ranbaxy and the generic drug market. Pleasantly surprised by how ni
 ### Indica, by Pranay Lal (2021)
 A natural history of India. The photos and illustrations are quite beautiful.
 
+### Entangled Life, by Merlin Sheldrake (2022)
+A peek into the world of fungi, from truffles to magic mushrooms. Very interesting.
+
+### Alex Through the Looking-Glass, by Alex Bellos (2022)
+A good read, though the first chapter on numerology and favorite numbers felt a bit out of place compared to the author's previous work.
+
+### Infinite Powers, by Steven H. Strogatz (2022)
+Fairly light reading. Gives a sense of how wide-spread Calculus is with nice historical examples.
+
+### Seven Brief Lessons on Physics, by Carlo Rovelli (2021)
+A light overview of physics. Does not go too deep so might be good for folks who are dipping their toes in this genre.
+
+### Blood, Sweat, and Pixels, by Jason Schreier (2021)
+An interesting peek behind the curtains of game companies small and large.
+
+### The Brain: The Story of You, by David Eagleman (2021)
+A nice introduction to our current understanding of how the brain functions. The author does a nice job of keeping things interesting at a high level.
+
+### An Immense World, by Ed Yong (2023)
+A lovely exploration into the hidden world of animal senses. I love seeing the world through different perspectives and this book did that job very well.
+
+### Stuff Matters, by Mark Miodownik (2022)
+A nice foray into materials science: the author takes everyday objects and explains how we created them.
+
+### The Great Derangement, by Amitav Ghosh (2024)
+A great writer considers the history and politics around Climate Change.
+
+### Heretics: Adventures with the Enemies of Science, by Will Storr (2015)
+Explores why otherwise intelligent people delude themselves into believing things that are obviously not true. Skeptical, funny, and well worth a read.
+
 ### Trilobite!, by Richard Fortey (2019)
 A detailed look at one of the most successful creatures in history.
 

@@ -26,3 +26,21 @@ A brief play covering the last few days of Cato's life. Caesar is at the gates a
 
 ### Classics: A Very Short Introduction, by Mary Beard (2025)
 Taking the excavation of a Greek Temple to Apollo in the remote town of Bassae in Greece, the authors elegantly explain how it touches each generation's perspectives on ancient Greek and Roman cultures, philosophy and art.
+
+### The Stranger, by Albert Camus (2022)
+A murderer is judged by a society he cannot relate to. Told from the perspective of an indifferent, apathetic character.
+
+### Pride and Prejudice, by Jane Austen (2022)
+Focused on character motivations and conversations, noting Austen's superior skill compared to lesser authors.
+
+### Hamlet, by William Shakespeare (2021)
+It’s Shakespeare, of course it’s great. Extensive and useful annotations in the Penguin edition.
+
+### Watchmen, by Alan Moore (2006)
+This 12-issue graphic novel redefined its whole genre and changed the face of comic book writing forever. Brilliant and shiver-inducing.
+
+### ❤️The Iliad, by Homer (2022)
+The translation by Samuel Butler is in prose form, so it was enjoyable to read.
+
+### Heroes, Gods and Monsters of the Greek Myths, by Bernard Evslin (2024)
+A gentle and fun introduction to all the important Greek Gods and Heroes.

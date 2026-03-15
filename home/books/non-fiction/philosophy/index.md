@@ -24,3 +24,21 @@ A brief essay on the current culture of excess and the problems it brings.
 
 ### ❤️What Kind of Creatures Are We? by Noam Chomsky (2019)
 Talks about language, not as a mode of communication, but as a mode of cognition itself.
+
+### The Conspiracy Against the Human Race, by Thomas Ligotti (2022)
+A pessimist's manifesto on the pointlessness of it all. A nice break from the usual propaganda.
+
+### Knowledge, Reality, and Value, by Michael Huemer (2022)
+A phenomenal introduction to philosophy. Skips the boring bits, has great examples, and sections on critical thinking.
+
+### How the World Works, by Noam Chomsky (2022)
+A collection of 4 books, collecting interviews given by Chomsky in a variety of topics. An excellent summary of his worldview.
+
+### The Pig That Wants to Be Eaten, by Julian Baggini (2021)
+Fun armchair philosophy thought experiments, good in bite-sized chunks.
+
+### Goodbye, Things: On Minimalist Living, by Fumio Sasaki (2021)
+A light look at the minimalist movement from a Japanese blogger.
+
+### Faith, Hope and Carnage, by Nick Cave (2023)
+A series of interviews with a great artist. Always thoughtful, deeply considerate and passionate about the human connection.

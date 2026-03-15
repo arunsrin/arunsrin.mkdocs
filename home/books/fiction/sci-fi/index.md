@@ -50,6 +50,27 @@ A short story collection from one of my favourite science fiction authors. *The 
 ### Shards of Earth, by Adrian Tchaikovsky (2021)
 I wanted a bit of epic science fiction and this delivered.
 
+### Olympos, by Dan Simmons (2022)
+A massive but enjoyable sequel to Ilium. The author successfully weaves complex elements into a satisfying conclusion.
+
+### The Dispossessed, by Ursula K. Le Guin (2022)
+An impressive introduction to Le Guin's work. It follows a scientist from an anarchist moon colony to the mother planet, featuring a nuanced exploration of clashing cultures and ideas.
+
+### Ilium, by Dan Simmons (2021)
+A reimagining of the Iliad featuring post-human robots, 'gods,' and a lost human history. Enjoyable.
+
+### All Systems Red, by Martha Wells (2021)
+Short science fiction piece with a decent cast and atmosphere.
+
+### Nexus, by Ramez Naam (2021)
+A switch to science fiction; it was alright.
+
+### Terms of Enlistment, by Marko Kloos (2023)
+Like the movie version of Starship Troopers, but missing the satire.
+
+### What the Hell Did I Just Read, by David Wong (2019)
+The third in the 'John' trilogy. Very entertaining read, constantly humorous and horrifying.
+
 ### Winter World, by A.G. Riddle (2023)
 A decent sci fi novel about an alien visit that triggers an ice age on Earth. The protagonist is annoyingly flawless.
 

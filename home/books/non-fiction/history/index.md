@@ -56,3 +56,24 @@ A concise information dump of India's Geography and how it shaped its History.
 
 ### Hate, Inc., by Matt Taibbi (2019)
 [Detailed Review](hate-inc.md)
+
+### Civilization, by Niall Ferguson (2021)
+Found the tendency to pigeon-hole history into fixed theories too forced.
+
+### Anabasis, by Xenophon (2021)
+It’s nice to finally read something that has such a rich cultural history and see all the influences it has had.
+
+### Myths and Legends of Ancient Greece and Rome, by E. M. Berens (2021)
+A more classic take on these myths. Highly recommended.
+
+### Debt: The First 5000 Years, by David Graeber (2022)
+A thoroughly enjoyable look at debt from its early history up to the current generation. All kinds of interesting tidbits from different cultures.
+
+### The Immortal Game, by David Shenk (2024)
+A history of chess, written by an enthusiast. It stops at the Deep Blue / Kasparov generation.
+
+### Pirateology, by Dugald A Steer (2023)
+A very short read but beautifully made, with a lovely art style.
+
+### Out of their Minds, by Dennis E. Shasha (2024)
+A brief but interesting summary of titans of Computer Science like John McCarthy and Alan Kay.

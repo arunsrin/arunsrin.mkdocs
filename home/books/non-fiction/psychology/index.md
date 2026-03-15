@@ -35,3 +35,27 @@ Sessions with patients and their extreme addictions. Skip.
 
 ### Four Thousand Weeks, by Oliver Burkeman (2021)
 Perspective on things that matter more than trying to make the most of every minute.
+
+### The Checklist Manifesto, by Atul Gawande (2021)
+Slightly light productivity book emphasizing how checklists prevent basic errors in high-pressure jobs.
+
+### Pomodoro Technique Illustrated, by Staffan Noteberg (2021)
+Light, enjoyable read about the Pomodoro technique for pacing work.
+
+### Thinking, Fast and Slow, by Daniel Kahneman (2021)
+Disappointed due to the replication crisis and the book's reliance on statistically poor studies.
+
+### Range: Why Generalists Triumph in a Specialized World, by David Epstein (2021)
+The general recommendation is to sample widely and not be afraid to be a late bloomer.
+
+### Make Time, by Jake Knapp (2024)
+Light book with some useful tips on prioritization, setting time apart, and so on.
+
+### Think Again, by Adam Grant (2024)
+Ways to rethink your assumptions, handle arguments, and so on.
+
+### Rationality, by Steven Pinker (2023)
+Most of the chapters here will be familiar to people who've read about game theory, statistics, and the replication crisis.
+
+### Mind Master, by Vishwanathan Anand (2025)
+Interesting background on the preparation and travel and stress that happens behind the scenes in the world of professional chess.

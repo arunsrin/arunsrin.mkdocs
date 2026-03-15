@@ -36,8 +36,35 @@ A good fantasy novel about a Torturer who is exiled from his guild.
 ### The Just City, by Jo Walton (2024)
 An excellent thought experiment. Athena and Apollo decide to implement Plato's 'Just City' in Atlantis, and recruit a bunch of children to form the first generation.
 
-### The Witcher series, by Andrzej Sapkowski (2021)
-Things are getting interesting with the Witcher assembling a rag-tag party to search for Ciri.
+### The Witcher series, by Andrzej Sapkowski (2021-2022)
+I finally caught up with this series.
+
+- **The Last Wish**: Hooked from the start; the first two books are nice collections of short stories.
+- **Sword of Destiny**: Part of the early Witcher short-story collections; very enjoyable.
+- **Blood of Elves**: Continuation of the Witcher saga; a nice break from TV shows.
+- **Time of Contempt**: Part of the main Witcher series; highly engaging.
+- **Baptism of Fire**: Things are getting interesting now, with the Witcher assembling a rag-tag party to search for Ciri.
+- **The Tower of the Swallow**: Part of the Witcher series; the story is becoming increasingly engaging.
+- **The Lady of the Lake**: Exquisite. The series converges here into brutal, poignant, and unpredictable events. Highly recommended.
+- **Season of Storms**: An unrelated prequel that can be read standalone, though it contains spoilers for the final book of the main series.
+
+### Piranesi, by Susanna Clarke (2022)
+A short fantasy from the author of the excellent Jonathan Strange and Mr Norrell. Recommended.
+
+### Mistborn: The Final Empire, by Brandon Sanderson (2021)
+Thoroughly enjoyed it; avoids many common fantasy tropes.
+
+### Assassin's Apprentice, by Robin Hobb (2021)
+Very enjoyable fantasy read; worth finishing the trilogy.
+
+### The Tangled Lands, by Paolo Bacigalupi & Tobias S. Buckell (2021)
+Four short stories by the two authors, all centered around a world troubled by poisonous brambles that grow and spread whenever its people use magic.
+
+### ❤️House of Leaves, by Mark Z Danielewski (2023)
+A horror book based on a film documentary narrated by a blind man and annotated by a constantly-digressing tattoo artist. Lovely layers upon layers of a labyrinth.
+
+### Illuminations, by Alan Moore (2023)
+A short story collection from a master of the craft. He has not lost any of his strangeness and this collection is quite nice.
 
 ### Vita Nostra, by Marina and Sergey Dyachenko (2026)
 A strange Russian fantasy. The story follows a promising student's rise in a school of surreal magic. I loved the sense of unknowable complexity.

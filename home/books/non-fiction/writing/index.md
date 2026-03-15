@@ -35,3 +35,33 @@ A nice breakdown of several great pieces of literature by someone who loves the 
 
 ### The Odyssey of Homer, by Elizabeth Vandiver (2024)
 Lots of rich context behind the language, culture, and structure of the Odyssey.
+
+### The Elements of Style, by William Strunk Jr. & E.B. White (2017)
+Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences. A precise, brimming guide to writing.
+
+### The Art of Reading, by The Great Courses (2021)
+Audiobook that inspired me to tackle books I previously considered too hard.
+
+### The Letters of Vincent Van Gogh, by Vincent Van Gogh (2021)
+A tragic look at Van Gogh’s suffering but passionate life. Helpful editor’s notes.
+
+### The Enchanter: An Adventure in the Land of Nabokov, by Lila Azam Zanganeh (2021)
+An exquisite love letter to Nabokov’s works. Emulates his luminous, mad style very well.
+
+### The Battles of Tolkien, by David Day (2022)
+A book to be held. With lovely illustrations and binding, it is a joy to read.
+
+### Supergods, by Grant Morrison (2022)
+Grant Morrison looks at Super Heroes across the years, weaving in his own childhood and career. Recommended for comic lovers.
+
+### The Hero with a Thousand Faces, by Joseph Campbell (2021)
+A beautiful synthesis of major world myths. Great for fans of TV Tropes.
+
+### How to View and Appreciate Great Movies, by Eric Williams (2024)
+A look into different parts of the movie making process and what sets apart normal ones from the great ones.
+
+### Good Game, No Rematch, by Mike Drucker (2025)
+A gamer's recollection of a lifetime playing games before moving on to the Comedy and TV industries.
+
+### The Chess Revolution, by Peter Doggers (2025)
+A survey of chess from its earliest days to the AI stage and the current surge post-covid.
