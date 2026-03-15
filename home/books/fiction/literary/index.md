@@ -12,9 +12,6 @@ Contemporary works exploring the human condition.
 ### ❤️When We Cease To Understand The World, by Benjamin Labatut (2025)
 Literature collides with Science as the author probes the edges of human understanding during the Second World War. Blending fiction with real events turns out to be a marvelous choice.
 
-### The Saint of Bright Doors, by Vajra Chandrasekera (2025)
-A surreal, shifting novel that is part Rushdie, part Kafka. A character's fate and choices diverge and converge in unexpected ways. Highly recommended.
-
 ### Narcopolis, by Jeet Thayil (2025)
 An opium-filled ode to old Bombay, full of highs and (mostly) lows. Shades of A Scanner Darkly and Trainspotting but with a more Indian vibe.
 

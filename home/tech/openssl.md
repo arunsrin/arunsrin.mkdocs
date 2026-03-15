@@ -1,10 +1,4 @@
----
-tags:
-  - openssl
-  - security
----
-
-# :material-lock:{ .anim-bounce } OpenSSL
+# 🔒 OpenSSL
 
 Some non-openssl [security](security.md) notes are in a sibling page.
 

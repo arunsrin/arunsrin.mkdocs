@@ -35,3 +35,9 @@ An excellent historical novel based on King Philip the Fair.
 
 ### The Miniaturist, by Kunal Basu (2024)
 About a painter in Mughal India. A pleasant evening's read.
+
+### Circe & The Song of Achilles, by Madeline Miller (2020)
+Lovely books from the author who brings Greek mythology to life with a lyrical touch.
+
+### Mythos, by Stephen Fry (2020)
+Has his trademark light-hearted air which is really nice sometimes and a bit annoying some other times.

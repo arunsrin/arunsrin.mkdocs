@@ -15,6 +15,9 @@ These are graphic novel versions of the Iliad and the Odyssey. I really loved th
 ### The Count of Monte Cristo, by Alexandre Dumas (2020)
 I have fond memories of this book. So I was not ready for how BIG the original version is. So most of this month went in reading this enjoyable revenge tale.
 
+### The Man Who Was Thursday: A Nightmare, by G.K. Chesterton (2024)
+Absolutely enjoyable. Every time this book seemed to be going in a predictable direction, it veered off course into a completely different one. Highly recommended.
+
 ### Far From The Madding Crowd, by Thomas Hardy (2023)
 I have read Tess of the d'Ubervilles and liked it. This one is quite good too. Recommended.
 
