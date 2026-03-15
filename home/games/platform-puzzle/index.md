@@ -18,6 +18,9 @@ Lovely little gem of a game.
 ### Cocoon (2023)
 Worlds within worlds within worlds. Thoroughly satisfying when everything clicks together.
 
+### Venba (2023)
+A little gem from Game Pass. I was able to relate to it even more, being a Tamilian who loves the local cuisine. Lovely art style and music.
+
 ### Planet of Lana (2023)
 Short and sweet with lovely visuals and simple puzzles. No cutscenes or exposition needed.
 

@@ -15,6 +15,12 @@ I've never played anything quite like this! A true work of art. A fevered weeken
 ### ❤️ Split Fiction (2025)
 One of the best games I've played in the past few years! Exquisite co-op gameplay and imagination. Played with my daughter and son.
 
+### ❤️ Hellblade 2 (2024)
+No HUD, no map, no health bar, no power-ups, no levelling up. Just a pure, visceral, cinematic experience. It hit the sweet spot for me.
+
+### ❤️ Brothers: A Tale of Two Sons (2024)
+A masterpiece of storytelling through gameplay. I've played this gem twice now and it's as good as I remember it. Highly recommended.
+
 ### As Dusk Falls (2025)
 An interactive, choose-your-own-adventure game about a robbery gone wrong. Well-developed characters.
 

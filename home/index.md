@@ -61,13 +61,22 @@ reference.
 
     Me and my [books](books/index.md)
 
+    **Fiction**
+
     - [:material-weather-night:{ .anim-heart } Hard Sci-Fi](books/fiction/sci-fi/index.md)
     - [:material-view-column:{ .anim-bounce } Classics](books/fiction/classics/index.md)
     - [:material-library:{ .anim-rotate } Literary Fiction](books/fiction/literary/index.md)
     - [:material-auto-fix:{ .anim-rotate } Fantasy](books/fiction/fantasy/index.md)
+    - [:material-timer-sand:{ .anim-rotate } Historical Fiction](books/fiction/historical/index.md)
+    - [:material-incognito:{ .anim-bounce } Mystery & Thriller](books/fiction/mystery/index.md)
+
+    **Non-Fiction**
+
     - [:material-dna:{ .anim-flip } Science](books/non-fiction/science/index.md)
     - [:material-thought-bubble:{ .anim-heart } Philosophy](books/non-fiction/philosophy/index.md)
     - [:material-history:{ .anim-rotate } History](books/non-fiction/history/index.md)
+    - [:material-brain:{ .anim-flip } Psychology](books/non-fiction/psychology/index.md)
+    - [:material-math-compass:{ .anim-pulse } Math](books/non-fiction/math/index.md)
     - [:fontawesome-solid-pen-nib:{ .anim-flip } Literature & Writing](books/non-fiction/writing/index.md)
 
 
@@ -147,6 +156,7 @@ These pages cover other various topics I've researched or feel passionate about.
     - [:material-pencil:{ .anim-rotate }Think Like a Stoic, by Massimo Pigliucci](books/non-fiction/philosophy/think-like-a-stoic.md)
     - [:material-pencil:{ .anim-rotate }Immune, by Phillip Dettmer (kurzgesagt)](books/non-fiction/science/immune.md)
     - [:material-pencil:{ .anim-rotate }Despair, by Vladimir Nabokov](books/fiction/literary/despair.md)
+    - [:material-pencil:{ .anim-rotate }Pale Fire, by Vladimir Nabokov](books/fiction/literary/pale-fire.md)
     - [:material-pencil:{ .anim-rotate }The Happiness Hypothesis, by Jonathan Haidt](books/non-fiction/psychology/happiness.md)
     - [:material-pencil:{ .anim-rotate }How to Read a Book, by Mortimer J. Adler and Charles Van Doren](books/non-fiction/writing/how-to-read-a-book.md)
     - [:material-pencil:{ .anim-rotate }Eats, Shoots & Leaves, by Lynne Truss](books/non-fiction/writing/eats-shoots-leaves.md)

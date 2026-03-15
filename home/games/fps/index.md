@@ -18,6 +18,15 @@ Absolutely phenomenal single-player campaign. One of the few games I've gone bac
 ### ❤️ Halo: Reach (2021) & Halo: Infinite (2022)
 Reach blew me away both gameplay and story-wise. Infinite's move to open-world and the grappleshot are huge improvements.
 
+### Halo 1, 2, 3, 4, 5 & ODST (2021-2022)
+Finished the entire series. *Reach* is my favourite alongside *Infinite*. *ODST* was a short and sweet game. *Halo 5* has a decent campaign, though I had no idea what was going on story-wise since it was my first Halo.
+
+### Homefront: The Revolution (2019)
+Ignore the reviews, this is a fun game. Very nice tension where you're initially avoiding an overpowered enemy, and slowly instigating a rebellion.
+
+### Call of Duty: Infinite Warfare (2019)
+Tolerable single player campaign. Titanfall 2 does this kind of thing a lot better.
+
 ### ❤️ Gears of War (Series) (2020)
 Mindless fun. Finished the entire legacy series. Phenomenal weapons like the Hammer of Dawn and Lancer.
 

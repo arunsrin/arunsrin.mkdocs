@@ -22,7 +22,7 @@ Excellent from Obsidian. Played as a mage and enjoyed the rich variety of spells
 A solid game. Very pretty to look at with diverse combat and skill trees.
 
 ### South Park: The Stick of Truth (2023)
-Animation is spot on and the gameplay is really polished.
+Highly recommended if you already like South Park. The animation is spot on and the gameplay is really polished. I picked the Thief class and stuck with Butters as my side-kick.
 
 ### Diablo 3 (2021)
 Disappointing compared to the hype, felt too easy even on the first playthrough.

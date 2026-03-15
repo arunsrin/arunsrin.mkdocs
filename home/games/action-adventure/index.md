@@ -21,8 +21,11 @@ It is immensely satisfying to have an overpowered assassin + archer build and ta
 ### ❤️ Far Cry 5 (2019)
 Probably my favourite game on the console. Amazing open world, supports a lot of play styles, nice co-op AI partners.
 
+### ❤️ Indiana Jones and the Great Circle (2024)
+A great game to end the year. Feels like a movie and the visuals are just stunning. Special mention to the voice actor (Troy Baker) for nailing Indiana Jones' voice and personality perfectly.
+
 ### ❤️ Rise of the Tomb Raider (2019)
-Probably my favourite series. I love how *vertical* this whole game is.
+Probably my favourite series. I have fond memories of playing *Tomb Raider: Legend* on my PS2. I love how *vertical* this whole game is.
 
 ### Shadow of the Tomb Raider (2019)
 Fun game, great visuals and stealth sections.
@@ -35,6 +38,9 @@ WD2 has a beautiful open world and a satirical take on Silicon Valley. Stealth g
 
 ### Watch Dogs: Legion (2025)
 Enjoyable, but probably the weakest of the trilogy. The idea of recruiting anyone is fun at first but didn't make a huge difference over time.
+
+### Thief (2020)
+An enjoyable game. I loved their stealth implementation (over other games like Deus Ex: Mankind Divided). There were some truly thrilling moments during the game.
 
 ### Batman: Arkham Knight (2019)
 Disappointing. Too much driving.
