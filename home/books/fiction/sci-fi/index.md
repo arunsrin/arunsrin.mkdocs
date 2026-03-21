@@ -9,6 +9,11 @@ tags:
 
 A collection of notes and reviews on authors who explore the boundaries of physics, consciousness, and the future.
 
+### Hyperion, by Dan Simmons (2026)
+
+Alas, Dan Simmons has passed away. I decided to read his most famous book in his memory. TBH I prefer Ilium more, but this is a good book too. 7 travelers on a
+pilgrimage to a terrifying alien being tell their stories.
+
 ### Axiomatic, by Greg Egan (2021)
 A short story collection from one of my favourite hard-sci-fi writers. Excellent as always.
 
