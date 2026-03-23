@@ -21,9 +21,6 @@ A short story collection from one of my favourite hard-sci-fi writers. Excellent
 ### ❤️Leech, by Hiron Ennes (2025)
 This was recommended by the excellent Peter Watts. It has been a while since I've read a science fiction book this good! A parasitic hive-mind that inhabits a bunch of people meets a competitor in an atmospheric post-apocalyptic world. Finished this in a single long sitting.
 
----
-
-## Other Speculative Fiction
 
 ### Lord of Light, by Roger Zelazny (2026)
 An enjoyable speculative sci-fi tale of a far future where an advanced group has solved re-incarnation and elevated themselves to godhood, styling themselves after the Hindu Gods. They govern humanity by controlling thir karmic cycle and offering godhood as a faraway boon. Their reign is challenged by one of their own, who has a promethean desire to accelerate it to the masses.
@@ -69,6 +66,11 @@ Short science fiction piece with a decent cast and atmosphere.
 
 ### Nexus, by Ramez Naam (2021)
 A switch to science fiction; it was alright.
+
+### House of Suns, by Alastair Reynolds (2026)
+
+Humanity has spread to the stars by creating numerous clones descended from a few original pioneers, and now faces 
+an extinction-level crisis from an unknown enemy.
 
 ### Terms of Enlistment, by Marko Kloos (2023)
 Like the movie version of Starship Troopers, but missing the satire.
