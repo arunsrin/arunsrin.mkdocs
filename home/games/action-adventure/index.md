@@ -27,6 +27,11 @@ A great game to end the year. Feels like a movie and the visuals are just stunni
 ### ❤️ Rise of the Tomb Raider (2019)
 Probably my favourite series. I have fond memories of playing *Tomb Raider: Legend* on my PS2. I love how *vertical* this whole game is.
 
+### ❤️ Tomb Raider (2026)
+Replayed this game and still absolutely adore it. This is the 2013 reboot and has a lovely mix of exploration and combat. The Tombs
+themselves are a bit simple but the overall level design, the traversal, and combat are excellently tuned. Cannot fault a game that uses
+bow-and-arrow so well.
+
 ### Shadow of the Tomb Raider (2019)
 Fun game, great visuals and stealth sections.
 
