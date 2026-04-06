@@ -12,6 +12,9 @@ Timing, logic, and creative problem-solving.
 ### ❤️ Rayman Legends (2019)
 Exquisite level design and music. My kids love this. Easy and hard as you want it to be.
 
+### ❤️ It Takes Two (2026)
+My daughter and I finished this together. Another co-op gem from Hazelight Studios.
+
 ### ❤️ INSIDE (2019)
 Lovely little gem of a game.
 
