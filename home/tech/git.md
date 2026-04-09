@@ -95,6 +95,40 @@ You can undo the revert with this:
 git reset HEAD@{1}
 ```
 
+## Some great ones to investigate a repo
+
+These are all from [this excellent post](https://piechowski.io/post/git-commands-before-reading-code/):
+
+What changes the most:
+
+```sh
+git log --format=format: --name-only --since="1 year ago" | sort | uniq -c | sort -nr | head -20
+```
+
+Who built this:
+
+```sh
+git shortlog -sn --no-merges
+```
+
+Where do bugs cluster:
+
+```sh
+git log -i -E --grep="fix|bug|broken" --name-only --format='' | sort | uniq -c | sort -nr | head -20
+```
+
+Is this project accelerating or dying:
+
+```sh
+git log --format='%ad' --date=format:'%Y-%m' | sort | uniq -c
+```
+
+How often is the team firefighting:
+
+```sh
+git log --oneline --since="1 year ago" | grep -iE 'revert|hotfix|emergency|rollback'
+```
+
 ## Using git stash to save changes temporarily
 
 -   First do a `git add` (if its a new file to be tracked), then `git stash`
