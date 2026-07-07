@@ -9,6 +9,14 @@ tags:
 
 Investigations into ethics, existence, and the principles of thought.
 
+### ❤️Myths to Live by, by Joseph Campbell (2026)
+
+They don't make great people like him any more do they. A remarkable series of
+lectures by the leading authority on myths. The author never lets cynicism get
+in the way of his sense of wonder, and has a knack for melding science with
+religion, and getting to the common kernel inside the mythologies of cultures
+across the world.
+
 ### ❤️Think like a Stoic, by Massimo Pigliucci (2024)
 Condenses Seneca, Aurelius and others in a very digestible set of chapters.
 [Detailed Review](think-like-a-stoic.md)
