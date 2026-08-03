@@ -9,6 +9,11 @@ tags:
 
 Contemporary works exploring the human condition.
 
+### A Man in Full, by Tom Wolfe (2026)
+
+When 2 people, worlds apart, are pushed to extreme situations, their true nature shines
+through.
+
 ### ❤️A Fine Balance, by Rohinton Mistry
 
 Unrelentingly bleak and stays with you long after you are done with it. Four lives intersect
