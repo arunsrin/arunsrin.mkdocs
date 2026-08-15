@@ -9,6 +9,10 @@ tags:
 
 Choices matter. Narrative-heavy experiences and interactive cinema.
 
+### ❤️ Dispatch (2016)
+Whip-smart writing and an immersive story make this a must-play. You play an out-of-luck superhero who has to manage a misfit team
+of heroes for hire. 
+
 ### ❤️ Immortality (2022)
 I've never played anything quite like this! A true work of art. A fevered weekend of uncovering secrets through film clips.
 
