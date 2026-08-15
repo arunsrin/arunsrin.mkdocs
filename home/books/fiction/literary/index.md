@@ -44,7 +44,7 @@ Short and bitter-sweet story.
 ### Nabokov: The Mystery of Literary Structures, by Leona Toker (2020)
 A detailed look at several of Nabokov's books. A fruitful area to get lost in.
 
-### ❤️Luzhin's Defense, by Vladimir Nabokov (2020)
+### ❤️Luzhin's Defense, by Vladimir Nabokov (2020, 2026)
 What can I say? It's Nabokov and Chess and obsession, in language and form that only he can create.
 
 ### Despair, by Vladimir Nabokov
