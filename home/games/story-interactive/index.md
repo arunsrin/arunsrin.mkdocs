@@ -9,7 +9,10 @@ tags:
 
 Choices matter. Narrative-heavy experiences and interactive cinema.
 
-### ❤️ Dispatch (2016)
+### The Expanse (2026)
+Another good Telltale game. The main addition here is some fun navigation in zero-g.
+
+### ❤️ Dispatch (2026)
 Whip-smart writing and an immersive story make this a must-play. You play an out-of-luck superhero who has to manage a misfit team
 of heroes for hire. 
 
